@@ -1,0 +1,135 @@
+//          888             888                            d8b      888
+//          888             888                            Y8P      888
+//          888             888                                     888
+// .d8888b  888888 888  888 888  .d88b.   .d88b.  888  888 888  .d88888  .d88b.
+// 88K      888    888  888 888 d8P  Y8b d88P"88b 888  888 888 d88" 888 d8P  Y8b
+// "Y8888b. 888    888  888 888 88888888 888  888 888  888 888 888  888 88888888
+//      X88 Y88b.  Y88b 888 888 Y8b.     Y88b 888 Y88b 888 888 Y88b 888 Y8b.
+//  88888P'  "Y888  "Y88888 888  "Y8888   "Y88888  "Y88888 888  "Y88888  "Y8888
+//                      888                   888
+//                 Y8b d88P              Y8b d88P
+//                  "Y88P"                "Y88P"
+
+@import 'directives/directives';
+@import 'tokens/tokens';
+
+@import 'styleguide/colors';
+
+@import 'styleguide/prism';
+
+.kss-body {
+	min-height: 100vh;
+
+	> .grid {
+		min-height: 100vh;
+		grid-template-rows: min-content min-content auto;
+
+		@include breakpoint(l) {
+			grid-template-rows: min-content auto;
+		}
+	}
+
+	abbr {
+		text-decoration: none;
+	}
+
+	h1 {
+		color: $color-blue;
+		font-weight: $font-weight-black;
+		text-transform: uppercase;
+	}
+
+	.kss-with-anchor {
+		margin: 0 0 $space-s;
+
+		> span {
+			white-space: nowrap;
+		}
+
+		.anchor-icon {
+			display: flex;
+			flex: 0 1 100%;
+			justify-content: flex-end;
+			text-align: right;
+
+			a {
+				color: $color-blue;
+
+				&:active,
+				&:focus,
+				&:hover {
+					background-color: transparent;
+					color: $color-black;
+				}
+			}
+		}
+	}
+
+	.site-header {
+		margin-bottom: 0;
+
+		> nav > ul li.site-name {
+			border-bottom-width: 0;
+		}
+	}
+}
+
+.kss-home {
+	h1 {
+		color: inherit;
+		font-weight: $font-weight-bold;
+		margin-bottom: $space-s;
+		text-transform: none;
+	}
+
+	h2 {
+		font-size: $font-size-m;
+	}
+
+	h3 {
+		color: $color-blue;
+		font-size: $font-size-h2;
+		font-weight: $font-weight-black;
+		text-transform: uppercase;
+	}
+
+	h4 {
+		font-weight: $font-weight-bold;
+		margin: 0 0 $space-s;
+	}
+}
+
+.kss-menu {
+	background-color: $color-blue-dark;
+	color: $color-white;
+	padding: $space-l 0;
+
+	a {
+		display: block;
+		padding: $space-s ($space-m + $space-s);
+		text-decoration: none;
+
+		&.kss-state-active {
+			background-color: color(black, 0, 10);
+		}
+	}
+
+	li {
+		font-size: $font-size-m;
+		list-style: none;
+		margin: 0;
+
+		li {
+			font-size: $font-size-s;
+
+			a {
+				padding: $space-xxs ($space-m + $space-s) $space-xxs ($space-l + $space-xs);
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}

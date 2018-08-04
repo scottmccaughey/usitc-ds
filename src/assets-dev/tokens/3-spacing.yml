@@ -1,0 +1,39 @@
+#                                     d8b
+#                                     Y8P
+#
+# .d8888b  88888b.   8888b.   .d8888b 888 88888b.   .d88b.
+# 88K      888 "88b     "88b d88P"    888 888 "88b d88P"88b
+# "Y8888b. 888  888 .d888888 888      888 888  888 888  888
+#      X88 888 d88P 888  888 Y88b.    888 888  888 Y88b 888
+#  88888P' 88888P"  "Y888888  "Y8888P 888 888  888  "Y88888
+#          888                                          888
+#          888                                     Y8b d88P
+#          888                                      "Y88P"
+
+space:
+  xxs:              $font-size-base / 8
+  xs:               $font-size-base / 4
+  s:                $font-size-base / 2
+  m:                $font-size-base
+  l:                $font-size-base * 2
+  xl:               $font-size-base * 4
+  xxl:              $font-size-base * 8
+  xxxl:             $font-size-base * 12
+  stack:
+    xxs:            0 0 $space-xxs 0
+    xs:             0 0 $space-xs 0
+    s:              0 0 $space-s 0
+    m:              0 0 $space-m 0
+    l:              0 0 $space-l 0
+    xl:             0 0 $space-xl 0
+    xxl:            0 0 $space-xxl 0
+    xxxl:           0 0 $space-xxxl 0
+  inline:
+    xxs:            0 $space-xxs 0 0
+    xs:             0 $space-xs 0 0
+    s:              0 $space-s 0 0
+    m:              0 $space-m 0 0
+    l:              0 $space-l 0 0
+    xl:             0 $space-xl 0 0
+    xxl:            0 $space-xxl 0 0
+    xxxl:           0 $space-xxxl 0 0

@@ -1,0 +1,105 @@
+// d8b
+// Y8P
+//
+// 888  .d8888b .d88b.  88888b.  .d8888b
+// 888 d88P"   d88""88b 888 "88b 88K
+// 888 888     888  888 888  888 "Y8888b.
+// 888 Y88b.   Y88..88P 888  888      X88
+// 888  "Y8888P "Y88P"  888  888  88888P'
+
+icon,
+.icon {
+	display: inline-block;
+	height: $icon-size-base;
+	position: relative;
+	width: $icon-size-base;
+
+	> svg {
+		align-items: stretch;
+		display: flex;
+		height: 100%;
+		fill: currentColor;
+		justify-content: stretch;
+		stroke: none;
+		width: 100%;
+	}
+
+	&.icon-xxxs {
+		height: $icon-size-xxxs;
+		width: $icon-size-xxxs;
+	}
+
+	&.icon-xxs {
+		height: $icon-size-xxs;
+		width: $icon-size-xxs;
+	}
+
+	&.icon-xs {
+		height: $icon-size-xs;
+		width: $icon-size-xs;
+	}
+
+	&.icon-s {
+		height: $icon-size-s;
+		width: $icon-size-s;
+	}
+
+	&.icon-m {
+		height: $icon-size-m;
+		width: $icon-size-m;
+	}
+
+	&.icon-l {
+		height: $icon-size-l;
+		width: $icon-size-l;
+	}
+
+	&.icon-xl {
+		height: $icon-size-xl;
+		width: $icon-size-xl;
+	}
+
+	&.icon-xxl {
+		height: $icon-size-xxl;
+		width: $icon-size-xxl;
+	}
+
+	&.icon-xxxl {
+		height: $icon-size-xxxl;
+		width: $icon-size-xxxl;
+	}
+
+	&.icon-xxxxl {
+		height: $icon-size-xxxxl;
+		width: $icon-size-xxxxl;
+	}
+
+	&.icon-xxxxxl {
+		height: $icon-size-xxxxxl;
+		width: $icon-size-xxxxxl;
+	}
+
+	&.icon-xxxxxxl {
+		height: $icon-size-xxxxxxl;
+		width: $icon-size-xxxxxxl;
+	}
+
+	&.icon-xxxxxxxl {
+		height: $icon-size-xxxxxxxl;
+		width: $icon-size-xxxxxxxl;
+	}
+
+	&.icon-block {
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	&.icon-centered {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
