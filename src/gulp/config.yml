@@ -15,7 +15,12 @@ path:
       scss:             src/assets/scss/tokens
 
   clean:
-                      - src/assets/**/*
+                      - src/assets/css/**/*
+                      - src/assets/fonts/**/*
+                      - src/assets/icons/**/*
+                      - src/assets/scss/**/*
+                      - src/assets/styleguide/**/*
+                      - src/assets/tokens/**/*
 
   css:
     dist:               src/assets/css

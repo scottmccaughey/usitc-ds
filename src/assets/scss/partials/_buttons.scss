@@ -166,10 +166,22 @@ button,
     width: 100%;
   }
 
-  &.button-borderless {
-    border-color: transparent;
-  }
+  // Button Alignment
+  //
+  // Styleguide Components.Buttons.Alignment
+  //
+  // Weight: 3
 
+  // Centered Button
+  //
+  // Add a `.button-centered` class for a button that will be centered on its own line, with top and bottom margins.
+  //
+  // Markup:
+  // <button type="button" class="button-centered">Centered Button</button>
+  //
+  // Styleguide Components.Buttons.Alignment.Centered
+  //
+  // Weight: 1
   &.button-centered {
     display: block;
     margin: 1rem auto;

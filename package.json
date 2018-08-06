@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=4500 && start gulp",
+    "prestart": "gulp build",
+    "start": "concurrently \"ng serve --port=4500\" \"gulp watch\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -40,6 +41,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
+    "concurrently": "^3.6.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",

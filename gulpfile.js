@@ -1,23 +1,23 @@
 require('events').EventEmitter.prototype._maxListeners = 100;
 
 var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
-	plumber = require('gulp-plumber'),
-	sequence = require('gulp-sequence'),
-	autoprefixer = require('gulp-autoprefixer'),
-	clone = require('gulp-clone').sink(),
-	del = require('del'),
-	rename = require('gulp-rename'),
-	replace = require('gulp-replace'),
-	yamlToJson = require('gulp-yaml'),
-	jsonToSass = require('./src/gulp/json-to-sass'),
-	sassToCss = require('gulp-sass'),
-	kss = require('gulp-kss'),
-	yRequire = require('require-yml'),
-	config = yRequire('./src/gulp/config.yml'),
-	mixer = require('./src/gulp/mixer'),
-	svgo = require('gulp-svgo'),
-	svgSprite = require('gulp-svg-sprite'),
-	convert = [];
+  plumber = require('gulp-plumber'),
+  sequence = require('gulp-sequence'),
+  autoprefixer = require('gulp-autoprefixer'),
+  clone = require('gulp-clone').sink(),
+  del = require('del'),
+  rename = require('gulp-rename'),
+  replace = require('gulp-replace'),
+  yamlToJson = require('gulp-yaml'),
+  jsonToSass = require('./src/gulp/json-to-sass'),
+  sassToCss = require('gulp-sass'),
+  kss = require('gulp-kss'),
+  yRequire = require('require-yml'),
+  config = yRequire('./src/gulp/config.yml'),
+  mixer = require('./src/gulp/mixer'),
+  svgo = require('gulp-svgo'),
+  svgSprite = require('gulp-svg-sprite'),
+  convert = [];
 
 /*
   TASK: 'clean'
@@ -25,7 +25,7 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
   Delete contents of distribution folders.
 */
 gulp.task('clean', 'Delete contents of distribution folders.', function() {
-	return del(config.path.clean);
+  return del(config.path.clean);
 });
 
 /*
@@ -35,7 +35,7 @@ gulp.task('clean', 'Delete contents of distribution folders.', function() {
   called "convert".
 */
 config.formats.forEach(function(format) {
-	convert.push('convert:' + format);
+  convert.push('convert:' + format);
 });
 
 /*
@@ -52,11 +52,11 @@ gulp.task('convert', 'Convert YAML Design Tokens into formats specified in confi
   can be used in JavaScript.
 */
 gulp.task('convert:json', 'Convert YAML Design Tokens into JSON.', function() {
-	return gulp
-		.src(config.path.tokens.src)
-		.pipe(plumber())
-		.pipe(yamlToJson())
-		.pipe(gulp.dest(config.path.tokens.dist.json));
+  return gulp
+    .src(config.path.tokens.src)
+    .pipe(plumber())
+    .pipe(yamlToJson())
+    .pipe(gulp.dest(config.path.tokens.dist.json));
 });
 
 /*
@@ -66,31 +66,31 @@ gulp.task('convert:json', 'Convert YAML Design Tokens into JSON.', function() {
   can be used in SCSS (Sass).
 */
 gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
-	return gulp
-		.src(config.path.tokens.src)
-		.pipe(plumber())
-		.pipe(yamlToJson())
-		.pipe(jsonToSass())
-		.pipe(clone)
-		.pipe(mixer('tokens'))
-		.pipe(clone.tap())
-		.pipe(
-			rename(function(path) {
-				path.basename = '_' + path.basename;
-			})
-		)
-		.pipe(gulp.dest(config.path.tokens.dist.scss));
+  return gulp
+    .src(config.path.tokens.src)
+    .pipe(plumber())
+    .pipe(yamlToJson())
+    .pipe(jsonToSass())
+    .pipe(clone)
+    .pipe(mixer('tokens'))
+    .pipe(clone.tap())
+    .pipe(
+      rename(function(path) {
+        path.basename = '_' + path.basename;
+      })
+    )
+    .pipe(gulp.dest(config.path.tokens.dist.scss));
 });
 
 /*
-  TASK: 'build'
+  TASK: 'compile'
 
   Run the "copy", "convert" and "compile" tasks.
 */
 gulp.task(
-	'build',
-	'Copy and compile SCSS, copy fonts, and convert icons.',
-	sequence('copy:fonts', 'convert:icons', 'compile:scss')
+  'compile',
+  'Copy and compile SCSS, copy fonts, and convert icons.',
+  sequence('copy:fonts', 'convert:icons', 'compile:scss')
 );
 
 /*
@@ -99,7 +99,7 @@ gulp.task(
   Copy fonts from the source folder to the destination folder.
 */
 gulp.task('copy:fonts', 'Copy fonts from the source folder to the destination folder.', function() {
-	return gulp.src(config.path.fonts.src).pipe(plumber()).pipe(gulp.dest(config.path.fonts.dist));
+  return gulp.src(config.path.fonts.src).pipe(plumber()).pipe(gulp.dest(config.path.fonts.dist));
 });
 
 /*
@@ -108,13 +108,13 @@ gulp.task('copy:fonts', 'Copy fonts from the source folder to the destination fo
   Optimize SVG icons and save them, then convert them all into a single SVG sprite for easy use.
 */
 gulp.task('convert:icons', 'Convert SVG icons into an SVG sprite.', function() {
-	return gulp
-		.src(config.path.icons.src)
-		.pipe(plumber())
-		.pipe(svgo())
-		.pipe(gulp.dest(config.path.icons.dist))
-		.pipe(svgSprite(config.settings.icons))
-		.pipe(gulp.dest(config.path.icons.dist));
+  return gulp
+    .src(config.path.icons.src)
+    .pipe(plumber())
+    .pipe(svgo())
+    .pipe(gulp.dest(config.path.icons.dist))
+    .pipe(svgSprite(config.settings.icons))
+    .pipe(gulp.dest(config.path.icons.dist));
 });
 
 /*
@@ -123,15 +123,12 @@ gulp.task('convert:icons', 'Convert SVG icons into an SVG sprite.', function() {
   Copy SCSS from the source folder to the destination folder.
 */
 gulp.task(
-	'copy:scss',
-	'Copy SCSS from the source folder to the destination folder.',
-	[ 'convert:scss' ],
-	function() {
-		return gulp
-			.src(config.path.scss.src)
-			.pipe(plumber())
-			.pipe(gulp.dest(config.path.scss.dist));
-	}
+  'copy:scss',
+  'Copy SCSS from the source folder to the destination folder.',
+  [ 'convert:scss' ],
+  function() {
+    return gulp.src(config.path.scss.src).pipe(plumber()).pipe(gulp.dest(config.path.scss.dist));
+  }
 );
 
 /*
@@ -141,28 +138,28 @@ gulp.task(
   styles into CSS.
 */
 gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() {
-	return gulp
-		.src(config.path.scss.src)
-		.pipe(plumber())
-		.pipe(gulp.dest(config.path.scss.dist))
-		.pipe(
-			sassToCss({
-				includePaths: config.settings.scss.includePaths
-			})
-		)
-		.pipe(
-			autoprefixer({
-				browsers: config.settings.scss.browsers
-			})
-		)
-		.pipe(gulp.dest(config.path.css.dist))
-		.pipe(replace(config.settings.scss.fontPath.prod, config.settings.scss.fontPath.dev))
-		.pipe(
-			rename(function(path) {
-				path.basename = path.basename + config.settings.scss.devSuffix;
-			})
-		)
-		.pipe(gulp.dest(config.path.css.dist));
+  return gulp
+    .src(config.path.scss.src)
+    .pipe(plumber())
+    .pipe(gulp.dest(config.path.scss.dist))
+    .pipe(
+      sassToCss({
+        includePaths: config.settings.scss.includePaths
+      })
+    )
+    .pipe(
+      autoprefixer({
+        browsers: config.settings.scss.browsers
+      })
+    )
+    .pipe(gulp.dest(config.path.css.dist))
+    .pipe(replace(config.settings.scss.fontPath.prod, config.settings.scss.fontPath.dev))
+    .pipe(
+      rename(function(path) {
+        path.basename = path.basename + config.settings.scss.devSuffix;
+      })
+    )
+    .pipe(gulp.dest(config.path.css.dist));
 });
 
 /*
@@ -171,45 +168,51 @@ gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() 
   Generate a styleguide using comments in the SCSS files.
 */
 gulp.task(
-	'generate:styleguide',
-	'Generate a styleguide using comments in the SCSS files.',
-	function() {
-		return gulp
-			.src(config.path.scss.src)
-			.pipe(plumber())
-			.pipe(
-				kss({
-					templateDirectory: __dirname + '/src/styleguide'
-				})
-			)
-			.pipe(gulp.dest('test'));
-	}
+  'generate:styleguide',
+  'Generate a styleguide using comments in the SCSS files.',
+  function() {
+    return gulp
+      .src(config.path.scss.src)
+      .pipe(plumber())
+      .pipe(
+        kss({
+          templateDirectory: __dirname + '/src/styleguide'
+        })
+      )
+      .pipe(gulp.dest('test'));
+  }
 );
 
 /*
-  TASK: "serve"
+  TASK: "build"
 
   Run the "clean" task, then run the "convert" task, then run the "compile" task.
 */
 gulp.task(
-	'serve',
-	'Empty the distribution folder, convert tokens, then build.',
-	sequence('clean', 'convert', 'build')
+  'build',
+  'Empty the distribution folder, convert tokens, then compile.',
+  sequence('clean', 'convert', 'compile')
 );
+
+/*
+  TASK: "watch"
+
+  Watch files for processing.
+*/
+gulp.task('watch', 'Watch files for processing.', function() {
+  gulp.watch(config.path.tokens.src, [ 'convert' ]);
+  gulp.watch(config.path.scss.watch, [ 'compile:scss' ]);
+  gulp.watch(config.path.fonts.src, [ 'copy:fonts' ]);
+  gulp.watch(config.path.icons.src, [ 'convert:icons' ]);
+});
 
 /*
   TASK: "default"
 
-  Run the "serve" task, then start watch files for processing.
+  Run the "build" task, then watch files for processing.
 */
 gulp.task(
-	'default',
-	'Set up BrowserSync server and watch files for changes.',
-	[ 'serve' ],
-	function() {
-		gulp.watch(config.path.tokens.src, [ 'convert' ]);
-		gulp.watch(config.path.scss.watch, [ 'compile:scss' ]);
-		gulp.watch(config.path.fonts.src, [ 'copy:fonts' ]);
-		gulp.watch(config.path.icons.src, [ 'convert:icons' ]);
-	}
+  'default',
+  'Run the "build" task, then watch files for processing.',
+  sequence('build', 'watch')
 );
