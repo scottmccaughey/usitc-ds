@@ -3,7 +3,7 @@
   <div *ngIf="content.description" class="kss-description" [innerHTML]="content.description"></div>
   <ng-container *ngIf="content.markup">
     <div class="kss-example-header">Example</div>
-    <div class="kss-example" [innerHTML]="content.markup | KeepHtmlPipe"></div>
+    <div class="kss-example" [ngClass]="content.markupClass" [innerHTML]="content.markup | KeepHtmlPipe"></div>
     <ngx-prism [language]="'markup'">{{content.markup}}</ngx-prism>
     <div *ngIf="content.modifiers?.length > 0" [innerHTML]="content.modifiers"></div>
     <div *ngIf="content.parameters?.length > 0" [innerHTML]="content.parameters"></div>

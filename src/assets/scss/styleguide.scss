@@ -127,6 +127,11 @@
   border: 1px solid color(cyan, 15);
   margin: 0;
   padding: $space-m;
+
+  &.kss-section-buttons {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .kss-home {
@@ -169,7 +174,7 @@
 }
 
 .kss-main {
-  padding: $space-m $space-l;
+  padding: $space-m $space-l 0;
 }
 
 .kss-menu {
@@ -210,6 +215,6 @@
 .kss-source {
   background-color: color(cyan, 95);
   border: 1px solid color(cyan, 15);
-  margin: 0 0 $space-l;
+  margin: 0 0 ($space-l + $space-m);
   padding: $space-s $space-m;
 }

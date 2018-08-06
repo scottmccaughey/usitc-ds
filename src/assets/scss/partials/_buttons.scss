@@ -9,7 +9,7 @@
 
 // Buttons
 //
-// This is our base button. It can be generated using either a `<button type="button">` element, an `<input type="button">` element or a `<a class="button" role="button">` element.
+// This is our base button. It can be generated using a `<button type="button">` element, an `<input type="button">` element, or a `<a class="button" role="button">` element.
 //
 // Common practice on the web suggests that:
 //
@@ -64,9 +64,9 @@ button,
   // Disable `<button>` and `<input>` elements with the boolean `disabled` attribute and `<a>` elements with the `.disabled` class.
   //
   // Markup:
-  // <button type="button" disabled>Disabled Button</button>
-  // <input type="button" value="Disabled Button" disabled>
-  // <a class="button disabled" role="button">Disabled Button</a>
+  // <button type="button" disabled>Disabled Button Button</button>
+  // <input type="button" value="Disabled Input Button" disabled>
+  // <a class="button disabled" role="button">Disabled Link Button</a>
   //
   // Styleguide Components.Buttons.Disabled
   //
@@ -119,22 +119,51 @@ button,
   //
   // Weight: 2
   &.button-l {
-    font-size: $font-size-l;
+    font-size: $font-size-m;
   }
 
-  // Extra Large Button
+  // XL Button
   //
-  // Add a `.button-xl` class for a smaller button.
+  // Add a `.button-xl` class for an XL button.
   //
   // Markup:
   // <button type="button">Button</button>
-  // <button type="button" class="button-xl">Extra Large Button</button>
+  // <button type="button" class="button-xl">XL Button</button>
   //
-  // Styleguide Components.Buttons.Sizes.ExtraLarge
+  // Styleguide Components.Buttons.Sizes.XL
   //
   // Weight: 3
   &.button-xl {
+    font-size: $font-size-l;
+  }
+
+  // XXL Button
+  //
+  // Add a `.button-xxl` class for an XXL button.
+  //
+  // Markup:
+  // <button type="button">Button</button>
+  // <button type="button" class="button-xxl">XXL Button</button>
+  //
+  // Styleguide Components.Buttons.Sizes.XXL
+  //
+  // Weight: 4
+  &.button-xxl {
     font-size: $font-size-xl;
+  }
+
+  // Full-Width Button
+  //
+  // Add a `.button-full-width` class for a button 100% of the width of its container.
+  //
+  // Markup:
+  // <button type="button" class="button-full-width">Full-Width Button</button>
+  //
+  // Styleguide Components.Buttons.Sizes.FullWidth
+  //
+  // Weight: 5
+  &.button-full-width {
+    width: 100%;
   }
 
   &.button-borderless {
@@ -167,21 +196,6 @@ button,
     position: absolute;
     right: 0;
     top: 0;
-  }
-
-  // Extra Large Button
-  //
-  // Add a `.button-xl` class for a smaller button.
-  //
-  // Markup:
-  // <button type="button">Button</button>
-  // <button type="button" class="button-xl">Extra Large Button</button>
-  //
-  // Styleguide Components.Buttons.Sizes.ExtraLarge
-  //
-  // Weight: 3
-  &.button-full-width {
-    width: 100%;
   }
 
   &.button-ghost {
