@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+
+  _devAssetsLocation: 'src/assets-dev/'
 };

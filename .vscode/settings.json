@@ -1,0 +1,55 @@
+{
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline",
+    "indent_size": 2,
+    "keep_array_indentation": true
+  },
+  "beautify.ignore": [
+    "**/*.scss"
+  ],
+  "beautify.language": {
+    "js": {
+      "type": [
+        "json",
+        "jsonc"
+      ]
+    },
+    "css": [],
+    "html": [
+      "html"
+    ]
+  },
+  "editor.autoIndent": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "indent",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "html.format.enable": true,
+  "prettier.disableLanguages": ["json"],
+  "prettier.eslintIntegration": false,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "tslint.autoFixOnSave": false,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#be2a26",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#981d20",
+    "titleBar.inactiveForeground": null
+  }
+}

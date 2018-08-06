@@ -9,12 +9,12 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
 	rename = require('gulp-rename'),
 	replace = require('gulp-replace'),
 	yamlToJson = require('gulp-yaml'),
-	jsonToSass = require('./gulp/json-to-sass'),
+	jsonToSass = require('./src/gulp/json-to-sass'),
 	sassToCss = require('gulp-sass'),
 	kss = require('gulp-kss'),
 	yRequire = require('require-yml'),
-	config = yRequire('./gulp/config.yml'),
-	mixer = require('./gulp/mixer'),
+	config = yRequire('./src/gulp/config.yml'),
+	mixer = require('./src/gulp/mixer'),
 	svgo = require('gulp-svgo'),
 	svgSprite = require('gulp-svg-sprite'),
 	convert = [];
@@ -122,9 +122,17 @@ gulp.task('convert:icons', 'Convert SVG icons into an SVG sprite.', function() {
 
   Copy SCSS from the source folder to the destination folder.
 */
-gulp.task('copy:scss', 'Copy SCSS from the source folder to the destination folder.', function() {
-	return gulp.src(config.path.scss.src).pipe(plumber()).pipe(gulp.dest(config.path.scss.dist));
-});
+gulp.task(
+	'copy:scss',
+	'Copy SCSS from the source folder to the destination folder.',
+	[ 'convert:scss' ],
+	function() {
+		return gulp
+			.src(config.path.scss.src)
+			.pipe(plumber())
+			.pipe(gulp.dest(config.path.scss.dist));
+	}
+);
 
 /*
   TASK: 'compile:scss'
@@ -132,7 +140,7 @@ gulp.task('copy:scss', 'Copy SCSS from the source folder to the destination fold
   Run the "convert:scss" task, then copy the SCSS to the distribution folder and compile SCSS
   styles into CSS.
 */
-gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'convert:scss', 'copy:scss' ], function() {
+gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() {
 	return gulp
 		.src(config.path.scss.src)
 		.pipe(plumber())

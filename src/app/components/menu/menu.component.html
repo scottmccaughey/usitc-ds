@@ -1,0 +1,7 @@
+<aside class="kss-menu">
+  <ul *ngIf="menu">
+    <li *ngFor="let item of menu">
+      <a [class.kss-menu-active]="item.url === route" [class.kss-menu-child]="item.child" [routerLink]="item.url">{{item.name}}</a>
+    </li>
+  </ul>
+</aside>
