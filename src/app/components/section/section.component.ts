@@ -14,7 +14,7 @@ export class SectionComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    const depth = this.section['depth'] - 1;
+    const depth = this.section['depth'] > 1 ? this.section['depth'] - 1 : 1;
     this.content['header'] = '<h' + depth + '>' + this.section['header'] + '</h' + depth + '>';
     this.content['description'] = this.section['description'];
     this.content['sourceFile'] = environment._devAssetsLocation + this.section['source']['filename'];
