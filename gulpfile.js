@@ -11,7 +11,7 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
   yamlToJson = require('gulp-yaml'),
   jsonToSass = require('./src/gulp/json-to-sass'),
   sassToCss = require('gulp-sass'),
-  kss = require('gulp-kss'),
+  run = require('gulp-run'),
   yRequire = require('require-yml'),
   config = yRequire('./src/gulp/config.yml'),
   mixer = require('./src/gulp/mixer'),
@@ -90,7 +90,7 @@ gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
 gulp.task(
   'compile',
   'Copy and compile SCSS, copy fonts, and convert icons.',
-  sequence('copy:fonts', 'convert:icons', 'compile:scss')
+  sequence('copy:fonts', 'convert:icons', 'compile:scss', 'generate:styleguide')
 );
 
 /*
@@ -165,21 +165,17 @@ gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() 
 /*
   TASK: 'generate:styleguide'
 
-  Generate a styleguide using comments in the SCSS files.
+  Generate a JSON file containing all the styleguide documentation.
 */
 gulp.task(
   'generate:styleguide',
-  'Generate a styleguide using comments in the SCSS files.',
+  'Generate a JSON file containing all the styleguide documentation.',
   function() {
-    return gulp
-      .src(config.path.scss.src)
-      .pipe(plumber())
-      .pipe(
-        kss({
-          templateDirectory: __dirname + '/src/styleguide'
-        })
-      )
-      .pipe(gulp.dest('test'));
+    return run(
+      'node ' +
+        __dirname +
+        '/node_modules/kss/bin/kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json'
+    ).exec();
   }
 );
 
@@ -204,6 +200,7 @@ gulp.task('watch', 'Watch files for processing.', function() {
   gulp.watch(config.path.scss.watch, [ 'compile:scss' ]);
   gulp.watch(config.path.fonts.src, [ 'copy:fonts' ]);
   gulp.watch(config.path.icons.src, [ 'convert:icons' ]);
+  gulp.watch(config.path.styleguide.src, [ 'generate:styleguide' ]);
 });
 
 /*

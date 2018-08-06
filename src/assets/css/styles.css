@@ -911,7 +911,6 @@ button,
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
   button:active, button:focus, button:hover,
@@ -923,16 +922,6 @@ button,
   .button:hover {
     background-color: #0d7e97;
     color: #ffffff; }
-  button + button,
-  button + [type="button"],
-  button + .button,
-  [type="button"] + button,
-  [type="button"] + [type="button"],
-  [type="button"] + .button,
-  .button + button,
-  .button + [type="button"],
-  .button + .button {
-    margin-left: 0.5rem; }
   button[disabled], button.disabled,
   [type="button"][disabled],
   [type="button"].disabled,
@@ -981,7 +970,13 @@ button,
   [type="button"].button-centered,
   .button.button-centered {
     display: block;
-    margin: 1rem auto; }
+    margin-left: auto;
+    margin-right: auto; }
+  button.button-right,
+  [type="button"].button-right,
+  .button.button-right {
+    display: block;
+    margin-left: auto; }
   button.button-cancel,
   [type="button"].button-cancel,
   .button.button-cancel {

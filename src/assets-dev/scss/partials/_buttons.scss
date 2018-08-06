@@ -43,7 +43,6 @@ button,
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: $transition-base;
 
   &:active,
@@ -174,7 +173,7 @@ button,
 
   // Centered Button
   //
-  // Add a `.button-centered` class for a button that will be centered on its own line, with top and bottom margins.
+  // Add a `.button-centered` class for a button that will be centered on its own line.
   //
   // Markup:
   // <button type="button" class="button-centered">Centered Button</button>
@@ -184,7 +183,23 @@ button,
   // Weight: 1
   &.button-centered {
     display: block;
-    margin: 1rem auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Right-Aligned Button
+  //
+  // Add a `.button-right` class for a button that will be right-aligned on its own line.
+  //
+  // Markup:
+  // <button type="button" class="button-right">Right-Aligned Button</button>
+  //
+  // Styleguide Components.Buttons.Alignment.RightAligned
+  //
+  // Weight: 2
+  &.button-right {
+    display: block;
+    margin-left: auto;
   }
 
   &.button-cancel {

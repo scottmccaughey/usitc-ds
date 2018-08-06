@@ -131,6 +131,8 @@
   &.kss-section-buttons {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
   }
 }
 

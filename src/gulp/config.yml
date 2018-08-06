@@ -19,7 +19,6 @@ path:
                       - src/assets/fonts/**/*
                       - src/assets/icons/**/*
                       - src/assets/scss/**/*
-                      - src/assets/styleguide/**/*
                       - src/assets/tokens/**/*
 
   css:
@@ -40,6 +39,11 @@ path:
                       - src/assets-dev/scss/**/*.scss
                       - src/assets/scss/partials/_icons-sprite.scss
                       - src/assets/scss/tokens/_tokens.scss
+
+  styleguide:
+    src:
+                      - src/assets-dev/scss/**/*.scss
+                      - src/assets-dev/tokens/**/*.yml
 
 settings:
 

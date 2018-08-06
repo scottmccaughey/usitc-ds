@@ -2,15 +2,13 @@
   "name": "usitc-ds",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "prestart": "gulp build",
-    "start": "concurrently \"ng serve --port=4500\" \"gulp watch\"",
+    "start": "concurrently -k -r \"ng serve --port=4500\" \"gulp watch\"",
+    "prebuild": "gulp build",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "gulp": "gulp",
-    "kss": "kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -48,11 +46,11 @@
     "gulp-clone": "^2.0.1",
     "gulp-help": "^1.6.1",
     "gulp-json-sass": "0.0.2",
-    "gulp-kss": "0.0.2",
     "gulp-match": "^1.0.3",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^1.0.0",
+    "gulp-run": "^1.7.1",
     "gulp-sass": "^4.0.1",
     "gulp-sequence": "^1.0.0",
     "gulp-svg-sprite": "^1.4.0",
