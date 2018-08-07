@@ -17,7 +17,14 @@
 // * `<input>` elements should be used to trigger `<form>` actions.
 // * `<a>` elements should be used to trigger a move to a new page or view.
 //
-// For accessibility, **always specify a `type`** when using a `<button>` element and **always add `role="button"`** when using a `<a>` element as a button.
+// The variations below can be combined so that you can have, for example, an XL-sized, right-aligned, primary-colored button with an icon on it.
+//
+// <div class="panel state-warning">
+//
+// # Accessibility Note
+// **Always specify a `type`** when using a `<button>` element and **always add `role="button"`** when using an `<a>` element as a button.
+//
+// </div>
 //
 // Markup:
 // <button type="button">Button Button</button>
@@ -69,7 +76,7 @@ button,
   //
   // Styleguide Components.Buttons.Disabled
   //
-  // Weight: 1
+  // Weight: 5
   &[disabled],
   &.disabled {
     background-color: inherit;
@@ -202,6 +209,124 @@ button,
     margin-left: auto;
   }
 
+  // Icons on Buttons
+  //
+  // You can add icons to `<button>` and  `<a>` buttons (but not `<input>` buttons). They can be placed alone, before, after, or even in the middle of the button text.
+  //
+  // You will likely need to add margins to the icons for things to look right, which can be done easily in the markup using our spacing classes as shown below.
+  //
+  // <aside class="panel state-warning">
+  //
+  // # Accessibility Note
+  // If you use only an icon, **always include hidden text describing the action** so that anyone using a screenreader can understand what the button does.
+  //
+  // </aside>
+  //
+  // Markup:
+  // <button type="button"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#save"></use></svg></span><span class="visually-hidden">Save</span></button>
+  // <button type="button"><span class="icon icon-l margin-right-half"><svg><use xlink:href="/assets/icons/symbol/icons.svg#download"></use></svg></span>Download</button>
+  // <button type="button">Edit<span class="icon icon-l margin-left-half"><svg><use xlink:href="/assets/icons/symbol/icons.svg#edit"></use></svg></span></button>
+  // <button type="button">Search<span class="icon icon-l margin-left-half margin-right-half"><svg><use xlink:href="/assets/icons/symbol/icons.svg#search"></use></svg></span>Now</button>
+  //
+  // Styleguide Components.Buttons.WithIcons
+  //
+  // Weight: 4
+
+  // Colored Buttons
+  //
+  // Styleguide Components.Buttons.Colors
+  //
+  // Weight: 1
+
+  // Primary Button
+  //
+  // Add a `.button-primary` class for a button that will be trigger the *primary* action on a page.
+  //
+  // Markup:
+  // <button type="button" class="button-primary">Primary Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.Primary
+  //
+  // Weight: 1
+  &.button-primary {
+    border-color: transparent;
+    background-color: $color-theme-dark-background-alt;
+    color: $color-theme-dark-text;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background;
+      color: $color-theme-dark-text;
+
+      .on-dark & {
+        border-color: $color-white;
+      }
+    }
+  }
+
+  // Alternate Primary Button
+  //
+  // Use the `.button-primary-alt` class if you need a slightly darker *primary* button.
+  //
+  // Markup:
+  // <button type="button" class="button-primary-alt">Alternate Primary Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.AlternatePrimary
+  //
+  // Weight: 2
+  &.button-primary-alt {
+    border-color: transparent;
+    background-color: $color-theme-dark-background;
+    color: $color-theme-dark-text;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+
+      .on-dark & {
+        border-color: $color-white;
+      }
+    }
+  }
+
+  // Success Button
+  //
+  // Add a `.button-success` class to call attention to a positive action such as saving a search or downloading data.
+  //
+  // Markup:
+  // <button type="button" class="button-success">Success Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.Success
+  //
+  // Weight: 3
+  &.button-success {
+    background-color: $color-green;
+    border-color: transparent;
+    color: $color-white;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-green-dark;
+    }
+  }
+
+  // Cancel Button
+  //
+  // Add a `.button-cancel` class for an action that requires caution before being triggered, such as:
+  //
+  // * Canceling a form (any data the user has entered will be lost).
+  // * Deleting a user setting or a saved search.
+  //
+  // Markup:
+  // <button type="button" class="button-cancel">Cancel Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.Cancel
+  //
+  // Weight: 4
   &.button-cancel {
     background-color: $color-red;
     border-color: transparent;
@@ -225,148 +350,22 @@ button,
     top: 0;
   }
 
-  &.button-ghost {
-    background-color: transparent;
-    color: inherit;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-blue;
-      color: $color-white;
-    }
-  }
-
-  &.button-icon {
-    position: relative;
-  }
-
-  &.button-invisible {
-    background-color: transparent;
-    border-width: 0;
-    color: inherit;
-    padding: 0;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-theme-dark-hover-background;
-      color: $color-theme-dark-text;
-    }
-  }
-
-  &.button-new-request {
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    font-size: $font-size-m;
-    margin: 1rem auto;
-    max-width: 100%;
-    padding: 0;
-
-    @include breakpoint(m) {
-      font-size: $font-size-xxxl;
-    }
-
-    &:active,
-    &:focus,
-    &:hover {
-      > div {
-        background-color: $color-blue;
-
-        &.button-icon {
-          background-color: $color-white;
-        }
-      }
-    }
-
-    > div {
-      background-color: $color-green;
-      color: $color-white;
-      padding: $space-m;
-
-      @include breakpoint(m) {
-        padding: $space-m $space-l;
-      }
-
-      &.button-icon {
-        background-color: $color-white;
-        color: $color-gray;
-        display: flex;
-        flex-direction: column;
-        padding: $space-s;
-        width: $space-l;
-
-        @include breakpoint(m) {
-          padding: $space-m;
-          width: $space-xl;
-        }
-
-        > * {
-          display: flex;
-          flex: 1;
-          flex-direction: column;
-          height: $space-m;
-          width: $space-m;
-
-          @include breakpoint(m) {
-            width: $space-l;
-          }
-        }
-      }
-    }
-
-    svg {
-      display: block;
-      flex: 1;
-      height: $space-m;
-      width: $space-m;
-
-      @include breakpoint(m) {
-        height: $space-l;
-        width: $space-l;
-      }
-    }
-  }
-
-  &.button-primary {
-    border-color: transparent;
-    background-color: $color-theme-dark-background-alt;
-    color: $color-theme-dark-text;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-theme-dark-background;
-      color: $color-theme-dark-text;
-
-      .on-dark & {
-        border-color: $color-white;
-      }
-    }
-  }
-
-  &.button-primary-alt {
-    background-color: $color-theme-dark-background;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-theme-dark-background-alt;
-      color: $color-theme-dark-text;
-    }
-  }
-
+  // Round Button
+  //
+  // Add a `.button-round` class for a round button. This should only be used for icon buttons, as shown below, and only sparingly as most of our components have square corners.
+  //
+  // Markup:
+  // <button type="button" class="button-success button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#save"></use></svg></span><span class="visually-hidden">Save</span></button>
+  // <button type="button" class="button-cancel button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#trash"></use></svg></span><span class="visually-hidden">Delete</span></button>
+  //
+  // Styleguide Components.Buttons.Round
+  //
+  // Weight: 6
   &.button-round {
     border-radius: $border-radius-circle;
     height: $space-l;
     line-height: $space-l;
     width: $space-l;
-  }
-
-  &.button-search-submit {
-    height: $space-l;
-    width: 10rem;
   }
 
   &.button-spinner {
@@ -377,40 +376,5 @@ button,
     .spinner {
       margin: 0;
     }
-  }
-
-  &.button-success {
-    background-color: $color-green;
-    border-color: transparent;
-    color: $color-white;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: $color-green-dark;
-    }
-  }
-
-  &.button-transparent {
-    border-color: transparent;
-    background-color: transparent;
-    color: inherit;
-  }
-}
-
-.buttons-right {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-
-  > * {
-    flex-basis: 100%;
-  }
-
-  > button,
-  > .tag {
-    flex: 0 1 auto;
-    margin-left: $space-s;
-    white-space: nowrap;
   }
 }

@@ -1,0 +1,10 @@
+<div class="kss-markup">
+  <ngx-prism [language]="language" [code]="code"></ngx-prism>
+  <button type="button" title="Copy to Clipboard" class="button-primary button-s" ngxClipboard [cbContent]="code">
+    <span class="icon icon-xl">
+      <svg>
+        <use xlink:href="/assets/icons/symbol/icons.svg#copy-to-clipboard"></use>
+      </svg>
+    </span>
+  </button>
+</div>

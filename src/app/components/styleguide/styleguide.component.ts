@@ -26,7 +26,6 @@ export class StyleguideComponent implements OnInit {
     this.slug = this.route.substr(1).replace(/\//g, '-');
     this.kss['sections'].forEach((section) => {
       if (section.referenceURI === this.slug) {
-        console.log(section);
         this.section = section;
         this.depth = section.depth - 1;
 

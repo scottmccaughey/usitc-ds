@@ -82,6 +82,15 @@
     }
   }
 
+  .panel.state-warning {
+    h1 {
+      font-size: $font-size-m;
+      font-weight: $font-weight-bold;
+      margin-top: 0;
+      text-transform: none;
+    }
+  }
+
   .site-header {
     margin-bottom: 0;
 
@@ -145,23 +154,26 @@
   }
 
   h2 {
-    color: inherit;
-    font-size: $font-size-m;
-    font-weight: $font-weight-normal;
-    margin-top: $space-s;
-    text-transform: none;
-  }
-
-  h3 {
     color: $color-blue;
-    font-size: $font-size-h2;
     font-weight: $font-weight-black;
     text-transform: uppercase;
   }
 
-  h4 {
+  h3 {
     font-weight: $font-weight-bold;
     margin: 0 0 $space-s;
+    text-transform: uppercase;
+  }
+
+  pre {
+    margin-bottom: $space-m;
+  }
+
+  .kss-home-subheader {
+    font-size: $font-size-m;
+    font-weight: $font-weight-normal;
+    margin-top: $space-s;
+    text-transform: none;
   }
 }
 
@@ -177,6 +189,24 @@
 
 .kss-main {
   padding: $space-m $space-l 0;
+}
+
+.kss-markup {
+  position: relative;
+
+  [ngxClipboard] {
+    padding: $space-xs;
+    position: absolute;
+    right: $space-s;
+    top: $space-s;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue;
+    }
+  }
 }
 
 .kss-menu {
@@ -212,6 +242,11 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.kss-ref {
+  float: right;
+  font-weight: $font-weight-bold;
 }
 
 .kss-source {

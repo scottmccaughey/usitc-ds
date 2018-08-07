@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ClipboardModule } from 'ngx-clipboard';
 import { PrismModule } from '@ngx-prism/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { StyleguideComponent } from './components/styleguide/styleguide.componen
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { SectionComponent } from './components/section/section.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { CodeComponent } from './components/code/code.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     ErrorComponent,
     KeepHtmlPipe,
     SectionComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CodeComponent
   ],
-  imports: [ AppRoutingModule, BrowserModule, HttpClientModule, AppRoutingModule, PrismModule ],
+  imports: [ AppRoutingModule, BrowserModule, HttpClientModule, AppRoutingModule, PrismModule, ClipboardModule ],
   exports: [ StyleguideComponent ],
   providers: [],
   bootstrap: [ AppComponent ],

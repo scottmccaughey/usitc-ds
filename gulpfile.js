@@ -7,9 +7,10 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
   clone = require('gulp-clone').sink(),
   del = require('del'),
   rename = require('gulp-rename'),
-  replace = require('gulp-replace'),
+  insert = require('gulp-insert'),
   yamlToJson = require('gulp-yaml'),
   jsonToSass = require('./src/gulp/json-to-sass'),
+  jsonMerge = require('gulp-merge-json'),
   sassToCss = require('gulp-sass'),
   run = require('gulp-run'),
   yRequire = require('require-yml'),
@@ -31,8 +32,7 @@ gulp.task('clean', 'Delete contents of distribution folders.', function() {
 /*
   GENERATOR: 'convert' formats list
 
-  Compile a list of the file formats to be converted into and push those onto an array
-  called "convert".
+  Compile a list of the file formats to be converted into and push those onto an array called "convert".
 */
 config.formats.forEach(function(format) {
   convert.push('convert:' + format);
@@ -48,22 +48,53 @@ gulp.task('convert', 'Convert YAML Design Tokens into formats specified in confi
 /*
   TASK: 'convert:json'
 
-  Empty the JSON distribution folder, then convert the YAML Design Tokens into JSON so that they
-  can be used in JavaScript.
+  Convert the YAML Design Tokens into JSON so that they can be used in JavaScript.
 */
 gulp.task('convert:json', 'Convert YAML Design Tokens into JSON.', function() {
   return gulp
     .src(config.path.tokens.src)
     .pipe(plumber())
     .pipe(yamlToJson())
-    .pipe(gulp.dest(config.path.tokens.dist.json));
+    .pipe(jsonMerge(config.settings.tokens.json))
+    .pipe(gulp.dest(config.path.tokens.dist.tokens));
+});
+
+/*
+  TASK: 'convert:es6'
+
+  Convert the YAML Design Tokens into a TypeScript ECMAScript 6 module.
+*/
+gulp.task(
+  'convert:es6',
+  'Convert YAML Design Tokens into a TypeScript ECMAScript 6 module.',
+  function() {
+    return gulp
+      .src(config.path.tokens.src)
+      .pipe(plumber())
+      .pipe(yamlToJson())
+      .pipe(jsonMerge(config.settings.tokens.es6))
+      .pipe(gulp.dest(config.path.tokens.dist.tokens));
+  }
+);
+
+/*
+  TASK: 'convert:node'
+
+  Convert the YAML Design Tokens into a NodeJS module.
+*/
+gulp.task('convert:node', 'Convert YAML Design Tokens into a NodeJS module.', function() {
+  return gulp
+    .src(config.path.tokens.src)
+    .pipe(plumber())
+    .pipe(yamlToJson())
+    .pipe(jsonMerge(config.settings.tokens.node))
+    .pipe(gulp.dest(config.path.tokens.dist.tokens));
 });
 
 /*
   TASK: 'convert:scss'
 
-  Convert the YAML Design Tokens into SCSS so that they
-  can be used in SCSS (Sass).
+  Convert the YAML Design Tokens into SCSS so that they can be used in SCSS (Sass).
 */
 gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
   return gulp
@@ -134,8 +165,7 @@ gulp.task(
 /*
   TASK: 'compile:scss'
 
-  Run the "convert:scss" task, then copy the SCSS to the distribution folder and compile SCSS
-  styles into CSS.
+  Run the "convert:scss" task, then copy the SCSS to the distribution folder and compile SCSS styles into CSS.
 */
 gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() {
   return gulp
@@ -152,13 +182,6 @@ gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() 
         browsers: config.settings.scss.browsers
       })
     )
-    .pipe(gulp.dest(config.path.css.dist))
-    .pipe(replace(config.settings.scss.fontPath.prod, config.settings.scss.fontPath.dev))
-    .pipe(
-      rename(function(path) {
-        path.basename = path.basename + config.settings.scss.devSuffix;
-      })
-    )
     .pipe(gulp.dest(config.path.css.dist));
 });
 
@@ -171,16 +194,12 @@ gulp.task(
   'generate:styleguide',
   'Generate a JSON file containing all the styleguide documentation.',
   function() {
-    return run(
-      'node ' +
-        __dirname +
-        '/node_modules/kss/bin/kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json'
-    ).exec();
+    return run('node ' + __dirname + config.settings.styleguide.cmd).exec();
   }
 );
 
 /*
-  TASK: "build"
+  TASK: 'build'
 
   Run the "clean" task, then run the "convert" task, then run the "compile" task.
 */
@@ -206,7 +225,7 @@ gulp.task('watch', 'Watch files for processing.', function() {
 /*
   TASK: "default"
 
-  Run the "build" task, then watch files for processing.
+  Run the 'build' task, then watch files for processing.
 */
 gulp.task(
   'default',

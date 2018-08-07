@@ -481,6 +481,102 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
   color: white; }
 
 code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.boolean,
+.token.number {
+  color: #ae81ff; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2; }
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+code[class*="language-"],
 pre[class*="language-"],
 .kss-source code {
   color: #f8f8f2;
@@ -501,7 +597,8 @@ pre[class*="language-"],
 
 .kss-description code,
 .kss-source code {
-  color: #0c758d; }
+  color: #0c758d;
+  white-space: normal; }
 
 /* Code blocks */
 pre[class*="language-"] {
@@ -878,6 +975,11 @@ pre.code-toolbar > .toolbar span:focus {
         .kss-body .kss-with-anchor .anchor-icon a:active, .kss-body .kss-with-anchor .anchor-icon a:focus, .kss-body .kss-with-anchor .anchor-icon a:hover {
           background-color: transparent;
           color: #3a3a3b; }
+  .kss-body .panel.state-warning h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: none; }
   .kss-body .site-header {
     margin-bottom: 0; }
     .kss-body .site-header > nav > ul li.site-name {
@@ -911,10 +1013,11 @@ pre.code-toolbar > .toolbar span:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(3, -webkit-min-content);
-    grid-template-columns: repeat(3, min-content);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     white-space: nowrap; }
 
 .kss-home h1 {
@@ -924,21 +1027,23 @@ pre.code-toolbar > .toolbar span:focus {
   text-transform: none; }
 
 .kss-home h2 {
-  color: inherit;
+  color: #0d7e97;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.kss-home h3 {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase; }
+
+.kss-home pre {
+  margin-bottom: 1rem; }
+
+.kss-home .kss-home-subheader {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 0.5rem;
   text-transform: none; }
-
-.kss-home h3 {
-  color: #0d7e97;
-  font-size: 1.44rem;
-  font-weight: 900;
-  text-transform: uppercase; }
-
-.kss-home h4 {
-  font-weight: 700;
-  margin: 0 0 0.5rem; }
 
 .kss-example-header {
   background-color: #0d7e97;
@@ -951,6 +1056,17 @@ pre.code-toolbar > .toolbar span:focus {
 
 .kss-main {
   padding: 1rem 2rem 0; }
+
+.kss-markup {
+  position: relative; }
+  .kss-markup [ngxClipboard] {
+    padding: 0.25rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem; }
+    .kss-markup [ngxClipboard]:active, .kss-markup [ngxClipboard]:focus, .kss-markup [ngxClipboard]:hover {
+      background-color: #ffffff;
+      color: #0d7e97; }
 
 .kss-menu {
   background-color: #004353;
@@ -975,6 +1091,10 @@ pre.code-toolbar > .toolbar span:focus {
   .kss-menu ul {
     margin: 0;
     padding: 0; }
+
+.kss-ref {
+  float: right;
+  font-weight: 700; }
 
 .kss-source {
   background-color: #e8f9fd;

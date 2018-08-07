@@ -164,12 +164,12 @@ color:
       hover-background:       '$color-white'
       hover-text:             '$color-green-dark'
     warning:
-      background:             '$color-orange-lighter'
-      border:                 '$color-orange-dark'
-      text:                   '$color-orange-dark'
+      background:             'color(yellow, 95)'
+      border:                 'color(yellow, 30)'
+      text:                   '$color-black'
       link:                   '$color-black'
       hover-background:       '$color-white'
-      hover-text:             '$color-orange-dark'
+      hover-text:             'color(yellow, 30)'
     highlight:
       background:             '$color-blue'
       text:                   '$color-white'

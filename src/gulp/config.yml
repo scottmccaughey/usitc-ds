@@ -1,6 +1,8 @@
 formats:
-                      - json
                       - scss
+                      - json
+                      - es6
+                      - node
 
 path:
 
@@ -11,7 +13,7 @@ path:
   tokens:
     src:                src/assets-dev/tokens/**/*.yml
     dist:
-      json:             src/assets/tokens/json
+      tokens:           src/assets/tokens
       scss:             src/assets/scss/tokens
 
   clean:
@@ -47,6 +49,19 @@ path:
 
 settings:
 
+  tokens:
+    json:
+      fileName:         tokens.json
+      jsonSpace:        '  '
+    es6:
+      fileName:         tokens.ts
+      jsonSpace:        '  '
+      exportModule:     export const tokens
+    node:
+      fileName:         tokens.js
+      jsonSpace:        '  '
+      exportModule:     true
+
   icons:
     mode:
       symbol:
@@ -61,10 +76,9 @@ settings:
   scss:
     browsers:
                       - last 2 versions
-    devSuffix:          -dev
-    fontPath:
-      dev:              ../fonts
-      prod:             ~usitc-ds/src/assets/fonts
     includePaths:
                       - node_modules
                       - src/assets/fonts
+
+  styleguide:
+    cmd:                /node_modules/kss/bin/kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json

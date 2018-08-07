@@ -1,5 +1,5 @@
 %svg-common {
-	background: url("icons-4d322b42.svg") no-repeat;
+	background: url("icons-6c702a26.svg") no-repeat;
 }
 
 .icon-africa {
@@ -262,9 +262,19 @@
 	height: 1000px;
 }
 
-.icon-database {
+.icon-copy-to-clipboard {
 	@extend %svg-common;
 	background-position: 71.42857142857143% 16.666666666666668%;
+}
+
+.icon-copy-to-clipboard-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-database {
+	@extend %svg-common;
+	background-position: 71.42857142857143% 33.333333333333336%;
 }
 
 .icon-database-dims {
@@ -274,7 +284,7 @@
 
 .icon-download {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 33.333333333333336%;
+	background-position: 71.42857142857143% 50%;
 }
 
 .icon-download-dims {
@@ -284,7 +294,7 @@
 
 .icon-edit {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 50%;
+	background-position: 71.42857142857143% 66.66666666666667%;
 }
 
 .icon-edit-dims {
@@ -294,7 +304,7 @@
 
 .icon-forward {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 66.66666666666667%;
+	background-position: 0 83.33333333333333%;
 }
 
 .icon-forward-dims {
@@ -304,7 +314,7 @@
 
 .icon-forward-to-end {
 	@extend %svg-common;
-	background-position: 0 83.33333333333333%;
+	background-position: 14.285714285714286% 83.33333333333333%;
 }
 
 .icon-forward-to-end-dims {
@@ -314,7 +324,7 @@
 
 .icon-globe {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 83.33333333333333%;
+	background-position: 28.571428571428573% 83.33333333333333%;
 }
 
 .icon-globe-dims {
@@ -324,7 +334,7 @@
 
 .icon-globe-with-marker {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 83.33333333333333%;
+	background-position: 42.857142857142854% 83.33333333333333%;
 }
 
 .icon-globe-with-marker-dims {
@@ -334,7 +344,7 @@
 
 .icon-info {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 83.33333333333333%;
+	background-position: 57.142857142857146% 83.33333333333333%;
 }
 
 .icon-info-dims {
@@ -344,7 +354,7 @@
 
 .icon-link {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 83.33333333333333%;
+	background-position: 71.42857142857143% 83.33333333333333%;
 }
 
 .icon-link-dims {
@@ -354,7 +364,7 @@
 
 .icon-menu {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 83.33333333333333%;
+	background-position: 85.71428571428571% 0;
 }
 
 .icon-menu-dims {
@@ -364,7 +374,7 @@
 
 .icon-minus {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 0;
+	background-position: 85.71428571428571% 16.666666666666668%;
 }
 
 .icon-minus-dims {
@@ -374,7 +384,7 @@
 
 .icon-minus-circle {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 16.666666666666668%;
+	background-position: 85.71428571428571% 33.333333333333336%;
 }
 
 .icon-minus-circle-dims {
@@ -384,7 +394,7 @@
 
 .icon-plus {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 33.333333333333336%;
+	background-position: 85.71428571428571% 50%;
 }
 
 .icon-plus-dims {
@@ -394,7 +404,7 @@
 
 .icon-plus-circle {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 50%;
+	background-position: 85.71428571428571% 66.66666666666667%;
 }
 
 .icon-plus-circle-dims {
@@ -404,7 +414,7 @@
 
 .icon-save {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 66.66666666666667%;
+	background-position: 85.71428571428571% 83.33333333333333%;
 }
 
 .icon-save-dims {
@@ -414,7 +424,7 @@
 
 .icon-search {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 83.33333333333333%;
+	background-position: 0 100%;
 }
 
 .icon-search-dims {
@@ -424,7 +434,7 @@
 
 .icon-settings {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 14.285714285714286% 100%;
 }
 
 .icon-settings-dims {
@@ -434,7 +444,7 @@
 
 .icon-shaking-hands {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 100%;
+	background-position: 28.571428571428573% 100%;
 }
 
 .icon-shaking-hands-dims {
@@ -444,7 +454,7 @@
 
 .icon-share {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 100%;
+	background-position: 42.857142857142854% 100%;
 }
 
 .icon-share-dims {
@@ -454,7 +464,7 @@
 
 .icon-table {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 100%;
+	background-position: 57.142857142857146% 100%;
 }
 
 .icon-table-dims {
@@ -464,7 +474,7 @@
 
 .icon-trash {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 100%;
+	background-position: 71.42857142857143% 100%;
 }
 
 .icon-trash-dims {
@@ -474,7 +484,7 @@
 
 .icon-user {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 100%;
+	background-position: 85.71428571428571% 100%;
 }
 
 .icon-user-dims {
@@ -484,7 +494,7 @@
 
 .icon-x {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 100%;
+	background-position: 100% 0;
 }
 
 .icon-x-dims {
@@ -494,7 +504,7 @@
 
 .icon-x-circle {
 	@extend %svg-common;
-	background-position: 100% 0;
+	background-position: 100% 16.666666666666668%;
 }
 
 .icon-x-circle-dims {
