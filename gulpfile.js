@@ -9,13 +9,13 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
   rename = require('gulp-rename'),
   insert = require('gulp-insert'),
   yamlToJson = require('gulp-yaml'),
-  jsonToSass = require('./src/gulp/json-to-sass'),
+  jsonToSass = require('./gulp/gulp-json-to-scss'),
   jsonMerge = require('gulp-merge-json'),
   sassToCss = require('gulp-sass'),
   run = require('gulp-run'),
   yRequire = require('require-yml'),
-  config = yRequire('./src/gulp/config.yml'),
-  mixer = require('./src/gulp/mixer'),
+  config = yRequire('./gulp/gulp-config.yml'),
+  list = require('./gulp/gulp-output-list'),
   svgo = require('gulp-svgo'),
   svgSprite = require('gulp-svg-sprite'),
   convert = [];
@@ -43,7 +43,11 @@ config.formats.forEach(function(format) {
 
   Run the "convert" tasks.
 */
-gulp.task('convert', 'Convert YAML Design Tokens into formats specified in config.yml.', convert);
+gulp.task(
+  'convert',
+  'Convert YAML Design Tokens into formats specified in gulp-config.yml.',
+  convert
+);
 
 /*
   TASK: 'convert:json'
@@ -103,7 +107,7 @@ gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
     .pipe(yamlToJson())
     .pipe(jsonToSass())
     .pipe(clone)
-    .pipe(mixer('tokens'))
+    .pipe(list(config.settings.tokens.scss.fileName, config.settings.tokens.scss.dirName))
     .pipe(clone.tap())
     .pipe(
       rename(function(path) {
@@ -121,7 +125,7 @@ gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
 gulp.task(
   'compile',
   'Copy and compile SCSS, copy fonts, and convert icons.',
-  sequence('copy:fonts', 'convert:icons', 'compile:scss', 'generate:styleguide')
+  sequence('copy:fonts', 'copy:favicons', 'convert:icons', 'compile:scss', 'generate:styleguide')
 );
 
 /*
@@ -130,8 +134,27 @@ gulp.task(
   Copy fonts from the source folder to the destination folder.
 */
 gulp.task('copy:fonts', 'Copy fonts from the source folder to the destination folder.', function() {
-  return gulp.src(config.path.fonts.src).pipe(plumber()).pipe(gulp.dest(config.path.fonts.dist));
+  return gulp
+    .src(config.path.fonts.src)
+    .pipe(plumber())
+    .pipe(gulp.dest(config.path.fonts.dist));
 });
+
+/*
+  TASK: 'copy:favicons'
+
+  Copy favicons from the source folder to the destination folder.
+*/
+gulp.task(
+  'copy:favicons',
+  'Copy favicons from the source folder to the destination folder.',
+  function() {
+    return gulp
+      .src(config.path.favicons.src)
+      .pipe(plumber())
+      .pipe(gulp.dest(config.path.favicons.dist));
+  }
+);
 
 /*
   TASK: 'convert:icons'
@@ -156,9 +179,12 @@ gulp.task('convert:icons', 'Convert SVG icons into an SVG sprite.', function() {
 gulp.task(
   'copy:scss',
   'Copy SCSS from the source folder to the destination folder.',
-  [ 'convert:scss' ],
+  ['convert:scss'],
   function() {
-    return gulp.src(config.path.scss.src).pipe(plumber()).pipe(gulp.dest(config.path.scss.dist));
+    return gulp
+      .src(config.path.scss.src)
+      .pipe(plumber())
+      .pipe(gulp.dest(config.path.scss.dist));
   }
 );
 
@@ -167,7 +193,7 @@ gulp.task(
 
   Run the "convert:scss" task, then copy the SCSS to the distribution folder and compile SCSS styles into CSS.
 */
-gulp.task('compile:scss', 'Compile SCSS into CSS.', [ 'copy:scss' ], function() {
+gulp.task('compile:scss', 'Compile SCSS into CSS.', ['copy:scss'], function() {
   return gulp
     .src(config.path.scss.src)
     .pipe(plumber())
@@ -215,11 +241,12 @@ gulp.task(
   Watch files for processing.
 */
 gulp.task('watch', 'Watch files for processing.', function() {
-  gulp.watch(config.path.tokens.src, [ 'convert' ]);
-  gulp.watch(config.path.scss.watch, [ 'compile:scss' ]);
-  gulp.watch(config.path.fonts.src, [ 'copy:fonts' ]);
-  gulp.watch(config.path.icons.src, [ 'convert:icons' ]);
-  gulp.watch(config.path.styleguide.src, [ 'generate:styleguide' ]);
+  gulp.watch(config.path.tokens.src, ['convert']);
+  gulp.watch(config.path.scss.watch, ['compile:scss']);
+  gulp.watch(config.path.fonts.src, ['copy:fonts']);
+  gulp.watch(config.path.favicons.src, ['copy:favicons']);
+  gulp.watch(config.path.icons.src, ['convert:icons']);
+  gulp.watch(config.path.styleguide.src, ['generate:styleguide']);
 });
 
 /*

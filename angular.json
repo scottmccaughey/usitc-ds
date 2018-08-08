@@ -24,15 +24,16 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/assets"
+              "src/compiled-assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/compiled-assets/scss/styles.scss",
+              "src/compiled-assets/scss/styleguide.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/assets/scss",
-                "src/assets/fonts",
+                "src/compiled-assets/scss",
+                "src/compiled-assets/fonts",
                 "node_modules"
               ]
             },
@@ -83,11 +84,12 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/compiled-assets/scss/styles.scss",
+              "src/compiled-assets/scss/styleguide.scss"
             ],
             "scripts": [],
             "assets": [
-              "src/assets"
+              "src/compiled-assets"
             ]
           }
         },

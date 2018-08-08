@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-import * as kssConfig from '../../assets/styleguide/kss.json';
+import * as kssConfig from '../../compiled-assets/styleguide/kss.json';
 
 @Injectable({
   providedIn: 'root'

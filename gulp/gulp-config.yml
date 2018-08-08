@@ -1,0 +1,87 @@
+formats:
+                      - scss
+                      - json
+                      - es6
+                      - node
+
+path:
+
+  clean:
+                      - src/compiled-assets/css/**/*
+                      - src/compiled-assets/fonts/**/*
+                      - src/compiled-assets/icons/**/*
+                      - src/compiled-assets/scss/**/*
+                      - src/compiled-assets/tokens/**/*
+
+  tokens:
+    src:                src/assets/tokens/**/*.yml
+    dist:
+      tokens:           src/compiled-assets/tokens
+      scss:             src/compiled-assets/scss/tokens
+
+  css:
+    dist:               src/compiled-assets/css
+
+  fonts:
+    src:                src/assets/fonts/**/*.{woff,woff2}
+    dist:               src/compiled-assets/fonts
+
+  favicons:
+    src:                src/assets/favicons/**/*
+    dist:               src/compiled-assets/favicons
+
+  icons:
+    src:                src/assets/icons/**/*.svg
+    dist:               src/compiled-assets/icons
+
+  scss:
+    src:                src/assets/scss/**/*.scss
+    dist:               src/compiled-assets/scss
+    watch:
+                      - src/assets/scss/**/*.scss
+                      - src/compiled-assets/scss/partials/_icons-sprite.scss
+                      - src/compiled-assets/scss/tokens/_tokens.scss
+
+  styleguide:
+    src:
+                      - src/assets/scss/**/*.scss
+                      - src/assets/tokens/**/*.yml
+
+settings:
+
+  tokens:
+    scss:
+      fileName:         tokens
+      dirName:          src/assets/tokens
+    json:
+      fileName:         tokens.json
+      jsonSpace:        '  '
+    es6:
+      fileName:         tokens.ts
+      jsonSpace:        '  '
+      exportModule:     export const tokens
+    node:
+      fileName:         tokens.js
+      jsonSpace:        '  '
+      exportModule:     true
+
+  icons:
+    mode:
+      symbol:
+        sprite:         icons
+      view:
+        render:
+          scss:
+            dest:       ../../scss/partials/_icons-sprite.scss
+        sprite:         icons
+        prefix:         .icon-%s
+
+  scss:
+    browsers:
+                      - last 2 versions
+    includePaths:
+                      - node_modules
+                      - src/assets/fonts
+
+  styleguide:
+    cmd:                /node_modules/kss-yaml/bin/kss --config src/kss-config.json > src/compiled-assets/styleguide/kss.json
