@@ -1,4 +1,6 @@
-# UsitcDs
+# USITC Design System
+
+## Resources, tooling and guidelines for building websites with the USITC’s front-end framework.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
