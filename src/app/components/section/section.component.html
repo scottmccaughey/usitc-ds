@@ -1,15 +1,28 @@
 <section *ngIf="content">
-  <div class="kss-ref" *ngIf="content['ref']">{{content['ref']}} ({{content['weight']}})</div>
-  <div *ngIf="content['header']" [innerHTML]="content['header']"></div>
-  <div *ngIf="content['description']" class="kss-description" [innerHTML]="content['description']"></div>
+  <div class="kss-ref"
+    *ngIf="content['ref']">{{content['ref']}} ({{content['weight']}})</div>
+  <div *ngIf="content['header']"
+    [innerHTML]="content['header']"></div>
+  <div *ngIf="content['description']"
+    class="kss-description"
+    [innerHTML]="content['description']"></div>
   <ng-container *ngIf="content['markup']">
     <div class="kss-example-header">Example</div>
-    <div class="kss-example" [ngClass]="content['markupClass']" [innerHTML]="content['markup'] | KeepHtmlPipe"></div>
+    <div class="kss-example"
+      [ngClass]="content['markupClass']"
+      [innerHTML]="content['markup'] | KeepHtmlPipe"></div>
     <div class="kss-markup">
-      <app-code [language]="'markup'" [code]="content['markup']"></app-code>
+      <app-code [language]="'markup'"
+        [code]="content['markup']"></app-code>
     </div>
-    <div *ngIf="content['modifiers']?.length > 0" [innerHTML]="content['modifiers']"></div>
-    <div *ngIf="content['parameters']?.length > 0" [innerHTML]="content['parameters']"></div>
-    <div class="kss-source"><strong>Source: </strong><code [innerHTML]="content['sourceFile']"></code>, line <code [innerHTML]="content['sourceLine']"></code></div>
+    <div *ngIf="content['modifiers']?.length > 0"
+      [innerHTML]="content['modifiers']"></div>
+    <div *ngIf="content['parameters']?.length > 0"
+      [innerHTML]="content['parameters']"></div>
+    <div class="kss-source">
+      <strong>Source: </strong>
+      <code [innerHTML]="content['sourceFile']"></code>, line
+      <code [innerHTML]="content['sourceLine']"></code>
+    </div>
   </ng-container>
 </section>
