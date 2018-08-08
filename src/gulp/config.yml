@@ -81,4 +81,4 @@ settings:
                       - src/assets/fonts
 
   styleguide:
-    cmd:                /node_modules/kss/bin/kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json
+    cmd:                /node_modules/kss-yaml/bin/kss --config src/styleguide/kss-config.json > src/assets/styleguide/kss.json
