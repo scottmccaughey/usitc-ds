@@ -1,5 +1,6 @@
 <ul class="kss-breadcrumb">
   <li *ngFor="let breadcrumb of breadcrumbs">
-    <a [routerLink]="breadcrumb.link" [innerHTML]="breadcrumb.name"></a>
+    <a [routerLink]="breadcrumb.link"
+      [innerHTML]="breadcrumb.name"></a>
   </li>
 </ul>

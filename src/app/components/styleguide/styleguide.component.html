@@ -2,6 +2,7 @@
   <app-breadcrumb [section]="section"></app-breadcrumb>
   <app-section [section]="section"></app-section>
   <ng-container *ngIf="subSections">
-    <app-section *ngFor="let section of subSections" [section]="section"></app-section>
+    <app-section *ngFor="let section of subSections"
+      [section]="section"></app-section>
   </ng-container>
 </ng-container>
