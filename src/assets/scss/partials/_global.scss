@@ -42,7 +42,7 @@ body {
 
 :focus {
   box-shadow: $border-focus;
-  outline: 0;
+  outline-color: transparent;
 }
 
 ::placeholder {

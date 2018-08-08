@@ -1908,7 +1908,7 @@ body {
 :focus {
   -webkit-box-shadow: 0 0 0 0.125rem #0d7e97;
           box-shadow: 0 0 0 0.125rem #0d7e97;
-  outline: 0; }
+  outline-color: transparent; }
 
 ::-webkit-input-placeholder {
   color: #b3b1b4;
