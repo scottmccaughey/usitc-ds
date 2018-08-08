@@ -11,7 +11,7 @@
 #         "Y88P"  888                "Y88P"                  888                "Y88P"
 
 font:
-  path:             "'../fonts'"
+  path:             "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default"
 
   family:
     files--map:
@@ -54,23 +54,23 @@ font:
     base:           1rem
     scale-ratio:    1.2
 
-    xxxxxxxs:       'ms(-8)'
-    xxxxxxs:        'ms(-7)'
-    xxxxxs:         'ms(-6)'
-    xxxxs:          'ms(-5)'
-    xxxs:           'ms(-4)'
-    xxs:            'ms(-3)'
-    xs:             'ms(-2)'
-    s:              'ms(-1)'
-    m:              'ms(0)'
-    l:              'ms(1)'
-    xl:             'ms(2)'
-    xxl:            'ms(3)'
-    xxxl:           'ms(4)'
-    xxxxl:          'ms(5)'
-    xxxxxl:         'ms(6)'
-    xxxxxxl:        'ms(7)'
-    xxxxxxxl:       'ms(8)'
+    xxxxxxxs:       ms(-8)
+    xxxxxxs:        ms(-7)
+    xxxxxs:         ms(-6)
+    xxxxs:          ms(-5)
+    xxxs:           ms(-4)
+    xxs:            ms(-3)
+    xs:             ms(-2)
+    s:              ms(-1)
+    m:              ms(0)
+    l:              ms(1)
+    xl:             ms(2)
+    xxl:            ms(3)
+    xxxl:           ms(4)
+    xxxxl:          ms(5)
+    xxxxxl:         ms(6)
+    xxxxxxl:        ms(7)
+    xxxxxxxl:       ms(8)
 
     h1:             $font-size-xxl
     h2:             $font-size-xl

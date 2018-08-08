@@ -1,0 +1,5 @@
+// Set $font-path to local path for web fonts, overriding the variable set for the distributed Design System (located in node_modules).
+$font-path: 'compiled-assets/fonts';
+
+@import 'compiled-assets/scss/styles';
+@import 'compiled-assets/scss/styleguide';

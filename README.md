@@ -15,7 +15,7 @@ The USITC Design System is distributed via [npm](https://www.npmjs.com/package/u
 After [installing npm](https://docs.npmjs.com/getting-started/installing-node), you can install the USITC Design System with this command:
 
 ```bash
-npm install --save usitc-ds
+npm install --save @usitc/usitc-ds
 ```
 
 ### SCSS
@@ -25,7 +25,7 @@ The style source files included are written in Sass (`scss`).
 To use the Sass files, you can point your Sass `include-path` at your `node_modules` directory and import it like this:
 
 ```scss
-@import 'usitc-ds/src/compiled-assets/scss/styles.scss';
+@import '@usitc/usitc-ds/src/compiled-assets/scss/styles';
 ```
 
 This will allow you to take advantage of the Sass functions and variables generated from our design tokens, and use them to write your own styles using our color system, spacing scale, etc.
@@ -37,7 +37,7 @@ You can also import specific portions of the code by importing those partials fr
 To use the compiled CSS, you can add this line to your HTML:
 
 ```html
-<link rel='stylesheet' href='/node_modules/usitc-ds/src/compiled-assets/css/styles.css'>
+<link rel='stylesheet' href='/node_modules/@usitc/usitc-ds/src/compiled-assets/css/styles.css'>
 ```
 
 ---

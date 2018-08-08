@@ -31,8 +31,7 @@
               }
             ],
             "styles": [
-              "src/compiled-assets/scss/styles.scss",
-              "src/compiled-assets/scss/styleguide.scss"
+              "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

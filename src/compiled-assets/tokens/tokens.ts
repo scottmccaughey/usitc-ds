@@ -131,7 +131,7 @@ export const tokens = {
     }
   },
   "font": {
-    "path": "'../fonts'",
+    "path": "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default",
     "family": {
       "files--map": {
         "Montserrat": {
