@@ -51,14 +51,13 @@ body {
 }
 
 a {
-  color: $color-blue;
+  color: $color-theme-base-link;
   cursor: pointer;
-  text-decoration: underline;
   transition: $transition-base;
 
-  @supports (text-decoration-color: $color-blue) {
+  @supports (text-decoration-color: $color-theme-base-link) {
     color: inherit;
-    text-decoration-color: $color-blue;
+    text-decoration-color: $color-theme-base-link;
   }
 
   .on-dark & {
@@ -174,22 +173,14 @@ ol li {
 }
 
 pre {
-  background-color: $color-white;
+  background-color: color(white);
   border: $border-base;
-  color: $color-black;
+  color: color(black);
   font-family: $font-family-mono;
   padding: $space-s;
 }
 
 .alt {
-  background-color: $color-theme-base-background-alt;
-
-  + .alt > .padded {
-    padding-top: 0;
-  }
-}
-
-.alt2 {
   background-color: $color-gray-lightest;
 }
 
@@ -203,10 +194,6 @@ pre {
 
 .alt-green {
   background-color: $color-green-lighter;
-}
-
-.alt-orange {
-  background-color: $color-orange-lighter;
 }
 
 .alt-red {
@@ -300,7 +287,7 @@ pre {
 
 .tag-label {
   background-color: $color-gray;
-  color: $color-white;
+  color: color(white);
   display: inline-block;
   font-size: $font-size-xxs;
   font-weight: $font-weight-bold;

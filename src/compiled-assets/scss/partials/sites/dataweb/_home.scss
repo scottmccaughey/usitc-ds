@@ -48,8 +48,8 @@
 
 	button {
 		align-items: center;
-		background-color: $color-teal;
-		color: $color-white;
+		background-color: color(cyan);
+		color: color(white);
 		display: flex;
 		font-size: $font-size-xl;
 		font-weight: $font-weight-black;
@@ -60,7 +60,7 @@
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color-teal-darker;
+			background-color: color(cyan, 40);
 		}
 
 		> i {
@@ -77,7 +77,7 @@
 
 	select {
 		background-color: $color-gray-dark;
-		color: $color-white;
+		color: color(white);
 		font-size: $space-m;
 		padding: $space-s ($space-xl + $space-m) $space-s $space-l;
 
@@ -90,7 +90,7 @@
 		&::after {
 			border-left-width: $space-m;
 			border-right-width: $space-m;
-			border-top: $space-m solid $color-white;
+			border-top: $space-m solid color(white);
 			margin-top: (-$space-s);
 			right: $space-l;
 		}
@@ -108,7 +108,7 @@
 .trade-data-reports {
 	> a {
 		background: $color-gray-lightest;
-		color: $color-black;
+		color: color(black);
 		display: block;
 		padding: $space-m;
 		text-align: center;
@@ -117,7 +117,7 @@
 		&:focus,
 		&:hover {
 			background: $color-blue;
-			color: $color-white;
+			color: color(white);
 		}
 	}
 }

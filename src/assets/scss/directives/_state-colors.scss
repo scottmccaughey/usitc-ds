@@ -15,29 +15,117 @@
   state-success()
   state-warning()
 
-  Include these to use standard state colors (border-color, background-color, color) on an element.
+  Include these to use standard state colors on an element.
 */
 
 @mixin state-error {
   background-color: $color-state-error-background;
-  border: 1px solid $color-state-error-border;
+  border-color: $color-state-error-border;
   color: $color-state-error-text;
+
+  a {
+    color: $color-state-error-link;
+
+    @supports (text-decoration-color: $color-state-error-link) {
+      color: inherit;
+      text-decoration-color: $color-state-error-link;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-state-error-hover-background;
+      color: $color-state-error-hover-text;
+    }
+  }
+
+  .panel-header,
+  .panel-header:first-child {
+    background-color: $color-state-error-hover-background;
+    color: $color-state-error-hover-text;
+  }
 }
 
 @mixin state-info {
   background-color: $color-state-info-background;
-  border: 1px solid $color-state-info-border;
+  border-color: $color-state-info-border;
   color: $color-state-info-text;
+
+  a {
+    color: $color-state-info-link;
+
+    @supports (text-decoration-color: $color-state-info-link) {
+      color: inherit;
+      text-decoration-color: $color-state-info-link;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-state-info-hover-background;
+      color: $color-state-info-hover-text;
+    }
+  }
+
+  .panel-header,
+  .panel-header:first-child {
+    background-color: $color-state-info-hover-background;
+    color: $color-state-info-hover-text;
+  }
 }
 
 @mixin state-success {
   background-color: $color-state-success-background;
-  border: 1px solid $color-state-success-border;
+  border-color: $color-state-success-border;
   color: $color-state-success-text;
+
+  a {
+    color: $color-state-success-link;
+
+    @supports (text-decoration-color: $color-state-success-link) {
+      color: inherit;
+      text-decoration-color: $color-state-success-link;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-state-success-hover-background;
+      color: $color-state-success-hover-text;
+    }
+  }
+
+  .panel-header,
+  .panel-header:first-child {
+    background-color: $color-state-success-hover-background;
+    color: $color-state-success-hover-text;
+  }
 }
 
 @mixin state-warning {
   background-color: $color-state-warning-background;
-  border: 1px solid $color-state-warning-border;
+  border-color: $color-state-warning-border;
   color: $color-state-warning-text;
+
+  a {
+    color: $color-state-warning-link;
+
+    @supports (text-decoration-color: $color-state-warning-link) {
+      color: inherit;
+      text-decoration-color: $color-state-warning-link;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-state-warning-hover-background;
+      color: $color-state-warning-hover-text;
+    }
+  }
+
+  .panel-header,
+  .panel-header:first-child {
+    background-color: $color-state-warning-hover-background;
+    color: $color-state-warning-hover-text;
+  }
 }

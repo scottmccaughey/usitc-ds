@@ -20,7 +20,7 @@
     background-color: transparent;
     background-image: none;
     border: 1px solid $color-blue;
-    color: $color-white;
+    color: color(white);
     display: flex;
     flex: 1 1 0;
     line-height: 24px;
@@ -53,14 +53,14 @@
 
     &.active {
       background-color: $color-blue;
-      color: $color-white;
+      color: color(white);
       cursor: default;
 
       &:active,
       &:focus,
       &:hover {
         background-color: $color-blue;
-        color: $color-white;
+        color: color(white);
       }
     }
 
@@ -92,13 +92,13 @@
       select {
         background-color: $color-blue-dark;
         border-width: 0;
-        color: $color-white;
+        color: color(white);
         font-size: $font-size-xs;
         height: 44px;
         padding: $space-s ($space-m + $space-s) $space-s $space-s;
 
         &:focus {
-          color: $color-white;
+          color: color(white);
         }
 
         option {
@@ -107,7 +107,7 @@
       }
 
       &:after {
-        border-top-color: $color-white;
+        border-top-color: color(white);
       }
     }
   }

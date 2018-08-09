@@ -10,6 +10,12 @@
 //        Y8b d88P 888               Y8b d88P                 888               Y8b d88P
 //         "Y88P"  888                "Y88P"                  888                "Y88P"
 
+@each $family, $data in $font-family-files {
+  @each $variant, $variant-data in $data {
+    @include font-def($family, $variant, map-get($variant-data, 'weight'), map-get($variant-data, 'style'), map-get($variant-data, 'stretch'));
+  }
+}
+
 .bold {
 	font-weight: $font-weight-bold;
 }

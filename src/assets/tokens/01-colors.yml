@@ -11,8 +11,6 @@
 #
 # All the colors.
 #
-# $color-white  - #ffffff; White
-# $color-black  - #3a3a3b; Black
 # $color-gray   - #818386; Gray
 # $color-blue   - #0d7e97; Blue
 # $color-red    - #be2a26; Red
@@ -23,153 +21,127 @@
 # Styleguide Tokens.Colors
 
 colors--map:
-
   black:
-    hue:                       0
-    sat:                       0
-    lum:                       0
+    hue:                0
+    sat:                0
+    lum:                0
   white:
-    hue:                       0
-    sat:                       0
-    lum:                       100
+    hue:                0
+    sat:                0
+    lum:                100
   grey:
-    hue:                       210
-    sat:                       10
+    hue:                216
+    sat:                2
   red:
-    hue:                       2
-    sat:                       67
+    hue:                2
+    sat:                67
   orange:
-    hue:                       23
-    sat:                       100
+    hue:                23
+    sat:                100
   yellow:
-    hue:                       53
-    sat:                       98
+    hue:                53
+    sat:                98
   green:
-    hue:                       145
-    sat:                       47
+    hue:                145
+    sat:                47
   cyan:
-    hue:                       191
-    sat:                       84
+    hue:                191
+    sat:                84
   blue:
-    hue:                       216
-    sat:                       56
+    hue:                216
+    sat:                56
   purple:
-    hue:                       281
-    sat:                       100
+    hue:                281
+    sat:                100
 
 # Primary Colors
 #
 # The primary colors used.
 #
-# $color-white  - #ffffff; White
-# $color-black  - #3a3a3b; Black
 # $color-gray   - #818386; Gray
 # $color-blue   - #0d7e97; Blue
 # $color-red    - #be2a26; Red
 # $color-green  - #308453; Green
 # $color-orange - #fdb71c; Orange
-# $color-teal   - #5c9999; Teal
 #
 # Styleguide Tokens.Colors.Primary
 
-# Dark Primary Colors
-#
-# The dark primary colors used.
-#
-# $color-white  - #ffffff; White
-# $color-black  - #3a3a3b; Black
-# $color-gray   - #818386; Gray
-# $color-blue   - #0d7e97; Blue
-# $color-red    - #be2a26; Red
-# $color-green  - #308453; Green
-# $color-orange - #fdb71c; Orange
-# $color-teal   - #5c9999; Teal
-#
-# Styleguide Tokens.Colors.Primary.Dark
-
 color:
+  white:                color(white)
+  black:                color(grey, 20)
 
-  white:                      '#ffffff'
-  black:                      '#3a3a3b'
+  gray:                 color(grey)
+  gray-dark:            color(grey, 25)
+  gray-light:           color(grey, 70)
+  gray-lighter:         color(grey, 90)
+  gray-lightest:        color(grey, 95)
 
-  gray:                       '#818386'
-  gray-dark:                  '#414042'
-  gray-light:                 '#b3b1b4'
-  gray-lighter:               '#e6e7e8'
-  gray-lightest:              '#f9f9f9'
-
-  blue:                       '#0d7e97'
-  blue-dark:                  '#004353'
-  blue-light:                 '#c9e3e8'
-  blue-lighter:               '#e4f1f3'
-
-  red:                        '#be2a26'
-  red-dark:                   '#981d20'
-  red-light:                  '#f0b9b8'
-  red-lighter:                '#f7dbdb'
-
-  green:                      '#308453'
-  green-dark:                 '#266942'
-  green-light:                '#e8f3e5'
-  green-lighter:              '#edf5eb'
-
-  orange:                     '#fdb71c'
-  orange-dark:                '#835c1b'
-  orange-light:               '#fae0af'
-  orange-lighter:             '#f3e3c8'
-
-  teal:                       '#5c9999'
-  teal-darker:                '#447272'
+  blue:                 '#0d7e97'
+  blue-dark:            '#004353'
+  blue-light:           '#c9e3e8'
+  blue-lighter:         '#e4f1f3'
+  red:                  '#be2a26'
+  red-dark:             '#981d20'
+  red-light:            '#f0b9b8'
+  red-lighter:          '#f7dbdb'
+  green:                '#308453'
+  green-dark:           '#266942'
+  green-light:          '#e8f3e5'
+  green-lighter:        '#edf5eb'
+  orange:               '#fdb71c'
+  orange-dark:          '#835c1b'
+  orange-light:         '#fae0af'
+  orange-lighter:       '#f3e3c8'
 
   theme:
     base:
-      background:             '$color-white'
-      background-alt:         '$color-gray-lighter'
-      border:                 '$color-gray'
-      text:                   '$color-black'
-      link:                   '$color-blue'
-      hover-background:       '$color-blue'
-      hover-text:             '$color-white'
-      spinner:                '$color-blue'
+      background:       color(white)
+      background-alt:   color(grey, 90)
+      border:           color(grey, 90)
+      text:             color(grey, 20)
+      link:             color(cyan, 30)
+      hover-background: color(cyan, 30)
+      hover-text:       color(white)
+      spinner:          color(cyan)
     dark:
-      background:             '$color-blue-dark'
-      background-alt:         '$color-blue'
-      border:                 '$color-blue-dark'
-      text:                   '$color-white'
-      link:                   '$color-white'
-      hover-background:       '$color-white'
-      hover-text:             '$color-blue'
-      spinner:                '$color-white'
+      background:       color(cyan, 20)
+      background-alt:   color(cyan, 30)
+      border:           color(cyan, 20)
+      text:             color(white)
+      link:             color(white)
+      hover-background: color(white)
+      hover-text:       color(cyan, 30)
+      spinner:          color(white)
 
   state:
     error:
-      background:             '$color-red-lighter'
-      border:                 '$color-red-dark'
-      text:                   '$color-red-dark'
-      link:                   '$color-black'
-      hover-background:       '$color-white'
-      hover-text:             '$color-red-dark'
+      background:       color(red, 95)
+      border:           color(red, 40)
+      text:             color(grey, 20)
+      link:             color(red, 40)
+      hover-background: color(red, 40)
+      hover-text:       color(white)
     info:
-      background:             '$color-blue-lighter'
-      border:                 '$color-blue-dark'
-      text:                   '$color-blue-dark'
-      link:                   '$color-black'
-      hover-background:       '$color-white'
-      hover-text:             '$color-blue-dark'
+      background:       color(cyan, 95)
+      border:           color(cyan, 30)
+      text:             color(grey, 20)
+      link:             color(cyan, 30)
+      hover-background: color(cyan, 30)
+      hover-text:       color(white)
     success:
-      background:             '$color-green-lighter'
-      border:                 '$color-green-dark'
-      text:                   '$color-green-dark'
-      link:                   '$color-black'
-      hover-background:       '$color-white'
-      hover-text:             '$color-green-dark'
+      background:       color(green, 95)
+      border:           color(green, 30)
+      text:             color(grey, 20)
+      link:             color(green, 30)
+      hover-background: color(green, 30)
+      hover-text:       color(white)
     warning:
-      background:             'color(yellow, 95)'
-      border:                 'color(yellow, 30)'
-      text:                   '$color-black'
-      link:                   '$color-black'
-      hover-background:       '$color-white'
-      hover-text:             'color(yellow, 30)'
+      background:       color(yellow, 95)
+      border:           color(orange, 40)
+      text:             color(grey, 20)
+      link:             color(orange, 40)
+      hover-background: color(orange, 40)
+      hover-text:       color(white)
     highlight:
-      background:             '$color-blue'
-      text:                   '$color-white'
+      background:       color(cyan, 30)
+      text:             color(white)

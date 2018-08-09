@@ -24,6 +24,7 @@
   "html.format.wrapAttributes": "force",
   "html.format.wrapLineLength": 0,
   "json.format.enable": true,
+  "prettier.disableLanguages": ["yaml"],
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
   "workbench.colorCustomizations": {

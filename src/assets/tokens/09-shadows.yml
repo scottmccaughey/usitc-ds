@@ -9,4 +9,4 @@
 
 shadows:
   box:
-    base:           0 $space-xxs $space-xxs 0 $color-black
+    base:           0 $space-xxs $space-xxs 0 color(black)

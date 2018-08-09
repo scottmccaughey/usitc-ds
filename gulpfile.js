@@ -7,7 +7,6 @@ var gulp = require('gulp-help')(require('gulp'), { hideDepsMessage: true }),
   clone = require('gulp-clone').sink(),
   del = require('del'),
   rename = require('gulp-rename'),
-  insert = require('gulp-insert'),
   yamlToJson = require('gulp-yaml'),
   jsonToSass = require('./gulp/gulp-json-to-scss'),
   jsonMerge = require('gulp-merge-json'),
@@ -41,7 +40,7 @@ config.formats.forEach(function(format) {
 /*
   TASK: 'convert'
 
-  Run the "convert" tasks.
+  Convert YAML Design Tokens into formats specified in gulp-config.yml.
 */
 gulp.task(
   'convert',
@@ -52,7 +51,7 @@ gulp.task(
 /*
   TASK: 'convert:json'
 
-  Convert the YAML Design Tokens into JSON so that they can be used in JavaScript.
+  Convert YAML Design Tokens into JSON so that they can be used in JavaScript.
 */
 gulp.task('convert:json', 'Convert YAML Design Tokens into JSON.', function() {
   return gulp
@@ -66,7 +65,7 @@ gulp.task('convert:json', 'Convert YAML Design Tokens into JSON.', function() {
 /*
   TASK: 'convert:es6'
 
-  Convert the YAML Design Tokens into a TypeScript ECMAScript 6 module.
+  Convert YAML Design Tokens into a TypeScript ECMAScript 6 module.
 */
 gulp.task(
   'convert:es6',
@@ -84,7 +83,7 @@ gulp.task(
 /*
   TASK: 'convert:node'
 
-  Convert the YAML Design Tokens into a NodeJS module.
+  Convert YAML Design Tokens into a NodeJS module.
 */
 gulp.task('convert:node', 'Convert YAML Design Tokens into a NodeJS module.', function() {
   return gulp
@@ -98,7 +97,7 @@ gulp.task('convert:node', 'Convert YAML Design Tokens into a NodeJS module.', fu
 /*
   TASK: 'convert:scss'
 
-  Convert the YAML Design Tokens into SCSS so that they can be used in SCSS (Sass).
+  Convert YAML Design Tokens into SCSS.
 */
 gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
   return gulp
@@ -120,13 +119,17 @@ gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
 /*
   TASK: 'compile'
 
-  Run the "copy", "convert" and "compile" tasks.
+  Copy and compile SCSS, copy fonts, and convert icons.
 */
-gulp.task(
-  'compile',
-  'Copy and compile SCSS, copy fonts, and convert icons.',
-  sequence('copy:fonts', 'copy:favicons', 'convert:icons', 'compile:scss', 'generate:styleguide')
-);
+gulp.task('compile', 'Copy and compile SCSS, copy fonts, and convert icons.', function(cb) {
+  sequence(
+    'copy:fonts',
+    'copy:favicons',
+    'convert:icons',
+    'compile:scss',
+    'generate:styleguide'
+  )(cb);
+});
 
 /*
   TASK: 'copy:fonts'
@@ -159,17 +162,21 @@ gulp.task(
 /*
   TASK: 'convert:icons'
 
-  Optimize SVG icons and save them, then convert them all into a single SVG sprite for easy use.
+  Optimize SVG icons, then convert them all into a single SVG sprite.
 */
-gulp.task('convert:icons', 'Convert SVG icons into an SVG sprite.', function() {
-  return gulp
-    .src(config.path.icons.src)
-    .pipe(plumber())
-    .pipe(svgo())
-    .pipe(gulp.dest(config.path.icons.dist))
-    .pipe(svgSprite(config.settings.icons))
-    .pipe(gulp.dest(config.path.icons.dist));
-});
+gulp.task(
+  'convert:icons',
+  'Optimize SVG icons, then convert them all into a single SVG sprite.',
+  function() {
+    return gulp
+      .src(config.path.icons.src)
+      .pipe(plumber())
+      .pipe(svgo())
+      .pipe(gulp.dest(config.path.icons.dist))
+      .pipe(svgSprite(config.settings.icons))
+      .pipe(gulp.dest(config.path.icons.dist));
+  }
+);
 
 /*
   TASK: 'copy:scss'
@@ -191,7 +198,7 @@ gulp.task(
 /*
   TASK: 'compile:scss'
 
-  Run the "convert:scss" task, then copy the SCSS to the distribution folder and compile SCSS styles into CSS.
+  Compile SCSS into CSS.
 */
 gulp.task('compile:scss', 'Compile SCSS into CSS.', ['copy:scss'], function() {
   return gulp
@@ -225,15 +232,42 @@ gulp.task(
 );
 
 /*
+  TASK: 'build:tokens'
+
+  Convert tokens to all formats, then generate the styleguide.
+*/
+gulp.task('build:tokens', 'Convert tokens to all formats, then generate the styleguide.', function(
+  cb
+) {
+  sequence('convert', 'generate:styleguide')(cb);
+});
+
+/*
+  TASK: 'build:scss'
+
+  Compile the SCSS, then generate the styleguide.
+*/
+gulp.task('build:scss', 'Compile the SCSS, then generate the styleguide.', function(cb) {
+  sequence('compile:scss', 'generate:styleguide')(cb);
+});
+
+/*
+  TASK: 'build:icons'
+
+  Convert the icons, then generate the styleguide.
+*/
+gulp.task('build:icons', 'Convert the icons, then generate the styleguide.', function(cb) {
+  sequence('convert:icon', 'generate:styleguide')(cb);
+});
+
+/*
   TASK: 'build'
 
-  Run the "clean" task, then run the "convert" task, then run the "compile" task.
+  Empty the distribution folder, convert tokens, then compile.
 */
-gulp.task(
-  'build',
-  'Empty the distribution folder, convert tokens, then compile.',
-  sequence('clean', 'convert', 'compile')
-);
+gulp.task('build', 'Empty the distribution folder, convert tokens, then compile.', function(cb) {
+  sequence('clean', 'convert', 'compile')(cb);
+});
 
 /*
   TASK: "watch"
@@ -241,12 +275,11 @@ gulp.task(
   Watch files for processing.
 */
 gulp.task('watch', 'Watch files for processing.', function() {
-  gulp.watch(config.path.tokens.src, ['convert']);
-  gulp.watch(config.path.scss.watch, ['compile:scss']);
+  gulp.watch(config.path.tokens.src, ['build:tokens']);
+  gulp.watch(config.path.scss.watch, ['build:scss']);
+  gulp.watch(config.path.icons.src, ['build:icons']);
   gulp.watch(config.path.fonts.src, ['copy:fonts']);
   gulp.watch(config.path.favicons.src, ['copy:favicons']);
-  gulp.watch(config.path.icons.src, ['convert:icons']);
-  gulp.watch(config.path.styleguide.src, ['generate:styleguide']);
 });
 
 /*
@@ -254,8 +287,6 @@ gulp.task('watch', 'Watch files for processing.', function() {
 
   Run the 'build' task, then watch files for processing.
 */
-gulp.task(
-  'default',
-  'Run the "build" task, then watch files for processing.',
-  sequence('build', 'watch')
-);
+gulp.task('default', 'Run the "build" task, then watch files for processing.', function(cb) {
+  sequence('build', 'watch')(cb);
+});
