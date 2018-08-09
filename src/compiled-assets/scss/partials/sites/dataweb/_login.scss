@@ -50,7 +50,7 @@
 }
 
 .login-form {
-	background-color: $color-gray-lighter;
+	background-color: color(grey, 95);
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto;
@@ -138,7 +138,7 @@
 
 	.login-icon-wrapper {
 		align-items: center;
-		background-color: $color-gray;
+		background-color: color(grey);
 		color: color(white);
 		display: grid;
 		justify-items: center;
@@ -216,7 +216,7 @@
 	}
 
 	h2 {
-		color: $color-blue;
+		color: color(cyan, 30);
 		font-weight: $font-weight-bold;
 	}
 }

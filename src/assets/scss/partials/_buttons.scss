@@ -303,14 +303,14 @@ button,
   //
   // Weight: 3
   &.button-success {
-    background-color: $color-green;
+    background-color: color(green, 40);
     border-color: transparent;
     color: color(white);
 
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-green-dark;
+      background-color: color(green, 20);
     }
   }
 
@@ -328,14 +328,14 @@ button,
   //
   // Weight: 4
   &.button-cancel {
-    background-color: $color-red;
+    background-color: color(red, 40);
     border-color: transparent;
     color: color(white);
 
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-red-dark;
+      background-color: color(red, 20);
     }
   }
 

@@ -61,7 +61,7 @@
 
 .grid-separated {
   > * {
-    border-right: 1px solid $color-gray-lighter;
+    border-right: 1px solid color(grey, 90);
 
     &:last-child {
       border-right-width: 0;

@@ -9,7 +9,7 @@
 
 .home-intro {
 	em {
-		color: $color-red;
+		color: color(red, 40);
 		font-style: normal;
 	}
 }
@@ -48,7 +48,7 @@
 
 	button {
 		align-items: center;
-		background-color: color(cyan);
+		background-color: color(cyan, 40);
 		color: color(white);
 		display: flex;
 		font-size: $font-size-xl;
@@ -60,7 +60,7 @@
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: color(cyan, 40);
+			background-color: color(cyan, 20);
 		}
 
 		> i {
@@ -76,7 +76,7 @@
 	}
 
 	select {
-		background-color: $color-gray-dark;
+		background-color: color(grey, 20);
 		color: color(white);
 		font-size: $space-m;
 		padding: $space-s ($space-xl + $space-m) $space-s $space-l;
@@ -107,7 +107,7 @@
 
 .trade-data-reports {
 	> a {
-		background: $color-gray-lightest;
+		background: color(grey, 95);
 		color: color(black);
 		display: block;
 		padding: $space-m;
@@ -116,7 +116,7 @@
 		&:active,
 		&:focus,
 		&:hover {
-			background: $color-blue;
+			background: color(cyan, 30);
 			color: color(white);
 		}
 	}

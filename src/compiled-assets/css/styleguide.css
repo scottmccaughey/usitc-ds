@@ -480,15 +480,17 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
   background-color: #daf1e4;
   color: white; }
 
-code[class*='language-'],
-pre[class*='language-'] {
+.kss-body code[class*='language-'],
+.kss-body pre[class*='language-'] {
   background: #063b46;
   color: white;
   font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 100%;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
   line-height: 1.5;
+  padding: 0;
   -moz-tab-size: 2;
     -o-tab-size: 2;
        tab-size: 2;
@@ -499,10 +501,10 @@ pre[class*='language-'] {
   word-wrap: normal; }
 
 /* Code blocks */
-pre[class*='language-'] {
+.kss-body pre[class*='language-'] {
   border-width: 0;
   padding: 1rem;
-  margin: 0;
+  margin: 0 0 1rem;
   overflow: auto; }
 
 :not(pre) > code[class*='language-'],
@@ -510,13 +512,13 @@ pre[class*='language-'] {
   background: #063b46; }
 
 /* Inline code */
-:not(pre) > code[class*='language-'],
-.kss-description code,
-.kss-source code {
+.kss-body code {
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 90%;
   margin: 0;
   padding: 0.125rem 0.25rem;
+  position: relative;
+  top: -1px;
   white-space: normal; }
 
 .token.comment,
@@ -600,7 +602,7 @@ pre[class*='language-'] {
   .kss-body h2,
   .kss-body h3,
   .kss-body h4 {
-    color: #0d7e97;
+    color: #0c758d;
     font-weight: 900;
     margin: 1rem 0 0.5rem;
     text-transform: uppercase; }
@@ -622,15 +624,17 @@ pre[class*='language-'] {
               justify-content: flex-end;
       text-align: right; }
       .kss-body .kss-with-anchor .anchor-icon a {
-        color: #0d7e97; }
+        color: #0c758d; }
         .kss-body .kss-with-anchor .anchor-icon a:active, .kss-body .kss-with-anchor .anchor-icon a:focus, .kss-body .kss-with-anchor .anchor-icon a:hover {
           background-color: transparent;
           color: black; }
-  .kss-body .panel.state-warning h1 {
+  .kss-body .panel h1 {
     font-size: 1rem;
     font-weight: 700;
     margin-top: 0;
     text-transform: none; }
+  .kss-body .panel pre[class*='language-'] {
+    margin-bottom: 0; }
   .kss-body .site-header {
     margin-bottom: 0; }
     .kss-body .site-header > nav > ul li.site-name {
@@ -656,21 +660,6 @@ pre[class*='language-'] {
 .kss-description {
   margin-bottom: 1rem; }
 
-.kss-example {
-  border: 1px solid #063b46;
-  margin: 0;
-  padding: 1rem; }
-  .kss-example.kss-section-buttons {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    white-space: nowrap; }
-
 .kss-home h1 {
   color: inherit;
   font-weight: 700;
@@ -678,7 +667,7 @@ pre[class*='language-'] {
   text-transform: none; }
 
 .kss-home h2 {
-  color: #0d7e97;
+  color: #0c758d;
   font-weight: 900;
   text-transform: uppercase; }
 
@@ -696,15 +685,6 @@ pre[class*='language-'] {
   margin-top: 0.5rem;
   text-transform: none; }
 
-.kss-example-header {
-  background-color: #0d7e97;
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 1rem 0 0;
-  max-width: none;
-  padding: 0.5rem 1rem; }
-
 .kss-main {
   padding: 1rem 2rem 0; }
 
@@ -717,10 +697,10 @@ pre[class*='language-'] {
     top: 0.5rem; }
     .kss-markup [ngxClipboard]:active, .kss-markup [ngxClipboard]:focus, .kss-markup [ngxClipboard]:hover {
       background-color: white;
-      color: #0d7e97; }
+      color: #0c758d; }
 
 .kss-menu {
-  background-color: #004353;
+  background-color: #084e5e;
   color: white;
   padding: 1rem 0;
   width: 100%; }
@@ -743,12 +723,23 @@ pre[class*='language-'] {
     margin: 0;
     padding: 0; }
 
+.kss-panel {
+  margin: 0 0 3rem; }
+
 .kss-ref {
   float: right;
   font-weight: 700; }
 
+.kss-section-buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: nowrap; }
+
 .kss-source {
-  background-color: #e8f9fd;
-  border: 1px solid #063b46;
-  margin: 0 0 3rem;
   padding: 0.5rem 1rem; }

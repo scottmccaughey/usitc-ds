@@ -14,6 +14,7 @@ icon,
 	position: relative;
 	width: $icon-size-base;
 
+	&.svg,
 	> svg {
 		align-items: stretch;
 		display: flex;

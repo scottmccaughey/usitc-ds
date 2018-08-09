@@ -42,7 +42,7 @@
   h2,
   h3,
   h4 {
-    color: $color-blue;
+    color: color(cyan, 30);
     font-weight: $font-weight-black;
     margin: $space-m 0 $space-s;
     text-transform: uppercase;
@@ -66,7 +66,7 @@
       text-align: right;
 
       a {
-        color: $color-blue;
+        color: color(cyan, 30);
 
         &:active,
         &:focus,
@@ -78,12 +78,16 @@
     }
   }
 
-  .panel.state-warning {
+  .panel {
     h1 {
       font-size: $font-size-m;
       font-weight: $font-weight-bold;
       margin-top: 0;
       text-transform: none;
+    }
+
+    pre[class*='language-'] {
+      margin-bottom: 0;
     }
   }
 
@@ -128,19 +132,6 @@
   margin-bottom: $space-m;
 }
 
-.kss-example {
-  border: 1px solid color(cyan, 15);
-  margin: 0;
-  padding: $space-m;
-
-  &.kss-section-buttons {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    white-space: nowrap;
-  }
-}
-
 .kss-home {
   h1 {
     color: inherit;
@@ -150,7 +141,7 @@
   }
 
   h2 {
-    color: $color-blue;
+    color: color(cyan, 30);
     font-weight: $font-weight-black;
     text-transform: uppercase;
   }
@@ -173,16 +164,6 @@
   }
 }
 
-.kss-example-header {
-  background-color: $color-blue;
-  color: color(white);
-  font-size: $font-size-m;
-  font-weight: $font-weight-bold;
-  margin: $space-m 0 0;
-  max-width: none;
-  padding: $space-s $space-m;
-}
-
 .kss-main {
   padding: $space-m $space-l 0;
 }
@@ -200,13 +181,13 @@
     &:focus,
     &:hover {
       background-color: color(white);
-      color: $color-blue;
+      color: color(cyan, 30);
     }
   }
 }
 
 .kss-menu {
-  background-color: $color-blue-dark;
+  background-color: color(cyan, 20);
   color: color(white);
   padding: $space-m 0;
   width: 100%;
@@ -240,14 +221,22 @@
   }
 }
 
+.kss-panel {
+  margin: 0 0 ($space-l + $space-m);
+}
+
 .kss-ref {
   float: right;
   font-weight: $font-weight-bold;
 }
 
+.kss-section-buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
 .kss-source {
-  background-color: color(cyan, 95);
-  border: 1px solid color(cyan, 15);
-  margin: 0 0 ($space-l + $space-m);
   padding: $space-s $space-m;
 }

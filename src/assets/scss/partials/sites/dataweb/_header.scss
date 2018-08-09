@@ -8,8 +8,7 @@
 // 888  888  "Y8888  "Y888888  "Y88888  "Y8888  888
 
 .site-header {
-  background-color: $color-gray-lighter;
-  color: $color-gray-dark;
+  background-color: color(grey, 95);
   margin-bottom: $space-m;
 
   > nav > ul {
@@ -24,8 +23,8 @@
 
     li {
       align-items: stretch;
-      border-bottom: 1px solid $color-gray-light;
-      border-right: 1px solid $color-gray-light;
+      border-bottom: 1px solid color(grey, 90);
+      border-right: 1px solid color(grey, 90);
       display: flex;
       flex: 0 0 50%;
       font-size: $font-size-xs;
@@ -75,7 +74,7 @@
       a {
         align-items: center;
         background-image: none;
-        color: $color-gray-dark;
+        color: color(grey, 20);
         display: flex;
         justify-content: center;
         line-height: $line-height-header;
@@ -92,7 +91,7 @@
         &:active,
         &:focus,
         &:hover {
-          background-color: $color-blue;
+          background-color: color(cyan, 30);
           color: color(white);
         }
       }

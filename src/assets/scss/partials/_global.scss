@@ -41,12 +41,11 @@ body {
 }
 
 :focus {
-  box-shadow: $border-focus;
-  outline-color: transparent;
+  outline: $space-xs auto color(cyan, 30);
 }
 
 ::placeholder {
-  color: $color-gray-light;
+  color: color(grey, 95);
   opacity: 1;
 }
 
@@ -181,23 +180,11 @@ pre {
 }
 
 .alt {
-  background-color: $color-gray-lightest;
+  background-color: color(grey, 95);
 }
 
 .alt-off {
   background-color: $color-theme-base-background;
-}
-
-.alt-blue {
-  background-color: $color-blue-lighter;
-}
-
-.alt-green {
-  background-color: $color-green-lighter;
-}
-
-.alt-red {
-  background-color: $color-red-lighter;
 }
 
 .app-version {
@@ -206,7 +193,7 @@ pre {
 }
 
 .beta {
-  color: $color-red;
+  color: color(red, 40);
 }
 
 .body-scrollable {
@@ -286,7 +273,7 @@ pre {
 }
 
 .tag-label {
-  background-color: $color-gray;
+  background-color: color(grey, 95);
   color: color(white);
   display: inline-block;
   font-size: $font-size-xxs;

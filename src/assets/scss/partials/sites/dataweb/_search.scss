@@ -38,7 +38,7 @@
   &:focus,
   &:hover {
     > div {
-      background-color: $color-blue;
+      background-color: color(cyan, 30);
 
       &.button-icon {
         background-color: color(white);
@@ -47,7 +47,7 @@
   }
 
   > div {
-    background-color: $color-green;
+    background-color: color(green, 40);
     color: color(white);
     padding: $space-m;
 
@@ -57,7 +57,7 @@
 
     &.button-icon {
       background-color: color(white);
-      color: $color-gray;
+      color: color(grey);
       display: flex;
       flex-direction: column;
       padding: $space-s;
@@ -165,7 +165,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-blue-light;
+      background-color: color(cyan, 90);
       color: color(black);
     }
   }
@@ -174,7 +174,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-green-light;
+      background-color: color(green, 90);
       color: color(black);
     }
   }
@@ -183,7 +183,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-red-light;
+      background-color: color(red, 90);
       color: color(black);
     }
   }
@@ -219,7 +219,7 @@
   padding: $space-s;
 
   &:nth-child(odd) {
-    background-color: $color-gray-lighter;
+    background-color: color(grey, 95);
   }
 
   > div {
@@ -310,7 +310,7 @@
 }
 
 .site-search-header {
-  background-color: $color-blue-dark;
+  background-color: color(cyan, 20);
 }
 
 .table-results {
@@ -375,7 +375,7 @@
   .total {
     th,
     td {
-      background-color: $color-gray-lighter;
+      background-color: color(grey, 95);
     }
   }
 }
@@ -398,24 +398,24 @@
   tbody {
     tr {
       &:nth-child(odd) td {
-        background-color: $color-blue;
+        background-color: color(cyan, 30);
       }
 
       &.sample-row td {
-        background-color: $color-orange-light;
+        background-color: color(orange, 95);
         color: color(black);
 
         &:last-child {
-          border-bottom: 1px solid rgba($color-black, 0.25);
+          border-bottom: 1px solid color(grey, 20, 25);
         }
 
         @include breakpoint(s) {
-          border-bottom: 1px solid rgba($color-black, 0.25);
-          border-color: rgba($color-black, 0.25);
+          border-bottom: 1px solid color(grey, 20, 25);
+          border-color: color(grey, 20, 25);
         }
 
         span {
-          background-color: $color-orange;
+          background-color: color(orange, 40);
           color: color(white);
           display: inline-block;
           font-weight: $font-weight-bold;
@@ -439,7 +439,7 @@
 
         td {
           em {
-            background-color: $color-orange;
+            background-color: color(orange, 40);
             color: color(white);
             display: block;
             font-weight: $font-weight-bold;
@@ -544,14 +544,9 @@
     margin-bottom: 0;
   }
 
-  &::after {
-    border-top-color: $color-theme-base-text; //
-  }
-
   select {
-    background-color: $color-blue-light;
+    background-color: color(cyan, 60);
     border-width: 0;
-    color: $color-theme-base-text; //
     font-weight: $font-weight-bold;
   }
 }

@@ -44,29 +44,6 @@ export const tokens = {
     }
   },
   "color": {
-    "white": "color(white)",
-    "black": "color(grey, 20)",
-    "gray": "color(grey)",
-    "gray-dark": "color(grey, 25)",
-    "gray-light": "color(grey, 70)",
-    "gray-lighter": "color(grey, 90)",
-    "gray-lightest": "color(grey, 95)",
-    "blue": "#0d7e97",
-    "blue-dark": "#004353",
-    "blue-light": "#c9e3e8",
-    "blue-lighter": "#e4f1f3",
-    "red": "#be2a26",
-    "red-dark": "#981d20",
-    "red-light": "#f0b9b8",
-    "red-lighter": "#f7dbdb",
-    "green": "#308453",
-    "green-dark": "#266942",
-    "green-light": "#e8f3e5",
-    "green-lighter": "#edf5eb",
-    "orange": "#fdb71c",
-    "orange-dark": "#835c1b",
-    "orange-light": "#fae0af",
-    "orange-lighter": "#f3e3c8",
     "theme": {
       "base": {
         "background": "color(white)",
@@ -240,8 +217,7 @@ export const tokens = {
     }
   },
   "border": {
-    "base": "1px solid $color-gray",
-    "focus": "0 0 0 $space-xxs $color-blue",
+    "base": "1px solid color(grey)",
     "radius": {
       "base": 0,
       "circle": "100%"

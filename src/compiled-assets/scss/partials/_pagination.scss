@@ -19,7 +19,7 @@
   > * {
     background-color: transparent;
     background-image: none;
-    border: 1px solid $color-blue;
+    border: 1px solid color(cyan, 30);
     color: color(white);
     display: flex;
     flex: 1 1 0;
@@ -52,27 +52,27 @@
     }
 
     &.active {
-      background-color: $color-blue;
+      background-color: color(cyan, 30);
       color: color(white);
       cursor: default;
 
       &:active,
       &:focus,
       &:hover {
-        background-color: $color-blue;
+        background-color: color(cyan, 30);
         color: color(white);
       }
     }
 
     &.disabled {
-      color: $color-blue;
+      color: color(cyan, 30);
       cursor: default;
 
       &:active,
       &:focus,
       &:hover {
         background-color: transparent;
-        color: $color-blue;
+        color: color(cyan, 30);
       }
     }
 
@@ -90,7 +90,7 @@
       }
 
       select {
-        background-color: $color-blue-dark;
+        background-color: color(cyan, 20);
         border-width: 0;
         color: color(white);
         font-size: $font-size-xs;
@@ -102,7 +102,7 @@
         }
 
         option {
-          background-color: $color-blue-dark;
+          background-color: color(cyan, 20);
         }
       }
 

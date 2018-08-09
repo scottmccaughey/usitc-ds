@@ -5,13 +5,15 @@
 //
 // Modified to use colors from the USITC Design System.
 
-code[class*='language-'],
-pre[class*='language-'] {
+.kss-body code[class*='language-'],
+.kss-body pre[class*='language-'] {
   background: color(cyan, 15);
   color: color(white);
   font-family: $font-family-mono;
+  font-size: 100%;
   hyphens: none;
   line-height: $line-height-base;
+  padding: 0;
   tab-size: 2;
   text-align: left;
   white-space: pre;
@@ -21,10 +23,10 @@ pre[class*='language-'] {
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+.kss-body pre[class*='language-'] {
   border-width: 0;
   padding: $space-m;
-  margin: 0;
+  margin: 0 0 $space-m;
   overflow: auto;
 }
 
@@ -34,13 +36,13 @@ pre[class*='language-'] {
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'],
-.kss-description code,
-.kss-source code {
+.kss-body code {
   background-color: color(black, 0, 10);
   font-size: 90%;
   margin: 0;
   padding: $space-xxs $space-xs;
+  position: relative;
+  top: -1px;
   white-space: normal;
 }
 

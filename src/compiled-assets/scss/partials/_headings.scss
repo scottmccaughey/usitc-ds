@@ -75,7 +75,7 @@ h6,
 }
 
 .header-caps {
-	color: $color-blue;
+	color: color(cyan, 30);
 	font-size: ($space-m + $space-xs);
 	font-weight: $font-weight-black;
 	text-transform: uppercase;
@@ -86,7 +86,6 @@ h6,
 }
 
 .header-overall {
-	color: $color-gray-dark;
 	font-size: 6.3vw;
 	letter-spacing: -.3vw;
 	margin-bottom: 0;
@@ -109,11 +108,11 @@ h6,
 		font-weight: $font-weight-bold;
 
 		b {
-			color: $color-blue;
+			color: color(cyan, 30);
 		}
 
 		i {
-			color: $color-red;
+			color: color(red, 40);
 			font-style: normal;
 		}
 	}
@@ -131,7 +130,7 @@ h6,
 	}
 
 	em {
-		color: $color-blue;
+		color: color(cyan, 30);
 		font-size: $font-size-xxxxl;
 		font-style: normal;
 		font-weight: $font-weight-black;
@@ -141,7 +140,6 @@ h6,
 }
 
 .header-tagline {
-	color: $color-gray-dark;
 	font-size: 3vw;
 	font-weight: $font-weight-normal;
 	letter-spacing: .25rem;
