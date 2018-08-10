@@ -95,7 +95,7 @@ simple-select {
     z-index: -1;
 
     &:focus ~ .control-indicator {
-      outline: $space-xs auto color(cyan, 30);
+      box-shadow: $shadows-box-focus;
     }
   }
 }
@@ -881,10 +881,6 @@ simple-select {
     overflow: hidden;
     position: absolute;
     width: 1px;
-
-    &:focus {
-      box-shadow: none;
-    }
 
     &:focus ~ label {
       box-shadow: $shadows-box-focus;
