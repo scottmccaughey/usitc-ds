@@ -1570,7 +1570,7 @@ simple-select + simple-select .select-child-field {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2U2ZTdlOCIgZD0iTTE2LjU4IDEuMzlhLjY4LjY4IDAgMCAwLS40NC4yMUw2LjggMTEuMzJsLTIuODktM2EuNzYuNzYgMCAwIDAtMSAwTC4xOSAxMS4xMWEuNzUuNzUgMCAwIDAgMCAxbDMuNDEgMy41NCAyLjY0IDIuNzZhLjc2Ljc2IDAgMCAwIDEgMGwyLjI1LTIuMzEuNDctLjQ5IDkuODUtMTAuMjdhLjc1Ljc1IDAgMCAwIDAtMUwxNy4xNiAxLjZhLjc0Ljc0IDAgMCAwLS41OC0uMjF6Ii8+PC9zdmc+"); }
 
 .read-more-content {
-  background-color: #43cfef;
+  background-color: #d0f3fb;
   padding: 1rem; }
   .read-more-content h4 {
     font-weight: 700; }
@@ -1653,8 +1653,8 @@ simple-select + simple-select .select-child-field {
     .select select::-ms-expand {
       display: none; }
     .select select option:checked {
-      background: #43cfef -webkit-gradient(linear, left bottom, left top, from(#43cfef), to(#43cfef));
-      background: #43cfef linear-gradient(0deg, #43cfef 0%, #43cfef 100%);
+      background: #d0f3fb -webkit-gradient(linear, left bottom, left top, from(#d0f3fb), to(#d0f3fb));
+      background: #d0f3fb linear-gradient(0deg, #d0f3fb 0%, #d0f3fb 100%);
       color: black !important; }
   .select::after {
     border-bottom: 0.25rem solid transparent;
@@ -1812,7 +1812,7 @@ simple-select + simple-select .select-child-field {
       background-color: #0c758d;
       color: white; }
   .toggle-switch label {
-    background-color: #43cfef;
+    background-color: #d0f3fb;
     border-right: 1px solid #7d7f82;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1863,7 +1863,9 @@ body {
   text-shadow: 0; }
 
 :focus {
-  outline: 0.25rem auto #0c758d; }
+  -webkit-box-shadow: 0 0 0.25rem 0.25rem #0c758d;
+          box-shadow: 0 0 0.25rem 0.25rem #0c758d;
+  outline: transparent; }
 
 ::-webkit-input-placeholder {
   color: #f2f2f3;

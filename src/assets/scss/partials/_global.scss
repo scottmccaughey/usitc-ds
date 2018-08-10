@@ -41,7 +41,8 @@ body {
 }
 
 :focus {
-  outline: $space-xs auto color(cyan, 30);
+  box-shadow: 0 0 $space-xs $space-xs color(cyan, 30);
+  outline: transparent;
 }
 
 ::placeholder {

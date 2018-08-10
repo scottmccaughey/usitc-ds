@@ -515,6 +515,7 @@ pre[class*='language-'] {
 .kss-body code {
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 90%;
+  font-weight: 300;
   margin: 0;
   padding: 0.125rem 0.25rem;
   position: relative;

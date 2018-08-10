@@ -39,6 +39,7 @@ pre[class*='language-'] {
 .kss-body code {
   background-color: color(black, 0, 10);
   font-size: 90%;
+  font-weight: $font-weight-normal;
   margin: 0;
   padding: $space-xxs $space-xs;
   position: relative;

@@ -609,7 +609,7 @@ simple-select {
 }
 
 .read-more-content {
-  background-color: color(cyan, 60);
+  background-color: color(cyan, 90);
   padding: $space-m;
 
   h4 {
@@ -715,8 +715,8 @@ simple-select {
     }
 
     option:checked {
-      background: color(cyan, 60)
-        linear-gradient(0deg, color(cyan, 60) 0%, color(cyan, 60) 100%);
+      background: color(cyan, 90)
+        linear-gradient(0deg, color(cyan, 90) 0%, color(cyan, 90) 100%);
       color: color(black) !important;
     }
   }
@@ -893,7 +893,7 @@ simple-select {
   }
 
   label {
-    background-color: color(cyan, 60);
+    background-color: color(cyan, 90);
     border-right: $border-base;
     flex-grow: 1;
     font-weight: $font-weight-normal;
