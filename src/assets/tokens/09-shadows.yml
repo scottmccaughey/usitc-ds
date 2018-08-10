@@ -10,3 +10,4 @@
 shadows:
   box:
     base:           0 $space-xxs $space-xxs 0 color(black)
+    focus:          0 0 $space-xs $space-xs color(cyan, 30)

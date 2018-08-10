@@ -882,8 +882,12 @@ simple-select {
     position: absolute;
     width: 1px;
 
+    &:focus {
+      box-shadow: none;
+    }
+
     &:focus ~ label {
-      box-shadow: 0 0 0 $space-xxs color(cyan, 30);
+      box-shadow: $shadows-box-focus;
     }
 
     &:checked + label {

@@ -41,7 +41,7 @@ body {
 }
 
 :focus {
-  box-shadow: 0 0 $space-xs $space-xs color(cyan, 30);
+  box-shadow: $shadows-box-focus;
   outline: transparent;
 }
 
