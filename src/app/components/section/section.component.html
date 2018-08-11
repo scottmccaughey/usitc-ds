@@ -1,28 +1,32 @@
-<section *ngIf="content">
+<section *ngIf="section" [id]="section['referenceURI']">
   <div class="kss-ref"
-    *ngIf="content['ref']">{{content['ref']}} ({{content['weight']}})</div>
-  <div *ngIf="content['header']"
-    [innerHTML]="content['header']"></div>
-  <div *ngIf="content['description']"
+    *ngIf="section['referenceNumber']">{{section['referenceNumber']}} ({{section['weight']}})</div>
+  <div *ngIf="section['name']"
+    [innerHTML]="section['name']"></div>
+  <div *ngIf="section['description']"
     class="kss-description"
-    [innerHTML]="content['description']"></div>
-  <div class="panel kss-panel padding-none border" *ngIf="content['markup']">
+    [innerHTML]="section['description']"></div>
+  <app-colors *ngIf="section['colors'].length > 0"
+    [colorVals]="section['colors']"></app-colors>
+  <app-parameters *ngIf="section['parameters'].length > 0"
+    [parameterVals]="section['parameters']"></app-parameters>
+  <div *ngIf="section['modifiers'].length > 0"
+    [innerHTML]="section['modifiers']"></div>
+  <div class="panel kss-panel padding-none border"
+    *ngIf="section['markup']">
     <div class="panel-header">Example</div>
     <div class="alt-off padded"
-      [ngClass]="content['markupClass']"
-      [innerHTML]="content['markup'] | KeepHtmlPipe"></div>
+      [ngClass]="section['markupClass']"
+      [innerHTML]="section['markup'] | KeepHtmlPipe"></div>
     <div class="kss-markup">
       <app-code [language]="'markup'"
-        [code]="content['markup']"></app-code>
+        [code]="section['markup']"></app-code>
     </div>
-    <div *ngIf="content['modifiers']?.length > 0"
-      [innerHTML]="content['modifiers']"></div>
-    <div *ngIf="content['parameters']?.length > 0"
-      [innerHTML]="content['parameters']"></div>
-    <div class="kss-source">
-      <strong>Source: </strong>
-      <code [innerHTML]="content['sourceFile']"></code>, line
-      <code [innerHTML]="content['sourceLine']"></code>
-    </div>
+  </div>
+  <div *ngIf="section['showSource']"
+    class="panel kss-source border">
+    <strong>Source: </strong>
+    <code [innerHTML]="section['source']['file']"></code>, line
+    <code [innerHTML]="section['source']['line']"></code>
   </div>
 </section>

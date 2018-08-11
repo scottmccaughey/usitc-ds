@@ -48,7 +48,7 @@ export const tokens = {
       "base": {
         "background": "color(white)",
         "background-alt": "color(grey, 90)",
-        "border": "color(grey, 90)",
+        "border": "color(grey, 20)",
         "text": "color(grey, 20)",
         "link": "color(cyan, 30)",
         "hover-background": "color(cyan, 30)",
@@ -69,39 +69,43 @@ export const tokens = {
     "state": {
       "error": {
         "background": "color(red, 95)",
+        "background-alt": "color(red, 90)",
         "border": "color(red, 40)",
         "text": "color(grey, 20)",
         "link": "color(red, 40)",
         "hover-background": "color(red, 40)",
-        "hover-text": "color(white)"
+        "hover-text": "color(white)",
+        "spinner": "color(red, 40)"
       },
       "info": {
         "background": "color(cyan, 95)",
+        "background-alt": "color(cyan, 90)",
         "border": "color(cyan, 30)",
         "text": "color(grey, 20)",
         "link": "color(cyan, 30)",
         "hover-background": "color(cyan, 30)",
-        "hover-text": "color(white)"
+        "hover-text": "color(white)",
+        "spinner": "color(cyan, 30)"
       },
       "success": {
         "background": "color(green, 95)",
+        "background-alt": "color(green, 90)",
         "border": "color(green, 30)",
         "text": "color(grey, 20)",
         "link": "color(green, 30)",
         "hover-background": "color(green, 30)",
-        "hover-text": "color(white)"
+        "hover-text": "color(white)",
+        "spinner": "color(green, 30)"
       },
       "warning": {
         "background": "color(yellow, 95)",
+        "background-alt": "color(yellow, 90)",
         "border": "color(orange, 40)",
         "text": "color(grey, 20)",
         "link": "color(orange, 40)",
         "hover-background": "color(orange, 40)",
-        "hover-text": "color(white)"
-      },
-      "highlight": {
-        "background": "color(cyan, 30)",
-        "text": "color(white)"
+        "hover-text": "color(white)",
+        "spinner": "color(orange, 40)"
       }
     }
   },
@@ -187,6 +191,7 @@ export const tokens = {
   },
   "max-line-length": "50em",
   "space": {
+    "xxxs": "$font-size-base / 12",
     "xxs": "$font-size-base / 8",
     "xs": "$font-size-base / 4",
     "s": "$font-size-base / 2",
@@ -196,6 +201,7 @@ export const tokens = {
     "xxl": "$font-size-base * 8",
     "xxxl": "$font-size-base * 12",
     "stack": {
+      "xxxs": "0 0 $space-xxxs 0",
       "xxs": "0 0 $space-xxs 0",
       "xs": "0 0 $space-xs 0",
       "s": "0 0 $space-s 0",
@@ -206,6 +212,7 @@ export const tokens = {
       "xxxl": "0 0 $space-xxxl 0"
     },
     "inline": {
+      "xxxs": "0 $space-xxxs 0 0",
       "xxs": "0 $space-xxs 0 0",
       "xs": "0 $space-xs 0 0",
       "s": "0 $space-s 0 0",

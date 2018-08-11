@@ -1,182 +1,207 @@
-.kss-colors-container {
-	margin: 0;
-	padding-left: 0;
+.kss-colors {
+  display: grid;
+  line-height: $line-height-button;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+  margin-bottom: $space-m;
+
+  @include breakpoint(l) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.kss-color {
-	position: relative;
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	height: 127px;
-	margin: 0 auto;
-	margin-top: 10px;
-	border: 1px solid color(grey);
-	border-radius: 2px;
+.kss-color-samples {
+  .kss-color-sample {
+    display: grid;
+    align-items: end;
+    padding: $space-m;
+    grid-template-areas:
+      'code code code'
+      'lum hex score';
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem auto 2rem;
+
+    @include breakpoint(s) {
+      grid-template-areas: 'lum code hex score';
+      grid-template-columns: 4rem auto 4.5rem 3.5rem;
+      grid-template-rows: auto;
+    }
+
+    .kss-color-name {
+      display: none;
+    }
+
+    &:first-child {
+      display: grid;
+      margin-bottom: $space-xs;
+      grid-template-areas:
+        'name name name'
+        'code code code'
+        'lum hex score';
+      grid-template-columns: 4rem auto 3.5rem;
+      grid-template-rows: 4rem 2rem 2rem;
+
+      @include breakpoint(s) {
+        grid-template-areas:
+          'name name name name'
+          'lum code hex score';
+        grid-template-columns: 4rem auto 4.5rem 3.5rem;
+        grid-template-rows: 6rem 2rem;
+      }
+
+      .kss-color-name {
+        display: block;
+      }
+
+      .kss-opt-lum {
+        display: none;
+      }
+    }
+  }
 }
 
-.kss-color .kss-parameters__description {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 5px;
-	background: color(white);
+.kss-color-name {
+  align-self: start;
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  grid-area: name;
 }
 
-.kss-color__name {
-	display: block;
-	min-height: 22px;
-	font-weight: 700;
-	line-height: 1.6;
+.kss-color-lum {
+  grid-area: lum;
 }
 
-.kss-color__var,
-.kss-color__code {
-	display: block;
-	line-height: 1.4;
+.kss-color-code {
+  align-self: start;
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-normal;
+  grid-area: code;
+
+  @include breakpoint(s) {
+    align-self: end;
+  }
 }
 
-.kss-color .kss-parameters__name {
-	display: none;
+.kss-color-hex {
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  text-align: right;
+  grid-area: hex;
 }
 
-/*
-*/
+.kss-color-score {
+  padding-left: $space-m;
+  text-align: center;
+  grid-area: score;
 
-.c-cyan-10 {
-	background-color: color(cyan, 10);
-	color: color(white);
+  .tag-label {
+    cursor: help;
+  }
 }
 
-.c-cyan-20 {
-	background-color: color(cyan, 20);
-	color: color(white);
+.kss-color-sample-white {
+  border: $border-base;
 }
 
-.c-cyan-30 {
-	background-color: color(cyan, 30);
-	color: color(white);
+.kss-gradients {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+
+  @include breakpoint(laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.c-cyan-40 {
-	background-color: color(cyan, 40);
-	color: color(white);
+// .kss-gradient {
+//   display: grid;
+//   padding: $space-m;
+//   color: color(white);
+//   grid-template-areas:
+//     'name'
+//     'code';
+//   grid-template-rows: 6rem 2rem;
+
+//   .kss-color-name {
+//     font-weight: $font-weight-bold;
+//     text-transform: capitalize;
+//   }
+// }
+
+// @each $color, $hsl in $base-colors {
+//   .kss-gradient-#{$color} {
+//     @include gradient(bottom, #{$color});
+//   }
+// }
+
+// .kss-gradient-red-orange {
+//   @include gradient(bottom, red, orange);
+// }
+
+// .kss-gradient-orange-yellow {
+//   @include gradient(bottom, orange, yellow);
+// }
+
+// .kss-gradient-yellow-green {
+//   @include gradient(bottom, yellow, green);
+
+//   .kss-color-name {
+//     color: color(black);
+//   }
+// }
+
+// .kss-gradient-green-blue {
+//   @include gradient(bottom, green, blue);
+// }
+
+// .kss-gradient-blue-purple {
+//   @include gradient(bottom, blue, purple);
+// }
+
+// .kss-gradient-purple-red {
+//   @include gradient(bottom, purple, red);
+// }
+
+// .kss-gradient-yellow,
+// .kss-gradient-green,
+// .kss-gradient-orange-yellow,
+// .kss-gradient-yellow-green {
+//   .color-code {
+//     color: $color-theme-base-text;
+//   }
+// }
+
+.kss-contrast-aaa,
+.kss-contrast-aa,
+.kss-contrast-aa18,
+.kss-contrast-dnp {
+  border: $border-base;
+  color: $color-theme-base-text;
+  text-transform: uppercase;
 }
 
-.c-cyan-50 {
-	background-color: color(cyan, 50);
-	color: color(white);
+.kss-contrast-aaa,
+.kss-contrast-aa {
+  background-color: color(green, 80);
+  border-color: color(green, 30);
 }
 
-.c-cyan-60 {
-	background-color: color(cyan, 60);
-	color: color(white);
+.kss-contrast-aa18 {
+  background-color: color(yellow, 80);
+  border-color: color(yellow, 30);
 }
 
-.c-cyan-70 {
-	background-color: color(cyan, 70);
-	color: color(white);
-}
-
-.c-cyan-80 {
-	background-color: color(cyan, 80);
-	color: color(white);
-}
-
-.c-cyan-90 {
-	background-color: color(cyan, 90);
-	color: color(white);
-}
-
-.c-red-10 {
-	background-color: color(red, 10);
-	color: color(white);
-}
-
-.c-red-20 {
-	background-color: color(red, 20);
-	color: color(white);
-}
-
-.c-red-30 {
-	background-color: color(red, 30);
-	color: color(white);
-}
-
-.c-red-40 {
-	background-color: color(red, 40);
-	color: color(white);
-}
-
-.c-red-50 {
-	background-color: color(red, 50);
-	color: color(white);
-}
-
-.c-red-60 {
-	background-color: color(red, 60);
-	color: color(white);
-}
-
-.c-red-70 {
-	background-color: color(red, 70);
-	color: color(white);
-}
-
-.c-red-80 {
-	background-color: color(red, 80);
-	color: color(white);
-}
-
-.c-red-90 {
-	background-color: color(red, 90);
-	color: color(white);
-}
-
-.c-green-10 {
-	background-color: color(green, 10);
-	color: color(white);
-}
-
-.c-green-20 {
-	background-color: color(green, 20);
-	color: color(white);
-}
-
-.c-green-30 {
-	background-color: color(green, 30);
-	color: color(white);
-}
-
-.c-green-40 {
-	background-color: color(green, 40);
-	color: color(white);
-}
-
-.c-green-50 {
-	background-color: color(green, 50);
-	color: color(white);
-}
-
-.c-green-60 {
-	background-color: color(green, 60);
-	color: color(white);
-}
-
-.c-green-70 {
-	background-color: color(green, 70);
-	color: color(white);
-}
-
-.c-green-80 {
-	background-color: color(green, 80);
-	color: color(white);
-}
-
-.c-green-90 {
-	background-color: color(green, 90);
-	color: color(white);
+.kss-contrast-dnp {
+  background-color: color(red, 80);
+  border-color: color(red, 30);
 }

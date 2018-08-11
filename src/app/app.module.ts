@@ -16,6 +16,8 @@ import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { SectionComponent } from './components/section/section.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { CodeComponent } from './components/code/code.component';
+import { ColorsComponent } from './components/colors/colors.component';
+import { ParametersComponent } from './components/parameters/parameters.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,21 @@ import { CodeComponent } from './components/code/code.component';
     KeepHtmlPipe,
     SectionComponent,
     BreadcrumbComponent,
-    CodeComponent
+    CodeComponent,
+    ColorsComponent,
+    ParametersComponent
   ],
-  imports: [ AppRoutingModule, BrowserModule, HttpClientModule, AppRoutingModule, PrismModule, ClipboardModule ],
-  exports: [ StyleguideComponent ],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    PrismModule,
+    ClipboardModule
+  ],
+  exports: [StyleguideComponent],
   providers: [],
-  bootstrap: [ AppComponent ],
-  entryComponents: [ StyleguideComponent ]
+  bootstrap: [AppComponent],
+  entryComponents: [StyleguideComponent]
 })
 export class AppModule {}

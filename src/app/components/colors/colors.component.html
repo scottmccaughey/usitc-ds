@@ -1,0 +1,21 @@
+<div class="kss-colors">
+  <ng-container *ngFor="let color of colors">
+    <div class="kss-color-samples kss-color-sample-{{color['name']}}">
+      <div *ngFor="let lum of color['lums']; let i = index"
+        class="kss-color-sample"
+        [ngStyle]="color['colorInfo'][i]['style']">
+        <div class="kss-color-name"
+          [innerHTML]="color['name']"></div>
+        <div class="kss-color-luminosity">{{lum}}</div>
+        <div class="kss-color-code">color({{color['name']}}<span class="kss-opt-lum">, {{lum}}</span>)</div>
+        <div class="kss-color-hex"
+          [innerHTML]="color['colorInfo'][i]['hex']"></div>
+        <div class="kss-color-score">
+          <span class="tag-label kss-contrast-{{color['colorInfo'][i]['score']}}"
+            title="Contrast Ratio: {{color['colorInfo'][i]['ratio']}}"
+            [innerHTML]="color['colorInfo'][i]['score']"></span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

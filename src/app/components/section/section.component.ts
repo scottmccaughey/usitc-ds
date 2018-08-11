@@ -8,24 +8,27 @@ import { environment } from '../../../environments/environment';
   styles: []
 })
 export class SectionComponent implements OnInit {
-  @Input() section: object;
-  content = {};
+  @Input()
+  section: object;
 
   constructor() {}
 
   ngOnInit() {
+    console.log(this.section);
     const secSplit = this.section['referenceURI'].split('-');
     const depth = this.section['depth'] > 1 ? this.section['depth'] - 1 : 1;
-    this.content['header'] = '<h' + depth + '>' + this.section['header'] + '</h' + depth + '>';
-    this.content['description'] = this.section['description'];
-    this.content['ref'] = this.section['referenceNumber'];
-    this.content['weight'] = this.section['weight'];
-    this.content['markupClass'] = 'kss-section-' + secSplit[1];
-    this.content['markup'] = this.section['markup'];
-    this.content['modifiers'] = this.section['modifiers'];
-    this.content['parameters'] = this.section['parameters'];
-    this.content['sourceFile'] =
+    this.section['name'] = '<h' + depth + '>' + this.section['header'] + '</h' + depth + '>';
+    this.section['markupClass'] = 'kss-section-' + secSplit[1];
+    this.section['source']['file'] =
       environment._devAssetsLocation + this.section['source']['filename'];
-    this.content['sourceLine'] = this.section['source']['line'];
+    this.section['showSource'] = false;
+    if (
+      this.section['colors'].length > 0 ||
+      this.section['modifiers'].length > 0 ||
+      this.section['parameters'].length > 0 ||
+      this.section['markup']
+    ) {
+      this.section['showSource'] = true;
+    }
   }
 }

@@ -29,14 +29,14 @@ body {
 }
 
 ::selection {
-  background-color: $color-state-highlight-background;
-  color: $color-state-highlight-text;
+  background-color: $color-theme-base-hover-background;
+  color: $color-theme-base-hover-text;
   text-shadow: 0;
 }
 
 ::-moz-selection {
-  background-color: $color-state-highlight-background;
-  color: $color-state-highlight-text;
+  background-color: $color-theme-base-hover-background;
+  color: $color-theme-base-hover-text;
   text-shadow: 0;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 ::placeholder {
-  color: color(grey, 95);
+  color: color(grey, 75);
   opacity: 1;
 }
 
@@ -274,16 +274,15 @@ pre {
 }
 
 .tag-label {
-  background-color: color(grey, 95);
-  color: color(white);
+  background-color: $color-theme-base-background-alt;
+  color: $color-theme-base-text;
   display: inline-block;
   font-size: $font-size-xxs;
   font-weight: $font-weight-bold;
-  line-height: $font-size-xxs;
-  margin: 0 $space-xs;
+  line-height: $line-height-button;
   padding: $space-xxs;
   position: relative;
-  top: (-$space-xxs);
+  top: $space-xxxs;
 
   &:first-child {
     margin-left: 0;

@@ -11,6 +11,7 @@
 #          888                                      "Y88P"
 
 space:
+  xxxs:             $font-size-base / 12
   xxs:              $font-size-base / 8
   xs:               $font-size-base / 4
   s:                $font-size-base / 2
@@ -20,6 +21,7 @@ space:
   xxl:              $font-size-base * 8
   xxxl:             $font-size-base * 12
   stack:
+    xxxs:           0 0 $space-xxxs 0
     xxs:            0 0 $space-xxs 0
     xs:             0 0 $space-xs 0
     s:              0 0 $space-s 0
@@ -29,6 +31,7 @@ space:
     xxl:            0 0 $space-xxl 0
     xxxl:           0 0 $space-xxxl 0
   inline:
+    xxxs:           0 $space-xxxs 0 0
     xxs:            0 $space-xxs 0 0
     xs:             0 $space-xs 0 0
     s:              0 $space-s 0 0
