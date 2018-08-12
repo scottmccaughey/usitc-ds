@@ -144,7 +144,7 @@ color:
       link:             color(cyan, 30)
       hover-background: color(cyan, 30)
       hover-text:       color(white)
-      spinner:          color(cyan)
+      spinner:          color(cyan, 30)
 
     # Dark Theme
     #
