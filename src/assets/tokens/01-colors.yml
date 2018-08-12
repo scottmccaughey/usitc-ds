@@ -61,16 +61,16 @@
 # </div>
 #
 # Colors:
-# @red:     hsl(2, 67, 50)
-# @orange:  hsl(23, 100, 50)
-# @yellow:  hsl(53, 98, 50)
-# @green:   hsl(145, 47, 50)
-# @cyan:    hsl(191, 84, 50)
-# @blue:    hsl(216, 56, 50)
-# @purple:  hsl(281, 100, 50)
-# @grey:    hsl(216, 2, 50)
-# @black:   hsl(0, 0, 0)
-# @white:   hsl(0, 0, 100)
+# @red:     hsl(10,  80, 50)
+# @orange:  hsl(40,  80, 50)
+# @yellow:  hsl(70,  80, 50)
+# @green:   hsl(130, 80, 50)
+# @cyan:    hsl(190, 80, 50)
+# @blue:    hsl(250, 80, 50)
+# @purple:  hsl(280, 80, 50)
+# @grey:    hsl(190, 15, 50)
+# @black:   hsl(0,   0,  0)
+# @white:   hsl(0,   0,  100)
 #
 # Styleguide Tokens.Colors.Available
 #
@@ -85,29 +85,29 @@ colors--map:
     sat:                0
     lum:                100
   grey:
-    hue:                216
-    sat:                2
+    hue:                190
+    sat:                20
   red:
-    hue:                2
-    sat:                67
+    hue:                10
+    sat:                80
   orange:
-    hue:                23
-    sat:                100
+    hue:                40
+    sat:                80
   yellow:
-    hue:                53
-    sat:                98
+    hue:                70
+    sat:                80
   green:
-    hue:                145
-    sat:                47
+    hue:                130
+    sat:                80
   cyan:
-    hue:                191
-    sat:                84
+    hue:                190
+    sat:                80
   blue:
-    hue:                216
-    sat:                56
+    hue:                250
+    sat:                80
   purple:
-    hue:                281
-    sat:                100
+    hue:                280
+    sat:                80
 
 color:
 
@@ -125,13 +125,13 @@ color:
     # These are the colors that should be used by default on USITC websites. You can use these variables in Sass, such as `border-color: $color-theme-base-background` or `color: $color-theme-base-hover-text`.
     #
     # $color-theme-base-background =        #ffffff - color(white)
-    # $color-theme-base-background-alt =    #e5e5e6 - color(grey, 90)
-    # $color-theme-base-border =            #323334 - color(grey, 20)
-    # $color-theme-base-text =              #323334 - color(grey, 20)
-    # $color-theme-base-link =              #0c758d - color(cyan, 30)
-    # $color-theme-base-hover-background =  #0c758d - color(cyan, 30)
+    # $color-theme-base-background-alt =    #e2e8e9 - color(grey, 90)
+    # $color-theme-base-border =            #2b383b - color(grey, 20)
+    # $color-theme-base-text =              #2b383b - color(grey, 20)
+    # $color-theme-base-link =              #0f758a - color(cyan, 30)
+    # $color-theme-base-hover-background =  #0f758a - color(cyan, 30)
     # $color-theme-base-hover-text =        #ffffff - color(white)
-    # $color-theme-base-spinner =           #0c758d - color(cyan, 30)
+    # $color-theme-base-spinner =           #0f758a - color(cyan, 30)
     #
     # Styleguide Tokens.Colors.Theme.Base
     #
@@ -150,13 +150,13 @@ color:
     #
     # When you want to use a dark background, use these colors.
     #
-    # $color-theme-dark-background =        #084e5e - color(cyan, 20)
-    # $color-theme-dark-background-alt =    #0c758d - color(cyan, 30)
-    # $color-theme-dark-border =            #084e5e - color(cyan, 20)
+    # $color-theme-dark-background =        #0a4e5c - color(cyan, 20)
+    # $color-theme-dark-background-alt =    #0f758a - color(cyan, 30)
+    # $color-theme-dark-border =            #0a4e5c - color(cyan, 20)
     # $color-theme-dark-text =              #ffffff - color(white)
     # $color-theme-dark-link =              #ffffff - color(white)
     # $color-theme-dark-hover-background =  #ffffff - color(white)
-    # $color-theme-dark-hover-text =        #0c758d - color(cyan, 30)
+    # $color-theme-dark-hover-text =        #0f758a - color(cyan, 30)
     # $color-theme-dark-spinner =           #ffffff - color(white)
     #
     # Styleguide Tokens.Colors.Theme.Dark
@@ -185,40 +185,40 @@ color:
     #
     # These colors should be used to show an error or a very important message for the user.
     #
-    # $color-state-error-background =        #fbeaea - color(red, 95)
-    # $color-state-error-background-alt =    #f7d6d4 - color(red, 90)
-    # $color-state-error-border =            #aa2622 - color(red, 40)
-    # $color-state-error-text =              #323334 - color(grey, 20)
-    # $color-state-error-link =              #aa2622 - color(red, 40)
-    # $color-state-error-hover-background =  #aa2622 - color(red, 40)
+    # $color-state-error-background =        #fcebe8 - color(red,  95)
+    # $color-state-error-background-alt =    #fad8d1 - color(red,  90)
+    # $color-state-error-border =            #b83014 - color(red,  40)
+    # $color-state-error-text =              #2b383b - color(grey, 20)
+    # $color-state-error-link =              #b83014 - color(red,  40)
+    # $color-state-error-hover-background =  #b83014 - color(red,  40)
     # $color-state-error-hover-text =        #ffffff - color(white)
-    # $color-state-error-spinner =           #aa2622 - color(red, 40)
+    # $color-state-error-spinner =           #b83014 - color(red,  40)
     #
     # Styleguide Tokens.Colors.State.Error
     #
     # Weight: 1
     error:
-      background:       color(red, 95)
-      background-alt:   color(red, 90)
-      border:           color(red, 40)
+      background:       color(red,  95)
+      background-alt:   color(red,  90)
+      border:           color(red,  40)
       text:             color(grey, 20)
-      link:             color(red, 40)
-      hover-background: color(red, 40)
+      link:             color(red,  40)
+      hover-background: color(red,  40)
       hover-text:       color(white)
-      spinner:          color(red, 40)
+      spinner:          color(red,  40)
 
     # Info State
     #
     # These colors should be used to show a standard message for the user.
     #
     # $color-state-info-background =        #e8f9fd - color(cyan, 95)
-    # $color-state-info-background-alt =    #d0f3fb - color(cyan, 90)
-    # $color-state-info-border =            #0c758d - color(cyan, 30)
-    # $color-state-info-text =              #323334 - color(grey, 20)
-    # $color-state-info-link =              #0c758d - color(cyan, 30)
-    # $color-state-info-hover-background =  #0c758d - color(cyan, 30)
+    # $color-state-info-background-alt =    #d1f3fa - color(cyan, 90)
+    # $color-state-info-border =            #0f758a - color(cyan, 30)
+    # $color-state-info-text =              #2b383b - color(grey, 20)
+    # $color-state-info-link =              #0f758a - color(cyan, 30)
+    # $color-state-info-hover-background =  #0f758a - color(cyan, 30)
     # $color-state-info-hover-text =        #ffffff - color(white)
-    # $color-state-info-spinner =           #0c758d - color(cyan, 30)
+    # $color-state-info-spinner =           #0f758a - color(cyan, 30)
     #
     # Styleguide Tokens.Colors.State.Info
     #
@@ -237,14 +237,14 @@ color:
     #
     # These colors should be used to show that an action has successfully completed or a positive message for the user.
     #
-    # $color-state-success-background =        #ecf8f1 - color(green, 95)
-    # $color-state-success-background-alt =    #daf1e4 - color(green, 90)
-    # $color-state-success-border =            #297047 - color(green, 30)
-    # $color-state-success-text =              #323334 - color(grey, 20)
-    # $color-state-success-link =              #297047 - color(green, 30)
-    # $color-state-success-hover-background =  #297047 - color(green, 30)
+    # $color-state-success-background =        #e8fceb - color(green, 95)
+    # $color-state-success-background-alt =    #d1fad8 - color(green, 90)
+    # $color-state-success-border =            #0f8a24 - color(green, 30)
+    # $color-state-success-text =              #2b383b - color(grey,  20)
+    # $color-state-success-link =              #0f8a24 - color(green, 30)
+    # $color-state-success-hover-background =  #0f8a24 - color(green, 30)
     # $color-state-success-hover-text =        #ffffff - color(white)
-    # $color-state-success-spinner =           #297047 - color(green, 30)
+    # $color-state-success-spinner =           #0f8a24 - color(green, 30)
     #
     # Styleguide Tokens.Colors.State.Success
     #
@@ -253,7 +253,7 @@ color:
       background:       color(green, 95)
       background-alt:   color(green, 90)
       border:           color(green, 30)
-      text:             color(grey, 20)
+      text:             color(grey,  20)
       link:             color(green, 30)
       hover-background: color(green, 30)
       hover-text:       color(white)
@@ -263,24 +263,24 @@ color:
     #
     # These colors should be used to show a warning or a semi-important message for the user.
     #
-    # $color-state-warning-background =        #fffce6 - color(yellow, 95)
-    # $color-state-warning-background-alt =    #fef9cd - color(yellow, 90)
-    # $color-state-warning-border =            #cc4e00 - color(orange, 40)
-    # $color-state-warning-text =              #323334 - color(grey, 20)
-    # $color-state-warning-link =              #cc4e00 - color(orange, 40)
-    # $color-state-warning-hover-background =  #cc4e00 - color(orange, 40)
+    # $color-state-warning-background =        #fcf6e8 - color(orange, 95)
+    # $color-state-warning-background-alt =    #faecd1 - color(orange, 90)
+    # $color-state-warning-border =            #e6a219 - color(orange, 50)
+    # $color-state-warning-text =              #2b383b - color(grey,   20)
+    # $color-state-warning-link =              #e6a219 - color(orange, 50)
+    # $color-state-warning-hover-background =  #e6a219 - color(orange, 50)
     # $color-state-warning-hover-text =        #ffffff - color(white)
-    # $color-state-warning-spinner =           #cc4e00 - color(orange, 40)
+    # $color-state-warning-spinner =           #e6a219 - color(orange, 50)
     #
     # Styleguide Tokens.Colors.State.Warning
     #
     # Weight: 4
     warning:
-      background:       color(yellow, 95)
-      background-alt:   color(yellow, 90)
-      border:           color(orange, 40)
-      text:             color(grey, 20)
-      link:             color(orange, 40)
-      hover-background: color(orange, 40)
+      background:       color(orange, 95)
+      background-alt:   color(orange, 90)
+      border:           color(orange, 50)
+      text:             color(grey,   20)
+      link:             color(orange, 50)
+      hover-background: color(orange, 50)
       hover-text:       color(white)
-      spinner:          color(orange, 40)
+      spinner:          color(orange, 50)
