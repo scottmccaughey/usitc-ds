@@ -37,11 +37,6 @@
   width: $off-canvas-width;
 
   > .button-close {
-    color: color(white);
-    position: absolute;
-    right: 0;
-    top: 0;
-
     &:focus {
       box-shadow: none;
     }

@@ -1039,9 +1039,7 @@ button,
   button.button-close,
   [type='button'].button-close,
   .button.button-close {
-    background-color: transparent;
     border: 0;
-    color: white;
     font-size: 1.44rem;
     padding: 0.25rem;
     position: absolute;
@@ -2572,14 +2570,9 @@ icon,
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
   width: 400px; }
-  .off-canvas > .button-close {
-    color: white;
-    position: absolute;
-    right: 0;
-    top: 0; }
-    .off-canvas > .button-close:focus {
-      -webkit-box-shadow: none;
-              box-shadow: none; }
+  .off-canvas > .button-close:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .off-canvas > section {
     padding: 1rem; }
     .off-canvas > section > :first-child {
