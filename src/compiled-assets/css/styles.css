@@ -1039,12 +1039,22 @@ button,
   button.button-close,
   [type='button'].button-close,
   .button.button-close {
+    background-color: rgba(0, 0, 0, 0.1);
     border: 0;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 1.44rem;
     padding: 0.25rem;
     position: absolute;
     right: 0;
     top: 0; }
+    button.button-close:active, button.button-close:focus, button.button-close:hover,
+    [type='button'].button-close:active,
+    [type='button'].button-close:focus,
+    [type='button'].button-close:hover,
+    .button.button-close:active,
+    .button.button-close:focus,
+    .button.button-close:hover {
+      color: rgba(0, 0, 0, 0.7); }
   button.button-round,
   [type='button'].button-round,
   .button.button-round {

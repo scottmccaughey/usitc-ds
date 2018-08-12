@@ -340,12 +340,20 @@ button,
   }
 
   &.button-close {
+    background-color: color(black, 0, 10);
     border: 0;
+    color: color(black, 0, 50);
     font-size: $font-size-xl;
     padding: $space-xs;
     position: absolute;
     right: 0;
     top: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: color(black, 0, 70);
+    }
   }
 
   // Round Button
