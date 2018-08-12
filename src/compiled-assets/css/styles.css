@@ -2894,8 +2894,8 @@ icon,
 .spinner-circle {
   -webkit-animation: spCircRot 0.6s infinite linear;
           animation: spCircRot 0.6s infinite linear;
-  border: 4px rgba(26, 196, 230, 0.25) solid;
-  border-top-color: rgba(26, 196, 230, 0.75);
+  border: 4px rgba(15, 117, 138, 0.25) solid;
+  border-top-color: rgba(15, 117, 138, 0.75);
   border-radius: 100%; }
   .on-dark .spinner-circle {
     border-color: rgba(255, 255, 255, 0.25);
@@ -2906,7 +2906,7 @@ icon,
   width: 0.75rem; }
 
 .spinner-wrapper {
-  color: #1ac4e6;
+  color: #0f758a;
   font-size: 0.69444rem;
   font-weight: 700;
   margin-bottom: 0;
