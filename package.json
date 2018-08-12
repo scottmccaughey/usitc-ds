@@ -1,7 +1,7 @@
 {
   "name": "@usitc/usitc-ds",
   "description": "USITC Design System — resources, tooling and guidelines for building websites with USITC’s front-end framework.",
-  "version": "0.11.11",
+  "version": "0.11.12",
   "homepage": "https://github.com/scottmccaughey/usitc-ds",
   "bugs": {
     "url": "https://github.com/scottmccaughey/usitc-ds/issues"
