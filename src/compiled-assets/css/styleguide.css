@@ -1855,6 +1855,19 @@ body {
   position: relative; }
   body.has-off-canvas {
     overflow: hidden; }
+  body.body-scrollable {
+    overflow: auto; }
+    body.body-scrollable .constrained {
+      margin-left: 1vw;
+      margin-right: 0;
+      max-width: 95vw; }
+    body.body-scrollable .off-canvas-right {
+      display: none; }
+    body.body-scrollable .site-content {
+      overflow: initial; }
+    body.body-scrollable .site-layout {
+      grid-template-columns: 400px auto;
+      width: calc(100% + 400px); }
 
 ::-moz-selection {
   background-color: #0f758a;
@@ -2001,20 +2014,6 @@ pre {
 
 .beta {
   color: #b83014; }
-
-.body-scrollable {
-  overflow: auto; }
-  .body-scrollable .constrained {
-    margin-left: 1vw;
-    margin-right: 0;
-    max-width: 95vw; }
-  .body-scrollable .off-canvas-right {
-    display: none; }
-  .body-scrollable .site-content {
-    overflow: initial; }
-  .body-scrollable .site-layout {
-    grid-template-columns: 400px auto;
-    width: calc(100% + 400px); }
 
 @media (min-width: 1200px) {
   .constrained {
@@ -3756,6 +3755,8 @@ a rect {
   .search-actions-buttons .button-cancel:active, .search-actions-buttons .button-cancel:focus, .search-actions-buttons .button-cancel:hover {
     background-color: #fad8d1;
     color: black; }
+  .search-actions-buttons .button-spinner {
+    min-height: 40.75px; }
 
 .search-actions-name {
   margin-bottom: 1rem; }
@@ -4134,8 +4135,8 @@ a rect {
   border-color: #0f8a24; }
 
 .kss-contrast-aa18 {
-  background-color: #e7f5a3;
-  border-color: #758a0f; }
+  background-color: #f5daa3;
+  border-color: #8a610f; }
 
 .kss-contrast-dnp {
   background-color: #f5b1a3;

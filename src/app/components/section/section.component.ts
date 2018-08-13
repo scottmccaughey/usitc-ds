@@ -14,7 +14,6 @@ export class SectionComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.section);
     const secSplit = this.section['referenceURI'].split('-');
     const depth = this.section['depth'] > 1 ? this.section['depth'] - 1 : 1;
     this.section['name'] = '<h' + depth + '>' + this.section['header'] + '</h' + depth + '>';
