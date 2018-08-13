@@ -514,7 +514,7 @@
     }
 
     @include breakpoint(s) {
-      border-right: 1px solid color(white, 100, 80);
+      border-right: 1px solid color(white, 100, 20);
 
       &:last-child {
         border-right-width: 0;
@@ -523,8 +523,7 @@
   }
 
   button {
-    display: block;
-    width: 100%;
+    border-color: color(white, 100, 50);
   }
 
   .query-desc {

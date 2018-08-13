@@ -1867,7 +1867,7 @@ body {
       overflow: initial; }
     body.body-scrollable .site-layout {
       grid-template-columns: 400px auto;
-      width: calc(100% + 400px); }
+      width: calc(100% + $off-canvas-width); }
 
 ::-moz-selection {
   background-color: #0f758a;
@@ -3993,14 +3993,13 @@ a rect {
   @media (min-width: 600px) {
     .table-searches.table-responsive th,
     .table-searches.table-responsive td {
-      border-right: 1px solid rgba(255, 255, 255, 0.8); }
+      border-right: 1px solid rgba(255, 255, 255, 0.2); }
       .table-searches.table-responsive th:last-child,
       .table-searches.table-responsive td:last-child {
         border-right-width: 0; } }
 
 .table-searches.table-responsive button {
-  display: block;
-  width: 100%; }
+  border-color: rgba(255, 255, 255, 0.5); }
 
 .table-searches.table-responsive .query-desc {
   font-size: 0.69444rem; }

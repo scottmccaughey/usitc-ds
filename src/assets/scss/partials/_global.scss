@@ -45,8 +45,8 @@ body {
     }
 
     .site-layout {
-      grid-template-columns: 400px auto;
-      width: calc(100% + 400px);
+      grid-template-columns: $off-canvas-width auto;
+      width: calc(100% + $off-canvas-width);
     }
   }
 }
