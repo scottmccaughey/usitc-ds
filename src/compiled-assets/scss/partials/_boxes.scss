@@ -112,6 +112,123 @@
   margin-top: 72px;
 }
 
+.commodities-button {
+  button {
+    padding: $space-xs;
+  }
+}
+
+.commodities-name {
+  font-size: $font-size-xs;
+  padding-bottom: 0;
+  text-align: center;
+
+  @include breakpoint(m) {
+    text-align: left;
+    padding-bottom: $space-s;
+  }
+}
+
+.commodities-value {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  padding-bottom: 0;
+  text-align: center;
+
+  @include breakpoint(m) {
+    border-right: 1px solid #b3b1b4;
+    padding-bottom: $space-s;
+  }
+}
+
+.controls-boxed-grid {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: auto;
+
+  &.controls-boxed-grid-2 {
+    @include breakpoint(m) {
+      grid-template-columns: min-content auto;
+    }
+
+    > * {
+      &:nth-child(4n + 3),
+      &:nth-child(4n + 4) {
+        background-color: color(grey, 95);
+      }
+    }
+  }
+
+  &.controls-boxed-grid-3 {
+    @include breakpoint(m) {
+      grid-template-columns: min-content auto min-content;
+    }
+
+    > * {
+      &:nth-child(6n + 4),
+      &:nth-child(6n + 5),
+      &:nth-child(6n + 6) {
+        background-color: color(grey, 95);
+      }
+    }
+  }
+
+  > * {
+    align-items: center;
+    display: grid;
+    padding: $space-s;
+  }
+}
+
+.controls-boxed-header {
+  color: color(cyan, 30);
+  cursor: pointer;
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: $space-s;
+
+  &:nth-child(even) {
+    background-color: color(grey, 95);
+  }
+
+  &:active,
+  &:focus,
+  &:hover,
+  &.current {
+    background-color: color(cyan, 30);
+    color: color(white);
+  }
+
+  &.current {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.group-object-name {
+  font-size: $font-size-xs;
+  padding-bottom: $space-s;
+  text-align: center;
+
+  @include breakpoint(m) {
+    text-align: left;
+  }
+}
+
+.group-object-value {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  padding-bottom: 0;
+  text-align: center;
+
+  @include breakpoint(m) {
+    border-right: 1px solid #b3b1b4;
+    padding-bottom: $space-s;
+  }
+}
+
 .panel {
   @include state-info;
   margin-bottom: $space-m;
