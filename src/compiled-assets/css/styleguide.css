@@ -1495,6 +1495,7 @@ simple-select + simple-select .select-child-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: hidden;
   width: 100%; }
   .input-icon > i {
     -webkit-box-align: center;
