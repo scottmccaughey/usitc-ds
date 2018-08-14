@@ -835,28 +835,6 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
 .boxed-wrapper-double {
   margin-top: 72px; }
 
-.commodities-button button {
-  padding: 0.25rem; }
-
-.commodities-name {
-  font-size: 0.69444rem;
-  padding-bottom: 0;
-  text-align: center; }
-  @media (min-width: 800px) {
-    .commodities-name {
-      text-align: left;
-      padding-bottom: 0.5rem; } }
-
-.commodities-value {
-  font-size: 0.69444rem;
-  font-weight: 700;
-  padding-bottom: 0;
-  text-align: center; }
-  @media (min-width: 800px) {
-    .commodities-value {
-      border-right: 1px solid #b3b1b4;
-      padding-bottom: 0.5rem; } }
-
 .controls-boxed-grid {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -917,6 +895,56 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
     .group-object-value {
       border-right: 1px solid #b3b1b4;
       padding-bottom: 0.5rem; } }
+
+.ind-comm {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  @media (min-width: 800px) {
+    .ind-comm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.ind-comm-value {
+  font-size: 0.69444rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .ind-comm-value {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      padding: 0.5rem;
+      text-align: left;
+      width: 120px; } }
+
+.ind-comm-name {
+  padding: 0.25rem 0.5rem;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .ind-comm-name {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 100%;
+              flex: 1 1 100%;
+      text-align: left; } }
+
+.ind-comm-button {
+  padding: 0.25rem 0.5rem 0.5rem;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .ind-comm-button {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      padding: 0.25rem 0.5rem;
+      text-align: right; } }
+  .ind-comm-button button {
+    font-size: 0.69444rem;
+    padding: 0.25rem; }
 
 .panel {
   background-color: #e8f9fc;
@@ -1459,6 +1487,13 @@ simple-select + simple-select .select-child-field {
   .form-group label.label-parent {
     line-height: 1.25;
     margin-bottom: 1rem; }
+  .form-group label.label-parent-choose {
+    color: #293a3d; }
+    .form-group label.label-parent-choose a {
+      color: #0f758a; }
+      .form-group label.label-parent-choose a:active, .form-group label.label-parent-choose a:focus, .form-group label.label-parent-choose a:hover {
+        background-color: #0f758a;
+        color: white; }
 
 .form-group .control-label {
   font-weight: 300;

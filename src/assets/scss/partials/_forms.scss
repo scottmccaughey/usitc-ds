@@ -317,6 +317,21 @@ simple-select {
       line-height: $line-height-header;
       margin-bottom: $space-m;
     }
+
+    &.label-parent-choose {
+      color: $color-theme-base-text;
+
+      a {
+        color: $color-theme-base-link;
+
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $color-theme-base-hover-background;
+          color: $color-theme-base-hover-text;
+        }
+      }
+    }
   }
 
   .control-label {
