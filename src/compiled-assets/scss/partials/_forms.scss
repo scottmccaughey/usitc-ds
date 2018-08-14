@@ -153,58 +153,6 @@ simple-select {
   }
 }
 
-.controls-boxed-grid {
-  align-items: stretch;
-  display: grid;
-
-  &.controls-boxed-grid-3 {
-    grid-template-columns: auto;
-
-    @include breakpoint(m) {
-      grid-template-columns: min-content auto min-content;
-    }
-  }
-
-  > * {
-    align-items: center;
-    display: grid;
-    padding: $space-s;
-
-    &:nth-child(6n + 4),
-    &:nth-child(6n + 5),
-    &:nth-child(6n + 6) {
-      background-color: color(grey, 95);
-    }
-  }
-}
-
-.controls-boxed-header {
-  color: color(cyan, 30);
-  cursor: pointer;
-  font-size: $font-size-l;
-  font-weight: $font-weight-bold;
-  margin: 0;
-  padding: $space-s;
-
-  &:nth-child(even) {
-    background-color: color(grey, 95);
-  }
-
-  &:active,
-  &:focus,
-  &:hover,
-  &.current {
-    background-color: color(cyan, 30);
-    color: color(white);
-  }
-
-  &.current {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-}
-
 .controls-inline {
   margin: $space-m 0;
 
