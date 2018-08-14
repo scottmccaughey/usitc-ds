@@ -76,6 +76,7 @@ body {
 a {
   color: $color-theme-base-link;
   cursor: pointer;
+  text-decoration: underline;
   transition: $transition-base;
 
   @supports (text-decoration-color: $color-theme-base-link) {

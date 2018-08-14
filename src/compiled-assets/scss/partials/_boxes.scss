@@ -58,6 +58,23 @@
     max-height: 350px;
   }
 
+  &.boxed-with-id {
+    > li {
+      display: flex;
+      padding: 0;
+
+      > * {
+        padding: $space-s;
+      }
+
+      > .boxed-id {
+        background-color: color(black, 0, 2);
+        text-align: center;
+        width: $space-xl;
+      }
+    }
+  }
+
   > li {
     list-style: none;
     margin-bottom: 0;

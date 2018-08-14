@@ -9,5 +9,14 @@
       <div class="kss-parameters-color-value"
         [innerHTML]="parameter['value']"></div>
     </ng-container>
+
+    <ng-container *ngIf="parameter['font']">
+      <div class="kss-parameters-font-var"
+        [innerHTML]="parameter['var']"></div>
+      <div class="kss-parameters-font-value"
+        [innerHTML]="parameter['value']"></div>
+      <div class="kss-parameters-font-description"
+        [ngStyle]="parameter['description']"></div>
+    </ng-container>
   </ng-container>
 </div>

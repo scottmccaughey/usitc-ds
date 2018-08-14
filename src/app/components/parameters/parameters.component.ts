@@ -13,6 +13,8 @@ export class ParametersComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.log(this.parameterVals);
+
     this.parameterVals.forEach(parameter => {
       const param = {};
       param['color'] = false;
@@ -21,8 +23,12 @@ export class ParametersComponent implements OnInit {
         param['style'] = { 'background-color': parameter['defaultValue'] };
         param['var'] = parameter['name'];
         param['value'] = parameter['description'];
+      } else if (parameter['name'].startsWith('$font-')) {
+        param['font'] = true;
+        param['var'] = parameter['name'];
+        param['value'] = parameter['description'];
+        param['descripton'] = parameter['defaultValue'];
       }
-
       this.parameters.push(param);
     });
   }

@@ -801,6 +801,17 @@ Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
   .boxed.boxed-350 {
     height: auto;
     max-height: 350px; }
+  .boxed.boxed-with-id > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0; }
+    .boxed.boxed-with-id > li > * {
+      padding: 0.5rem; }
+    .boxed.boxed-with-id > li > .boxed-id {
+      background-color: rgba(0, 0, 0, 0.02);
+      text-align: center;
+      width: 4rem; }
   .boxed > li {
     list-style: none;
     margin-bottom: 0;
@@ -1908,6 +1919,7 @@ body {
 a {
   color: #0f758a;
   cursor: pointer;
+  text-decoration: underline;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
   @supports ((-webkit-text-decoration-color: #0f758a) or (text-decoration-color: #0f758a)) {
