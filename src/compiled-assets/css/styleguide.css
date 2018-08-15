@@ -688,6 +688,31 @@ textarea {
   link-underline($color)
 */
 /*
+  888                                     888
+  888                                     888
+  888                                     888
+  888  8888b.  888  888  .d88b.  888  888 888888
+  888     "88b 888  888 d88""88b 888  888 888
+  888 .d888888 888  888 888  888 888  888 888  888888
+  888 888  888 Y88b 888 Y88..88P Y88b 888 Y88b.
+  888 "Y888888  "Y88888  "Y88P"   "Y88888  "Y888
+                    888
+               Y8b d88P
+                "Y88P"
+  888                                      888                  d8b
+  888                                      888                  Y8P
+  888                                      888
+  88888b.   .d88b.  888  888 88888b.   .d88888  8888b.  888d888 888  .d88b.  .d8888b
+  888 "88b d88""88b 888  888 888 "88b d88" 888     "88b 888P"   888 d8P  Y8b 88K
+  888  888 888  888 888  888 888  888 888  888 .d888888 888     888 88888888 "Y8888b.
+  888 d88P Y88..88P Y88b 888 888  888 Y88b 888 888  888 888     888 Y8b.          X88
+  88888P"   "Y88P"   "Y88888 888  888  "Y88888 "Y888888 888     888  "Y8888   88888P'
+
+  Make Layout Boundaries mixin
+
+  make-layout-boundaries($color, $background)
+*/
+/*
 888                     888
 888                     888
 888                     888
@@ -1462,13 +1487,6 @@ simple-select + simple-select .select-child-field {
   .form-group label.label-parent {
     line-height: 1.25;
     margin-bottom: 1rem; }
-  .form-group label.label-parent-choose {
-    color: #293a3d; }
-    .form-group label.label-parent-choose a {
-      color: #0f758a; }
-      .form-group label.label-parent-choose a:active, .form-group label.label-parent-choose a:focus, .form-group label.label-parent-choose a:hover {
-        background-color: #0f758a;
-        color: white; }
 
 .form-group .control-label {
   font-weight: 300;
@@ -1608,6 +1626,14 @@ simple-select + simple-select .select-child-field {
     margin-top: 1rem; }
   .form-group label.label-parent {
     text-transform: none; }
+
+.label-parent-choose {
+  color: #293a3d; }
+  .label-parent-choose a {
+    color: #0f758a; }
+    .label-parent-choose a:active, .label-parent-choose a:focus, .label-parent-choose a:hover {
+      background-color: #0f758a;
+      color: white; }
 
 .label-plain {
   font-size: 0.83333rem; }

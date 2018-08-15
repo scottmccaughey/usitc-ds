@@ -1487,13 +1487,6 @@ simple-select + simple-select .select-child-field {
   .form-group label.label-parent {
     line-height: 1.25;
     margin-bottom: 1rem; }
-  .form-group label.label-parent-choose {
-    color: #293a3d; }
-    .form-group label.label-parent-choose a {
-      color: #0f758a; }
-      .form-group label.label-parent-choose a:active, .form-group label.label-parent-choose a:focus, .form-group label.label-parent-choose a:hover {
-        background-color: #0f758a;
-        color: white; }
 
 .form-group .control-label {
   font-weight: 300;
@@ -1633,6 +1626,14 @@ simple-select + simple-select .select-child-field {
     margin-top: 1rem; }
   .form-group label.label-parent {
     text-transform: none; }
+
+.label-parent-choose {
+  color: #293a3d; }
+  .label-parent-choose a {
+    color: #0f758a; }
+    .label-parent-choose a:active, .label-parent-choose a:focus, .label-parent-choose a:hover {
+      background-color: #0f758a;
+      color: white; }
 
 .label-plain {
   font-size: 0.83333rem; }
