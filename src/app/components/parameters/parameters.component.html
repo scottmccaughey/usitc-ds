@@ -1,22 +1,21 @@
-<div class="kss-parameters">
+<div class="kss-parameters"
+  [class.kss-parameters-color]="parameters[0]['color']">
   <ng-container *ngFor="let parameter of parameters">
     <ng-container *ngIf="parameter['color']">
       <div *ngIf="parameter['style']"
         class="kss-parameters-color-sample"
         [ngStyle]="parameter['style']"></div>
-      <div class="kss-parameters-color-var"
+      <div class="kss-parameters-var"
         [innerHTML]="parameter['var']"></div>
-      <div class="kss-parameters-color-value"
+      <div class="kss-parameters-value"
         [innerHTML]="parameter['value']"></div>
     </ng-container>
 
     <ng-container *ngIf="parameter['font']">
-      <div class="kss-parameters-font-var"
+      <div class="kss-parameters-var"
         [innerHTML]="parameter['var']"></div>
-      <div class="kss-parameters-font-value"
+      <div class="kss-parameters-value"
         [innerHTML]="parameter['value']"></div>
-      <div class="kss-parameters-font-description"
-        [ngStyle]="parameter['description']"></div>
     </ng-container>
   </ng-container>
 </div>

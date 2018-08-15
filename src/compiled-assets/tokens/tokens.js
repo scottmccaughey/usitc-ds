@@ -15,19 +15,19 @@ module.exports = {
       "sat": 20
     },
     "red": {
-      "hue": 10,
+      "hue": 355,
       "sat": 80
     },
     "orange": {
-      "hue": 40,
+      "hue": 25,
       "sat": 80
     },
     "yellow": {
-      "hue": 70,
+      "hue": 55,
       "sat": 80
     },
     "green": {
-      "hue": 130,
+      "hue": 115,
       "sat": 80
     },
     "cyan": {
@@ -35,7 +35,7 @@ module.exports = {
       "sat": 80
     },
     "blue": {
-      "hue": 250,
+      "hue": 220,
       "sat": 80
     },
     "purple": {

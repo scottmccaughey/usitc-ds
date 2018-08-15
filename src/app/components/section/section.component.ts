@@ -29,5 +29,7 @@ export class SectionComponent implements OnInit {
     ) {
       this.section['showSource'] = true;
     }
+
+    console.log(this.section);
   }
 }

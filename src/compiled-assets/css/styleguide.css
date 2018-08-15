@@ -688,31 +688,6 @@ textarea {
   link-underline($color)
 */
 /*
-  888                                     888
-  888                                     888
-  888                                     888
-  888  8888b.  888  888  .d88b.  888  888 888888
-  888     "88b 888  888 d88""88b 888  888 888
-  888 .d888888 888  888 888  888 888  888 888  888888
-  888 888  888 Y88b 888 Y88..88P Y88b 888 Y88b.
-  888 "Y888888  "Y88888  "Y88P"   "Y88888  "Y888
-                    888
-               Y8b d88P
-                "Y88P"
-  888                                      888                  d8b
-  888                                      888                  Y8P
-  888                                      888
-  88888b.   .d88b.  888  888 88888b.   .d88888  8888b.  888d888 888  .d88b.  .d8888b
-  888 "88b d88""88b 888  888 888 "88b d88" 888     "88b 888P"   888 d8P  Y8b 88K
-  888  888 888  888 888  888 888  888 888  888 .d888888 888     888 88888888 "Y8888b.
-  888 d88P Y88..88P Y88b 888 888  888 Y88b 888 888  888 888     888 Y8b.          X88
-  88888P"   "Y88P"   "Y88888 888  888  "Y88888 "Y888888 888     888  "Y8888   88888P'
-
-  Make Layout Boundaries mixin
-
-  make-layout-boundaries($color, $background)
-*/
-/*
 888                     888
 888                     888
 888                     888
@@ -1133,7 +1108,7 @@ button,
   button.button-success,
   [type='button'].button-success,
   .button.button-success {
-    background-color: #0f8a24;
+    background-color: #1a8a0f;
     border-color: transparent;
     color: white; }
     button.button-success:active, button.button-success:focus, button.button-success:hover,
@@ -1143,11 +1118,11 @@ button,
     .button.button-success:active,
     .button.button-success:focus,
     .button.button-success:hover {
-      background-color: #0a5c18; }
+      background-color: #115c0a; }
   button.button-cancel,
   [type='button'].button-cancel,
   .button.button-cancel {
-    background-color: #b83014;
+    background-color: #b81422;
     border-color: transparent;
     color: white; }
     button.button-cancel:active, button.button-cancel:focus, button.button-cancel:hover,
@@ -1157,7 +1132,7 @@ button,
     .button.button-cancel:active,
     .button.button-cancel:focus,
     .button.button-cancel:hover {
-      background-color: #5c180a; }
+      background-color: #5c0a11; }
   button.button-close,
   [type='button'].button-close,
   .button.button-close {
@@ -1598,13 +1573,13 @@ simple-select + simple-select .select-child-field {
   .input-icon[class*='state-'] > i {
     color: white; }
   .input-icon.state-error > i {
-    background-color: #b83014; }
+    background-color: #b81422; }
   .input-icon.state-info > i {
     background-color: #0f758a; }
   .input-icon.state-success > i {
-    background-color: #0f8a24; }
+    background-color: #1a8a0f; }
   .input-icon.state-warning > i {
-    background-color: #e6a21a; }
+    background-color: #e66f1a; }
   .input-icon input {
     border-width: 0;
     -webkit-box-flex: 1;
@@ -1940,7 +1915,7 @@ html {
 body {
   background-color: white;
   color: #293a3d;
-  font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.83333rem;
   font-weight: 300;
   line-height: 1.5;
@@ -2039,7 +2014,7 @@ article section + section {
 
 code,
 pre {
-  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace; }
 
 dl dt {
   font-weight: 700; }
@@ -2092,7 +2067,7 @@ pre {
   background-color: white;
   border: 1px solid #669199;
   color: black;
-  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
   padding: 0.5rem; }
 
 .alt {
@@ -2106,7 +2081,7 @@ pre {
   font-style: italic; }
 
 .beta {
-  color: #b83014; }
+  color: #b81422; }
 
 @media (min-width: 1200px) {
   .constrained {
@@ -2520,7 +2495,7 @@ h6,
     .header-overall em b {
       color: #0f758a; }
     .header-overall em i {
-      color: #b83014;
+      color: #b81422;
       font-style: normal; }
 
 .header-step,
@@ -3013,29 +2988,29 @@ icon,
 
 .state-error,
 .state-error.panel {
-  background-color: #fcebe8;
-  border-color: #b83014;
+  background-color: #fce8ea;
+  border-color: #b81422;
   color: #293a3d; }
   .state-error a,
   .state-error.panel a {
-    color: #b83014; }
-    @supports ((-webkit-text-decoration-color: #b83014) or (text-decoration-color: #b83014)) {
+    color: #b81422; }
+    @supports ((-webkit-text-decoration-color: #b81422) or (text-decoration-color: #b81422)) {
       .state-error a,
       .state-error.panel a {
         color: inherit;
-        -webkit-text-decoration-color: #b83014;
-                text-decoration-color: #b83014; } }
+        -webkit-text-decoration-color: #b81422;
+                text-decoration-color: #b81422; } }
     .state-error a:active, .state-error a:focus, .state-error a:hover,
     .state-error.panel a:active,
     .state-error.panel a:focus,
     .state-error.panel a:hover {
-      background-color: #b83014;
+      background-color: #b81422;
       color: white; }
   .state-error .panel-header,
   .state-error .panel-header:first-child,
   .state-error.panel .panel-header,
   .state-error.panel .panel-header:first-child {
-    background-color: #b83014;
+    background-color: #b81422;
     color: white; }
 
 .state-info,
@@ -3067,56 +3042,56 @@ icon,
 
 .state-success,
 .state-success.panel {
-  background-color: #e8fceb;
-  border-color: #0f8a24;
+  background-color: #eafce8;
+  border-color: #1a8a0f;
   color: #293a3d; }
   .state-success a,
   .state-success.panel a {
-    color: #0f8a24; }
-    @supports ((-webkit-text-decoration-color: #0f8a24) or (text-decoration-color: #0f8a24)) {
+    color: #1a8a0f; }
+    @supports ((-webkit-text-decoration-color: #1a8a0f) or (text-decoration-color: #1a8a0f)) {
       .state-success a,
       .state-success.panel a {
         color: inherit;
-        -webkit-text-decoration-color: #0f8a24;
-                text-decoration-color: #0f8a24; } }
+        -webkit-text-decoration-color: #1a8a0f;
+                text-decoration-color: #1a8a0f; } }
     .state-success a:active, .state-success a:focus, .state-success a:hover,
     .state-success.panel a:active,
     .state-success.panel a:focus,
     .state-success.panel a:hover {
-      background-color: #0f8a24;
+      background-color: #1a8a0f;
       color: white; }
   .state-success .panel-header,
   .state-success .panel-header:first-child,
   .state-success.panel .panel-header,
   .state-success.panel .panel-header:first-child {
-    background-color: #0f8a24;
+    background-color: #1a8a0f;
     color: white; }
 
 .state-warning,
 .state-warning.panel {
-  background-color: #fcf6e8;
-  border-color: #e6a21a;
+  background-color: #fcf1e8;
+  border-color: #e66f1a;
   color: #293a3d; }
   .state-warning a,
   .state-warning.panel a {
-    color: #e6a21a; }
-    @supports ((-webkit-text-decoration-color: #e6a21a) or (text-decoration-color: #e6a21a)) {
+    color: #e66f1a; }
+    @supports ((-webkit-text-decoration-color: #e66f1a) or (text-decoration-color: #e66f1a)) {
       .state-warning a,
       .state-warning.panel a {
         color: inherit;
-        -webkit-text-decoration-color: #e6a21a;
-                text-decoration-color: #e6a21a; } }
+        -webkit-text-decoration-color: #e66f1a;
+                text-decoration-color: #e66f1a; } }
     .state-warning a:active, .state-warning a:focus, .state-warning a:hover,
     .state-warning.panel a:active,
     .state-warning.panel a:focus,
     .state-warning.panel a:hover {
-      background-color: #e6a21a;
+      background-color: #e66f1a;
       color: white; }
   .state-warning .panel-header,
   .state-warning .panel-header:first-child,
   .state-warning.panel .panel-header,
   .state-warning.panel .panel-header:first-child {
-    background-color: #e6a21a;
+    background-color: #e66f1a;
     color: white; }
 
 .table {
@@ -3465,7 +3440,7 @@ a rect {
           color: white; }
 
 .home-intro em {
-  color: #b83014;
+  color: #b81422;
   font-style: normal; }
 
 .home-links {
@@ -3574,7 +3549,7 @@ a rect {
   padding-left: 0; }
 
 .login-error input {
-  border-color: #b83014; }
+  border-color: #b81422; }
 
 .login-form {
   background-color: #f0f4f5;
@@ -3733,11 +3708,11 @@ a rect {
     .button-new-request {
       font-size: 2.0736rem; } }
   .button-new-request:active > div, .button-new-request:focus > div, .button-new-request:hover > div {
-    background-color: #0a5c18; }
+    background-color: #115c0a; }
     .button-new-request:active > div.button-icon, .button-new-request:focus > div.button-icon, .button-new-request:hover > div.button-icon {
       background-color: white; }
   .button-new-request > div {
-    background-color: #0f8a24;
+    background-color: #1a8a0f;
     color: white;
     padding: 1rem; }
     @media (min-width: 800px) {
@@ -3821,10 +3796,10 @@ a rect {
     background-color: #d1f3fa;
     color: black; }
   .search-actions-buttons .button-success:active, .search-actions-buttons .button-success:focus, .search-actions-buttons .button-success:hover {
-    background-color: #d1fad8;
+    background-color: #d5fad1;
     color: black; }
   .search-actions-buttons .button-cancel:active, .search-actions-buttons .button-cancel:focus, .search-actions-buttons .button-cancel:hover {
-    background-color: #fad8d1;
+    background-color: #fad1d5;
     color: black; }
   .search-actions-buttons .button-spinner {
     min-height: 40.75px; }
@@ -3967,6 +3942,16 @@ a rect {
 .table-results-font-l {
   font-size: 1.2rem; }
 
+.table-searches.table-responsive tbody tr td.query-deleted {
+  background-color: #fad1d5;
+  color: #293a3d;
+  font-style: italic;
+  padding: 0.5rem 1rem !important;
+  text-align: center; }
+
+.table-searches.table-responsive tbody tr:nth-child(odd) td.query-deleted {
+  background-color: #fce8ea; }
+
 .table-searches.table-responsive thead th {
   text-transform: uppercase;
   vertical-align: middle;
@@ -3976,7 +3961,7 @@ a rect {
   background-color: #0f758a; }
 
 .table-searches.table-responsive tbody tr.sample-row td {
-  background-color: #fcf6e8;
+  background-color: #fcf1e8;
   color: black; }
   .table-searches.table-responsive tbody tr.sample-row td:last-child {
     border-bottom: 1px solid rgba(41, 58, 61, 0.25); }
@@ -3985,7 +3970,7 @@ a rect {
       border-bottom: 1px solid rgba(41, 58, 61, 0.25);
       border-color: rgba(41, 58, 61, 0.25); } }
   .table-searches.table-responsive tbody tr.sample-row td span {
-    background-color: #b88114;
+    background-color: #b85814;
     color: white;
     display: inline-block;
     font-weight: 700;
@@ -3996,12 +3981,20 @@ a rect {
         line-height: 1.25rem;
         margin: -0.25rem 1rem -0.25rem -1rem;
         padding: 0.5rem 1rem; } }
+  .table-searches.table-responsive tbody tr.sample-row td td.query-deleted {
+    background-color: #fad1d5;
+    color: #293a3d;
+    font-style: italic;
+    padding: 0.5rem 1rem !important;
+    text-align: center; }
+  .table-searches.table-responsive tbody tr.sample-row td:nth-child(odd) td.query-deleted {
+    background-color: #fce8ea; }
 
 .table-searches.table-responsive tbody tr.sample-row:nth-child(even) td {
   background-color: #fcefd6; }
 
 .table-searches.table-responsive tbody tr.sample-row td em {
-  background-color: #b88114;
+  background-color: #b85814;
   color: white;
   display: block;
   font-weight: 700;
@@ -4161,7 +4154,7 @@ a rect {
 .kss-color-code {
   -ms-flex-item-align: start;
       align-self: start;
-  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
   font-size: 0.69444rem;
   font-weight: 300;
   grid-area: code; }
@@ -4171,7 +4164,7 @@ a rect {
           align-self: end; } }
 
 .kss-color-hex {
-  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
   font-size: 0.69444rem;
   text-align: right;
   grid-area: hex; }
@@ -4201,16 +4194,16 @@ a rect {
 
 .kss-contrast-aaa,
 .kss-contrast-aa {
-  background-color: #a3f5b1;
-  border-color: #0f8a24; }
+  background-color: #aaf5a3;
+  border-color: #1a8a0f; }
 
 .kss-contrast-aa18 {
-  background-color: #f5daa3;
-  border-color: #8a610f; }
+  background-color: #f5c5a3;
+  border-color: #8a420f; }
 
 .kss-contrast-dnp {
-  background-color: #f5b1a3;
-  border-color: #8a240f; }
+  background-color: #f5a3aa;
+  border-color: #8a0f1a; }
 
 .kss-parameters {
   display: grid;
@@ -4219,8 +4212,11 @@ a rect {
   margin-bottom: 1rem; }
   @media (min-width: 800px) {
     .kss-parameters {
-      grid-template-columns: 4rem auto auto;
+      grid-template-columns: auto auto;
       grid-template-rows: auto; } }
+  @media (min-width: 800px) {
+    .kss-parameters.kss-parameters-color {
+      grid-template-columns: 4rem auto auto; } }
 
 .kss-parameters-color-sample {
   border: 1px solid #669199;
@@ -4230,20 +4226,21 @@ a rect {
     .kss-parameters-color-sample {
       width: 4rem; } }
 
-.kss-parameters-color-var {
-  font-weight: 700; }
-
-.kss-parameters-color-value {
+.kss-parameters-value {
   margin-bottom: 1rem; }
   @media (min-width: 800px) {
-    .kss-parameters-color-value {
+    .kss-parameters-value {
       margin-bottom: 0; } }
+
+.kss-parameters-var {
+  font-weight: 700;
+  white-space: nowrap; }
 
 .kss-body code[class*='language-'],
 .kss-body pre[class*='language-'] {
   background: #083b45;
   color: white;
-  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
   font-size: 100%;
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -4307,7 +4304,7 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #75f08a; }
+  color: #80f075; }
 
 .token.operator,
 .token.entity,
@@ -4320,14 +4317,14 @@ pre[class*='language-'] {
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: #faecd1; }
+  color: #fae2d1; }
 
 .token.keyword {
   color: #a3e7f5; }
 
 .token.regex,
 .token.important {
-  color: #f5daa3; }
+  color: #f5c5a3; }
 
 .token.important,
 .token.bold {

@@ -61,12 +61,12 @@
 # </div>
 #
 # Colors:
-# @red:     hsl(10,  80, 50)
-# @orange:  hsl(40,  80, 50)
-# @yellow:  hsl(70,  80, 50)
-# @green:   hsl(130, 80, 50)
+# @red:     hsl(355,  80, 50)
+# @orange:  hsl(25,  80, 50)
+# @yellow:  hsl(55,  80, 50)
+# @green:   hsl(115, 80, 50)
 # @cyan:    hsl(190, 80, 50)
-# @blue:    hsl(250, 80, 50)
+# @blue:    hsl(220, 80, 50)
 # @purple:  hsl(280, 80, 50)
 # @grey:    hsl(190, 15, 50)
 # @black:   hsl(0,   0,  0)
@@ -88,22 +88,22 @@ colors--map:
     hue:                190
     sat:                20
   red:
-    hue:                10
+    hue:                355
     sat:                80
   orange:
-    hue:                40
+    hue:                25
     sat:                80
   yellow:
-    hue:                70
+    hue:                55
     sat:                80
   green:
-    hue:                130
+    hue:                115
     sat:                80
   cyan:
     hue:                190
     sat:                80
   blue:
-    hue:                250
+    hue:                220
     sat:                80
   purple:
     hue:                280

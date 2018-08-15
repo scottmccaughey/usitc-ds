@@ -5,8 +5,14 @@
   margin-bottom: $space-m;
 
   @include breakpoint(m) {
-    grid-template-columns: $space-xl auto auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
+  }
+
+  &.kss-parameters-color {
+    @include breakpoint(m) {
+      grid-template-columns: $space-xl auto auto;
+    }
   }
 }
 
@@ -20,14 +26,15 @@
   }
 }
 
-.kss-parameters-color-var {
-  font-weight: $font-weight-bold;
-}
-
-.kss-parameters-color-value {
+.kss-parameters-value {
   margin-bottom: $space-m;
 
   @include breakpoint(m) {
     margin-bottom: 0;
   }
+}
+
+.kss-parameters-var {
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
 }
