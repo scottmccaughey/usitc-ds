@@ -11,6 +11,8 @@
 #
 # These are system-wide settings that have been converted from [YAML](http://yaml.org) files to Sass (SCSS) for use in USITC projects.
 #
+# Most settings can be overridden in your own Sass code by declaring the variable *before* importing the design system tokens.
+#
 # Tokens are also output in other formats for ease of use in various projects. Currently available formats are:
 #
 # * A TypeScript ES6 module at `dist/assets/tokens/tokens.ts`.

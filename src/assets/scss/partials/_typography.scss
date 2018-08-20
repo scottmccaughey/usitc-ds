@@ -12,59 +12,117 @@
 
 @each $family, $data in $font-family-files {
   @each $variant, $variant-data in $data {
-    @include font-def($family, $variant, map-get($variant-data, 'weight'), map-get($variant-data, 'style'), map-get($variant-data, 'stretch'));
+    @include font-def(
+      $family,
+      $variant,
+      map-get($variant-data, 'weight'),
+      map-get($variant-data, 'style'),
+      map-get($variant-data, 'stretch')
+    );
   }
 }
 
+.black {
+  font-weight: $font-weight-black;
+}
+
 .bold {
-	font-weight: $font-weight-bold;
-}
-
-.text-crop {
-	@include text-crop($line-height-base);
-}
-
-.text-crop-button {
-	@include text-crop($line-height-button);
-}
-
-.text-crop-header {
-	@include text-crop($line-height-header);
-}
-
-.text-center {
-	display: block;
-	text-align: center;
-}
-
-.text-left {
-	display: block;
-	text-align: left;
-}
-
-.text-right {
-	display: block;
-	text-align: right;
-}
-
-.unbold {
-	font-weight: $font-weight-normal !important;
-}
-
-.uppercase {
-	text-transform: uppercase;
+  font-weight: $font-weight-bold;
 }
 
 .max-line {
-	blockquote,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	li,
-	p {
-		max-width: $max-line-length;
-	}
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  p {
+    max-width: $max-line-length;
+  }
+}
+
+.mono {
+  font-family: $font-family-mono;
+}
+
+.size-xxxxs {
+  font-size: $font-size-xxxxs;
+}
+
+.size-xxxs {
+  font-size: $font-size-xxxs;
+}
+
+.size-xxs {
+  font-size: $font-size-xxs;
+}
+
+.size-xs {
+  font-size: $font-size-xs;
+}
+
+.size-s {
+  font-size: $font-size-s;
+}
+
+.size-m {
+  font-size: $font-size-m;
+}
+
+.size-l {
+  font-size: $font-size-l;
+}
+
+.size-xl {
+  font-size: $font-size-xl;
+}
+
+.size-xxl {
+  font-size: $font-size-xxl;
+}
+
+.size-xxxl {
+  font-size: $font-size-xxxl;
+}
+
+.size-xxxxl {
+  font-size: $font-size-xxxxl;
+}
+
+.text-crop {
+  @include text-crop($line-height-base);
+}
+
+.text-crop-button {
+  @include text-crop($line-height-button);
+}
+
+.text-crop-header {
+  @include text-crop($line-height-header);
+}
+
+.text-center {
+  display: block;
+  text-align: center;
+}
+
+.text-left {
+  display: block;
+  text-align: left;
+}
+
+.text-right {
+  display: block;
+  text-align: right;
+}
+
+.unbold {
+  font-weight: $font-weight-normal !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

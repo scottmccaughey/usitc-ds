@@ -7,6 +7,16 @@
 #      X88 888  888 888  888 Y88b 888 Y88..88P Y88b 888 d88P      X88
 #  88888P' 888  888 "Y888888  "Y88888  "Y88P"   "Y8888888P"   88888P'
 
+# Shadows
+#
+# These settings are our default CSS shadows. Shadows are used very sparingly across our design system, but can occasionally be very useful.
+#
+# $shadows-box-base =  The default box shadow -                           0 $space-xxs $space-xxs 0 color(black)
+# $shadows-box-focus = The box-shadow we use when an element has focus -  0 0 $space-xs $space-xs color(cyan, 30)
+#
+# Styleguide Tokens.Shadows
+#
+# Weight: 9
 shadows:
   box:
     base:           0 $space-xxs $space-xxs 0 color(black)

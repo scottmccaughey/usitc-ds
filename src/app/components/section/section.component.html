@@ -1,32 +1,37 @@
-<section *ngIf="section" [id]="section['referenceURI']">
+<section *ngIf="section" [id]="section.referenceURI">
   <div class="kss-ref"
-    *ngIf="section['referenceNumber']">{{section['referenceNumber']}} ({{section['weight']}})</div>
-  <div *ngIf="section['name']"
-    [innerHTML]="section['name']"></div>
-  <div *ngIf="section['description']"
+    *ngIf="section.referenceNumber">{{section.referenceNumber}} ({{section.weight}})</div>
+  <div *ngIf="section.name"
+    [innerHTML]="section.name"></div>
+  <div *ngIf="section.description"
     class="kss-description"
-    [innerHTML]="section['description']"></div>
-  <app-colors *ngIf="section['colors'].length > 0"
-    [colorVals]="section['colors']"></app-colors>
-  <app-parameters *ngIf="section['parameters'].length > 0"
-    [parameterVals]="section['parameters']"></app-parameters>
-  <div *ngIf="section['modifiers'].length > 0"
-    [innerHTML]="section['modifiers']"></div>
+    [innerHTML]="section.description"></div>
+  <app-colors *ngIf="section.colors.length > 0"
+    [colorVals]="section.colors"></app-colors>
+  <app-parameters *ngIf="section.parameters.length > 0"
+    [parameterVals]="section.parameters"></app-parameters>
+  <app-parameters *ngIf="section.modifiers.length > 0"
+    [parameterVals]="section.modifiers"></app-parameters>
   <div class="panel kss-panel padding-none border"
-    *ngIf="section['markup']">
+    *ngIf="section.markup">
     <div class="panel-header">Example</div>
-    <div class="alt-off padded"
-      [ngClass]="section['markupClass']"
-      [innerHTML]="section['markup'] | KeepHtmlPipe"></div>
+    <div *ngIf="!section.scss"
+      class="alt-off padded"
+      [ngClass]="section.markupClass"
+      [innerHTML]="section.markup | KeepHtmlPipe"></div>
     <div class="kss-markup">
-      <app-code [language]="'markup'"
-        [code]="section['markup']"></app-code>
+      <app-code *ngIf="!section.scss"
+        [language]="'markup'"
+        [code]="section.markup"></app-code>
+      <app-code *ngIf="section.scss"
+        [language]="'css'"
+        [code]="section.scssSrc"></app-code>
     </div>
   </div>
-  <div *ngIf="section['showSource']"
+  <div *ngIf="section.showSource"
     class="panel kss-source border">
     <strong>Source: </strong>
-    <code [innerHTML]="section['source']['file']"></code>, line
-    <code [innerHTML]="section['source']['line']"></code>
+    <code [innerHTML]="section.source.file"></code>, line
+    <code [innerHTML]="section.source.line"></code>
   </div>
 </section>

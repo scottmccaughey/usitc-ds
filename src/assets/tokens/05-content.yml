@@ -7,6 +7,16 @@
 # Y88b.   Y88..88P 888  888 Y88b. Y8b.     888  888 Y88b.
 #  "Y8888P "Y88P"  888  888  "Y888 "Y8888  888  888  "Y888
 
+# Content
+#
+# These content variables are used when the site styles are generated.
+#
+# $content-max-width    = Used to set a maximum content width for pages - 1200px
+# $content-header-links = Controls the grid in the site header          - 4
+#
+# Styleguide Tokens.Content
+#
+# Weight: 5
 content:
-  max-width:        1200px
-  header-links:     4
+  max-width:        1200px !default
+  header-links:     4 !default

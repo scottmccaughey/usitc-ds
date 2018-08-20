@@ -7,6 +7,19 @@
 # Y88b.  888    888  888 888  888      X88 888 Y88b.  888 Y88..88P 888  888      X88
 #  "Y888 888    "Y888888 888  888  88888P' 888  "Y888 888  "Y88P"  888  888  88888P'
 
+# Transitions
+#
+# These settings are our default CSS transitions.
+#
+# $transition-base        = The default transition<br>(All properties, 0.25 seconds, ease-in-out easing) - all 0.25s ease-in-out
+# $transition-base-time   = The default transition time -                   0.25s
+# $transition-base-easing = The default transition easing -                 ease-in-out
+# $transition-long-time   = A longer transition time -                      0.75s
+# $transition-max         = A max size for hiding/showing content blocks -  99rem
+#
+# Styleguide Tokens.Transitions
+#
+# Weight: 8
 transition:
   base:             all 0.25s ease-in-out
   base-time:        0.25s

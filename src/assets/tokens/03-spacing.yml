@@ -10,16 +10,50 @@
 #          888                                     Y8b d88P
 #          888                                      "Y88P"
 
+# Spacing
+#
+# We use a spacing scale starting at a `20px` base, going up and down from there. You can use these variables in Sass, such as `padding: $space-m;` or `margin: $space-xl $space-l;`.
+#
+# <div class="border padded margin-bottom">
+# <div class="kss-spacer-grid">
+#
+# <div>This is our XXXS space size:</div><div class="kss-spacer space-xxxs"></div>
+# <div>This is our XXS space size:</div><div class="kss-spacer space-xxs"></div>
+# <div>This is our XS space size:</div><div class="kss-spacer space-xs"></div>
+# <div>This is our small space size:</div><div class="kss-spacer space-s"></div>
+# <div>This is our medium space size:</div><div class="kss-spacer space-m"></div>
+# <div>This is our large space size:</div><div class="kss-spacer space-l"></div>
+# <div>This is our XL space size:</div><div class="kss-spacer space-xl"></div>
+# <div>This is our XXL space size:</div><div class="kss-spacer space-xxl"></div>
+# <div>This is our XXXL space size:</div><div class="kss-spacer space-xxxl"></div>
+#
+# </div>
+# </div>
+#
+# $space-xxxs - 0.083rem (2px)
+# $space-xxs -  0.125rem (2.5px)
+# $space-xs -   0.25rem  (5px)
+# $space-s -    0.5rem   (10px)
+# $space-m -    1rem     (20px)
+# $space-l -    2rem     (40px)
+# $space-xl -   4rem     (80px)
+# $space-xxl -  6rem     (120px)
+# $space-xxxl - 8rem     (160px)
+#
+# Styleguide Tokens.Spacing
+#
+# Weight: 3
 space:
-  xxxs:             $font-size-base / 12
-  xxs:              $font-size-base / 8
-  xs:               $font-size-base / 4
-  s:                $font-size-base / 2
-  m:                $font-size-base
-  l:                $font-size-base * 2
-  xl:               $font-size-base * 4
-  xxl:              $font-size-base * 8
-  xxxl:             $font-size-base * 12
+  xxxs:             $font-size-base / 8 !default
+  xxs:              $font-size-base / 6 !default
+  xs:               $font-size-base / 4 !default
+  s:                $font-size-base / 2 !default
+  m:                $font-size-base !default
+  l:                $font-size-base * 2 !default
+  xl:               $font-size-base * 4 !default
+  xxl:              $font-size-base * 6 !default
+  xxxl:             $font-size-base * 8 !default
+
   stack:
     xxxs:           0 0 $space-xxxs 0
     xxs:            0 0 $space-xxs 0
@@ -30,6 +64,7 @@ space:
     xl:             0 0 $space-xl 0
     xxl:            0 0 $space-xxl 0
     xxxl:           0 0 $space-xxxl 0
+
   inline:
     xxxs:           0 $space-xxxs 0 0
     xxs:            0 $space-xxs 0 0

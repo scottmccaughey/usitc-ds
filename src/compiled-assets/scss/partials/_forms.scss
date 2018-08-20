@@ -589,6 +589,14 @@ simple-select {
   }
 }
 
+.search-options {
+  .control.checkbox {
+    background-color: color(grey, 98);
+    margin-bottom: 0;
+    padding: $space-xs 0;
+  }
+}
+
 .select {
   color: color(black);
   display: flex;
@@ -761,6 +769,12 @@ simple-select {
   @include breakpoint(l) {
     margin-top: ($space-m + $space-s);
     min-height: $line-height-form;
+  }
+
+  &.checkbox-read-more {
+    @include breakpoint(l) {
+      margin-top: $space-xs;
+    }
   }
 
   a {

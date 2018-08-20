@@ -10,17 +10,19 @@
 # Y8b d88P
 #  "Y88P"
 
+# Grid System
+#
+# These settings control our grid system.
+#
+# $grid-columns = The default number of columns in our grid           - 12
+# $grid-gap-col = The default size of the gutter between grid columns - $space-m (20px)
+# $grid-gap-row = The default size of the gutter between grid rows    - $space-m (20px)
+#
+# Styleguide Tokens.Grid
+#
+# Weight: 7
 grid:
-  columns:          12
+  columns:          12 !default
   gap:
-    col:            $space-m
-    row:            $space-m
-  item-sizes:
-  - full:           12
-  - three-quarters: 9
-  - two-thirds:     8
-  - half:           6
-  - third:          4
-  - quarter:        3
-  - sixth:          2
-  - twelfth:        1
+    col:            $space-m !default
+    row:            $space-m !default

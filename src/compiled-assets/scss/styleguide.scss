@@ -38,6 +38,10 @@
     display: flex;
   }
 
+  app-parameters + .kss-panel {
+    margin-top: $space-m;
+  }
+
   h1,
   h2,
   h3,
@@ -139,7 +143,11 @@
 }
 
 .kss-main {
-  padding: $space-m $space-l 0;
+  padding: $space-m $space-m 0;
+
+  @include breakpoint(l) {
+    padding: $space-m $space-l 0;
+  }
 }
 
 .kss-markup {
@@ -216,6 +224,26 @@
 }
 
 .kss-source {
+  border-top-width: 0;
   margin: 0 0 ($space-l + $space-m);
   padding: $space-s $space-m;
+}
+
+.kss-spacer {
+  background-color: color(grey, 50, 50);
+}
+
+.kss-spacer-grid {
+  display: grid;
+  grid-column-gap: $grid-gap-col;
+  grid-row-gap: $space-xs;
+
+  @include breakpoint(m) {
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto;
+  }
+
+  div {
+    white-space: nowrap;
+  }
 }

@@ -85,11 +85,13 @@ a {
   }
 
   .on-dark & {
-    @include link-underline($color-theme-dark-link);
+    color: inherit;
+    text-decoration-color: $color-theme-dark-link;
   }
 
   .on-light & {
-    @include link-underline($color-theme-base-link);
+    color: inherit;
+    text-decoration-color: $color-theme-base-link;
   }
 
   &:active,
@@ -283,7 +285,7 @@ pre {
   line-height: $line-height-button;
   padding: $space-xxs;
   position: relative;
-  top: $space-xxxs;
+  top: $space-xxs;
 
   &:first-child {
     margin-left: 0;

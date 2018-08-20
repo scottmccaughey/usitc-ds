@@ -46,66 +46,66 @@ module.exports = {
   "color": {
     "theme": {
       "base": {
-        "background": "color(white)",
-        "background-alt": "color(grey, 90)",
-        "border": "color(grey, 20)",
-        "text": "color(grey, 20)",
-        "link": "color(cyan, 30)",
-        "hover-background": "color(cyan, 30)",
-        "hover-text": "color(white)",
-        "spinner": "color(cyan, 30)"
+        "background": "color(white) !default",
+        "background-alt": "color(grey, 90) !default",
+        "border": "color(grey, 20) !default",
+        "text": "color(grey, 20) !default",
+        "link": "color(cyan, 30) !default",
+        "hover-background": "color(cyan, 30) !default",
+        "hover-text": "color(white) !default",
+        "spinner": "color(cyan, 30) !default"
       },
       "dark": {
-        "background": "color(cyan, 20)",
-        "background-alt": "color(cyan, 30)",
-        "border": "color(cyan, 20)",
-        "text": "color(white)",
-        "link": "color(white)",
-        "hover-background": "color(white)",
-        "hover-text": "color(cyan, 30)",
-        "spinner": "color(white)"
+        "background": "color(cyan, 20) !default",
+        "background-alt": "color(cyan, 30) !default",
+        "border": "color(cyan, 20) !default",
+        "text": "color(white) !default",
+        "link": "color(white) !default",
+        "hover-background": "color(white) !default",
+        "hover-text": "color(cyan, 30) !default",
+        "spinner": "color(white) !default"
       }
     },
     "state": {
       "error": {
-        "background": "color(red,  95)",
-        "background-alt": "color(red,  90)",
-        "border": "color(red,  40)",
-        "text": "color(grey, 20)",
-        "link": "color(red,  40)",
-        "hover-background": "color(red,  40)",
-        "hover-text": "color(white)",
-        "spinner": "color(red,  40)"
+        "background": "color(red,  95) !default",
+        "background-alt": "color(red,  90) !default",
+        "border": "color(red,  40) !default",
+        "text": "color(grey, 20) !default",
+        "link": "color(red,  40) !default",
+        "hover-background": "color(red,  40) !default",
+        "hover-text": "color(white) !default",
+        "spinner": "color(red,  40) !default"
       },
       "info": {
-        "background": "color(cyan, 95)",
-        "background-alt": "color(cyan, 90)",
-        "border": "color(cyan, 30)",
-        "text": "color(grey, 20)",
-        "link": "color(cyan, 30)",
-        "hover-background": "color(cyan, 30)",
-        "hover-text": "color(white)",
-        "spinner": "color(cyan, 30)"
+        "background": "color(cyan, 95) !default",
+        "background-alt": "color(cyan, 90) !default",
+        "border": "color(cyan, 30) !default",
+        "text": "color(grey, 20) !default",
+        "link": "color(cyan, 30) !default",
+        "hover-background": "color(cyan, 30) !default",
+        "hover-text": "color(white) !default",
+        "spinner": "color(cyan, 30) !default"
       },
       "success": {
-        "background": "color(green, 95)",
-        "background-alt": "color(green, 90)",
-        "border": "color(green, 30)",
-        "text": "color(grey,  20)",
-        "link": "color(green, 30)",
-        "hover-background": "color(green, 30)",
-        "hover-text": "color(white)",
-        "spinner": "color(green, 30)"
+        "background": "color(green, 95) !default",
+        "background-alt": "color(green, 90) !default",
+        "border": "color(green, 30) !default",
+        "text": "color(grey,  20) !default",
+        "link": "color(green, 30) !default",
+        "hover-background": "color(green, 30) !default",
+        "hover-text": "color(white) !default",
+        "spinner": "color(green, 30) !default"
       },
       "warning": {
-        "background": "color(orange, 95)",
-        "background-alt": "color(orange, 90)",
-        "border": "color(orange, 50)",
-        "text": "color(grey,   20)",
-        "link": "color(orange, 50)",
-        "hover-background": "color(orange, 50)",
-        "hover-text": "color(white)",
-        "spinner": "color(orange, 50)"
+        "background": "color(orange, 95) !default",
+        "background-alt": "color(orange, 90) !default",
+        "border": "color(orange, 50) !default",
+        "text": "color(grey,   20) !default",
+        "link": "color(orange, 50) !default",
+        "hover-background": "color(orange, 50) !default",
+        "hover-text": "color(white) !default",
+        "spinner": "color(orange, 50) !default"
       }
     }
   },
@@ -146,21 +146,18 @@ module.exports = {
           }
         }
       },
-      "base": "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif",
-      "mono": "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace"
+      "base": "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default",
+      "mono": "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
     },
     "weight": {
-      "normal": 300,
-      "bold": 700,
-      "black": 900
+      "normal": "300 !default",
+      "bold": "700 !default",
+      "black": "900 !default"
     },
     "size": {
-      "root": "20px",
-      "base": "1rem",
-      "scale-ratio": 1.2,
-      "xxxxxxxs": "ms(-8)",
-      "xxxxxxs": "ms(-7)",
-      "xxxxxs": "ms(-6)",
+      "root": "20px !default",
+      "base": "1rem !default",
+      "scale-ratio": "1.2 !default",
       "xxxxs": "ms(-5)",
       "xxxs": "ms(-4)",
       "xxs": "ms(-3)",
@@ -172,34 +169,31 @@ module.exports = {
       "xxl": "ms(3)",
       "xxxl": "ms(4)",
       "xxxxl": "ms(5)",
-      "xxxxxl": "ms(6)",
-      "xxxxxxl": "ms(7)",
-      "xxxxxxxl": "ms(8)",
-      "h1": "$font-size-xxl",
-      "h2": "$font-size-xl",
-      "h3": "$font-size-l",
-      "h4": "$font-size-m",
-      "h5": "$font-size-m",
-      "h6": "$font-size-m"
+      "h1": "$font-size-xxl !default",
+      "h2": "$font-size-xl !default",
+      "h3": "$font-size-l !default",
+      "h4": "$font-size-m !default",
+      "h5": "$font-size-m !default",
+      "h6": "$font-size-m !default"
     }
   },
   "line-height": {
-    "base": 1.5,
-    "header": 1.25,
-    "button": 1,
-    "form": "2.5rem"
+    "base": "1.5 !default",
+    "header": "1.25 !default",
+    "button": "1 !default",
+    "form": "2.5rem !default"
   },
-  "max-line-length": "50em",
+  "max-line-length": "50em !default",
   "space": {
-    "xxxs": "$font-size-base / 12",
-    "xxs": "$font-size-base / 8",
-    "xs": "$font-size-base / 4",
-    "s": "$font-size-base / 2",
-    "m": "$font-size-base",
-    "l": "$font-size-base * 2",
-    "xl": "$font-size-base * 4",
-    "xxl": "$font-size-base * 8",
-    "xxxl": "$font-size-base * 12",
+    "xxxs": "$font-size-base / 8 !default",
+    "xxs": "$font-size-base / 6 !default",
+    "xs": "$font-size-base / 4 !default",
+    "s": "$font-size-base / 2 !default",
+    "m": "$font-size-base !default",
+    "l": "$font-size-base * 2 !default",
+    "xl": "$font-size-base * 4 !default",
+    "xxl": "$font-size-base * 6 !default",
+    "xxxl": "$font-size-base * 8 !default",
     "stack": {
       "xxxs": "0 0 $space-xxxs 0",
       "xxs": "0 0 $space-xxs 0",
@@ -224,15 +218,15 @@ module.exports = {
     }
   },
   "border": {
-    "base": "1px solid color(grey)",
+    "base": "1px solid color(grey) !default",
     "radius": {
-      "base": 0,
-      "circle": "100%"
+      "base": "0 !default",
+      "circle": "100% !default"
     }
   },
   "content": {
-    "max-width": "1200px",
-    "header-links": 4
+    "max-width": "1200px !default",
+    "header-links": "4 !default"
   },
   "breakpoints--map": {
     "xs": "400px",
@@ -242,37 +236,11 @@ module.exports = {
     "xl": "1600px"
   },
   "grid": {
-    "columns": 12,
+    "columns": "12 !default",
     "gap": {
-      "col": "$space-m",
-      "row": "$space-m"
-    },
-    "item-sizes": [
-      {
-        "full": 12
-      },
-      {
-        "three-quarters": 9
-      },
-      {
-        "two-thirds": 8
-      },
-      {
-        "half": 6
-      },
-      {
-        "third": 4
-      },
-      {
-        "quarter": 3
-      },
-      {
-        "sixth": 2
-      },
-      {
-        "twelfth": 1
-      }
-    ]
+      "col": "$space-m !default",
+      "row": "$space-m !default"
+    }
   },
   "transition": {
     "base": "all 0.25s ease-in-out",

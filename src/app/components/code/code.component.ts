@@ -6,8 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styles: []
 })
 export class CodeComponent implements OnInit {
-  @Input() language = 'markup';
-  @Input() code = '';
+  @Input()
+  language = 'scss';
+  @Input()
+  code = '';
 
   constructor() {}
 

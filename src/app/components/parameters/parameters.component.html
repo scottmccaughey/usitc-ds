@@ -1,21 +1,23 @@
-<div class="kss-parameters"
-  [class.kss-parameters-color]="parameters[0]['color']">
+<div class="kss-parameters">
   <ng-container *ngFor="let parameter of parameters">
     <ng-container *ngIf="parameter['color']">
-      <div *ngIf="parameter['style']"
-        class="kss-parameters-color-sample"
-        [ngStyle]="parameter['style']"></div>
+      <svg *ngIf="parameter['style']"
+        class="kss-parameters-color-sample">
+        <rect [ngStyle]="parameter['style']"/>
+      </svg>
       <div class="kss-parameters-var"
         [innerHTML]="parameter['var']"></div>
-      <div class="kss-parameters-value"
+      <div class="kss-parameters-description"
         [innerHTML]="parameter['value']"></div>
     </ng-container>
 
-    <ng-container *ngIf="parameter['font']">
+    <ng-container *ngIf="!parameter['color']">
       <div class="kss-parameters-var"
         [innerHTML]="parameter['var']"></div>
       <div class="kss-parameters-value"
         [innerHTML]="parameter['value']"></div>
+      <div class="kss-parameters-description"
+        [innerHTML]="parameter['description']"></div>
     </ng-container>
   </ng-container>
 </div>

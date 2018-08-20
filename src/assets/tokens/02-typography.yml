@@ -13,10 +13,8 @@
 # Typography
 #
 # Styleguide Tokens.Typography
-
-# Fonts
 #
-# Styleguide Tokens.Typography.Fonts
+# Weight: 2
 font:
   path: "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default"
   family:
@@ -51,33 +49,103 @@ font:
     #
     # Our base font family is **[Montserrat](https://github.com/JulietaUla/Montserrat)**, a geometric sans-serif typeface designed by Argentinian designer [Julieta Ulanovsky](https://github.com/JulietaUla/). The design was inspired by signage from her historical Buenos Aires neighborhood of the same name. We load Montserrat as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
     #
+    # <div class="border padded margin-bottom">
+    #
+    # This text is set in our **base** *font stack*.
+    #
+    # </div>
+    #
     # We also have a monospace font stack for times when it’s needed, and it’s very visible in the code snippets all over this styleguide. We’ve chosen our favorite monospace font — **[Operator Mono](https://www.typography.com/fonts/operator/overview/)** — as the base, and several good fallback options.
+    #
+    # <div class="border padded mono">
+    #
+    # This text is set in our **monospace** *font stack*.
+    #
+    # </div>
     #
     # $font-family-base - Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif
     # $font-family-mono - 'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace
     #
-    # Markup:
-    # <button type="button" class="button-success button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#save"></use></svg></span><span class="visually-hidden">Save</span></button>
-    # <button type="button" class="button-cancel button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#trash"></use></svg></span><span class="visually-hidden">Delete</span></button>
+    # Styleguide Tokens.Typography.Families
     #
-    # Styleguide Tokens.Typography.Fonts.Families
-    base: "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif"
+    # Weight: 1
+    base: "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default"
     mono:
-      "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace"
+      "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
 
+  # Font Weights
+  #
+  # We use two main weights of Montserrat — *Light (300)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
+  #
+  # <div class="border padded margin-bottom">
+  #
+  # This is Montserrat Light.<br>
+  # <strong>This is Montserrat Bold.</strong><br>
+  # <span class="black">This is Montserrat Black.</span>
+  #
+  # </div>
+  #
+  # $font-weight-normal - 300
+  # $font-weight-bold -   700
+  # $font-weight-black -  900
+  #
+  # Styleguide Tokens.Typography.Weights
+  #
+  # Weight: 2
   weight:
-    normal: 300
-    bold: 700
-    black: 900
+    normal: 300 !default
+    bold: 700 !default
+    black: 900 !default
 
+  # Font Sizes
+  #
+  # We use a modular scale for our font sizes. Starting at a `20px` base, our font-sizes go up and down based on a [modular scale](https://alistapart.com/article/more-meaningful-typography) ratio of **1.2**.
+  #
+  # Styleguide Tokens.Typography.Sizes
+  #
+  # Weight: 3
   size:
-    root: 20px
-    base: 1rem
-    scale-ratio: 1.2
+    root: 20px !default
+    base: 1rem !default
+    scale-ratio: 1.2 !default
 
-    xxxxxxxs: ms(-8)
-    xxxxxxs: ms(-7)
-    xxxxxs: ms(-6)
+    # Font Size Scale
+    #
+    # `1rem` (`rem` is a CSS unit of length that stands for *root em*) is equivalent to our `20px` base.
+    #
+    # While we have all of the following sizes available, use your judgment on whether a particular size looks reasonable (and readable) in the situation where it is used.
+    #
+    # <div class="border padded margin-bottom">
+    #
+    # <span class="size-xxxxs">This is our XXXXS font size.</span><br>
+    # <span class="size-xxxs">This is our XXXS font size.</span><br>
+    # <span class="size-xxs">This is our XXS font size.</span><br>
+    # <span class="size-xs">This is our XS font size.</span><br>
+    # <span class="size-s">This is our small font size.</span><br>
+    # <span class="size-m">This is our medium font size.</span><br>
+    # <span class="size-l">This is our large font size.</span><br>
+    # <span class="size-xl">This is our XL font size.</span><br>
+    # <span class="size-xxl">This is our XXL font size.</span><br>
+    # <span class="size-xxxl">This is our XXXL font size.</span><br>
+    # <span class="size-xxxxl">This is our XXXXL font size.</span>
+    #
+    # </div>
+    #
+    # $font-size-xxxxs -  0.402rem (8.038px)
+    # $font-size-xxxs -   0.482rem (9.645px)
+    # $font-size-xxs -    0.579rem (11.574px)
+    # $font-size-xs -     0.694rem (13.889px)
+    # $font-size-s -      0.833rem (16.667px)
+    # $font-size-m -      1.000rem (20px)
+    # $font-size-l -      1.200rem (24px)
+    # $font-size-xl -     1.440rem (28.8px)
+    # $font-size-xxl -    1.728rem (34.56px)
+    # $font-size-xxxl -   2.074rem (41.472px)
+    # $font-size-xxxxl -  2.488rem (49.7664px)
+    #
+    # Styleguide Tokens.Typography.Sizes.Scale
+    #
+    # Weight: 1
     xxxxs: ms(-5)
     xxxs: ms(-4)
     xxs: ms(-3)
@@ -89,21 +157,62 @@ font:
     xxl: ms(3)
     xxxl: ms(4)
     xxxxl: ms(5)
-    xxxxxl: ms(6)
-    xxxxxxl: ms(7)
-    xxxxxxxl: ms(8)
 
-    h1: $font-size-xxl
-    h2: $font-size-xl
-    h3: $font-size-l
-    h4: $font-size-m
-    h5: $font-size-m
-    h6: $font-size-m
+    # Header Sizes
+    #
+    # These are the base font sizes for our headers, usable as variables in Sass.
+    #
+    # <div class="panel state-warning">
+    #
+    # # Accessibility Note
+    # Pages should be structured in a hierarchical manner, with `<h1>` headings being the most important (usually page titles or main content heading), then `<h2>` headings (usually major section headings), down to `<h3>` headings (sub-sections of the `<h2>`), and so on. Lower degree headings should be contained within headings of the next highest degree (i.e., one should not skip heading levels, such as from an `<h2>` to an `<h4>`, going down the document).
+    #
+    # </div>
+    #
+    # <div class="border padded margin-bottom no-guide-styles">
+    #
+    # <span class="size-xxl">This is an H1 heading.</span><br>
+    # <span class="size-xl">This is an H2 heading.</span><br>
+    # <span class="size-l">This is an H3 heading.</span><br>
+    # <span class="size-m">This is an H4 heading.</span><br>
+    # <span class="size-m">This is an H5 heading.</span><br>
+    # <span class="size-m">This is an H6 heading.</span>
+    #
+    # </div>
+    #
+    # $font-size-h1 - $font-size-xxl (34.56px)
+    # $font-size-h2 - $font-size-xl  (28.8px)
+    # $font-size-h3 - $font-size-l   (24px)
+    # $font-size-h4 - $font-size-m   (20px)
+    # $font-size-h5 - $font-size-m   (20px)
+    # $font-size-h6 - $font-size-m   (20px)
+    #
+    # Styleguide Tokens.Typography.Sizes.Headers
+    #
+    # Weight: 2
+    h1: $font-size-xxl !default
+    h2: $font-size-xl !default
+    h3: $font-size-l !default
+    h4: $font-size-m !default
+    h5: $font-size-m !default
+    h6: $font-size-m !default
 
+# Line Heights
+#
+# Our base line height is `1.5` (the number is multiplied by the element’s font size). We use smaller line heights for headers (`1.25`) and buttons (`1`). We also set an explicit line height of `2.5rem` (`50px`) on form elements like input fields and select boxes for consistency.
+#
+# $line-height-base -   1.5
+# $line-height-header - 1.25
+# $line-height-button - 1
+# $line-height-form -   2.5rem (50px)
+#
+# Styleguide Tokens.Typography.Line-Heights
+#
+# Weight: 4
 line-height:
-  base: 1.5
-  header: 1.25
-  button: 1
-  form: 2.5rem
+  base: 1.5 !default
+  header: 1.25 !default
+  button: 1 !default
+  form: 2.5rem !default
 
-max-line-length: 50em
+max-line-length: 50em !default

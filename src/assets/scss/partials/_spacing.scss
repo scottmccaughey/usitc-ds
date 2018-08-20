@@ -10,7 +10,6 @@
 //          888                                     Y8b d88P
 //          888                                      "Y88P"
 
-
 .margin {
   padding: $space-m;
 
@@ -169,4 +168,54 @@
 
 .padded-left {
   padding-left: $space-m;
+}
+
+.space-xxxs {
+  height: $space-m;
+  width: $space-xxxs;
+}
+
+.space-xxs {
+  height: $space-m;
+  width: $space-xxs;
+}
+
+.space-xs {
+  height: $space-m;
+  width: $space-xs;
+}
+
+.space-xxxs {
+  height: $space-m;
+  width: $space-xxxs;
+}
+
+.space-s {
+  height: $space-m;
+  width: $space-s;
+}
+
+.space-m {
+  height: $space-m;
+  width: $space-m;
+}
+
+.space-l {
+  height: $space-m;
+  width: $space-l;
+}
+
+.space-xl {
+  height: $space-m;
+  width: $space-xl;
+}
+
+.space-xxl {
+  height: $space-m;
+  width: $space-xxl;
+}
+
+.space-xxxl {
+  height: $space-m;
+  width: $space-xxxl;
 }

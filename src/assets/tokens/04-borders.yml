@@ -7,8 +7,19 @@
 # 888 d88P Y88..88P 888    Y88b 888 Y8b.     888          X88
 # 88888P"   "Y88P"  888     "Y88888  "Y8888  888      88888P'
 
+# Borders
+#
+# We have a standard border for elements, along with settings for different border radii. You can use these variables in Sass, such as `border-top: $border-base;` or `border-radius: $border-radius-base;`.
+#
+# $border-base          = A one pixel wide, solid grey border   - 1px solid color(grey)
+# $border-radius-base   = Entirely square corners on an element - 0
+# $border-radius-circle = A completely round element            - 100%
+#
+# Styleguide Tokens.Borders
+#
+# Weight: 4
 border:
-  base:             1px solid color(grey)
+  base:             1px solid color(grey) !default
   radius:
-    base:           0
-    circle:         100%
+    base:           0 !default
+    circle:         100% !default
