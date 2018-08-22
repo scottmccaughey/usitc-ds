@@ -38,8 +38,14 @@
     display: flex;
   }
 
-  app-parameters + .kss-panel {
-    margin-top: $space-m;
+  app-parameters {
+    + .kss-panel {
+      margin-top: $space-m;
+    }
+
+    + .kss-source {
+      border-top-width: 0;
+    }
   }
 
   h1,
@@ -108,6 +114,22 @@
 
 .kss-description {
   margin-bottom: $space-m;
+}
+
+.kss-directive {
+  &.panel {
+    border-color: color(cyan, 20);
+
+    .panel-header {
+      background-color: color(cyan, 20);
+    }
+  }
+
+  pre {
+    border-width: 0;
+    font-family: $font-family-mono;
+    padding: $space-m $space-m 0;
+  }
 }
 
 .kss-home {
@@ -225,7 +247,6 @@
 }
 
 .kss-source {
-  border-top-width: 0;
   margin: 0 0 ($space-l + $space-m);
   padding: $space-s $space-m;
 }

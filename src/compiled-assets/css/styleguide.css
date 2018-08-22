@@ -400,42 +400,6 @@ textarea {
   display: none !important; }
 
 /*
-  888                               888                        d8b          888
-  888                               888                        Y8P          888
-  888                               888                                     888
-  88888b.  888d888 .d88b.   8888b.  888  888 88888b.   .d88b.  888 88888b.  888888 .d8888b
-  888 "88b 888P"  d8P  Y8b     "88b 888 .88P 888 "88b d88""88b 888 888 "88b 888    88K
-  888  888 888    88888888 .d888888 888888K  888  888 888  888 888 888  888 888    "Y8888b.
-  888 d88P 888    Y8b.     888  888 888 "88b 888 d88P Y88..88P 888 888  888 Y88b.       X88
-  88888P"  888     "Y8888  "Y888888 888  888 88888P"   "Y88P"  888 888  888  "Y888  88888P'
-                                            888
-                                            888
-                                            888
-  Breakpoints mixin
-
-  @include breakpoint($point)
-
-  The breakpoint() function takes a single required parameter. You must pass in the breakpoint
-  name or a number ($point). If a breakpoint name is passed, the $breakpoints list as
-  defined in _settings.scss (@section 3) is used for a mininum-width. If a number is passed,
-  that number of pixels is used as a minimum-width.
-
-  Ithis will cause any styles between the {} brackets to be applied only to
-  screen sizes wider than the breakpoint passed:
-
-  @include breakpoint(m) {
-    font-size: 18px;
-  }
-
-  ...will set the font-size to '18px' on any screen larger than the medium breakpoint size.
-
-  @include breakpoint(1024) {
-    font-weight: bold;
-  }
-
-  ...will set the font-weight to 'bold' on any screen larger than 1024 pixels wide.
-*/
-/*
            888            d8b
            888            Y8P
            888
@@ -686,31 +650,6 @@ textarea {
   Link Underline mixin
 
   link-underline($color)
-*/
-/*
-  888                                     888
-  888                                     888
-  888                                     888
-  888  8888b.  888  888  .d88b.  888  888 888888
-  888     "88b 888  888 d88""88b 888  888 888
-  888 .d888888 888  888 888  888 888  888 888  888888
-  888 888  888 Y88b 888 Y88..88P Y88b 888 Y88b.
-  888 "Y888888  "Y88888  "Y88P"   "Y88888  "Y888
-                    888
-               Y8b d88P
-                "Y88P"
-  888                                      888                  d8b
-  888                                      888                  Y8P
-  888                                      888
-  88888b.   .d88b.  888  888 88888b.   .d88888  8888b.  888d888 888  .d88b.  .d8888b
-  888 "88b d88""88b 888  888 888 "88b d88" 888     "88b 888P"   888 d8P  Y8b 88K
-  888  888 888  888 888  888 888  888 888  888 .d888888 888     888 88888888 "Y8888b.
-  888 d88P Y88..88P Y88b 888 888  888 Y88b 888 888  888 888     888 Y8b.          X88
-  88888P"   "Y88P"   "Y88888 888  888  "Y88888 "Y888888 888     888  "Y8888   88888P'
-
-  Make Layout Boundaries mixin
-
-  make-layout-boundaries($color, $background)
 */
 /*
 888                     888
@@ -4467,6 +4406,8 @@ pre[class*='language-'] {
     display: flex; }
   .kss-body app-parameters + .kss-panel {
     margin-top: 1rem; }
+  .kss-body app-parameters + .kss-source {
+    border-top-width: 0; }
   .kss-body h1,
   .kss-body h2,
   .kss-body h3,
@@ -4508,6 +4449,16 @@ pre[class*='language-'] {
 
 .kss-description {
   margin-bottom: 1rem; }
+
+.kss-directive.panel {
+  border-color: #0a4e5c; }
+  .kss-directive.panel .panel-header {
+    background-color: #0a4e5c; }
+
+.kss-directive pre {
+  border-width: 0;
+  font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
+  padding: 1rem 1rem 0; }
 
 .kss-home h1 {
   color: inherit;
@@ -4597,7 +4548,6 @@ pre[class*='language-'] {
   white-space: nowrap; }
 
 .kss-source {
-  border-top-width: 0;
   margin: 0 0 3rem;
   padding: 0.5rem 1rem; }
 
