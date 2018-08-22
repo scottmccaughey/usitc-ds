@@ -11,9 +11,9 @@
 #
 # We have a standard border for elements, along with settings for different border radii. You can use these variables in Sass, such as `border-top: $border-base;` or `border-radius: $border-radius-base;`.
 #
-# $border-base          = A one pixel wide, solid grey border   - 1px solid color(grey)
-# $border-radius-base   = Entirely square corners on an element - 0
-# $border-radius-circle = A completely round element            - 100%
+# $border-base          = 1px solid color(grey) - A one pixel wide, solid grey border
+# $border-radius-base   = 0                     - Entirely square corners on an element
+# $border-radius-circle = 100%                  - A completely round element
 #
 # Styleguide Tokens.Borders
 #

@@ -30,6 +30,8 @@
 }
 
 .kss-parameters-description {
+  color: color(cyan, 40);
+  font-style: italic;
   margin-bottom: $space-m;
 
   @include breakpoint(m) {

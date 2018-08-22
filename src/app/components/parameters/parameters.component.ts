@@ -13,16 +13,14 @@ export class ParametersComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.parameterVals);
-
     this.parameterVals.forEach(parameter => {
       const param = {};
       param['var'] = parameter['name'];
-      param['value'] = parameter['description'];
-      param['description'] = parameter['defaultValue'];
+      param['value'] = parameter['defaultValue'];
+      param['description'] = parameter['description'];
       if (parameter['name'].startsWith('$color-')) {
         param['color'] = true;
-        param['style'] = { fill: parameter['defaultValue'] };
+        param['style'] = { fill: param['description'] };
       }
       this.parameters.push(param);
     });

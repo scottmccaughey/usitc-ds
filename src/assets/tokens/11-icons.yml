@@ -7,24 +7,37 @@
 # 888 Y88b.   Y88..88P 888  888      X88
 # 888  "Y8888P "Y88P"  888  888  88888P'
 
-icon:
-  size:
-    base:           0.75em
-    scale-ratio:    1.5
-    xxxxxxxs:       'msi(-8)'
-    xxxxxxs:        'msi(-7)'
-    xxxxxs:         'msi(-6)'
-    xxxxs:          'msi(-5)'
-    xxxs:           'msi(-4)'
-    xxs:            'msi(-3)'
-    xs:             'msi(-2)'
-    s:              'msi(-1)'
-    m:              'msi(0)'
-    l:              'msi(1)'
-    xl:             'msi(2)'
-    xxl:            'msi(3)'
-    xxxl:           'msi(4)'
-    xxxxl:          'msi(5)'
-    xxxxxl:         'msi(6)'
-    xxxxxxl:        'msi(7)'
-    xxxxxxxl:       'msi(8)'
+# Icons
+#
+# These settings control sizing for our icon system. Our base icon is `0.75em` in height and width, and scales up and down based on a [modular scale](https://alistapart.com/article/more-meaningful-typography) ratio of **1.5**. Unlike our typography sizes which will are based on `rem`, our icon sizes are based on `em` and depend on the font size of the containing element.
+#
+# $icon-size-xxxxs  = 0.099em - ​
+# $icon-size-xxxs   = 0.148em - ​
+# $icon-size-xxs    = 0.222em - ​
+# $icon-size-xs     = 0.333em - ​
+# $icon-size-s      = 0.500em - ​
+# $icon-size-m      = 0.750em - ​
+# $icon-size-l      = 1.125em - ​
+# $icon-size-xl     = 1.688em - ​
+# $icon-size-xxl    = 2.531em - ​
+# $icon-size-xxxl   = 3.797em - ​
+# $icon-size-xxxxl  = 5.695em - ​
+#
+# Styleguide Tokens.Icons
+#
+# Weight: 11
+icon-size:
+  base:           0.75em
+  scale-ratio:    1.5
+
+  xxxxs:          'msi(-5)'
+  xxxs:           'msi(-4)'
+  xxs:            'msi(-3)'
+  xs:             'msi(-2)'
+  s:              'msi(-1)'
+  m:              'msi(0)'
+  l:              'msi(1)'
+  xl:             'msi(2)'
+  xxl:            'msi(3)'
+  xxxl:           'msi(4)'
+  xxxxl:          'msi(5)'

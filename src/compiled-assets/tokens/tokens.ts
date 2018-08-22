@@ -255,54 +255,39 @@ export const tokens = {
       "focus": "0 0 $space-xs $space-xs color(cyan, 30)"
     }
   },
-  "form": {
-    "control": {
-      "default": {
-        "left": "-2px",
-        "size": "40px",
-        "size-inner": "26px",
-        "top": "-2px"
-      },
-      "checkbox": {
-        "position": "6px 7px"
-      },
-      "checkbox-bust": {
-        "left": "-2px",
-        "margin-top": "-10px",
-        "position": "5px 2px",
-        "size": "50px",
-        "size-inner": "44px",
-        "top": "-2px"
-      }
+  "form-control": {
+    "default": {
+      "left": "-2px",
+      "size": "40px",
+      "size-inner": "26px",
+      "top": "-2px"
     },
-    "read-more": {
-      "hr": {
-        "margin": "29px 0 30px"
-      }
+    "checkbox": {
+      "position": "6px 7px"
+    },
+    "checkbox-bust": {
+      "left": "-2px",
+      "margin-top": "-10px",
+      "position": "5px 2px",
+      "size": "50px",
+      "size-inner": "44px",
+      "top": "-2px"
     }
   },
-  "icon": {
-    "size": {
-      "base": "0.75em",
-      "scale-ratio": 1.5,
-      "xxxxxxxs": "msi(-8)",
-      "xxxxxxs": "msi(-7)",
-      "xxxxxs": "msi(-6)",
-      "xxxxs": "msi(-5)",
-      "xxxs": "msi(-4)",
-      "xxs": "msi(-3)",
-      "xs": "msi(-2)",
-      "s": "msi(-1)",
-      "m": "msi(0)",
-      "l": "msi(1)",
-      "xl": "msi(2)",
-      "xxl": "msi(3)",
-      "xxxl": "msi(4)",
-      "xxxxl": "msi(5)",
-      "xxxxxl": "msi(6)",
-      "xxxxxxl": "msi(7)",
-      "xxxxxxxl": "msi(8)"
-    }
+  "icon-size": {
+    "base": "0.75em",
+    "scale-ratio": 1.5,
+    "xxxxs": "msi(-5)",
+    "xxxs": "msi(-4)",
+    "xxs": "msi(-3)",
+    "xs": "msi(-2)",
+    "s": "msi(-1)",
+    "m": "msi(0)",
+    "l": "msi(1)",
+    "xl": "msi(2)",
+    "xxl": "msi(3)",
+    "xxxl": "msi(4)",
+    "xxxxl": "msi(5)"
   },
   "print": {
     "color": {
@@ -313,9 +298,7 @@ export const tokens = {
       "size": "12pt",
       "size-results": "5.5pt"
     },
-    "page": {
-      "margin": "1cm"
-    }
+    "page-margin": "1cm"
   },
   "off-canvas": {
     "height": "100vh",

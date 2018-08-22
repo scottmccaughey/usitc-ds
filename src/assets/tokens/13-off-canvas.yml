@@ -7,6 +7,18 @@
 # Y88..88P 888    888         Y88b.    888  888 888  888  Y8bd8P  888  888      X88
 #  "Y88P"  888    888          "Y8888P "Y888888 888  888   Y88P   "Y888888  88888P'
 
+# Off-Canvas
+#
+# These settings are used for our off-canvas components.
+#
+# $off-canvas-height      = 100vh                             - Sets the height of off-canvas elements
+# $off-canvas-shadow      = 5px 0 10px 0 color(black, 0, 25)  - Sets the box-shadow for off-canvas elements
+# $off-canvas-transition  = left 0.75s ease-in-out            - Sets the CSS transition when toggling off-canvas elements
+# $off-canvas-width       = 400px                             - Sets the width of off-canvas elements
+#
+# Styleguide Tokens.OffCanvas
+#
+# Weight: 13
 off-canvas:
   height:           100vh
   shadow:           5px 0 10px 0 color(black, 0, 25)

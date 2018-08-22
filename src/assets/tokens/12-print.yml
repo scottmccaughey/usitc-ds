@@ -10,6 +10,19 @@
 # 888
 # 888
 
+# Print
+#
+# These settings are used for our print-only styles.
+#
+# $print-color-base         = color(black)  - Sets the color of all text to black
+# $print-color-background   = color(white)  - Sets the background for all elements to white
+# $print-font-size          = 12pt          - Sets the default font size
+# $print-font-size-results  = 5.5pt         - Sets the font size for search results
+# $print-page-margin        = 1cm           - Sets the page margins
+#
+# Styleguide Tokens.Print
+#
+# Weight: 12
 print:
   color:
     base:           color(black)
@@ -17,5 +30,4 @@ print:
   font:
     size:           12pt
     size-results:   5.5pt
-  page:
-    margin:         1cm
+  page-margin:      1cm

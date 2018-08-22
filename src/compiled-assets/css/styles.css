@@ -2588,6 +2588,10 @@ icon,
             justify-content: stretch;
     stroke: none;
     width: 100%; }
+  icon.icon-xxxxs,
+  .icon.icon-xxxxs {
+    height: 0.09877em;
+    width: 0.09877em; }
   icon.icon-xxxs,
   .icon.icon-xxxs {
     height: 0.14815em;
@@ -2628,18 +2632,6 @@ icon,
   .icon.icon-xxxxl {
     height: 5.69531em;
     width: 5.69531em; }
-  icon.icon-xxxxxl,
-  .icon.icon-xxxxxl {
-    height: 8.54297em;
-    width: 8.54297em; }
-  icon.icon-xxxxxxl,
-  .icon.icon-xxxxxxl {
-    height: 12.81445em;
-    width: 12.81445em; }
-  icon.icon-xxxxxxxl,
-  .icon.icon-xxxxxxxl {
-    height: 19.22168em;
-    width: 19.22168em; }
   icon.icon-block,
   .icon.icon-block {
     display: block;

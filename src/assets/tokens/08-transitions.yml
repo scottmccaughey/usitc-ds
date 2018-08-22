@@ -11,11 +11,11 @@
 #
 # These settings are our default CSS transitions.
 #
-# $transition-base        = The default transition<br>(All properties, 0.25 seconds, ease-in-out easing) - all 0.25s ease-in-out
-# $transition-base-time   = The default transition time -                   0.25s
-# $transition-base-easing = The default transition easing -                 ease-in-out
-# $transition-long-time   = A longer transition time -                      0.75s
-# $transition-max         = A max size for hiding/showing content blocks -  99rem
+# $transition-base        = all 0.25s ease-in-out - The default transition<br>(All properties, 0.25 seconds, ease-in-out easing)
+# $transition-base-time   = 0.25s                 - The default transition time
+# $transition-base-easing = ease-in-out           - The default transition easing
+# $transition-long-time   = 0.75s                 - A longer transition time
+# $transition-max         = 99rem                 - A max size for hiding/showing content blocks
 #
 # Styleguide Tokens.Transitions
 #

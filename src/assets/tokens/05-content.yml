@@ -11,8 +11,8 @@
 #
 # These content variables are used when the site styles are generated.
 #
-# $content-max-width    = Used to set a maximum content width for pages - 1200px
-# $content-header-links = Controls the grid in the site header          - 4
+# $content-max-width    = 1200px  - Used to set a maximum content width for pages
+# $content-header-links = 4       - Controls the grid in the site header
 #
 # Styleguide Tokens.Content
 #

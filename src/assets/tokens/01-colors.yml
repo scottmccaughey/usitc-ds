@@ -139,14 +139,14 @@ color:
     # </div>
     # </div>
     #
-    # $color-theme-base-background =        #ffffff - color(white)
-    # $color-theme-base-background-alt =    #e2e8e9 - color(grey, 90)
-    # $color-theme-base-border =            #2b383b - color(grey, 20)
-    # $color-theme-base-text =              #2b383b - color(grey, 20)
-    # $color-theme-base-link =              #0f758a - color(cyan, 30)
-    # $color-theme-base-hover-background =  #0f758a - color(cyan, 30)
-    # $color-theme-base-hover-text =        #ffffff - color(white)
-    # $color-theme-base-spinner =           #0f758a - color(cyan, 30)
+    # $color-theme-base-background        = color(white)    - #ffffff
+    # $color-theme-base-background-alt    = color(grey, 90) - #e2e8e9
+    # $color-theme-base-border            = color(grey, 20) - #2b383b
+    # $color-theme-base-text              = color(grey, 20) - #2b383b
+    # $color-theme-base-link              = color(cyan, 30) - #0f758a
+    # $color-theme-base-hover-background  = color(cyan, 30) - #0f758a
+    # $color-theme-base-hover-text        = color(white)    - #ffffff
+    # $color-theme-base-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.Theme.Base
     #
@@ -178,14 +178,14 @@ color:
     # </div>
     # </div>
     #
-    # $color-theme-dark-background =        #0a4e5c - color(cyan, 20)
-    # $color-theme-dark-background-alt =    #0f758a - color(cyan, 30)
-    # $color-theme-dark-border =            #0a4e5c - color(cyan, 20)
-    # $color-theme-dark-text =              #ffffff - color(white)
-    # $color-theme-dark-link =              #ffffff - color(white)
-    # $color-theme-dark-hover-background =  #ffffff - color(white)
-    # $color-theme-dark-hover-text =        #0f758a - color(cyan, 30)
-    # $color-theme-dark-spinner =           #ffffff - color(white)
+    # $color-theme-dark-background        = color(cyan, 20) - #0a4e5c
+    # $color-theme-dark-background-alt    = color(cyan, 30) - #0f758a
+    # $color-theme-dark-border            = color(cyan, 20) - #0a4e5c
+    # $color-theme-dark-text              = color(white)    - #ffffff
+    # $color-theme-dark-link              = color(white)    - #ffffff
+    # $color-theme-dark-hover-background  = color(white)    - #ffffff
+    # $color-theme-dark-hover-text        = color(cyan, 30) - #0f758a
+    # $color-theme-dark-spinner           = color(white)    - #ffffff
     #
     # Styleguide Tokens.Colors.Theme.Dark
     #
@@ -219,14 +219,14 @@ color:
     #
     # </div>
     #
-    # $color-state-error-background =        #fcebe8 - color(red,  95)
-    # $color-state-error-background-alt =    #fad8d1 - color(red,  90)
-    # $color-state-error-border =            #b83014 - color(red,  40)
-    # $color-state-error-text =              #2b383b - color(grey, 20)
-    # $color-state-error-link =              #b83014 - color(red,  40)
-    # $color-state-error-hover-background =  #b83014 - color(red,  40)
-    # $color-state-error-hover-text =        #ffffff - color(white)
-    # $color-state-error-spinner =           #b83014 - color(red,  40)
+    # $color-state-error-background       = color(red,  95) - #fcebe8
+    # $color-state-error-background-alt   = color(red,  90) - #fad8d1
+    # $color-state-error-border           = color(red,  40) - #b83014
+    # $color-state-error-text             = color(grey, 20) - #2b383b
+    # $color-state-error-link             = color(red,  40) - #b83014
+    # $color-state-error-hover-background = color(red,  40) - #b83014
+    # $color-state-error-hover-text       = color(white)    - #ffffff
+    # $color-state-error-spinner          = color(red,  40) - #b83014
     #
     # Styleguide Tokens.Colors.State.Error
     #
@@ -251,14 +251,14 @@ color:
     #
     # </div>
     #
-    # $color-state-info-background =        #e8f9fd - color(cyan, 95)
-    # $color-state-info-background-alt =    #d1f3fa - color(cyan, 90)
-    # $color-state-info-border =            #0f758a - color(cyan, 30)
-    # $color-state-info-text =              #2b383b - color(grey, 20)
-    # $color-state-info-link =              #0f758a - color(cyan, 30)
-    # $color-state-info-hover-background =  #0f758a - color(cyan, 30)
-    # $color-state-info-hover-text =        #ffffff - color(white)
-    # $color-state-info-spinner =           #0f758a - color(cyan, 30)
+    # $color-state-info-background        = color(cyan, 95) - #e8f9fd
+    # $color-state-info-background-alt    = color(cyan, 90) - #d1f3fa
+    # $color-state-info-border            = color(cyan, 30) - #0f758a
+    # $color-state-info-text              = color(grey, 20) - #2b383b
+    # $color-state-info-link              = color(cyan, 30) - #0f758a
+    # $color-state-info-hover-background  = color(cyan, 30) - #0f758a
+    # $color-state-info-hover-text        = color(white)    - #ffffff
+    # $color-state-info-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.State.Info
     #
@@ -283,14 +283,14 @@ color:
     #
     # </div>
     #
-    # $color-state-success-background =        #e8fceb - color(green, 95)
-    # $color-state-success-background-alt =    #d1fad8 - color(green, 90)
-    # $color-state-success-border =            #0f8a24 - color(green, 30)
-    # $color-state-success-text =              #2b383b - color(grey,  20)
-    # $color-state-success-link =              #0f8a24 - color(green, 30)
-    # $color-state-success-hover-background =  #0f8a24 - color(green, 30)
-    # $color-state-success-hover-text =        #ffffff - color(white)
-    # $color-state-success-spinner =           #0f8a24 - color(green, 30)
+    # $color-state-success-background       = color(green, 95)  - #e8fceb
+    # $color-state-success-background-alt   = color(green, 90)  - #d1fad8
+    # $color-state-success-border           = color(green, 30)  - #0f8a24
+    # $color-state-success-text             = color(grey,  20)  - #2b383b
+    # $color-state-success-link             = color(green, 30)  - #0f8a24
+    # $color-state-success-hover-background = color(green, 30)  - #0f8a24
+    # $color-state-success-hover-text       = color(white)      - #ffffff
+    # $color-state-success-spinner          = color(green, 30)  - #0f8a24
     #
     # Styleguide Tokens.Colors.State.Success
     #
@@ -315,14 +315,14 @@ color:
     #
     # </div>
     #
-    # $color-state-warning-background =        #fcf6e8 - color(orange, 95)
-    # $color-state-warning-background-alt =    #faecd1 - color(orange, 90)
-    # $color-state-warning-border =            #e6a219 - color(orange, 50)
-    # $color-state-warning-text =              #2b383b - color(grey,   20)
-    # $color-state-warning-link =              #e6a219 - color(orange, 50)
-    # $color-state-warning-hover-background =  #e6a219 - color(orange, 50)
-    # $color-state-warning-hover-text =        #ffffff - color(white)
-    # $color-state-warning-spinner =           #e6a219 - color(orange, 50)
+    # $color-state-warning-background       = color(orange, 95) - #fcf6e8
+    # $color-state-warning-background-alt   = color(orange, 90) - #faecd1
+    # $color-state-warning-border           = color(orange, 50) - #e6a219
+    # $color-state-warning-text             = color(grey,   20) - #2b383b
+    # $color-state-warning-link             = color(orange, 50) - #e6a219
+    # $color-state-warning-hover-background = color(orange, 50) - #e6a219
+    # $color-state-warning-hover-text       = color(white)      - #ffffff
+    # $color-state-warning-spinner          = color(orange, 50) - #e6a219
     #
     # Styleguide Tokens.Colors.State.Warning
     #

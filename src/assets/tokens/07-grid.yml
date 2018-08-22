@@ -14,9 +14,9 @@
 #
 # These settings control our grid system.
 #
-# $grid-columns = The default number of columns in our grid           - 12
-# $grid-gap-col = The default size of the gutter between grid columns - $space-m (20px)
-# $grid-gap-row = The default size of the gutter between grid rows    - $space-m (20px)
+# $grid-columns = 12        - The default number of columns in our grid
+# $grid-gap-col = $space-m  - The default size of the gutter between grid columns
+# $grid-gap-row = $space-m  - The default size of the gutter between grid rows
 #
 # Styleguide Tokens.Grid
 #

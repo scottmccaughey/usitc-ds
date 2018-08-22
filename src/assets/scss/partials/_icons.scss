@@ -9,98 +9,88 @@
 
 icon,
 .icon {
-	display: inline-block;
-	height: $icon-size-base;
-	position: relative;
-	width: $icon-size-base;
+  display: inline-block;
+  height: $icon-size-base;
+  position: relative;
+  width: $icon-size-base;
 
-	&.svg,
-	> svg {
-		align-items: stretch;
-		display: flex;
-		height: 100%;
-		fill: currentColor;
-		justify-content: stretch;
-		stroke: none;
-		width: 100%;
-	}
+  &.svg,
+  > svg {
+    align-items: stretch;
+    display: flex;
+    height: 100%;
+    fill: currentColor;
+    justify-content: stretch;
+    stroke: none;
+    width: 100%;
+  }
 
-	&.icon-xxxs {
-		height: $icon-size-xxxs;
-		width: $icon-size-xxxs;
-	}
+  &.icon-xxxxs {
+    height: $icon-size-xxxxs;
+    width: $icon-size-xxxxs;
+  }
 
-	&.icon-xxs {
-		height: $icon-size-xxs;
-		width: $icon-size-xxs;
-	}
+  &.icon-xxxs {
+    height: $icon-size-xxxs;
+    width: $icon-size-xxxs;
+  }
 
-	&.icon-xs {
-		height: $icon-size-xs;
-		width: $icon-size-xs;
-	}
+  &.icon-xxs {
+    height: $icon-size-xxs;
+    width: $icon-size-xxs;
+  }
 
-	&.icon-s {
-		height: $icon-size-s;
-		width: $icon-size-s;
-	}
+  &.icon-xs {
+    height: $icon-size-xs;
+    width: $icon-size-xs;
+  }
 
-	&.icon-m {
-		height: $icon-size-m;
-		width: $icon-size-m;
-	}
+  &.icon-s {
+    height: $icon-size-s;
+    width: $icon-size-s;
+  }
 
-	&.icon-l {
-		height: $icon-size-l;
-		width: $icon-size-l;
-	}
+  &.icon-m {
+    height: $icon-size-m;
+    width: $icon-size-m;
+  }
 
-	&.icon-xl {
-		height: $icon-size-xl;
-		width: $icon-size-xl;
-	}
+  &.icon-l {
+    height: $icon-size-l;
+    width: $icon-size-l;
+  }
 
-	&.icon-xxl {
-		height: $icon-size-xxl;
-		width: $icon-size-xxl;
-	}
+  &.icon-xl {
+    height: $icon-size-xl;
+    width: $icon-size-xl;
+  }
 
-	&.icon-xxxl {
-		height: $icon-size-xxxl;
-		width: $icon-size-xxxl;
-	}
+  &.icon-xxl {
+    height: $icon-size-xxl;
+    width: $icon-size-xxl;
+  }
 
-	&.icon-xxxxl {
-		height: $icon-size-xxxxl;
-		width: $icon-size-xxxxl;
-	}
+  &.icon-xxxl {
+    height: $icon-size-xxxl;
+    width: $icon-size-xxxl;
+  }
 
-	&.icon-xxxxxl {
-		height: $icon-size-xxxxxl;
-		width: $icon-size-xxxxxl;
-	}
+  &.icon-xxxxl {
+    height: $icon-size-xxxxl;
+    width: $icon-size-xxxxl;
+  }
 
-	&.icon-xxxxxxl {
-		height: $icon-size-xxxxxxl;
-		width: $icon-size-xxxxxxl;
-	}
+  &.icon-block {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
 
-	&.icon-xxxxxxxl {
-		height: $icon-size-xxxxxxxl;
-		width: $icon-size-xxxxxxxl;
-	}
-
-	&.icon-block {
-		display: block;
-		max-height: 100%;
-		max-width: 100%;
-	}
-
-	&.icon-centered {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		max-height: 100%;
-		max-width: 100%;
-	}
+  &.icon-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }

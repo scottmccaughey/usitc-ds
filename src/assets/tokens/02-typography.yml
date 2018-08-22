@@ -63,8 +63,8 @@ font:
     #
     # </div>
     #
-    # $font-family-base - Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif
-    # $font-family-mono - 'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace
+    # $font-family-base = Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif - ​
+    # $font-family-mono = 'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace - ​
     #
     # Styleguide Tokens.Typography.Families
     #
@@ -85,9 +85,9 @@ font:
   #
   # </div>
   #
-  # $font-weight-normal - 300
-  # $font-weight-bold -   700
-  # $font-weight-black -  900
+  # $font-weight-normal = 300 - ​
+  # $font-weight-bold   = 700 - ​
+  # $font-weight-black  = 900 - ​
   #
   # Styleguide Tokens.Typography.Weights
   #
@@ -131,17 +131,17 @@ font:
     #
     # </div>
     #
-    # $font-size-xxxxs -  0.402rem (8.038px)
-    # $font-size-xxxs -   0.482rem (9.645px)
-    # $font-size-xxs -    0.579rem (11.574px)
-    # $font-size-xs -     0.694rem (13.889px)
-    # $font-size-s -      0.833rem (16.667px)
-    # $font-size-m -      1.000rem (20px)
-    # $font-size-l -      1.200rem (24px)
-    # $font-size-xl -     1.440rem (28.8px)
-    # $font-size-xxl -    1.728rem (34.56px)
-    # $font-size-xxxl -   2.074rem (41.472px)
-    # $font-size-xxxxl -  2.488rem (49.7664px)
+    # $font-size-xxxxs  = 0.402rem - 8.038px
+    # $font-size-xxxs   = 0.482rem - 9.645px
+    # $font-size-xxs    = 0.579rem - 11.574px
+    # $font-size-xs     = 0.694rem - 13.889px
+    # $font-size-s      = 0.833rem - 16.667px
+    # $font-size-m      = 1.000rem - 20px
+    # $font-size-l      = 1.200rem - 24px
+    # $font-size-xl     = 1.440rem - 28.8px
+    # $font-size-xxl    = 1.728rem - 34.56px
+    # $font-size-xxxl   = 2.074rem - 41.472px
+    # $font-size-xxxxl  = 2.488rem - 49.7664px
     #
     # Styleguide Tokens.Typography.Sizes.Scale
     #
@@ -180,12 +180,12 @@ font:
     #
     # </div>
     #
-    # $font-size-h1 - $font-size-xxl (34.56px)
-    # $font-size-h2 - $font-size-xl  (28.8px)
-    # $font-size-h3 - $font-size-l   (24px)
-    # $font-size-h4 - $font-size-m   (20px)
-    # $font-size-h5 - $font-size-m   (20px)
-    # $font-size-h6 - $font-size-m   (20px)
+    # $font-size-h1 = $font-size-xxl - 34.56px
+    # $font-size-h2 = $font-size-xl  - 28.8px
+    # $font-size-h3 = $font-size-l   - 24px
+    # $font-size-h4 = $font-size-m   - 20px
+    # $font-size-h5 = $font-size-m   - 20px
+    # $font-size-h6 = $font-size-m   - 20px
     #
     # Styleguide Tokens.Typography.Sizes.Headers
     #
@@ -201,10 +201,10 @@ font:
 #
 # Our base line height is `1.5` (the number is multiplied by the element’s font size). We use smaller line heights for headers (`1.25`) and buttons (`1`). We also set an explicit line height of `2.5rem` (`50px`) on form elements like input fields and select boxes for consistency.
 #
-# $line-height-base -   1.5
-# $line-height-header - 1.25
-# $line-height-button - 1
-# $line-height-form -   2.5rem (50px)
+# $line-height-base   = 1.5     - ​
+# $line-height-header = 1.25    - ​
+# $line-height-button = 1       - ​
+# $line-height-form   = 2.5rem  - 50px
 #
 # Styleguide Tokens.Typography.Line-Heights
 #

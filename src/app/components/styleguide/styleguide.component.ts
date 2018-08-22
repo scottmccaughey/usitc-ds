@@ -34,6 +34,8 @@ export class StyleguideComponent implements OnInit {
         }
       }
     });
+
+    console.log(this.section);
   }
 
   getSubSections(section) {

@@ -7,22 +7,37 @@
 # 888   Y88..88P 888     888  888  888      X88
 # 888    "Y88P"  888     888  888  888  88888P'
 
-form:
-  control:
-    default:
-      left:         -2px
-      size:         40px
-      size-inner:   26px
-      top:          -2px
-    checkbox:
-      position:     6px 7px
-    checkbox-bust:
-      left:         -2px
-      margin-top:   -10px
-      position:     5px 2px
-      size:         50px
-      size-inner:   44px
-      top:          -2px
-  read-more:
-    hr:
-      margin:       29px 0 30px
+# Forms
+#
+# We use custom form controls for checkboxes and radio buttons. Lining these elements up with the elements around them requires pixel-specific positioning, which is controlled by these settings.
+#
+# $form-control-default-left              = -2px        - Controls horizontal positioning
+# $form-control-default-size              = 40px        - Controls height and width
+# $form-control-default-size-inner        = 26px        - Controls inner height and width
+# $form-control-default-top               = -2px        - Controls vertical positioning
+# $form-control-checkbox-position         = 6px 7px     - Controls the position of the ✔
+# $form-control-checkbox-bust-left        = -2px        - Controls horizontal positioning for the "bust out" checkbox
+# $form-control-checkbox-bust-margin-top  = -10px       - Controls margins
+# $form-control-checkbox-bust-position    = 5px 2px     - Controls the position of the ✔
+# $form-control-checkbox-bust-size        = 50px        - Controls height and width
+# $form-control-checkbox-bust-size-inner  = 44px        - Controls inner height and width
+# $form-control-checkbox-bust-top         = -2px        - Controls vertical positioning
+#
+# Styleguide Tokens.Forms
+#
+# Weight: 10
+form-control:
+  default:
+    left:         -2px
+    size:         40px
+    size-inner:   26px
+    top:          -2px
+  checkbox:
+    position:     6px 7px
+  checkbox-bust:
+    left:         -2px
+    margin-top:   -10px
+    position:     5px 2px
+    size:         50px
+    size-inner:   44px
+    top:          -2px
