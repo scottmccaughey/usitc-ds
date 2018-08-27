@@ -3696,13 +3696,6 @@ a rect {
         grid-column-end: 5;
         margin: 1rem 1rem 0 0; } }
 
-.login-form-label {
-  -ms-flex-item-align: center;
-      align-self: center; }
-  @media (min-width: 800px) {
-    .login-form-label h2 {
-      margin-top: 0; } }
-
 .login-form-password {
   margin-top: 1rem; }
   .login-form-password h2 {
@@ -3711,6 +3704,7 @@ a rect {
     text-align: center; }
     @media (min-width: 800px) {
       .login-form-password h2 {
+        margin-top: 0;
         text-align: right; } }
   .login-form-password label {
     -ms-flex-item-align: center;

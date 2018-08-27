@@ -169,16 +169,6 @@
   }
 }
 
-.login-form-label {
-  align-self: center;
-
-  h2 {
-    @include breakpoint(m) {
-      margin-top: 0;
-    }
-  }
-}
-
 .login-form-password {
   margin-top: $space-m;
 
@@ -188,6 +178,7 @@
     text-align: center;
 
     @include breakpoint(m) {
+      margin-top: 0;
       text-align: right;
     }
   }
