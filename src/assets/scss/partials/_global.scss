@@ -229,10 +229,6 @@ pre {
 
 .disclaimer {
   font-size: $font-size-xs;
-
-  @include breakpoint(m) {
-    text-align: right;
-  }
 }
 
 .nowrap {

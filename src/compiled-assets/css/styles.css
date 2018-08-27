@@ -2087,9 +2087,6 @@ pre {
 
 .disclaimer {
   font-size: 0.69444rem; }
-  @media (min-width: 800px) {
-    .disclaimer {
-      text-align: right; } }
 
 .nowrap {
   white-space: nowrap; }
@@ -3622,7 +3619,7 @@ a rect {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 400px;
   width: 100%; }
   @media (min-width: 800px) {
@@ -3713,11 +3710,6 @@ a rect {
   .login-form-password label {
     -ms-flex-item-align: center;
         align-self: center; }
-
-@media (min-width: 800px) {
-  .login-links {
-    grid-area: links;
-    padding: 1rem 2rem; } }
 
 .login-links ul {
   padding-left: 0;
