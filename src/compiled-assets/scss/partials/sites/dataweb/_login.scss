@@ -193,11 +193,13 @@
 }
 
 .login-links {
+  align-self: center;
+
   ul {
     padding-left: 0;
     text-align: center;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       text-align: left;
     }
   }
@@ -209,7 +211,7 @@
     padding: 0 $space-s;
     white-space: nowrap;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       display: block;
       padding: 0;
     }

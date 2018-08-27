@@ -3711,23 +3711,25 @@ a rect {
     -ms-flex-item-align: center;
         align-self: center; }
 
-.login-links ul {
-  padding-left: 0;
-  text-align: center; }
-  @media (min-width: 800px) {
-    .login-links ul {
-      text-align: left; } }
-
-.login-links li {
-  display: inline-block;
-  line-height: 1;
-  list-style: none;
-  padding: 0 0.5rem;
-  white-space: nowrap; }
-  @media (min-width: 800px) {
-    .login-links li {
-      display: block;
-      padding: 0; } }
+.login-links {
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .login-links ul {
+    padding-left: 0;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .login-links ul {
+        text-align: left; } }
+  .login-links li {
+    display: inline-block;
+    line-height: 1;
+    list-style: none;
+    padding: 0 0.5rem;
+    white-space: nowrap; }
+    @media (min-width: 1200px) {
+      .login-links li {
+        display: block;
+        padding: 0; } }
 
 .site-login {
   display: -webkit-box;
