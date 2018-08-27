@@ -3697,23 +3697,28 @@ a rect {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.login-form-password {
-  margin-top: 1rem; }
-  .login-form-password h2 {
-    line-height: 1.5;
-    margin: 1rem 0 0;
-    text-align: center; }
-    @media (min-width: 1200px) {
-      .login-form-password h2 {
-        margin-top: 0;
-        text-align: right; } }
-  .login-form-password label {
-    -ms-flex-item-align: center;
-        align-self: center; }
+.login-form-password h2 {
+  line-height: 1.5;
+  margin: 1rem 0 0;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .login-form-password h2 {
+      margin-top: 0;
+      text-align: right; } }
+
+.login-form-password label {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.login-form-reset {
+  margin: 0 auto 2rem; }
 
 .login-links {
   -ms-flex-item-align: center;
       align-self: center; }
+  @media (min-width: 1200px) {
+    .login-links {
+      font-size: 0.69444rem; } }
   .login-links ul {
     padding-left: 0;
     text-align: center; }
@@ -3730,6 +3735,12 @@ a rect {
       .login-links li {
         display: block;
         padding: 0; } }
+
+.password-header {
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .password-header {
+      text-align: left; } }
 
 .site-login {
   display: -webkit-box;

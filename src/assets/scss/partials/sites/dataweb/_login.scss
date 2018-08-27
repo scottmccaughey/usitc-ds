@@ -174,8 +174,6 @@
 }
 
 .login-form-password {
-  margin-top: $space-m;
-
   h2 {
     line-height: $line-height-base;
     margin: $space-m 0 0;
@@ -192,8 +190,16 @@
   }
 }
 
+.login-form-reset {
+  margin: 0 auto $space-l;
+}
+
 .login-links {
   align-self: center;
+
+  @include breakpoint(l) {
+    font-size: $font-size-xs;
+  }
 
   ul {
     padding-left: 0;
@@ -215,6 +221,14 @@
       display: block;
       padding: 0;
     }
+  }
+}
+
+.password-header {
+  text-align: center;
+
+  @include breakpoint(l) {
+    text-align: left;
   }
 }
 
