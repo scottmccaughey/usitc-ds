@@ -58,7 +58,7 @@
   max-width: 400px;
   width: 100%;
 
-  @include breakpoint(m) {
+  @include breakpoint(l) {
     grid-gap: $grid-gap-row $grid-gap-col;
     grid-template-columns: 5rem repeat(3, 1fr);
     max-width: 100%;
@@ -73,19 +73,19 @@
   &.login-success,
   &.login-warning {
     > div {
-      @include breakpoint(m) {
+      @include breakpoint(l) {
         padding: 0 0 $space-m;
       }
 
       &:last-child {
-        @include breakpoint(m) {
+        @include breakpoint(l) {
           padding: 0 $space-m $space-m 0;
         }
       }
     }
 
     app-error-message {
-      @include breakpoint(m) {
+      @include breakpoint(l) {
         grid-column-start: 2;
         grid-column-end: 5;
       }
@@ -104,18 +104,18 @@
   > div {
     padding: 0 $space-m;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       padding: $space-m 0;
     }
 
     &:last-child {
-      @include breakpoint(m) {
+      @include breakpoint(l) {
         padding: $space-m $space-m $space-m 0;
       }
     }
 
     &.panel {
-      @include breakpoint(m) {
+      @include breakpoint(l) {
         padding: $space-m;
       }
     }
@@ -137,7 +137,7 @@
   .login-icon {
     display: block;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       height: 3rem;
       width: 3rem;
     }
@@ -161,7 +161,7 @@
       margin-bottom: $space-m;
     }
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       grid-column-start: 2;
       grid-column-end: 5;
       margin: $space-m $space-m 0 0;
@@ -181,7 +181,7 @@
     margin: $space-m 0 0;
     text-align: center;
 
-    @include breakpoint(m) {
+    @include breakpoint(l) {
       margin-top: 0;
       text-align: right;
     }

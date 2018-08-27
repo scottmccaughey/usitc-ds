@@ -3622,7 +3622,7 @@ a rect {
   margin: 0 auto;
   max-width: 400px;
   width: 100%; }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .login-form {
       grid-gap: 1rem 1rem;
       grid-template-columns: 5rem repeat(3, 1fr);
@@ -3630,13 +3630,13 @@ a rect {
   @media (min-width: 1200px) {
     .login-form {
       max-width: 1200px; } }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .login-form.login-error > div, .login-form.login-message > div, .login-form.login-success > div, .login-form.login-warning > div {
       padding: 0 0 1rem; } }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .login-form.login-error > div:last-child, .login-form.login-message > div:last-child, .login-form.login-success > div:last-child, .login-form.login-warning > div:last-child {
       padding: 0 1rem 1rem 0; } }
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .login-form.login-error app-error-message, .login-form.login-message app-error-message, .login-form.login-success app-error-message, .login-form.login-warning app-error-message {
       grid-column-start: 2;
       grid-column-end: 5; } }
@@ -3648,13 +3648,13 @@ a rect {
       padding: 0; } }
   .login-form > div {
     padding: 0 1rem; }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form > div {
         padding: 1rem 0; } }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form > div:last-child {
         padding: 1rem 1rem 1rem 0; } }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form > div.panel {
         padding: 1rem; } }
   .login-form input {
@@ -3668,7 +3668,7 @@ a rect {
     width: 100%; }
   .login-form .login-icon {
     display: block; }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form .login-icon {
         height: 3rem;
         width: 3rem; } }
@@ -3687,7 +3687,7 @@ a rect {
     margin: 1rem 1rem 0; }
     .login-form .panel.margin-bottom {
       margin-bottom: 1rem; }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form .panel {
         grid-column-start: 2;
         grid-column-end: 5;
@@ -3703,7 +3703,7 @@ a rect {
     line-height: 1.5;
     margin: 1rem 0 0;
     text-align: center; }
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       .login-form-password h2 {
         margin-top: 0;
         text-align: right; } }
