@@ -3736,6 +3736,11 @@ a rect {
         display: block;
         padding: 0; } }
 
+.login-password-strength {
+  font-size: 0.69444rem; }
+  .login-password-strength h2 {
+    font-size: 0.83333rem; }
+
 .password-header {
   text-align: center; }
   @media (min-width: 1200px) {
