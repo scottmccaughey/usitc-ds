@@ -592,6 +592,7 @@ simple-select {
 .search-options {
   .control.checkbox {
     background-color: color(grey, 98);
+    border: 1px solid color(grey, 80);
     margin-bottom: 0;
     padding: $space-xs 0;
   }

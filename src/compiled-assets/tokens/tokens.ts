@@ -12,7 +12,7 @@ export const tokens = {
     },
     "grey": {
       "hue": 190,
-      "sat": 20
+      "sat": 10
     },
     "red": {
       "hue": 355,
