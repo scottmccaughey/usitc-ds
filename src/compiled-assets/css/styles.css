@@ -3696,6 +3696,10 @@ a rect {
         grid-column-end: 5;
         margin: 1rem 1rem 0 0; } }
 
+.login-form-label {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
 .login-form-password {
   margin-top: 1rem; }
   .login-form-password h2 {
