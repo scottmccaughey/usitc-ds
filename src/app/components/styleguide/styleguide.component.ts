@@ -29,6 +29,10 @@ export class StyleguideComponent implements OnInit {
         this.section = section;
         this.depth = section.depth - 1;
 
+        if (this.depth === 0) {
+          this.getSubSectionLinks(section);
+        }
+
         if (this.depth === 1) {
           this.getSubSections(section);
         }
@@ -36,6 +40,16 @@ export class StyleguideComponent implements OnInit {
     });
 
     console.log(this.section);
+  }
+
+  getSubSectionLinks(section) {
+    const secSplit = section.referenceURI.split('-');
+    this.kss['sections'].forEach(sec => {
+      const sectionSplit = sec.referenceURI.split('-');
+      if (sectionSplit[0] === secSplit[0] && sectionSplit[1] === secSplit[1] && sectionSplit[2]) {
+        this.subSections.push(sec);
+      }
+    });
   }
 
   getSubSections(section) {

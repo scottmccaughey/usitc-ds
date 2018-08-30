@@ -8,11 +8,13 @@
 //  "Y88P"  888    888          "Y8888P "Y888888 888  888   Y88P   "Y888888  88888P'
 
 .site-content {
+  grid-area: site-content;
   overflow: auto;
 }
 
 .site-layout {
   display: grid;
+  grid-template-areas: 'off-canvas-left site-content off-canvas-right';
   grid-template-columns: $off-canvas-width 100vw $off-canvas-width;
   height: 100vh;
   left: (-$off-canvas-width);
@@ -49,4 +51,12 @@
       margin-right: $space-m;
     }
   }
+}
+
+.off-canvas-left {
+  grid-area: off-canvas-left;
+}
+
+.off-canvas-right {
+  grid-area: off-canvas-right;
 }

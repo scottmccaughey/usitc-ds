@@ -21,11 +21,16 @@ export class BreadcrumbComponent implements OnInit {
     routeSplit.forEach(breadcrumb => {
       crumbTrail += '/' + breadcrumb.toLowerCase();
       this.breadcrumbs.push({
-        name: breadcrumb,
+        name: this.unCamelCase(breadcrumb),
         link: crumbTrail
       });
     });
 
     this.breadcrumbs[this.breadcrumbs.length - 1]['name'] = this.section.header;
+  }
+
+  unCamelCase(str) {
+    str = str.replace(/([a-z\xE0-\xFF])([A-Z\xC0\xDF])/g, '$1 $2');
+    return str;
   }
 }

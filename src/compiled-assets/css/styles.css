@@ -637,62 +637,6 @@ textarea {
 
   build-grid()
 */
-/*
-  888 d8b          888                                   888                  888 d8b
-  888 Y8P          888                                   888                  888 Y8P
-  888              888                                   888                  888
-  888 888 88888b.  888  888       888  888 88888b.   .d88888  .d88b.  888d888 888 888 88888b.   .d88b.
-  888 888 888 "88b 888 .88P       888  888 888 "88b d88" 888 d8P  Y8b 888P"   888 888 888 "88b d8P  Y8b
-  888 888 888  888 888888K 888888 888  888 888  888 888  888 88888888 888     888 888 888  888 88888888
-  888 888 888  888 888 "88b       Y88b 888 888  888 Y88b 888 Y8b.     888     888 888 888  888 Y8b.
-  888 888 888  888 888  888        "Y88888 888  888  "Y88888  "Y8888  888     888 888 888  888  "Y8888
-
-  Link Underline mixin
-
-  link-underline($color)
-*/
-/*
-  888                                     888
-  888                                     888
-  888                                     888
-  888  8888b.  888  888  .d88b.  888  888 888888
-  888     "88b 888  888 d88""88b 888  888 888
-  888 .d888888 888  888 888  888 888  888 888  888888
-  888 888  888 Y88b 888 Y88..88P Y88b 888 Y88b.
-  888 "Y888888  "Y88888  "Y88P"   "Y88888  "Y888
-                    888
-               Y8b d88P
-                "Y88P"
-  888                                      888                  d8b
-  888                                      888                  Y8P
-  888                                      888
-  88888b.   .d88b.  888  888 88888b.   .d88888  8888b.  888d888 888  .d88b.  .d8888b
-  888 "88b d88""88b 888  888 888 "88b d88" 888     "88b 888P"   888 d8P  Y8b 88K
-  888  888 888  888 888  888 888  888 888  888 .d888888 888     888 88888888 "Y8888b.
-  888 d88P Y88..88P Y88b 888 888  888 Y88b 888 888  888 888     888 Y8b.          X88
-  88888P"   "Y88P"   "Y88888 888  888  "Y88888 "Y888888 888     888  "Y8888   88888P'
-
-  Make Layout Boundaries mixin
-
-  make-layout-boundaries($color, $background)
-*/
-/*
-888                     888
-888                     888
-888                     888
-888888 .d88b.  888  888 888888       .d8888b 888d888 .d88b.  88888b.
-888   d8P  Y8b `Y8bd8P' 888         d88P"    888P"  d88""88b 888 "88b
-888   88888888   X88K   888  888888 888      888    888  888 888  888
-Y88b. Y8b.     .d8""8b. Y88b.       Y88b.    888    Y88..88P 888 d88P
- "Y888 "Y8888  888  888  "Y888       "Y8888P 888     "Y88P"  88888P"
-                                                             888
-                                                             888
-                                                             888
-
-  Text Cropping mixin
-
-  text-crop($line-height, $top-adjustment, $bottom-adjustment)
-*/
 .border {
   border: 1px solid #73888c; }
 
@@ -2608,10 +2552,12 @@ icon,
     max-width: 100%; }
 
 .site-content {
+  grid-area: site-content;
   overflow: auto; }
 
 .site-layout {
   display: grid;
+  grid-template-areas: 'off-canvas-left site-content off-canvas-right';
   grid-template-columns: 400px 100vw 400px;
   height: 100vh;
   left: -400px;
@@ -2638,6 +2584,12 @@ icon,
     padding: 1rem; }
     .off-canvas > section > :first-child {
       margin-right: 1rem; }
+
+.off-canvas-left {
+  grid-area: off-canvas-left; }
+
+.off-canvas-right {
+  grid-area: off-canvas-right; }
 
 .pagination {
   display: -webkit-box;
@@ -3338,45 +3290,6 @@ icon,
 
 .size-xxxxl {
   font-size: 2.48832rem; }
-
-.text-crop {
-  display: inline-block;
-  line-height: 1.5; }
-  .text-crop::before, .text-crop::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0; }
-  .text-crop::before {
-    margin-bottom: calc(-0.40278em + 0px); }
-  .text-crop::after {
-    margin-top: calc(-0.40278em + 0px); }
-
-.text-crop-button {
-  display: inline-block;
-  line-height: 1; }
-  .text-crop-button::before, .text-crop-button::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0; }
-  .text-crop-button::before {
-    margin-bottom: calc(-0.15278em + 0px); }
-  .text-crop-button::after {
-    margin-top: calc(-0.15278em + 0px); }
-
-.text-crop-header {
-  display: inline-block;
-  line-height: 1.25; }
-  .text-crop-header::before, .text-crop-header::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0; }
-  .text-crop-header::before {
-    margin-bottom: calc(-0.27778em + 0px); }
-  .text-crop-header::after {
-    margin-top: calc(-0.27778em + 0px); }
 
 .text-center {
   display: block;

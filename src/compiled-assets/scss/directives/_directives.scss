@@ -7,13 +7,13 @@
 // Y88b 888 888 888    Y8b.     Y88b.    Y88b.  888  Y8bd8P  Y8b.          X88
 //  "Y88888 888 888     "Y8888   "Y8888P  "Y888 888   Y88P    "Y8888   88888P'
 
-// Directives
+// Sass Directives
 //
-// Sass mixins and functions to help make development and styling easier and more consistent.
+// Mixins and functions to help make development and styling easier and more consistent.
 //
 // Weight: 2
 //
-// Styleguide: Directives
+// Styleguide: SassDirectives
 
 @import 'breakpoints';
 @import 'string-replace';
@@ -24,6 +24,3 @@
 @import 'modular-scale';
 @import 'max-width';
 @import 'grid-builder';
-@import 'link-underline';
-@import 'layout-boundaries';
-@import 'text-crop';

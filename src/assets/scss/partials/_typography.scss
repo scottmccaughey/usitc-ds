@@ -92,18 +92,6 @@
   font-size: $font-size-xxxxl;
 }
 
-.text-crop {
-  @include text-crop($line-height-base);
-}
-
-.text-crop-button {
-  @include text-crop($line-height-button);
-}
-
-.text-crop-header {
-  @include text-crop($line-height-header);
-}
-
 .text-center {
   display: block;
   text-align: center;
