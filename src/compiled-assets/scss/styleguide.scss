@@ -51,8 +51,10 @@
   h1,
   h2,
   h3,
-  h4 {
-    color: color(cyan, 30);
+  h4,
+  h5,
+  h6 {
+    color: color(blue, 30);
     font-weight: $font-weight-black;
     margin: $space-m 0 $space-s;
     text-transform: uppercase;
@@ -191,25 +193,24 @@
 }
 
 .kss-menu {
-  background-color: color(cyan, 20);
-  color: color(white);
   padding: $space-m 0;
   width: 100%;
 
   a {
     display: block;
+    font-size: $font-size-l;
     font-weight: $font-weight-bold;
     padding: $space-xs $space-m;
     text-decoration: none;
 
     &.kss-menu-child {
-      font-size: $font-size-s;
       font-weight: $font-weight-normal;
       padding: $space-xxs $space-m $space-xxs $space-l;
     }
 
     &.kss-menu-active {
-      background-color: color(cyan, 10);
+      background-color: $color-theme-dark-background;
+      color: $color-theme-dark-text;
     }
   }
 

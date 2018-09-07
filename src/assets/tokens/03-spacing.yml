@@ -12,12 +12,11 @@
 
 # Spacing
 #
-# We use a spacing scale starting at a `20px` base, going up and down from there. You can use these variables in Sass, such as `padding: $space-m;` or `margin: $space-xl $space-l;`.
+# We use a spacing scale starting at a `2rem (20px)` base, going up and down from there. You can use these variables in Sass, such as `padding: $space-m;` or `margin: $space-xl $space-l;`.
 #
 # <div class="border padded margin-bottom">
 # <div class="kss-spacer-grid">
 #
-# <div>This is our XXXS space size:</div><div class="kss-spacer space-xxxs"></div>
 # <div>This is our XXS space size:</div><div class="kss-spacer space-xxs"></div>
 # <div>This is our XS space size:</div><div class="kss-spacer space-xs"></div>
 # <div>This is our small space size:</div><div class="kss-spacer space-s"></div>
@@ -30,32 +29,31 @@
 # </div>
 # </div>
 #
-# $space-xxxs = 0.083rem - 2px
-# $space-xxs  = 0.125rem - 2.5px
-# $space-xs   = 0.25rem  - 5px
-# $space-s    = 0.5rem   - 10px
-# $space-m    = 1rem     - 20px
-# $space-l    = 2rem     - 40px
-# $space-xl   = 4rem     - 80px
-# $space-xxl  = 6rem     - 120px
-# $space-xxxl = 8rem     - 160px
+# $space-xxs  = 0.25rem   - 2.5px
+# $space-xs   = 0.5rem    - 5px
+# $space-s    = 1rem      - 10px
+# $space-m    = 2rem      - 20px
+# $space-l    = 4rem      - 40px
+# $space-xl   = 8rem      - 80px
+# $space-xxl  = 12rem     - 120px
+# $space-xxxl = 16rem     - 160px
 #
 # Styleguide Tokens.Spacing
 #
 # Weight: 3
 space:
-  xxxs:             $font-size-base / 8 !default
-  xxs:              $font-size-base / 6 !default
-  xs:               $font-size-base / 4 !default
-  s:                $font-size-base / 2 !default
-  m:                $font-size-base !default
-  l:                $font-size-base * 2 !default
-  xl:               $font-size-base * 4 !default
-  xxl:              $font-size-base * 6 !default
-  xxxl:             $font-size-base * 8 !default
+  base:             1rem !default
+
+  xxs:              $space-base / 4 !default
+  xs:               $space-base / 2 !default
+  s:                $space-base !default
+  m:                $space-base * 2 !default
+  l:                $space-base * 4 !default
+  xl:               $space-base * 8 !default
+  xxl:              $space-base * 12 !default
+  xxxl:             $space-base * 16 !default
 
   stack:
-    xxxs:           0 0 $space-xxxs 0
     xxs:            0 0 $space-xxs 0
     xs:             0 0 $space-xs 0
     s:              0 0 $space-s 0
@@ -66,7 +64,6 @@ space:
     xxxl:           0 0 $space-xxxl 0
 
   inline:
-    xxxs:           0 $space-xxxs 0 0
     xxs:            0 $space-xxs 0 0
     xs:             0 $space-xs 0 0
     s:              0 $space-s 0 0

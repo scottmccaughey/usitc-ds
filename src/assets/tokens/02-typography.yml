@@ -19,7 +19,7 @@ font:
   path: "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default"
   family:
     files--map:
-      Montserrat:
+      Raleway:
         light:
           weight: 300
           style: normal
@@ -47,7 +47,9 @@ font:
 
     # Font Families
     #
-    # Our base font family is **[Montserrat](https://github.com/JulietaUla/Montserrat)**, a geometric sans-serif typeface designed by Argentinian designer [Julieta Ulanovsky](https://github.com/JulietaUla/). The design was inspired by signage from her historical Buenos Aires neighborhood of the same name. We load Montserrat as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
+    # Our base font family is **[Raleway](https://www.theleagueofmoveabletype.com/raleway)** by [The League of Movable Type](https://www.theleagueofmoveabletype.com). Raleway is an elegant sans-serif typeface, initially designed by [Matt McInerney](http://pixelspread.com) as a single thin weight. It was expanded into a 9 weight family by [Pablo Impallari](http://www.impallari.com) and [Rodrigo Fuenzalida](http://www.rfuenzalida.com) in 2012.
+    #
+    # We load Raleway as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
     #
     # <div class="border padded margin-bottom">
     #
@@ -63,25 +65,24 @@ font:
     #
     # </div>
     #
-    # $font-family-base = Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif - ​
+    # $font-family-base = Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif - ​
     # $font-family-mono = 'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace - ​
     #
     # Styleguide Tokens.Typography.Families
     #
     # Weight: 1
-    base: "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default"
-    mono:
-      "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
+    base: "Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default"
+    mono: "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
 
   # Font Weights
   #
-  # We use two main weights of Montserrat — *Light (300)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
+  # We use two main weights of Raleway — *Light (300)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
   #
   # <div class="border padded margin-bottom">
   #
-  # This is Montserrat Light.<br>
-  # <strong>This is Montserrat Bold.</strong><br>
-  # <span class="black">This is Montserrat Black.</span>
+  # This is Raleway Light.<br>
+  # <strong>This is Raleway Bold.</strong><br>
+  # <span class="black">This is Raleway Black.</span>
   #
   # </div>
   #
@@ -99,55 +100,49 @@ font:
 
   # Font Sizes
   #
-  # We use a modular scale for our font sizes. Starting at a `20px` base, our font-sizes go up and down based on a [modular scale](https://alistapart.com/article/more-meaningful-typography) ratio of **1.2**.
+  # We use a [modular scale](https://alistapart.com/article/more-meaningful-typography) for our font sizes. Starting at a `1.6rem (16px)` base, our font-sizes go up and down based on a modular scale ratio of **1.2**.
   #
   # Styleguide Tokens.Typography.Sizes
   #
   # Weight: 3
   size:
-    root: 20px !default
-    base: 1rem !default
+    root: 10px !default
+    base: 1.6rem !default
     scale-ratio: 1.2 !default
 
     # Font Size Scale
     #
-    # `1rem` (`rem` is a CSS unit of length that stands for *root em*) is equivalent to our `20px` base.
+    # `1rem` (`rem` is a CSS unit of length that stands for *root em*) is equivalent to our `10px` base.
     #
     # While we have all of the following sizes available, use your judgment on whether a particular size looks reasonable (and readable) in the situation where it is used.
     #
     # <div class="border padded margin-bottom">
     #
-    # <span class="size-xxxxs">This is our XXXXS font size.</span><br>
-    # <span class="size-xxxs">This is our XXXS font size.</span><br>
     # <span class="size-xxs">This is our XXS font size.</span><br>
     # <span class="size-xs">This is our XS font size.</span><br>
     # <span class="size-s">This is our small font size.</span><br>
-    # <span class="size-m">This is our medium font size.</span><br>
+    # <span class="size-m">This is our medium (base) font size.</span><br>
     # <span class="size-l">This is our large font size.</span><br>
     # <span class="size-xl">This is our XL font size.</span><br>
     # <span class="size-xxl">This is our XXL font size.</span><br>
     # <span class="size-xxxl">This is our XXXL font size.</span><br>
-    # <span class="size-xxxxl">This is our XXXXL font size.</span>
+    # <span class="size-xxxxl">This is our XXXXL font size.</span><br>
     #
     # </div>
     #
-    # $font-size-xxxxs  = 0.402rem - 8.038px
-    # $font-size-xxxs   = 0.482rem - 9.645px
-    # $font-size-xxs    = 0.579rem - 11.574px
-    # $font-size-xs     = 0.694rem - 13.889px
-    # $font-size-s      = 0.833rem - 16.667px
-    # $font-size-m      = 1.000rem - 20px
-    # $font-size-l      = 1.200rem - 24px
-    # $font-size-xl     = 1.440rem - 28.8px
-    # $font-size-xxl    = 1.728rem - 34.56px
-    # $font-size-xxxl   = 2.074rem - 41.472px
-    # $font-size-xxxxl  = 2.488rem - 49.7664px
+    # $font-size-xxs    = 0.926rem  - 9.259px
+    # $font-size-xs     = 1.111rem  - 11.111px
+    # $font-size-s      = 1.333rem  - 13.333px
+    # $font-size-m      = 1.6rem    - 16px
+    # $font-size-l      = 1.92rem   - 19.2px
+    # $font-size-xl     = 2.30rem   - 23.04px
+    # $font-size-xxl    = 2.76rem   - 27.648px
+    # $font-size-xxxl   = 3.318rem  - 33.178px
+    # $font-size-xxxxl  = 3.981rem  - 39.813px
     #
     # Styleguide Tokens.Typography.Sizes.Scale
     #
     # Weight: 1
-    xxxxs: ms(-5)
-    xxxs: ms(-4)
     xxs: ms(-3)
     xs: ms(-2)
     s: ms(-1)
@@ -171,40 +166,40 @@ font:
     #
     # <div class="border padded margin-bottom no-guide-styles">
     #
-    # <span class="size-xxl">This is an H1 heading.</span><br>
-    # <span class="size-xl">This is an H2 heading.</span><br>
-    # <span class="size-l">This is an H3 heading.</span><br>
-    # <span class="size-m">This is an H4 heading.</span><br>
-    # <span class="size-m">This is an H5 heading.</span><br>
+    # <span class="size-xxxxl">This is an H1 heading.</span><br>
+    # <span class="size-xxxl">This is an H2 heading.</span><br>
+    # <span class="size-xxl">This is an H3 heading.</span><br>
+    # <span class="size-xl">This is an H4 heading.</span><br>
+    # <span class="size-l">This is an H5 heading.</span><br>
     # <span class="size-m">This is an H6 heading.</span>
     #
     # </div>
     #
-    # $font-size-h1 = $font-size-xxl - 34.56px
-    # $font-size-h2 = $font-size-xl  - 28.8px
-    # $font-size-h3 = $font-size-l   - 24px
-    # $font-size-h4 = $font-size-m   - 20px
-    # $font-size-h5 = $font-size-m   - 20px
-    # $font-size-h6 = $font-size-m   - 20px
+    # $font-size-h1 = $font-size-xxxxl  - 39.813px
+    # $font-size-h2 = $font-size-xxxl   - 33.178px
+    # $font-size-h3 = $font-size-xxl    - 27.648px
+    # $font-size-h4 = $font-size-xl     - 23.04px
+    # $font-size-h5 = $font-size-l      - 19.2px
+    # $font-size-h6 = $font-size-m      - 16px
     #
     # Styleguide Tokens.Typography.Sizes.Headers
     #
     # Weight: 2
-    h1: $font-size-xxl !default
-    h2: $font-size-xl !default
-    h3: $font-size-l !default
-    h4: $font-size-m !default
-    h5: $font-size-m !default
+    h1: $font-size-xxxxl !default
+    h2: $font-size-xxxl !default
+    h3: $font-size-xxl !default
+    h4: $font-size-xl !default
+    h5: $font-size-l !default
     h6: $font-size-m !default
 
 # Line Heights
 #
-# Our base line height is `1.5` (the number is multiplied by the element’s font size). We use smaller line heights for headers (`1.25`) and buttons (`1`). We also set an explicit line height of `2.5rem` (`50px`) on form elements like input fields and select boxes for consistency.
+# Our base line height is `1.5` (the number is multiplied by the element’s font size). We use smaller line heights for headers (`1.25`) and buttons (`1`). We also set an explicit line height of `5rem` (`50px`) on form elements like input fields and select boxes for consistency.
 #
-# $line-height-base   = 1.5     - ​
-# $line-height-header = 1.25    - ​
-# $line-height-button = 1       - ​
-# $line-height-form   = 2.5rem  - 50px
+# $line-height-base   = 1.5   - ​
+# $line-height-header = 1.25  - ​
+# $line-height-button = 1     - ​
+# $line-height-form   = 5rem  - 50px
 #
 # Styleguide Tokens.Typography.Line-Heights
 #
@@ -213,6 +208,6 @@ line-height:
   base: 1.5 !default
   header: 1.25 !default
   button: 1 !default
-  form: 2.5rem !default
+  form: 5rem !default
 
 max-line-length: 50em !default

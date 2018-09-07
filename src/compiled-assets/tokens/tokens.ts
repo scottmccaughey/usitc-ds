@@ -11,35 +11,35 @@ export const tokens = {
       "lum": 100
     },
     "grey": {
-      "hue": 190,
+      "hue": 215,
       "sat": 10
     },
     "red": {
-      "hue": 355,
+      "hue": 350,
       "sat": 80
     },
     "orange": {
-      "hue": 25,
+      "hue": 35,
       "sat": 80
     },
     "yellow": {
-      "hue": 55,
+      "hue": 65,
       "sat": 80
     },
     "green": {
-      "hue": 115,
+      "hue": 110,
       "sat": 80
     },
     "cyan": {
-      "hue": 190,
+      "hue": 185,
       "sat": 80
     },
     "blue": {
-      "hue": 220,
+      "hue": 215,
       "sat": 80
     },
     "purple": {
-      "hue": 280,
+      "hue": 275,
       "sat": 80
     }
   },
@@ -50,19 +50,19 @@ export const tokens = {
         "background-alt": "color(grey, 90) !default",
         "border": "color(grey, 20) !default",
         "text": "color(grey, 20) !default",
-        "link": "color(cyan, 30) !default",
-        "hover-background": "color(cyan, 30) !default",
+        "link": "color(blue) !default",
+        "hover-background": "color(blue) !default",
         "hover-text": "color(white) !default",
-        "spinner": "color(cyan, 30) !default"
+        "spinner": "color(blue, 30) !default"
       },
       "dark": {
-        "background": "color(cyan, 20) !default",
-        "background-alt": "color(cyan, 30) !default",
-        "border": "color(cyan, 20) !default",
+        "background": "color(blue, 20) !default",
+        "background-alt": "color(blue, 30) !default",
+        "border": "color(blue, 20) !default",
         "text": "color(white) !default",
         "link": "color(white) !default",
         "hover-background": "color(white) !default",
-        "hover-text": "color(cyan, 30) !default",
+        "hover-text": "color(blue, 30) !default",
         "spinner": "color(white) !default"
       }
     },
@@ -113,7 +113,7 @@ export const tokens = {
     "path": "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default",
     "family": {
       "files--map": {
-        "Montserrat": {
+        "Raleway": {
           "light": {
             "weight": 300,
             "style": "normal",
@@ -146,7 +146,7 @@ export const tokens = {
           }
         }
       },
-      "base": "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default",
+      "base": "Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default",
       "mono": "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
     },
     "weight": {
@@ -155,11 +155,9 @@ export const tokens = {
       "black": "900 !default"
     },
     "size": {
-      "root": "20px !default",
-      "base": "1rem !default",
+      "root": "10px !default",
+      "base": "1.6rem !default",
       "scale-ratio": "1.2 !default",
-      "xxxxs": "ms(-5)",
-      "xxxs": "ms(-4)",
       "xxs": "ms(-3)",
       "xs": "ms(-2)",
       "s": "ms(-1)",
@@ -169,11 +167,11 @@ export const tokens = {
       "xxl": "ms(3)",
       "xxxl": "ms(4)",
       "xxxxl": "ms(5)",
-      "h1": "$font-size-xxl !default",
-      "h2": "$font-size-xl !default",
-      "h3": "$font-size-l !default",
-      "h4": "$font-size-m !default",
-      "h5": "$font-size-m !default",
+      "h1": "$font-size-xxxxl !default",
+      "h2": "$font-size-xxxl !default",
+      "h3": "$font-size-xxl !default",
+      "h4": "$font-size-xl !default",
+      "h5": "$font-size-l !default",
       "h6": "$font-size-m !default"
     }
   },
@@ -181,21 +179,20 @@ export const tokens = {
     "base": "1.5 !default",
     "header": "1.25 !default",
     "button": "1 !default",
-    "form": "2.5rem !default"
+    "form": "5rem !default"
   },
   "max-line-length": "50em !default",
   "space": {
-    "xxxs": "$font-size-base / 8 !default",
-    "xxs": "$font-size-base / 6 !default",
-    "xs": "$font-size-base / 4 !default",
-    "s": "$font-size-base / 2 !default",
-    "m": "$font-size-base !default",
-    "l": "$font-size-base * 2 !default",
-    "xl": "$font-size-base * 4 !default",
-    "xxl": "$font-size-base * 6 !default",
-    "xxxl": "$font-size-base * 8 !default",
+    "base": "1rem !default",
+    "xxs": "$space-base / 4 !default",
+    "xs": "$space-base / 2 !default",
+    "s": "$space-base !default",
+    "m": "$space-base * 2 !default",
+    "l": "$space-base * 4 !default",
+    "xl": "$space-base * 8 !default",
+    "xxl": "$space-base * 12 !default",
+    "xxxl": "$space-base * 16 !default",
     "stack": {
-      "xxxs": "0 0 $space-xxxs 0",
       "xxs": "0 0 $space-xxs 0",
       "xs": "0 0 $space-xs 0",
       "s": "0 0 $space-s 0",
@@ -206,7 +203,6 @@ export const tokens = {
       "xxxl": "0 0 $space-xxxl 0"
     },
     "inline": {
-      "xxxs": "0 $space-xxxs 0 0",
       "xxs": "0 $space-xxs 0 0",
       "xs": "0 $space-xs 0 0",
       "s": "0 $space-s 0 0",
