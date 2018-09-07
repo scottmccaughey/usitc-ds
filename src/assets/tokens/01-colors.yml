@@ -143,6 +143,7 @@ color:
     # $color-theme-base-background-alt    = color(grey, 90) - #e3e5e8
     # $color-theme-base-border            = color(grey, 20) - #2e3238
     # $color-theme-base-text              = color(grey, 20) - #2e3238
+    # $color-theme-base-accent            = color(blue, 30) - #0f428a
     # $color-theme-base-link              = color(blue)     - #196ee6
     # $color-theme-base-hover-background  = color(blue)     - #196ee6
     # $color-theme-base-hover-text        = color(white)    - #ffffff
@@ -156,6 +157,7 @@ color:
       background-alt:   color(grey, 90) !default
       border:           color(grey, 20) !default
       text:             color(grey, 20) !default
+      accent:           color(blue, 30) !default
       link:             color(blue) !default
       hover-background: color(blue) !default
       hover-text:       color(white) !default
@@ -182,7 +184,8 @@ color:
     # $color-theme-dark-background-alt    = color(blue, 30) - #0f428a
     # $color-theme-dark-border            = color(blue, 20) - #0a2c5c
     # $color-theme-dark-text              = color(white)    - #ffffff
-    # $color-theme-dark-link              = color(white)    - #ffffff
+    # $color-theme-dark-accent            = color(blue, 80) - #a3c5f5
+    # $color-theme-dark-link              = color(blue, 90) - #d1e2fa
     # $color-theme-dark-hover-background  = color(white)    - #ffffff
     # $color-theme-dark-hover-text        = color(blue, 30) - #0f428a
     # $color-theme-dark-spinner           = color(white)    - #ffffff
@@ -195,7 +198,8 @@ color:
       background-alt:   color(blue, 30) !default
       border:           color(blue, 20) !default
       text:             color(white) !default
-      link:             color(white) !default
+      accent:           color(blue, 80) !default
+      link:             color(blue, 90) !default
       hover-background: color(white) !default
       hover-text:       color(blue, 30) !default
       spinner:          color(white) !default
@@ -219,27 +223,29 @@ color:
     #
     # </div>
     #
-    # $color-state-error-background       = color(red,  95) - #fcebe8
-    # $color-state-error-background-alt   = color(red,  90) - #fad8d1
-    # $color-state-error-border           = color(red,  40) - #b83014
+    # $color-state-error-background       = color(red, 95) - #fcebe8
+    # $color-state-error-background-alt   = color(red, 90) - #fad8d1
+    # $color-state-error-border           = color(red, 40) - #b83014
     # $color-state-error-text             = color(grey, 20) - #2b383b
-    # $color-state-error-link             = color(red,  40) - #b83014
-    # $color-state-error-hover-background = color(red,  40) - #b83014
+    # $color-state-error-accent           = color(red, 30) - #8a0f24
+    # $color-state-error-link             = color(red, 40) - #b83014
+    # $color-state-error-hover-background = color(red, 40) - #b83014
     # $color-state-error-hover-text       = color(white)    - #ffffff
-    # $color-state-error-spinner          = color(red,  40) - #b83014
+    # $color-state-error-spinner          = color(red, 40) - #b83014
     #
     # Styleguide Tokens.Colors.State.Error
     #
     # Weight: 1
     error:
-      background:       color(red,  95) !default
-      background-alt:   color(red,  90) !default
-      border:           color(red,  40) !default
+      background:       color(red, 95) !default
+      background-alt:   color(red, 90) !default
+      border:           color(red, 40) !default
       text:             color(grey, 20) !default
-      link:             color(red,  40) !default
-      hover-background: color(red,  40) !default
+      accent:           color(red, 30) !default
+      link:             color(red, 40) !default
+      hover-background: color(red, 40) !default
       hover-text:       color(white) !default
-      spinner:          color(red,  40) !default
+      spinner:          color(red, 40) !default
 
     # Info State
     #
@@ -251,27 +257,29 @@ color:
     #
     # </div>
     #
-    # $color-state-info-background        = color(cyan, 95) - #e8f9fd
-    # $color-state-info-background-alt    = color(cyan, 90) - #d1f3fa
-    # $color-state-info-border            = color(cyan, 30) - #0f758a
-    # $color-state-info-text              = color(grey, 20) - #2b383b
-    # $color-state-info-link              = color(cyan, 30) - #0f758a
-    # $color-state-info-hover-background  = color(cyan, 30) - #0f758a
+    # $color-state-info-background        = color(blue, 98) - #f6f9fe
+    # $color-state-info-background-alt    = color(blue, 95) - #e8f1fc
+    # $color-state-info-border            = color(blue)     - #196ee6
+    # $color-state-info-text              = color(grey, 20) - #2e3238
+    # $color-state-info-accent            = color(blue, 30) - #0f428a
+    # $color-state-info-link              = color(blue, 40) - #1458b8
+    # $color-state-info-hover-background  = color(blue)     - #196ee6
     # $color-state-info-hover-text        = color(white)    - #ffffff
-    # $color-state-info-spinner           = color(cyan, 30) - #0f758a
+    # $color-state-info-spinner           = color(blue, 30) - #0f428a
     #
     # Styleguide Tokens.Colors.State.Info
     #
     # Weight: 2
     info:
-      background:       color(cyan, 95) !default
-      background-alt:   color(cyan, 90) !default
-      border:           color(cyan, 30) !default
+      background:       color(blue, 98) !default
+      background-alt:   color(blue, 95) !default
+      border:           color(blue) !default
       text:             color(grey, 20) !default
-      link:             color(cyan, 30) !default
-      hover-background: color(cyan, 30) !default
+      accent:           color(blue, 30) !default
+      link:             color(blue, 40) !default
+      hover-background: color(blue) !default
       hover-text:       color(white) !default
-      spinner:          color(cyan, 30) !default
+      spinner:          color(blue, 30) !default
 
     # Success State
     #
@@ -286,8 +294,9 @@ color:
     # $color-state-success-background       = color(green, 95)  - #e8fceb
     # $color-state-success-background-alt   = color(green, 90)  - #d1fad8
     # $color-state-success-border           = color(green, 30)  - #0f8a24
-    # $color-state-success-text             = color(grey,  20)  - #2b383b
-    # $color-state-success-link             = color(green, 30)  - #0f8a24
+    # $color-state-success-text             = color(grey, 20)   - #2b383b
+    # $color-state-success-accent           = color(green, 20)  - #185c0a
+    # $color-state-success-link             = color(green, 20)  - #185c0a
     # $color-state-success-hover-background = color(green, 30)  - #0f8a24
     # $color-state-success-hover-text       = color(white)      - #ffffff
     # $color-state-success-spinner          = color(green, 30)  - #0f8a24
@@ -299,8 +308,9 @@ color:
       background:       color(green, 95) !default
       background-alt:   color(green, 90) !default
       border:           color(green, 30) !default
-      text:             color(grey,  20) !default
-      link:             color(green, 30) !default
+      text:             color(grey, 20) !default
+      accent:           color(green, 20) !default
+      link:             color(green, 20) !default
       hover-background: color(green, 30) !default
       hover-text:       color(white) !default
       spinner:          color(green, 30) !default
@@ -317,12 +327,13 @@ color:
     #
     # $color-state-warning-background       = color(orange, 95) - #fcf6e8
     # $color-state-warning-background-alt   = color(orange, 90) - #faecd1
-    # $color-state-warning-border           = color(orange, 50) - #e6a219
-    # $color-state-warning-text             = color(grey,   20) - #2b383b
-    # $color-state-warning-link             = color(orange, 50) - #e6a219
-    # $color-state-warning-hover-background = color(orange, 50) - #e6a219
+    # $color-state-warning-border           = color(orange)     - #e6a219
+    # $color-state-warning-text             = color(grey, 20)   - #2b383b
+    # $color-state-warning-accent           = color(orange, 30) - #8a570f
+    # $color-state-warning-link             = color(orange, 30) - #8a570f
+    # $color-state-warning-hover-background = color(orange)     - #e6a219
     # $color-state-warning-hover-text       = color(white)      - #ffffff
-    # $color-state-warning-spinner          = color(orange, 50) - #e6a219
+    # $color-state-warning-spinner          = color(orange)     - #e6a219
     #
     # Styleguide Tokens.Colors.State.Warning
     #
@@ -330,9 +341,10 @@ color:
     warning:
       background:       color(orange, 95) !default
       background-alt:   color(orange, 90) !default
-      border:           color(orange, 50) !default
-      text:             color(grey,   20) !default
-      link:             color(orange, 50) !default
-      hover-background: color(orange, 50) !default
+      border:           color(orange) !default
+      text:             color(grey, 20) !default
+      accent:           color(orange, 30) !default
+      link:             color(orange, 30) !default
+      hover-background: color(orange) !default
       hover-text:       color(white) !default
-      spinner:          color(orange, 50) !default
+      spinner:          color(orange) !default

@@ -251,7 +251,7 @@
 }
 
 .panel {
-  @include state-info;
+  @include state-default;
   margin-bottom: $space-m;
   padding: $space-m;
 

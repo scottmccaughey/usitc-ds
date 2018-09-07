@@ -82,13 +82,11 @@ a {
   transition: $transition-base;
 
   .on-dark & {
-    color: inherit;
-    text-decoration-color: $color-theme-dark-link;
+    color: $color-theme-dark-link;
   }
 
   .on-light & {
-    color: inherit;
-    text-decoration-color: $color-theme-base-link;
+    color: $color-theme-base-link;
   }
 
   &:active,
@@ -205,6 +203,16 @@ pre {
 
 .alt {
   background-color: color(grey, 95);
+
+  a {
+    color: $color-theme-base-accent;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $color-theme-base-hover-text;
+    }
+  }
 }
 
 .alt-off {

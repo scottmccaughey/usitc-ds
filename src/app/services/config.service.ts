@@ -18,4 +18,9 @@ export class ConfigService {
   changeRoute(route: string) {
     this.routeSource.next(route);
   }
+
+  unCamelCase(str) {
+    str = str.replace(/([a-z\xE0-\xFF])([A-Z\xC0\xDF])/g, '$1 $2');
+    return str;
+  }
 }

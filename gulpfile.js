@@ -239,7 +239,7 @@ gulp.task(
 gulp.task('build:tokens', 'Convert tokens to all formats, then generate the styleguide.', function(
   cb
 ) {
-  sequence('convert', 'generate:styleguide')(cb);
+  sequence('convert', 'compile:scss', 'generate:styleguide')(cb);
 });
 
 /*

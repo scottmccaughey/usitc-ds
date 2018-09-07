@@ -16,8 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-theme-base-text;
-  font-weight: $font-weight-normal;
+  color: $color-theme-base-accent;
+  font-weight: $font-weight-bold;
   line-height: $line-height-header;
   margin: $space-l 0 $space-m;
 
@@ -40,7 +40,7 @@ h6 {
   }
 
   .on-light & {
-    color: $color-theme-base-text;
+    color: $color-theme-base-accent;
   }
 }
 
@@ -76,13 +76,8 @@ h6,
 
 .header-caps {
   color: color(blue, 30);
-  font-size: ($space-m + $space-xs);
   font-weight: $font-weight-black;
   text-transform: uppercase;
-
-  @include breakpoint(l) {
-    font-size: $space-l;
-  }
 }
 
 .header-overall {

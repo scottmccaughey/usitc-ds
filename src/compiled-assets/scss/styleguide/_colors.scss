@@ -123,85 +123,22 @@
   }
 }
 
-// .kss-gradient {
-//   display: grid;
-//   padding: $space-m;
-//   color: color(white);
-//   grid-template-areas:
-//     'name'
-//     'code';
-//   grid-template-rows: 6rem 2rem;
-
-//   .kss-color-name {
-//     font-weight: $font-weight-bold;
-//     text-transform: capitalize;
-//   }
-// }
-
-// @each $color, $hsl in $base-colors {
-//   .kss-gradient-#{$color} {
-//     @include gradient(bottom, #{$color});
-//   }
-// }
-
-// .kss-gradient-red-orange {
-//   @include gradient(bottom, red, orange);
-// }
-
-// .kss-gradient-orange-yellow {
-//   @include gradient(bottom, orange, yellow);
-// }
-
-// .kss-gradient-yellow-green {
-//   @include gradient(bottom, yellow, green);
-
-//   .kss-color-name {
-//     color: color(black);
-//   }
-// }
-
-// .kss-gradient-green-blue {
-//   @include gradient(bottom, green, blue);
-// }
-
-// .kss-gradient-blue-purple {
-//   @include gradient(bottom, blue, purple);
-// }
-
-// .kss-gradient-purple-red {
-//   @include gradient(bottom, purple, red);
-// }
-
-// .kss-gradient-yellow,
-// .kss-gradient-green,
-// .kss-gradient-orange-yellow,
-// .kss-gradient-yellow-green {
-//   .color-code {
-//     color: $color-theme-base-text;
-//   }
-// }
-
 .kss-contrast-aaa,
 .kss-contrast-aa,
 .kss-contrast-aa18,
 .kss-contrast-dnp {
-  border: $border-base;
-  color: $color-theme-base-text;
   text-transform: uppercase;
 }
 
 .kss-contrast-aaa,
 .kss-contrast-aa {
-  background-color: color(green, 80);
-  border-color: color(green, 30);
+  background-color: color(green);
 }
 
 .kss-contrast-aa18 {
-  background-color: color(orange, 80);
-  border-color: color(orange, 30);
+  background-color: color(orange, 60);
 }
 
 .kss-contrast-dnp {
   background-color: color(red, 80);
-  border-color: color(red, 30);
 }

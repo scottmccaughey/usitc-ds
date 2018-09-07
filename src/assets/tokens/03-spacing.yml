@@ -25,18 +25,22 @@
 # <div>This is our XL space size:</div><div class="kss-spacer space-xl"></div>
 # <div>This is our XXL space size:</div><div class="kss-spacer space-xxl"></div>
 # <div>This is our XXXL space size:</div><div class="kss-spacer space-xxxl"></div>
+# <div>This is our XXXXL space size:</div><div class="kss-spacer space-xxxxl"></div>
+# <div>This is our XXXXXL space size:</div><div class="kss-spacer space-xxxxxl"></div>
 #
 # </div>
 # </div>
 #
-# $space-xxs  = 0.25rem   - 2.5px
-# $space-xs   = 0.5rem    - 5px
-# $space-s    = 1rem      - 10px
-# $space-m    = 2rem      - 20px
-# $space-l    = 4rem      - 40px
-# $space-xl   = 8rem      - 80px
-# $space-xxl  = 12rem     - 120px
-# $space-xxxl = 16rem     - 160px
+# $space-xxs    = 0.33rem   - 3px
+# $space-xs     = 0.5rem    - 5px
+# $space-s      = 1rem      - 10px
+# $space-m      = 2rem      - 20px
+# $space-l      = 4rem      - 40px
+# $space-xl     = 4rem      - 40px
+# $space-xxl    = 6rem      - 60px
+# $space-xxxl   = 8rem      - 80px
+# $space-xxxxl  = 12rem     - 120px
+# $space-xxxxxl = 16rem     - 160px
 #
 # Styleguide Tokens.Spacing
 #
@@ -44,14 +48,16 @@
 space:
   base:             1rem !default
 
-  xxs:              $space-base / 4 !default
+  xxs:              $space-base / 3 !default
   xs:               $space-base / 2 !default
   s:                $space-base !default
   m:                $space-base * 2 !default
-  l:                $space-base * 4 !default
-  xl:               $space-base * 8 !default
-  xxl:              $space-base * 12 !default
-  xxxl:             $space-base * 16 !default
+  l:                $space-base * 3 !default
+  xl:               $space-base * 4 !default
+  xxl:              $space-base * 6 !default
+  xxxl:             $space-base * 8 !default
+  xxxxl:            $space-base * 12 !default
+  xxxxxl:           $space-base * 16 !default
 
   stack:
     xxs:            0 0 $space-xxs 0
@@ -62,6 +68,8 @@ space:
     xl:             0 0 $space-xl 0
     xxl:            0 0 $space-xxl 0
     xxxl:           0 0 $space-xxxl 0
+    xxxxl:          0 0 $space-xxxxl 0
+    xxxxxl:         0 0 $space-xxxxxl 0
 
   inline:
     xxs:            0 $space-xxs 0 0
@@ -72,3 +80,5 @@ space:
     xl:             0 $space-xl 0 0
     xxl:            0 $space-xxl 0 0
     xxxl:           0 $space-xxxl 0 0
+    xxxxl:          0 $space-xxxxl 0 0
+    xxxxxl:         0 $space-xxxxxl 0 0

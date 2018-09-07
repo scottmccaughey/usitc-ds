@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
         const pageTitle =
           event['title'] === 'Home'
             ? 'USITC Design System'
-            : event['title'] + ' | USITC Design System';
+            : this.config.unCamelCase(event['title']) + ' | USITC Design System';
         this.titleService.setTitle(pageTitle);
         this.config.changeRoute(this.location.path());
       });

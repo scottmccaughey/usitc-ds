@@ -10,6 +10,7 @@
 
   State Colors mixins
 
+  state-default()
   state-error()
   state-info()
   state-success()
@@ -17,6 +18,38 @@
 
   Include these to use standard state colors on an element.
 */
+
+@mixin state-default {
+  background-color: $color-theme-base-background;
+  border-color: $color-theme-dark-background-alt;
+  color: $color-theme-base-text;
+
+  a {
+    color: $color-theme-base-link;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-base-hover-background;
+      color: $color-theme-base-hover-text;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-theme-base-accent;
+  }
+
+  .panel-header,
+  .panel-header:first-child {
+    background-color: $color-theme-dark-background-alt;
+    color: $color-theme-dark-text;
+  }
+}
 
 @mixin state-error {
   background-color: $color-state-error-background;
@@ -26,17 +59,21 @@
   a {
     color: $color-state-error-link;
 
-    @supports (text-decoration-color: $color-state-error-link) {
-      color: inherit;
-      text-decoration-color: $color-state-error-link;
-    }
-
     &:active,
     &:focus,
     &:hover {
       background-color: $color-state-error-hover-background;
       color: $color-state-error-hover-text;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-state-error-accent;
   }
 
   .panel-header,
@@ -54,17 +91,21 @@
   a {
     color: $color-state-info-link;
 
-    @supports (text-decoration-color: $color-state-info-link) {
-      color: inherit;
-      text-decoration-color: $color-state-info-link;
-    }
-
     &:active,
     &:focus,
     &:hover {
       background-color: $color-state-info-hover-background;
       color: $color-state-info-hover-text;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-state-info-accent;
   }
 
   .panel-header,
@@ -82,17 +123,21 @@
   a {
     color: $color-state-success-link;
 
-    @supports (text-decoration-color: $color-state-success-link) {
-      color: inherit;
-      text-decoration-color: $color-state-success-link;
-    }
-
     &:active,
     &:focus,
     &:hover {
       background-color: $color-state-success-hover-background;
       color: $color-state-success-hover-text;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-state-success-accent;
   }
 
   .panel-header,
@@ -110,17 +155,21 @@
   a {
     color: $color-state-warning-link;
 
-    @supports (text-decoration-color: $color-state-warning-link) {
-      color: inherit;
-      text-decoration-color: $color-state-warning-link;
-    }
-
     &:active,
     &:focus,
     &:hover {
       background-color: $color-state-warning-hover-background;
       color: $color-state-warning-hover-text;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-state-warning-accent;
   }
 
   .panel-header,

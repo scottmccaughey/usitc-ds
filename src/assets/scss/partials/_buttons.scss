@@ -34,7 +34,7 @@
 // Styleguide Components.Buttons
 button,
 [type='button'],
-.button {
+.button.button {
   align-items: center;
   background-color: $color-theme-base-background;
   background-image: none;
@@ -353,34 +353,6 @@ button,
     &:focus,
     &:hover {
       color: color(black, 0, 70);
-    }
-  }
-
-  // Round Button
-  //
-  // Add a `.button-round` class for a round button. This should only be used for icon buttons, as shown below, and only sparingly as most of our components have square corners.
-  //
-  // Markup:
-  // <button type="button" class="button-success button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#save"></use></svg></span><span class="visually-hidden">Save</span></button>
-  // <button type="button" class="button-cancel button-round"><span class="icon icon-l"><svg><use xlink:href="/assets/icons/symbol/icons.svg#trash"></use></svg></span><span class="visually-hidden">Delete</span></button>
-  //
-  // Styleguide Components.Buttons.Round
-  //
-  // Weight: 6
-  &.button-round {
-    border-radius: $border-radius-circle;
-    height: $space-l;
-    line-height: $space-l;
-    width: $space-l;
-  }
-
-  &.button-spinner {
-    &.button-xl {
-      min-height: 62px;
-    }
-
-    .spinner {
-      margin: 0;
     }
   }
 }
