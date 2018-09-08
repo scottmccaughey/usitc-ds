@@ -8,116 +8,125 @@
 // 888  888  "Y88P"  888  888  888  "Y8888
 
 .home-intro {
-	em {
-		color: color(red, 40);
-		font-style: normal;
-	}
+  em {
+    color: color(red, 40);
+    font-style: normal;
+  }
 }
 
 .home-links {
-	margin-bottom: $space-m;
+  margin-bottom: $space-m;
 
-	ul {
-		padding-left: 0;
-		text-align: center;
-	}
+  ul {
+    padding-left: 0;
+    text-align: center;
+  }
 
-	li {
-		display: inline-block;
-		font-weight: $font-weight-bold;
-		line-height: 1;
-		list-style: none;
-		padding: 0 $space-s;
-		white-space: nowrap;
-	}
+  li {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    list-style: none;
+    padding: 0 $space-s;
+    white-space: nowrap;
+  }
 }
 
 .site-home-big-select {
-	margin: $space-l 0;
+  margin: $space-l 0;
 
-	@include breakpoint(m) {
-		grid-column-gap: $space-xs;
-	}
+  @include breakpoint(m) {
+    grid-column-gap: $space-xs;
+  }
 
-	button,
-	select {
-		border-width: 0;
-		height: 5rem;
-		width: 100%;
-	}
+  button,
+  select {
+    border-width: 0;
+    height: 5rem;
+    width: 100%;
 
-	button {
-		align-items: center;
-		background-color: color(cyan, 40);
-		color: color(white);
-		display: flex;
-		font-size: $font-size-xl;
-		font-weight: $font-weight-black;
-		justify-content: center;
-		padding: 0;
-		text-transform: uppercase;
+    @include breakpoint(m) {
+      height: 10rem;
+    }
+  }
 
-		&:active,
-		&:focus,
-		&:hover {
-			background-color: color(cyan, 20);
-		}
+  button {
+    align-items: center;
+    background-color: color(blue, 50);
+    color: color(white);
+    display: flex;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-black;
+    justify-content: center;
+    padding: 0;
+    text-transform: uppercase;
 
-		> i {
-			margin-left: $space-s;
-		}
+    @include breakpoint(m) {
+      font-size: $font-size-xxl;
+    }
 
-		> i,
-		> i > *,
-		> i > * > svg {
-			height: $line-height-form;
-			width: $line-height-form;
-		}
-	}
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(blue, 30);
+    }
 
-	select {
-		background-color: color(grey, 20);
-		color: color(white);
-		font-size: $space-m;
-		padding: $space-s ($space-xl + $space-m) $space-s $space-l;
+    icon {
+      height: $icon-size-l;
+      margin-left: $space-s;
+      width: $icon-size-l;
 
-		@include breakpoint(m) {
-			font-size: $space-l;
-		}
-	}
+      @include breakpoint(m) {
+        height: $icon-size-xl;
+        margin-left: $space-m;
+        width: $icon-size-xl;
+      }
+    }
+  }
 
-	.select {
-		&::after {
-			border-left-width: $space-m;
-			border-right-width: $space-m;
-			border-top: $space-m solid color(white);
-			margin-top: (-$space-s);
-			right: $space-l;
-		}
-	}
+  select {
+    background-color: color(grey, 20);
+    color: color(white);
+    font-size: $space-m;
+    padding: $space-s $space-xxxl $space-s $space-l;
+
+    @include breakpoint(m) {
+      font-size: $space-xl;
+    }
+  }
+
+  .select {
+    &::after {
+      border-left-width: $space-m;
+      border-right-width: $space-m;
+      border-top: $space-m solid color(white);
+      margin-top: (-$space-s);
+      right: $space-l;
+    }
+  }
 }
 
 .site-home-list {
-	margin-bottom: 0;
+  margin-bottom: 0;
 
-	li {
-		font-weight: $font-weight-bold;
-	}
+  li {
+    font-weight: $font-weight-bold;
+  }
 }
 
 .trade-data-reports {
-	> a {
-		background: color(grey, 95);
-		color: color(black);
-		display: block;
-		padding: $space-m;
-		text-align: center;
+  > a {
+    background: color(grey, 95);
+    color: color(black);
+    display: block;
+    padding: $space-m;
+    text-align: center;
 
-		&:active,
-		&:focus,
-		&:hover {
-			background: color(cyan, 30);
-			color: color(white);
-		}
-	}
+    &:active,
+    &:focus,
+    &:hover {
+      background: color(cyan, 30);
+      color: color(white);
+    }
+  }
 }

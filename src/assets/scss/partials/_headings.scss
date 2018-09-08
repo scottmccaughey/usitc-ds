@@ -81,35 +81,31 @@ h6,
 }
 
 .header-overall {
-  font-size: 6.3vw;
-  letter-spacing: -0.3vw;
-  margin-bottom: 0;
+  color: $color-theme-base-text;
+  font-size: 10vw;
+  font-weight: $font-weight-normal;
+  letter-spacing: -1px;
+  margin-bottom: $space-s;
 
   @include breakpoint(s) {
-    font-size: 6.3vw;
+    font-size: 10vw; //
+    letter-spacing: -2px;
   }
 
   @include breakpoint(m) {
-    font-size: 6.3vw;
+    font-size: 8rem;
+    letter-spacing: -4px; //
   }
 
   @include breakpoint(l) {
-    font-size: 76px;
-    letter-spacing: -3.6px;
+    font-size: 8rem; //
+    letter-spacing: -4px; //
   }
 
   em {
+    color: color(blue, 30);
     font-style: normal;
     font-weight: $font-weight-bold;
-
-    b {
-      color: color(blue, 30);
-    }
-
-    i {
-      color: color(red, 40);
-      font-style: normal;
-    }
   }
 }
 
@@ -135,19 +131,26 @@ h6,
 }
 
 .header-tagline {
-  font-size: 3vw;
+  font-size: $font-size-s;
   font-weight: $font-weight-normal;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0; //
   text-transform: uppercase;
 
   @include breakpoint(s) {
-    font-size: $font-size-xs;
+    font-size: 2.25vw;
     letter-spacing: 0.4rem;
+  }
+
+  @include breakpoint(m) {
+    font-size: $font-size-m;
   }
 }
 
 .subhead {
-  font-size: $font-size-s;
+  color: $color-theme-base-text;
+  font-size: $font-size-m;
+  font-weight: $font-weight-normal;
+  margin-top: (-$space-s);
 }
 
 .subhead-table {

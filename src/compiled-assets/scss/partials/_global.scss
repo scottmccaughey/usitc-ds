@@ -167,7 +167,7 @@ table {
 ol,
 ul {
   margin-bottom: $space-m;
-  padding-left: 1.75rem;
+  padding-left: $space-l;
 
   &:only-child,
   &:last-child li:last-child {
@@ -202,17 +202,7 @@ pre {
 }
 
 .alt {
-  background-color: color(grey, 95);
-
-  a {
-    color: $color-theme-base-accent;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: $color-theme-base-hover-text;
-    }
-  }
+  background-color: color(grey, 98);
 }
 
 .alt-off {

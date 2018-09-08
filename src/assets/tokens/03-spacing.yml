@@ -35,7 +35,7 @@
 # $space-xs     = 0.5rem    - 5px
 # $space-s      = 1rem      - 10px
 # $space-m      = 2rem      - 20px
-# $space-l      = 4rem      - 40px
+# $space-l      = 3rem      - 30px
 # $space-xl     = 4rem      - 40px
 # $space-xxl    = 6rem      - 60px
 # $space-xxxl   = 8rem      - 80px
