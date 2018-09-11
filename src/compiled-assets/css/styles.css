@@ -400,54 +400,6 @@ textarea {
   display: none !important; }
 
 /*
-           888            d8b
-           888            Y8P
-           888
-  .d8888b  888888 888d888 888 88888b.   .d88b.
-  88K      888    888P"   888 888 "88b d88P"88b
-  "Y8888b. 888    888     888 888  888 888  888 888888
-       X88 Y88b.  888     888 888  888 Y88b 888
-   88888P'  "Y888 888     888 888  888  "Y88888
-                                            888
-                                       Y8b d88P
-                                        "Y88P"
-                           888
-                           888
-                           888
-  888d888 .d88b.  88888b.  888  8888b.   .d8888b .d88b.
-  888P"  d8P  Y8b 888 "88b 888     "88b d88P"   d8P  Y8b
-  888    88888888 888  888 888 .d888888 888     88888888
-  888    Y8b.     888 d88P 888 888  888 Y88b.   Y8b.
-  888     "Y8888  88888P"  888 "Y888888  "Y8888P "Y8888
-                  888
-                  888
-                  888
-
-  String Replacement function
-
-  str-replace($string, $search, $replace)
-
-  The str-replace() function takes three parameters, the first two of which are required. You
-  must pass the text to be modified ($string) and the text you want to replace ($search). The
-  third (optional) parameter is the text you want to insert in place of the $search text
-  ($replace). If the $replace parameter is not passed, the $search text will simply be
-  removed. For example:
-
-  .selector {
-    $string: 'The answer to life, the universe and everything is blah.';
-    content: str-replace($string, 'blah', '42');
-  }
-
-  ...will compile to the following CSS...
-
-  .selector {
-    content: 'The answer to life, the universe and everything is 42.';
-  }
-
-  This function is used in the Font Face Declaration mixin defined and documented in
-  _directives.scss (@section 6).
-*/
-/*
    .d888                  888          .d888
   d88P"                   888         d88P"
   888                     888         888
@@ -2416,7 +2368,7 @@ h6,
       margin: -1rem 3rem 1rem; } }
   .header-step em,
   .header-step:first-child em {
-    color: #0f428a;
+    color: #1458b8;
     font-size: 3.98131rem;
     font-style: normal;
     font-weight: 900;
@@ -2426,7 +2378,6 @@ h6,
 .header-tagline {
   font-size: 1.33333rem;
   font-weight: 300;
-  letter-spacing: 0;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .header-tagline {
@@ -3204,42 +3155,42 @@ icon,
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-light.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-light.woff') format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-lightitalic.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-lightitalic.woff') format("woff");
   font-weight: 300;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-bold.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-bold.woff') format("woff");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-bolditalic.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-bolditalic.woff') format("woff");
   font-weight: 700;
   font-style: italic;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-black.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-black.woff') format("woff");
   font-weight: 900;
   font-style: normal;
   font-stretch: normal; }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff") format("woff");
+  src: url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-blackitalic.woff2') format("woff2"), url('../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/str-replace(raleway, " ")-blackitalic.woff') format("woff");
   font-weight: 900;
   font-style: italic;
   font-stretch: normal; }
