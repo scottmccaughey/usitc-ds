@@ -23,6 +23,10 @@
   height: $space-xl;
   margin: $space-m auto;
   width: $space-xl;
+
+  .button-spinner & {
+    margin: 0 auto;
+  }
 }
 
 .spinner-circle {

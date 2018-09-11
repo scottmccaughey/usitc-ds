@@ -19,8 +19,8 @@
   > * {
     background-color: transparent;
     background-image: none;
-    border: 1px solid color(cyan, 30);
-    color: color(white);
+    border: 1px solid $color-theme-dark-border;
+    color: $color-theme-dark-text;
     display: flex;
     flex: 1 1 0;
     line-height: 24px;
@@ -52,27 +52,27 @@
     }
 
     &.active {
-      background-color: color(cyan, 30);
-      color: color(white);
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
       cursor: default;
 
       &:active,
       &:focus,
       &:hover {
-        background-color: color(cyan, 30);
-        color: color(white);
+        background-color: $color-theme-dark-background-alt;
+        color: $color-theme-dark-text;
       }
     }
 
     &.disabled {
-      color: color(cyan, 30);
+      color: $color-theme-base-accent;
       cursor: default;
 
       &:active,
       &:focus,
       &:hover {
         background-color: transparent;
-        color: color(cyan, 30);
+        color: $color-theme-base-accent;
       }
     }
 
@@ -90,24 +90,24 @@
       }
 
       select {
-        background-color: color(cyan, 20);
+        background-color: $color-theme-dark-background;
         border-width: 0;
-        color: color(white);
+        color: $color-theme-dark-text;
         font-size: $font-size-xs;
         height: 44px;
         padding: $space-s ($space-m + $space-s) $space-s $space-s;
 
         &:focus {
-          color: color(white);
+          color: $color-theme-dark-text;
         }
 
         option {
-          background-color: color(cyan, 20);
+          background-color: $color-theme-dark-background;
         }
       }
 
       &:after {
-        border-top-color: color(white);
+        border-top-color: $color-theme-dark-text;
       }
     }
   }

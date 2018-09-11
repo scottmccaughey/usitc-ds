@@ -38,17 +38,17 @@
   &:focus,
   &:hover {
     > div {
-      background-color: color(green, 20);
+      background-color: $color-state-success-link;
 
       &.button-icon {
-        background-color: color(white);
+        background-color: $color-theme-base-background;
       }
     }
   }
 
   > div {
-    background-color: color(green, 30);
-    color: color(white);
+    background-color: $color-state-success-border;
+    color: $color-theme-dark-text;
     padding: $space-m;
 
     @include breakpoint(m) {
@@ -56,7 +56,7 @@
     }
 
     &.button-icon {
-      background-color: color(white);
+      background-color: $color-theme-base-background;
       color: color(grey);
       display: flex;
       flex-direction: column;
@@ -95,6 +95,11 @@
   }
 }
 
+.button-search-submit {
+  height: $space-xxl;
+  width: $space-xxxxl;
+}
+
 .commodities-select .input-with-button button {
   padding: 0 $space-m;
 }
@@ -117,6 +122,10 @@
   }
 }
 
+.saved-requests {
+  background-color: $color-state-info-background-alt;
+}
+
 .search-actions-buttons {
   text-align: center;
 
@@ -129,38 +138,42 @@
 
   button,
   .button {
-    text-transform: none;
-  }
-
-  .button-primary {
-    &:active,
-    &:focus,
-    &:hover {
+    &.button-primary {
       background-color: color(blue, 90);
       color: color(black);
-    }
-  }
 
-  .button-success {
-    &:active,
-    &:focus,
-    &:hover {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(blue, 70);
+      }
+    }
+
+    &.button-success {
       background-color: color(green, 90);
       color: color(black);
-    }
-  }
 
-  .button-cancel {
-    &:active,
-    &:focus,
-    &:hover {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(green, 70);
+      }
+    }
+
+    &.button-cancel {
       background-color: color(red, 90);
       color: color(black);
-    }
-  }
 
-  .button-spinner {
-    min-height: 40.75px;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(red, 70);
+      }
+    }
+
+    &.button-spinner {
+      min-height: 40.75px;
+    }
   }
 }
 
@@ -176,7 +189,7 @@
   }
 
   label {
-    color: color(white);
+    color: $color-theme-dark-text;
   }
 }
 
@@ -237,11 +250,6 @@
       }
     }
   }
-}
-
-.button-search-submit {
-  height: $space-l;
-  width: 10rem;
 }
 
 .show-query {
@@ -342,7 +350,7 @@
   .total {
     th,
     td {
-      background-color: #f2f3f3;
+      background-color: color(grey, 98);
       font-weight: $font-weight-bold;
     }
   }
@@ -389,11 +397,11 @@
   tbody {
     tr {
       &:nth-child(odd) td {
-        background-color: $color-theme-dark-background-alt;
+        background-color: $color-state-info-background;
       }
 
       &.sample-row td {
-        background-color: color(orange, 95);
+        background-color: $color-state-warning-background;
         color: color(black);
 
         &:last-child {
@@ -407,7 +415,7 @@
 
         span {
           background-color: color(orange, 40);
-          color: color(white);
+          color: $color-theme-dark-text;
           display: inline-block;
           font-weight: $font-weight-bold;
           margin-right: $space-s;
@@ -436,14 +444,14 @@
       &.sample-row {
         &:nth-child(even) {
           td {
-            background-color: #fcefd6;
+            background-color: color(grey, 98);
           }
         }
 
         td {
           em {
             background-color: color(orange, 40);
-            color: color(white);
+            color: $color-theme-dark-text;
             display: block;
             font-weight: $font-weight-bold;
             margin: (-$space-m) (-$space-m) $space-m;
@@ -526,7 +534,7 @@
   }
 
   .query-desc {
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
   }
 
   .query-name {
@@ -547,7 +555,7 @@
   }
 
   select {
-    background-color: color(blue, 90);
+    background-color: $color-theme-dark-link;
     border-width: 0;
     font-weight: $font-weight-bold;
   }

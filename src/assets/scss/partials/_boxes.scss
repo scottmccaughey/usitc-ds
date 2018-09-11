@@ -8,7 +8,7 @@
 // 88888P"   "Y88P"  888  888  "Y8888   88888P'
 
 .box-header {
-  background-color: color(cyan, 30);
+  background-color: $color-theme-dark-background-alt;
   color: color(white);
   font-size: $font-size-s;
   font-weight: $font-weight-bold;
@@ -16,7 +16,7 @@
   padding: $space-s;
 
   + .boxed {
-    border-color: color(cyan, 30);
+    border-color: $color-theme-dark-background-alt;
   }
 }
 
@@ -152,7 +152,7 @@
 }
 
 .controls-boxed-header {
-  color: color(cyan, 30);
+  color: $color-theme-base-accent;
   cursor: pointer;
   font-size: $font-size-l;
   font-weight: $font-weight-bold;
@@ -167,7 +167,7 @@
   &:focus,
   &:hover,
   &.current {
-    background-color: color(cyan, 30);
+    background-color: $color-theme-dark-background-alt;
     color: color(white);
   }
 
