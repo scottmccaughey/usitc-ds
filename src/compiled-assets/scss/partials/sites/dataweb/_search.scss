@@ -21,7 +21,7 @@
   }
 }
 
-.button-new-request {
+.button.button-new-request {
   align-items: stretch;
   display: flex;
   flex-direction: row;
@@ -61,11 +61,11 @@
       display: flex;
       flex-direction: column;
       padding: $space-s;
-      width: $space-l;
+      width: $space-xl;
 
       @include breakpoint(m) {
         padding: $space-m;
-        width: $space-xl;
+        width: 7rem;
       }
 
       > * {
@@ -76,7 +76,7 @@
         width: $space-m;
 
         @include breakpoint(m) {
-          width: $space-l;
+          width: $space-xl;
         }
       }
     }
@@ -136,7 +136,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: color(cyan, 90);
+      background-color: color(blue, 90);
       color: color(black);
     }
   }
@@ -285,7 +285,7 @@
 }
 
 .site-search-header {
-  background-color: color(cyan, 20);
+  background-color: $color-theme-dark-background;
 }
 
 .table-results {
@@ -363,8 +363,6 @@
   font-size: $font-size-l;
 }
 
-
-
 .table-searches.table-responsive tbody {
   tr {
     td.query-deleted {
@@ -381,7 +379,6 @@
   }
 }
 
-
 .table-searches.table-responsive {
   thead th {
     text-transform: uppercase;
@@ -392,7 +389,7 @@
   tbody {
     tr {
       &:nth-child(odd) td {
-        background-color: color(cyan, 30);
+        background-color: $color-theme-dark-background-alt;
       }
 
       &.sample-row td {
@@ -550,7 +547,7 @@
   }
 
   select {
-    background-color: color(cyan, 90);
+    background-color: color(blue, 90);
     border-width: 0;
     font-weight: $font-weight-bold;
   }

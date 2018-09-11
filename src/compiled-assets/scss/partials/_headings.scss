@@ -75,35 +75,25 @@ h6,
 }
 
 .header-caps {
-  color: color(blue, 30);
+  color: $color-theme-base-accent;
   font-weight: $font-weight-black;
   text-transform: uppercase;
 }
 
 .header-overall {
   color: $color-theme-base-text;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: $font-weight-normal;
   letter-spacing: -1px;
   margin-bottom: $space-s;
 
-  @include breakpoint(s) {
-    font-size: 10vw; //
-    letter-spacing: -2px;
-  }
-
   @include breakpoint(m) {
     font-size: 8rem;
-    letter-spacing: -4px; //
-  }
-
-  @include breakpoint(l) {
-    font-size: 8rem; //
-    letter-spacing: -4px; //
+    letter-spacing: -4px;
   }
 
   em {
-    color: color(blue, 30);
+    color: color(grey, 30);
     font-style: normal;
     font-weight: $font-weight-bold;
   }
@@ -121,7 +111,7 @@ h6,
   }
 
   em {
-    color: color(blue, 30);
+    color: $color-theme-base-accent;
     font-size: $font-size-xxxxl;
     font-style: normal;
     font-weight: $font-weight-black;
