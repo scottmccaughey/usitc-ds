@@ -55,8 +55,8 @@ button,
   &:active,
   &:focus,
   &:hover {
-    background-color: $color-theme-base-hover-background;
-    color: $color-theme-base-hover-text;
+    background-color: $color-theme-dark-background-alt;
+    color: $color-theme-dark-text;
   }
 
   + button,

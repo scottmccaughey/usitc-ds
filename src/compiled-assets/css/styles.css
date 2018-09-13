@@ -880,8 +880,8 @@ button,
   .button:active,
   .button:focus,
   .button:hover {
-    background-color: white;
-    color: #0f428a; }
+    background-color: #0f428a;
+    color: white; }
   button + button,
   button + [type='button'],
   button + .button,
@@ -3397,10 +3397,6 @@ a rect {
     height: 6rem;
     line-height: 6rem;
     width: 100%; }
-    @media (min-width: 800px) {
-      .site-home-big-select button,
-      .site-home-big-select select {
-        height: 10rem; } }
   .site-home-big-select button {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3431,8 +3427,6 @@ a rect {
     border: 1px solid #abb1ba;
     color: #2e3238;
     font-size: 2rem;
-    height: 6rem;
-    line-height: 6rem;
     padding: 0 8rem 0 3rem; }
     @media (min-width: 800px) {
       .site-home-big-select select {

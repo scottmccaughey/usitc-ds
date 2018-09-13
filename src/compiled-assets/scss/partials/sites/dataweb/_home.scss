@@ -55,10 +55,6 @@
     height: $space-xxl;
     line-height: $space-xxl;
     width: 100%;
-
-    @include breakpoint(m) {
-      height: 10rem;
-    }
   }
 
   button {
@@ -94,8 +90,6 @@
     border: 1px solid color(grey, 70);
     color: $color-theme-base-text;
     font-size: $space-m;
-    height: $space-xxl;
-    line-height: $space-xxl;
     padding: 0 $space-xxxl 0 $space-l;
 
     @include breakpoint(m) {
