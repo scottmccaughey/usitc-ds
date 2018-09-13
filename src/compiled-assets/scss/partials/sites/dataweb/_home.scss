@@ -19,7 +19,6 @@
 
   ul {
     padding-left: 0;
-    text-align: center;
   }
 
   li {
@@ -27,8 +26,19 @@
     font-weight: $font-weight-bold;
     line-height: 1;
     list-style: none;
-    padding: 0 $space-s;
+    padding: 0 $space-m 0 0;
     white-space: nowrap;
+  }
+}
+
+.site-home-big-select {
+  select {
+    background-color: $color-theme-base-background;
+    border: 1px solid color(grey, 70);
+    color: $color-theme-base-text;
+    height: $space-xxl;
+    line-height: $space-xxl;
+    padding: 0 $space-xxxl 0 $space-l;
   }
 }
 
@@ -42,7 +52,8 @@
   button,
   select {
     border-width: 0;
-    height: 5rem;
+    height: $space-xxl;
+    line-height: $space-xxl;
     width: 100%;
 
     @include breakpoint(m) {
@@ -52,7 +63,7 @@
 
   button {
     align-items: center;
-    background-color: color(blue);
+    background-color: color(blue, 40);
     color: color(white);
     display: flex;
     font-size: $font-size-xl;
@@ -75,23 +86,20 @@
       height: $icon-size-l;
       margin-left: $space-s;
       width: $icon-size-l;
-
-      @include breakpoint(m) {
-        height: $icon-size-xl;
-        margin-left: $space-m;
-        width: $icon-size-xl;
-      }
     }
   }
 
   select {
-    background-color: color(grey, 20);
-    color: color(white);
+    background-color: $color-theme-base-background;
+    border: 1px solid color(grey, 70);
+    color: $color-theme-base-text;
     font-size: $space-m;
-    padding: $space-s $space-xxxl $space-s $space-l;
+    height: $space-xxl;
+    line-height: $space-xxl;
+    padding: 0 $space-xxxl 0 $space-l;
 
     @include breakpoint(m) {
-      font-size: $space-xl;
+      font-size: $space-l;
     }
   }
 
@@ -99,7 +107,7 @@
     &::after {
       border-left-width: $space-m;
       border-right-width: $space-m;
-      border-top: $space-m solid color(white);
+      border-top: $space-m solid $color-theme-base-text;
       margin-top: (-$space-s);
       right: $space-l;
     }
@@ -111,6 +119,14 @@
 
   li {
     font-weight: $font-weight-bold;
+  }
+}
+
+.site-home-main {
+  padding: $space-m $space-m $space-xxl;
+
+  @include breakpoint(m) {
+    padding: $space-xxl $space-m $space-xxxxl;
   }
 }
 

@@ -75,20 +75,20 @@ h6,
 }
 
 .header-caps {
-  color: $color-theme-base-accent;
+  color: color(grey);
   font-weight: $font-weight-black;
   text-transform: uppercase;
 }
 
 .header-overall {
-  color: $color-theme-base-text;
+  color: color(grey);
   font-size: 8vw;
   font-weight: $font-weight-normal;
   letter-spacing: -1px;
   margin-bottom: $space-s;
 
   @include breakpoint(m) {
-    font-size: 8rem;
+    font-size: $space-xxxl;
     letter-spacing: -4px;
   }
 

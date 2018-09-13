@@ -144,9 +144,9 @@ color:
     # $color-theme-base-border            = color(grey, 20) - #2e3238
     # $color-theme-base-text              = color(grey, 20) - #2e3238
     # $color-theme-base-accent            = color(blue, 30) - #0f428a
-    # $color-theme-base-link              = color(blue)     - #196ee6
-    # $color-theme-base-hover-background  = color(blue)     - #196ee6
-    # $color-theme-base-hover-text        = color(white)    - #ffffff
+    # $color-theme-base-link              = color(blue, 30) - #0f428a
+    # $color-theme-base-hover-background  = color(white)    - #ffffff
+    # $color-theme-base-hover-text        = color(blue)     - #196ee6
     # $color-theme-base-spinner           = color(blue, 30) - #0f428a
     #
     # Styleguide Tokens.Colors.Theme.Base
@@ -158,9 +158,9 @@ color:
       border:           color(grey, 20) !default
       text:             color(grey, 20) !default
       accent:           color(blue, 30) !default
-      link:             color(blue) !default
-      hover-background: color(blue) !default
-      hover-text:       color(white) !default
+      link:             color(blue, 30) !default
+      hover-background: color(white) !default
+      hover-text:       color(blue, 30) !default
       spinner:          color(blue, 30) !default
 
     # Dark Theme

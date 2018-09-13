@@ -250,7 +250,7 @@ button,
   // Weight: 1
   &.button-primary {
     border-color: transparent;
-    background-color: $color-theme-dark-background-alt;
+    background-color: color(blue, 40);
     color: $color-theme-dark-text;
 
     &:active,
@@ -267,7 +267,7 @@ button,
 
   // Alternate Primary Button
   //
-  // Use the `.button-primary-alt` class if you need a slightly darker *primary* button.
+  // Use the `.button-primary-alt` class if you need a darker *primary* button.
   //
   // Markup:
   // <button type="button" class="button-primary-alt">Alternate Primary Button</button>

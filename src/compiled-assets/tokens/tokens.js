@@ -51,9 +51,9 @@ module.exports = {
         "border": "color(grey, 20) !default",
         "text": "color(grey, 20) !default",
         "accent": "color(blue, 30) !default",
-        "link": "color(blue) !default",
-        "hover-background": "color(blue) !default",
-        "hover-text": "color(white) !default",
+        "link": "color(blue, 30) !default",
+        "hover-background": "color(white) !default",
+        "hover-text": "color(blue, 30) !default",
         "spinner": "color(blue, 30) !default"
       },
       "dark": {
