@@ -122,10 +122,6 @@
   }
 }
 
-.saved-requests {
-  background-color: $color-state-info-background-alt;
-}
-
 .search-actions-buttons {
   text-align: center;
 
@@ -397,7 +393,7 @@
   tbody {
     tr {
       &:nth-child(odd) td {
-        background-color: $color-state-info-background;
+        background-color: color(grey, 90);
       }
 
       &.sample-row td {

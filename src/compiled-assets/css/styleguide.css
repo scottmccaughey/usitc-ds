@@ -3716,9 +3716,6 @@ a rect {
 .new-request-button > div {
   display: inline-block; }
 
-.saved-requests {
-  background-color: #e8f1fc; }
-
 .search-actions-buttons {
   text-align: center; }
   @media (min-width: 800px) {
@@ -3911,7 +3908,7 @@ a rect {
   white-space: nowrap; }
 
 .table-searches.table-responsive tbody tr:nth-child(odd) td {
-  background-color: #f6f9fe; }
+  background-color: #e3e5e8; }
 
 .table-searches.table-responsive tbody tr.sample-row td {
   background-color: #fcf4e8;
