@@ -3842,13 +3842,3 @@ a rect {
     background-color: #d1e2fa;
     border-width: 0;
     font-weight: 700; }
-
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .disclaimer,
-  .home-intro {
-    -ms-flex-preferred-size: 80%;
-        flex-basis: 80%; }
-  .select select:focus option:checked {
-    background-image: none; }
-  .select select option:checked {
-    background-image: none; } }
