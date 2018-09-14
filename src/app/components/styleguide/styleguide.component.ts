@@ -14,6 +14,7 @@ export class StyleguideComponent implements OnInit {
   section = {};
   depth: number;
   subSections = [];
+  subSectionLinks = [];
 
   content = {};
 
@@ -38,16 +39,15 @@ export class StyleguideComponent implements OnInit {
         }
       }
     });
-
-    console.log(this.section);
   }
 
   getSubSectionLinks(section) {
     const secSplit = section.referenceURI.split('-');
     this.kss['sections'].forEach(sec => {
       const sectionSplit = sec.referenceURI.split('-');
-      if (sectionSplit[0] === secSplit[0] && sectionSplit[1] === secSplit[1] && sectionSplit[2]) {
-        this.subSections.push(sec);
+      if (sectionSplit[0] === secSplit[0] && sectionSplit[1] && !sectionSplit[2]) {
+        sec['url'] = '/' + sec.referenceURI.replace(/-/g, '/');
+        this.subSectionLinks.push(sec);
       }
     });
   }

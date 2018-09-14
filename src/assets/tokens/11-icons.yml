@@ -30,14 +30,14 @@ icon-size:
   base:           0.75em
   scale-ratio:    1.5
 
-  xxxxs:          'msi(-5)'
-  xxxs:           'msi(-4)'
-  xxs:            'msi(-3)'
-  xs:             'msi(-2)'
-  s:              'msi(-1)'
-  m:              'msi(0)'
-  l:              'msi(1)'
-  xl:             'msi(2)'
-  xxl:            'msi(3)'
-  xxxl:           'msi(4)'
-  xxxxl:          'msi(5)'
+  xxxxs:          ms($icon-size-scale-ratio, $icon-size-base, -5)
+  xxxs:           ms($icon-size-scale-ratio, $icon-size-base, -4)
+  xxs:            ms($icon-size-scale-ratio, $icon-size-base, -3)
+  xs:             ms($icon-size-scale-ratio, $icon-size-base, -2)
+  s:              ms($icon-size-scale-ratio, $icon-size-base, -1)
+  m:              ms($icon-size-scale-ratio, $icon-size-base, 0)
+  l:              ms($icon-size-scale-ratio, $icon-size-base, 1)
+  xl:             ms($icon-size-scale-ratio, $icon-size-base, 2)
+  xxl:            ms($icon-size-scale-ratio, $icon-size-base, 3)
+  xxxl:           ms($icon-size-scale-ratio, $icon-size-base, 4)
+  xxxxl:          ms($icon-size-scale-ratio, $icon-size-base, 5)

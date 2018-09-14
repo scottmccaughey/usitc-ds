@@ -1,24 +1,37 @@
-/*
-           888             888                                    888
-           888             888                                    888
-           888             888                                    888
-  .d8888b  888888  8888b.  888888 .d88b.          .d8888b .d88b.  888  .d88b.  888d888 .d8888b
-  88K      888        "88b 888   d8P  Y8b        d88P"   d88""88b 888 d88""88b 888P"   88K
-  "Y8888b. 888    .d888888 888   88888888 888888 888     888  888 888 888  888 888     "Y8888b.
-       X88 Y88b.  888  888 Y88b. Y8b.            Y88b.   Y88..88P 888 Y88..88P 888          X88
-   88888P'  "Y888 "Y888888  "Y888 "Y8888          "Y8888P "Y88P"  888  "Y88P"  888      88888P'
+//          888             888                                    888
+//          888             888                                    888
+//          888             888                                    888
+// .d8888b  888888  8888b.  888888 .d88b.          .d8888b .d88b.  888  .d88b.  888d888 .d8888b
+// 88K      888        "88b 888   d8P  Y8b        d88P"   d88""88b 888 d88""88b 888P"   88K
+// "Y8888b. 888    .d888888 888   88888888 888888 888     888  888 888 888  888 888     "Y8888b.
+//      X88 Y88b.  888  888 Y88b. Y8b.            Y88b.   Y88..88P 888 Y88..88P 888          X88
+//  88888P'  "Y888 "Y888888  "Y888 "Y8888          "Y8888P "Y88P"  888  "Y88P"  888      88888P'
 
-  State Colors mixins
+// State Colors
+//
+// Include these Sass mixins to use standard state colors on an element and its children.
+//
+// Styleguide SassDirectives.StateColors
+//
+// Weight: 5
 
-  state-default()
-  state-error()
-  state-info()
-  state-success()
-  state-warning()
-
-  Include these to use standard state colors on an element.
-*/
-
+// Default State
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Mixin</div>
+// <pre class="language-scss">
+// @include state-default();
+// </pre>
+// </div>
+// </div>
+//
+// Markup:
+// <div class="panel border state-default">
+//   <h1>Default State</h1>
+//   <p>This is an example of our <a href="#">default state</a> in action.</p>
+// </div>
+//
+// Styleguide SassDirectives.StateColors.DefaultState
 @mixin state-default {
   background-color: $color-theme-base-background;
   border-color: $color-theme-dark-background-alt;
@@ -51,6 +64,23 @@
   }
 }
 
+// Error State
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Mixin</div>
+// <pre class="language-scss">
+// @include state-error();
+// </pre>
+// </div>
+// </div>
+//
+// Markup:
+// <div class="panel border state-error">
+//   <h1>Error State</h1>
+//   <p>This is an example of our <a href="#">error state</a> in action.</p>
+// </div>
+//
+// Styleguide SassDirectives.StateColors.ErrorState
 @mixin state-error {
   background-color: $color-state-error-background;
   border-color: $color-state-error-border;
@@ -83,6 +113,23 @@
   }
 }
 
+// Info State
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Mixin</div>
+// <pre class="language-scss">
+// @include state-info();
+// </pre>
+// </div>
+// </div>
+//
+// Markup:
+// <div class="panel border state-info">
+//   <h1>Info State</h1>
+//   <p>This is an example of our <a href="#">info state</a> in action.</p>
+// </div>
+//
+// Styleguide SassDirectives.StateColors.InfoState
 @mixin state-info {
   background-color: $color-state-info-background;
   border-color: $color-state-info-border;
@@ -115,6 +162,23 @@
   }
 }
 
+// Success State
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Mixin</div>
+// <pre class="language-scss">
+// @include state-success();
+// </pre>
+// </div>
+// </div>
+//
+// Markup:
+// <div class="panel border state-success">
+//   <h1>Success State</h1>
+//   <p>This is an example of our <a href="#">success state</a> in action.</p>
+// </div>
+//
+// Styleguide SassDirectives.StateColors.SuccessState
 @mixin state-success {
   background-color: $color-state-success-background;
   border-color: $color-state-success-border;
@@ -147,6 +211,23 @@
   }
 }
 
+// Warning State
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Mixin</div>
+// <pre class="language-scss">
+// @include state-warning();
+// </pre>
+// </div>
+// </div>
+//
+// Markup:
+// <div class="panel border state-warning">
+//   <h1>Warning State</h1>
+//   <p>This is an example of our <a href="#">warning state</a> in action.</p>
+// </div>
+//
+// Styleguide SassDirectives.StateColors.WarningState
 @mixin state-warning {
   background-color: $color-state-warning-background;
   border-color: $color-state-warning-border;

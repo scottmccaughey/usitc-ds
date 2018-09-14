@@ -12,23 +12,33 @@
 
 // String Replace
 //
-// The `str-replace()` Sass function takes three parameters, the first two of which are required. You must pass the text to be modified (`$string`) and the text you want to replace (`$search`). The third (optional) parameter is the text you want to insert in place of the `$search` text (`$replace`). If the $replace parameter is not passed, the `$search` text will simply be removed.
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Function</div>
+// <pre class="language-scss">
+// str-replace($string, $search, $replace)
+// </pre>
+// </div>
+// </div>
 //
-// Markup:
-// SCSS:
+// The `str-replace()` Sass function takes three parameters, the first two of which are required. You must pass the text to be modified (`$string`) and the text you want to replace (`$search`). The third (optional) parameter is the text you want to insert in place of the `$search` text (`$replace`). If the `$replace` parameter is not passed, the `$search` text will simply be removed. **_This function is used in [Directives ➔ Font Definition](/directives/fontdefinition)._**
+//
+// For example, this SCSS code:
+//
+// <pre class="language-scss">
 // $string: 'The answer to life, the universe, and everything is blah.';
 // ​
 // .selector {
 //   content: str-replace($string, 'blah', '42');
 // }
+// </pre>
 //
-// ...will compile to the following CSS...
+// will compile to this CSS:
 //
+// Markup:
+// SCSS:
 // .selector {
 //   content: 'The answer to life, the universe, and everything is 42.';
 // }
-//
-// This function is used in the Font Face mixin.
 //
 // Styleguide SassDirectives.StringReplace
 //

@@ -46,7 +46,7 @@
   }
 
   section {
-    margin: $space-m 0;
+    margin: $space-m 0 $space-l;
   }
 
   .panel {
@@ -87,7 +87,7 @@
       &:active,
       &:focus,
       &:hover {
-        color: color(white);
+        color: color(black);
       }
     }
 
@@ -105,17 +105,19 @@
 
 .kss-directive {
   &.panel {
-    border-color: color(blue, 20);
+    border-color: color(blue, 30);
+    padding: 0;
 
     .panel-header {
-      background-color: color(blue, 20);
+      background-color: color(blue, 30);
+      margin: 0;
     }
   }
 
   pre {
     border-width: 0;
     font-family: $font-family-mono;
-    padding: $space-m $space-m 0;
+    padding: 0;
   }
 }
 
@@ -199,6 +201,10 @@
   + .kss-source {
     border-top-width: 0;
   }
+
+  > :first-child > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .kss-parameters {
@@ -223,7 +229,7 @@
 
   @include breakpoint(m) {
     height: $space-m;
-    width: $space-xl;
+    width: $space-m;
   }
 
   rect {
@@ -249,6 +255,14 @@
 .kss-parameters-var {
   font-weight: $font-weight-bold;
   white-space: nowrap;
+
+  + .kss-parameters-value {
+    margin-bottom: $space-m;
+
+    @include breakpoint(m) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .kss-ref {
@@ -265,7 +279,6 @@
 }
 
 .kss-source {
-  margin: 0 0 ($space-l + $space-m);
   padding: $space-s $space-m;
 }
 
@@ -285,5 +298,25 @@
 
   div {
     white-space: nowrap;
+  }
+}
+
+.kss-sub-section-links {
+  li {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.kss-swatch {
+  border: $border-base;
+  bottom: -3px;
+  height: $space-m;
+  position: relative;
+  width: $space-m;
+
+  rect {
+    height: 100%;
+    width: 100%;
   }
 }

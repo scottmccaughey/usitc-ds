@@ -10,6 +10,8 @@
 // Y8b d88P
 //  "Y88P"
 
+@include build-grid();
+
 .grid {
   display: grid;
   grid-template-rows: auto;
@@ -68,5 +70,3 @@
     }
   }
 }
-
-@include build-grid();

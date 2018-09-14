@@ -399,197 +399,6 @@ textarea {
 [hidden] {
   display: none !important; }
 
-/*
-   .d888                  888          .d888
-  d88P"                   888         d88P"
-  888                     888         888
-  888888 .d88b.  88888b.  888888      888888 8888b.   .d8888b .d88b.
-  888   d88""88b 888 "88b 888         888       "88b d88P"   d8P  Y8b
-  888   888  888 888  888 888  888888 888   .d888888 888     88888888
-  888   Y88..88P 888  888 Y88b.       888   888  888 Y88b.   Y8b.
-  888    "Y88P"  888  888  "Y888      888   "Y888888  "Y8888P "Y8888
-
-  Font Face Declaration mixin
-
-  fontdef($family, $type, $weight, $style, $stretch)
-
-  Uses the $font-families list as defined in _settings.scss (@section 5a).
-
-  The fontdef() mixin takes five parameters, the first two of which are required. You must pass
-  the font family name ($family) and font variant name ($variant) to generate a @font-face
-  definition.
-
-  You can also pass an optional $weight [normal | 100 | 200 | ... | 800 | 900], $style
-  [normal | italic], and $stretch [normal | ultra-condensed | extra-condensed | condensed |
-  semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]. The optional
-  variables will all default to 'normal' if they are not passed. The $stretch variable is
-  currently not used in our design system, but is available for potential future use.
-
-  For example:
-
-  @include font-def(Fira Sans Condensed, semibolditalic, 600, italic, normal);
-
-  ...will compile to the following CSS...
-
-  @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: url('../fonts/firasanscondensed-semibolditalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-stretch: normal;
-  }
-
-  This function is used to generate @font-face declarations in _fonts.scss.
-*/
-/*
-                   888
-                   888
-                   888
-   .d8888b .d88b.  888  .d88b.  888d888 .d8888b
-  d88P"   d88""88b 888 d88""88b 888P"   88K
-  888     888  888 888 888  888 888     "Y8888b.
-  Y88b.   Y88..88P 888 Y88..88P 888          X88
-   "Y8888P "Y88P"  888  "Y88P"  888      88888P'
-
-  Color Variations function
-
-  color($key, $luminosity, $alpha)
-
-  Uses the $colors list as defined in _settings.scss (@section 1a).
-
-  The color() function takes three parameters, only the first of which is required. You must
-  pass in the color name ($key) - this will render the base color:
-
-    color(blue) - will render the BASE blue, equivalent to #3871c7 or rgba(56, 113, 199, 1)
-
-  You may pass in an optional brightness variable ($luminosity), which can be any percentage,
-  though it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. The higher
-  the number, the brighter the color:
-
-    color(blue, 20) - will render a very DARK blue, equivalent to #162d50 or
-                      rgba(56, 113, 199, 1)
-    color(blue, 50) - will render the BASE blue, equivalent to #3871c7 or
-                      rgba(56, 113, 199, 1)
-    color(blue, 80) - will render a very LIGHT blue, equivalent to #afc6e9 or
-                      rgba(56, 113, 199, 1)
-
-  color(black) and color(white) are special cases in that their brightness is set by
-  definition and cannot be adjusted:
-
-    color(black) - is the same as color(grey, 0), equivalent to #000000 or
-                    rgba(0, 0, 0, 1)
-    color(white) - is the same as color(grey, 100), equivalent to #ffffff or
-                    rgba(255, 255, 255, 1)
-
-  You may pass in an optional opacity variable ($alpha), which can be any percentage, though
-  it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. If you want to use
-  $alpha, you MUST also pass a $luminosity — it is recommended to always pass 50 so that you
-  are creating only transparent versions of the BASE color. The higher the number, the more
-  opaque the color:
-
-    color(blue, 50, 20) -  will render a NEARLY TRANSPARENT base blue, equivalent to
-                            rgba(56, 113, 199, 0.2)
-    color(blue, 50, 50) -  will render a HALF TRANSPARENT base blue, equivalent to
-                            rgba(56, 113, 199, 0.5)
-    color(blue, 50, 100) - will render a COMPLETELY OPAQUE base blue, equivalent to
-                            rgba(56, 113, 199, 1)
-
-  Unlike brightness, opacity CAN be set on color(black) and color(white):
-
-    color(black, 0, 20) -   will render a NEARLY TRANSPARENT black equivalent to
-                            rgba(0, 0, 0, 0.2)
-    color(white, 100, 50) - will render a HALF TRANSPARENT white, equivalent to
-                            rgba(255, 255, 255, 0.5)
-
-*/
-/*
-           888             888                                    888
-           888             888                                    888
-           888             888                                    888
-  .d8888b  888888  8888b.  888888 .d88b.          .d8888b .d88b.  888  .d88b.  888d888 .d8888b
-  88K      888        "88b 888   d8P  Y8b        d88P"   d88""88b 888 d88""88b 888P"   88K
-  "Y8888b. 888    .d888888 888   88888888 888888 888     888  888 888 888  888 888     "Y8888b.
-       X88 Y88b.  888  888 Y88b. Y8b.            Y88b.   Y88..88P 888 Y88..88P 888          X88
-   88888P'  "Y888 "Y888888  "Y888 "Y8888          "Y8888P "Y88P"  888  "Y88P"  888      88888P'
-
-  State Colors mixins
-
-  state-default()
-  state-error()
-  state-info()
-  state-success()
-  state-warning()
-
-  Include these to use standard state colors on an element.
-*/
-/*
-  88888b.   .d88b.  888  888  888  .d88b.  888d888
-  888 "88b d88""88b 888  888  888 d8P  Y8b 888P"
-  888  888 888  888 888  888  888 88888888 888
-  888 d88P Y88..88P Y88b 888 d88P Y8b.     888
-  88888P"   "Y88P"   "Y8888888P"   "Y8888  888
-  888
-  888
-  888
-
-  Power function
-
-  pow($number, $exponent)
-*/
-/*
-                              888          888
-                              888          888
-                              888          888
-  88888b.d88b.   .d88b.   .d88888 888  888 888  8888b.  888d888
-  888 "888 "88b d88""88b d88" 888 888  888 888     "88b 888P"
-  888  888  888 888  888 888  888 888  888 888 .d888888 888   888888
-  888  888  888 Y88..88P Y88b 888 Y88b 888 888 888  888 888
-  888  888  888  "Y88P"   "Y88888  "Y88888 888 "Y888888 888
-
-                             888
-                             888
-                             888
-  .d8888b   .d8888b  8888b.  888  .d88b.
-  88K      d88P"        "88b 888 d8P  Y8b
-  "Y8888b. 888      .d888888 888 88888888
-       X88 Y88b.    888  888 888 Y8b.
-   88888P'  "Y8888P "Y888888 888  "Y8888
-
-  Modular Scale Typography function
-
-  ms($factor)
-*/
-/*
-                                                      d8b      888 888    888
-                                                      Y8P      888 888    888
-                                                               888 888    888
-  88888b.d88b.   8888b.  888  888       888  888  888 888  .d88888 888888 88888b.
-  888 "888 "88b     "88b `Y8bd8P'       888  888  888 888 d88" 888 888    888 "88b
-  888  888  888 .d888888   X88K  888888 888  888  888 888 888  888 888    888  888
-  888  888  888 888  888 .d8""8b.       Y88b 888 d88P 888 Y88b 888 Y88b.  888  888
-  888  888  888 "Y888888 888  888        "Y8888888P"  888  "Y88888  "Y888 888  888
-
-  Max-Width mixin
-
-  constrained($max-width)
-*/
-/*
-                   d8b      888        888               d8b 888      888
-                   Y8P      888        888               Y8P 888      888
-                            888        888                   888      888
-   .d88b.  888d888 888  .d88888        88888b.  888  888 888 888  .d88888  .d88b.  888d888
-  d88P"88b 888P"   888 d88" 888        888 "88b 888  888 888 888 d88" 888 d8P  Y8b 888P"
-  888  888 888     888 888  888 888888 888  888 888  888 888 888 888  888 88888888 888
-  Y88b 888 888     888 Y88b 888        888 d88P Y88b 888 888 888 Y88b 888 Y8b.     888
-   "Y88888 888     888  "Y88888        88888P"   "Y88888 888 888  "Y88888  "Y8888  888
-       888
-  Y8b d88P
-   "Y88P"
-
-  Grid Builder mixin
-
-  build-grid()
-*/
 .border {
   border: 1px solid #737d8c; }
 
@@ -814,10 +623,10 @@ textarea {
   margin-bottom: 2rem;
   padding: 2rem; }
   .panel a {
-    color: #0f428a; }
+    color: #1458b8; }
     .panel a:active, .panel a:focus, .panel a:hover {
-      background-color: white;
-      color: #0f428a; }
+      background-color: transparent;
+      color: #478beb; }
   .panel h1,
   .panel h2,
   .panel h3,
@@ -848,8 +657,8 @@ textarea {
     margin: 0; }
 
 button,
-[type='button'],
-.button {
+input[type='button'],
+a.button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -874,156 +683,156 @@ button,
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
   button:active, button:focus, button:hover,
-  [type='button']:active,
-  [type='button']:focus,
-  [type='button']:hover,
-  .button:active,
-  .button:focus,
-  .button:hover {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='button']:hover,
+  a.button:active,
+  a.button:focus,
+  a.button:hover {
     background-color: #0f428a;
     color: white; }
   button + button,
-  button + [type='button'],
-  button + .button,
-  [type='button'] + button,
-  [type='button'] + [type='button'],
-  [type='button'] + .button,
-  .button + button,
-  .button + [type='button'],
-  .button + .button {
+  button + input[type='button'],
+  button + a.button,
+  input[type='button'] + button,
+  input[type='button'] + input[type='button'],
+  input[type='button'] + a.button,
+  a.button + button,
+  a.button + input[type='button'],
+  a.button + a.button {
     margin-left: 1rem; }
   button[disabled], button.disabled,
-  [type='button'][disabled],
-  [type='button'].disabled,
-  .button[disabled],
-  .button.disabled {
+  input[type='button'][disabled],
+  input[type='button'].disabled,
+  a.button[disabled],
+  a.button.disabled {
     background-color: inherit;
     color: inherit;
     cursor: not-allowed;
     opacity: 0.5; }
     button[disabled]:active, button[disabled]:focus, button[disabled]:hover, button.disabled:active, button.disabled:focus, button.disabled:hover,
-    [type='button'][disabled]:active,
-    [type='button'][disabled]:focus,
-    [type='button'][disabled]:hover,
-    [type='button'].disabled:active,
-    [type='button'].disabled:focus,
-    [type='button'].disabled:hover,
-    .button[disabled]:active,
-    .button[disabled]:focus,
-    .button[disabled]:hover,
-    .button.disabled:active,
-    .button.disabled:focus,
-    .button.disabled:hover {
+    input[type='button'][disabled]:active,
+    input[type='button'][disabled]:focus,
+    input[type='button'][disabled]:hover,
+    input[type='button'].disabled:active,
+    input[type='button'].disabled:focus,
+    input[type='button'].disabled:hover,
+    a.button[disabled]:active,
+    a.button[disabled]:focus,
+    a.button[disabled]:hover,
+    a.button.disabled:active,
+    a.button.disabled:focus,
+    a.button.disabled:hover {
       background-color: inherit;
       color: inherit; }
   button.button-s,
-  [type='button'].button-s,
-  .button.button-s {
+  input[type='button'].button-s,
+  a.button.button-s {
     font-size: 1.11111rem; }
   button.button-l,
-  [type='button'].button-l,
-  .button.button-l {
+  input[type='button'].button-l,
+  a.button.button-l {
     font-size: 1.6rem; }
   button.button-xl,
-  [type='button'].button-xl,
-  .button.button-xl {
+  input[type='button'].button-xl,
+  a.button.button-xl {
     font-size: 1.92rem; }
   button.button-xxl,
-  [type='button'].button-xxl,
-  .button.button-xxl {
+  input[type='button'].button-xxl,
+  a.button.button-xxl {
     font-size: 2.304rem; }
   button.button-full-width,
-  [type='button'].button-full-width,
-  .button.button-full-width {
+  input[type='button'].button-full-width,
+  a.button.button-full-width {
     width: 100%; }
   button.button-centered,
-  [type='button'].button-centered,
-  .button.button-centered {
+  input[type='button'].button-centered,
+  a.button.button-centered {
     display: block;
     margin-left: auto;
     margin-right: auto; }
   button.button-right,
-  [type='button'].button-right,
-  .button.button-right {
+  input[type='button'].button-right,
+  a.button.button-right {
     display: block;
     margin-left: auto; }
   button.button-primary,
-  [type='button'].button-primary,
-  .button.button-primary {
+  input[type='button'].button-primary,
+  a.button.button-primary {
     border-color: transparent;
     background-color: #1458b8;
     color: white; }
     button.button-primary:active, button.button-primary:focus, button.button-primary:hover,
-    [type='button'].button-primary:active,
-    [type='button'].button-primary:focus,
-    [type='button'].button-primary:hover,
-    .button.button-primary:active,
-    .button.button-primary:focus,
-    .button.button-primary:hover {
+    input[type='button'].button-primary:active,
+    input[type='button'].button-primary:focus,
+    input[type='button'].button-primary:hover,
+    a.button.button-primary:active,
+    a.button.button-primary:focus,
+    a.button.button-primary:hover {
       background-color: #0a2c5c;
       color: white; }
       .on-dark button.button-primary:active, .on-dark button.button-primary:focus, .on-dark button.button-primary:hover, .on-dark
-      [type='button'].button-primary:active, .on-dark
-      [type='button'].button-primary:focus, .on-dark
-      [type='button'].button-primary:hover, .on-dark
-      .button.button-primary:active, .on-dark
-      .button.button-primary:focus, .on-dark
-      .button.button-primary:hover {
+      input[type='button'].button-primary:active, .on-dark
+      input[type='button'].button-primary:focus, .on-dark
+      input[type='button'].button-primary:hover, .on-dark
+      a.button.button-primary:active, .on-dark
+      a.button.button-primary:focus, .on-dark
+      a.button.button-primary:hover {
         border-color: white; }
   button.button-primary-alt,
-  [type='button'].button-primary-alt,
-  .button.button-primary-alt {
+  input[type='button'].button-primary-alt,
+  a.button.button-primary-alt {
     border-color: transparent;
     background-color: #0a2c5c;
     color: white; }
     button.button-primary-alt:active, button.button-primary-alt:focus, button.button-primary-alt:hover,
-    [type='button'].button-primary-alt:active,
-    [type='button'].button-primary-alt:focus,
-    [type='button'].button-primary-alt:hover,
-    .button.button-primary-alt:active,
-    .button.button-primary-alt:focus,
-    .button.button-primary-alt:hover {
+    input[type='button'].button-primary-alt:active,
+    input[type='button'].button-primary-alt:focus,
+    input[type='button'].button-primary-alt:hover,
+    a.button.button-primary-alt:active,
+    a.button.button-primary-alt:focus,
+    a.button.button-primary-alt:hover {
       background-color: #0f428a;
       color: white; }
       .on-dark button.button-primary-alt:active, .on-dark button.button-primary-alt:focus, .on-dark button.button-primary-alt:hover, .on-dark
-      [type='button'].button-primary-alt:active, .on-dark
-      [type='button'].button-primary-alt:focus, .on-dark
-      [type='button'].button-primary-alt:hover, .on-dark
-      .button.button-primary-alt:active, .on-dark
-      .button.button-primary-alt:focus, .on-dark
-      .button.button-primary-alt:hover {
+      input[type='button'].button-primary-alt:active, .on-dark
+      input[type='button'].button-primary-alt:focus, .on-dark
+      input[type='button'].button-primary-alt:hover, .on-dark
+      a.button.button-primary-alt:active, .on-dark
+      a.button.button-primary-alt:focus, .on-dark
+      a.button.button-primary-alt:hover {
         border-color: white; }
   button.button-success,
-  [type='button'].button-success,
-  .button.button-success {
+  input[type='button'].button-success,
+  a.button.button-success {
     background-color: #185c0a;
     border-color: transparent;
     color: white; }
     button.button-success:active, button.button-success:focus, button.button-success:hover,
-    [type='button'].button-success:active,
-    [type='button'].button-success:focus,
-    [type='button'].button-success:hover,
-    .button.button-success:active,
-    .button.button-success:focus,
-    .button.button-success:hover {
+    input[type='button'].button-success:active,
+    input[type='button'].button-success:focus,
+    input[type='button'].button-success:hover,
+    a.button.button-success:active,
+    a.button.button-success:focus,
+    a.button.button-success:hover {
       background-color: #30b814; }
   button.button-cancel,
-  [type='button'].button-cancel,
-  .button.button-cancel {
+  input[type='button'].button-cancel,
+  a.button.button-cancel {
     background-color: #b81430;
     border-color: transparent;
     color: white; }
     button.button-cancel:active, button.button-cancel:focus, button.button-cancel:hover,
-    [type='button'].button-cancel:active,
-    [type='button'].button-cancel:focus,
-    [type='button'].button-cancel:hover,
-    .button.button-cancel:active,
-    .button.button-cancel:focus,
-    .button.button-cancel:hover {
+    input[type='button'].button-cancel:active,
+    input[type='button'].button-cancel:focus,
+    input[type='button'].button-cancel:hover,
+    a.button.button-cancel:active,
+    a.button.button-cancel:focus,
+    a.button.button-cancel:hover {
       background-color: #5c0a18; }
   button.button-close,
-  [type='button'].button-close,
-  .button.button-close {
+  input[type='button'].button-close,
+  a.button.button-close {
     background-color: rgba(0, 0, 0, 0.1);
     border: 0;
     color: rgba(0, 0, 0, 0.5);
@@ -1033,12 +842,12 @@ button,
     right: 0;
     top: 0; }
     button.button-close:active, button.button-close:focus, button.button-close:hover,
-    [type='button'].button-close:active,
-    [type='button'].button-close:focus,
-    [type='button'].button-close:hover,
-    .button.button-close:active,
-    .button.button-close:focus,
-    .button.button-close:hover {
+    input[type='button'].button-close:active,
+    input[type='button'].button-close:focus,
+    input[type='button'].button-close:hover,
+    a.button.button-close:active,
+    a.button.button-close:focus,
+    a.button.button-close:hover {
       color: rgba(0, 0, 0, 0.7); }
 
 .error-messages-list {
@@ -1439,13 +1248,13 @@ simple-select + simple-select .select-child-field {
   .input-icon[class*='state-'] > i {
     color: white; }
   .input-icon.state-error > i {
-    background-color: #b81430; }
+    background-color: transparent; }
   .input-icon.state-info > i {
-    background-color: #1a6fe6; }
+    background-color: transparent; }
   .input-icon.state-success > i {
-    background-color: #248a0f; }
+    background-color: transparent; }
   .input-icon.state-warning > i {
-    background-color: #e6911a; }
+    background-color: transparent; }
   .input-icon input {
     border-width: 0;
     -webkit-box-flex: 1;
@@ -1478,10 +1287,10 @@ simple-select + simple-select .select-child-field {
 .label-parent-choose {
   color: #2e3238; }
   .label-parent-choose a {
-    color: #0f428a; }
+    color: #1458b8; }
     .label-parent-choose a:active, .label-parent-choose a:focus, .label-parent-choose a:hover {
-      background-color: white;
-      color: #0f428a; }
+      background-color: transparent;
+      color: #478beb; }
 
 .label-plain {
   font-size: 1.33333rem; }
@@ -1701,9 +1510,9 @@ simple-select + simple-select .select-child-field {
     .select-read-more a:active i, .select-read-more a:focus em,
     .select-read-more a:focus i, .select-read-more a:hover em,
     .select-read-more a:hover i {
-      color: #0f428a; }
+      color: #478beb; }
   .select-read-more em {
-    color: #0f428a;
+    color: #1458b8;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase; }
@@ -1823,18 +1632,18 @@ body {
       width: calc(100% + $off-canvas-width); }
 
 ::-moz-selection {
-  background-color: white;
-  color: #0f428a;
+  background-color: transparent;
+  color: #478beb;
   text-shadow: 0; }
 
 ::selection {
-  background-color: white;
-  color: #0f428a;
+  background-color: transparent;
+  color: #478beb;
   text-shadow: 0; }
 
 ::-moz-selection {
-  background-color: white;
-  color: #0f428a;
+  background-color: transparent;
+  color: #478beb;
   text-shadow: 0; }
 
 :focus {
@@ -1859,7 +1668,7 @@ body {
   opacity: 1; }
 
 a {
-  color: #0f428a;
+  color: #1458b8;
   cursor: pointer;
   text-decoration: underline;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1867,16 +1676,16 @@ a {
   .on-dark a {
     color: #d1e2fa; }
   .on-light a {
-    color: #0f428a; }
+    color: #1458b8; }
   a:active, a:focus, a:hover {
-    background-color: white;
-    color: #0f428a; }
+    background-color: transparent;
+    color: #478beb; }
     .on-dark a:active, .on-dark a:focus, .on-dark a:hover {
-      background-color: white;
-      color: #0f428a; }
+      background-color: transparent;
+      color: white; }
     .on-light a:active, .on-light a:focus, .on-light a:hover {
-      background-color: white;
-      color: #0f428a; }
+      background-color: transparent;
+      color: #478beb; }
 
 app-layout,
 app-root {
@@ -2018,49 +1827,6 @@ pre {
   top: auto;
   width: 1px; }
 
-.grid {
-  display: grid;
-  grid-template-rows: auto; }
-  .grid > * {
-    grid-area: span 1/span 12; }
-  .grid > .padded + .padded {
-    padding: 2rem; }
-
-.grid-gap {
-  grid-gap: 2rem 2rem; }
-
-.grid-gap-col {
-  grid-column-gap: 2rem; }
-
-.grid-gap-row {
-  grid-row-gap: 2rem; }
-
-.grid-self-align-center {
-  -ms-flex-item-align: center;
-      align-self: center; }
-
-.grid-self-align-end {
-  -ms-flex-item-align: end;
-      align-self: end; }
-
-.grid-self-align-start {
-  -ms-flex-item-align: start;
-      align-self: start; }
-
-.grid-self-justify-center {
-  justify-self: center; }
-
-.grid-self-justify-end {
-  justify-self: end; }
-
-.grid-self-justify-start {
-  justify-self: start; }
-
-.grid-separated > * {
-  border-right: 1px solid #e3e5e8; }
-  .grid-separated > *:last-child {
-    border-right-width: 0; }
-
 @media (min-width: 400px) {
   .grid {
     grid-template-columns: repeat(12, 1fr); }
@@ -2200,6 +1966,49 @@ pre {
       grid-area: span 1/span 11; }
     .grid .g-xl-12 {
       grid-area: span 1/span 12; } }
+
+.grid {
+  display: grid;
+  grid-template-rows: auto; }
+  .grid > * {
+    grid-area: span 1/span 12; }
+  .grid > .padded + .padded {
+    padding: 2rem; }
+
+.grid-gap {
+  grid-gap: 2rem 2rem; }
+
+.grid-gap-col {
+  grid-column-gap: 2rem; }
+
+.grid-gap-row {
+  grid-row-gap: 2rem; }
+
+.grid-self-align-center {
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.grid-self-align-end {
+  -ms-flex-item-align: end;
+      align-self: end; }
+
+.grid-self-align-start {
+  -ms-flex-item-align: start;
+      align-self: start; }
+
+.grid-self-justify-center {
+  justify-self: center; }
+
+.grid-self-justify-end {
+  justify-self: end; }
+
+.grid-self-justify-start {
+  justify-self: start; }
+
+.grid-separated > * {
+  border-right: 1px solid #e3e5e8; }
+  .grid-separated > *:last-child {
+    border-right-width: 0; }
 
 h1,
 h2,
@@ -2903,8 +2712,8 @@ icon,
     .state-error.panel a:active,
     .state-error.panel a:focus,
     .state-error.panel a:hover {
-      background-color: #b81430;
-      color: white; }
+      background-color: transparent;
+      color: #eb4763; }
   .state-error h1,
   .state-error h2,
   .state-error h3,
@@ -2922,8 +2731,8 @@ icon,
   .state-error .panel-header:first-child,
   .state-error.panel .panel-header,
   .state-error.panel .panel-header:first-child {
-    background-color: #b81430;
-    color: white; }
+    background-color: transparent;
+    color: #eb4763; }
 
 .state-info,
 .state-info.panel {
@@ -2937,8 +2746,8 @@ icon,
     .state-info.panel a:active,
     .state-info.panel a:focus,
     .state-info.panel a:hover {
-      background-color: #1a6fe6;
-      color: white; }
+      background-color: transparent;
+      color: #478beb; }
   .state-info h1,
   .state-info h2,
   .state-info h3,
@@ -2956,8 +2765,8 @@ icon,
   .state-info .panel-header:first-child,
   .state-info.panel .panel-header,
   .state-info.panel .panel-header:first-child {
-    background-color: #1a6fe6;
-    color: white; }
+    background-color: transparent;
+    color: #478beb; }
 
 .state-success,
 .state-success.panel {
@@ -2971,8 +2780,8 @@ icon,
     .state-success.panel a:active,
     .state-success.panel a:focus,
     .state-success.panel a:hover {
-      background-color: #248a0f;
-      color: white; }
+      background-color: transparent;
+      color: #3ce61a; }
   .state-success h1,
   .state-success h2,
   .state-success h3,
@@ -2990,8 +2799,8 @@ icon,
   .state-success .panel-header:first-child,
   .state-success.panel .panel-header,
   .state-success.panel .panel-header:first-child {
-    background-color: #248a0f;
-    color: white; }
+    background-color: transparent;
+    color: #3ce61a; }
 
 .state-warning,
 .state-warning.panel {
@@ -3005,8 +2814,8 @@ icon,
     .state-warning.panel a:active,
     .state-warning.panel a:focus,
     .state-warning.panel a:hover {
-      background-color: #e6911a;
-      color: white; }
+      background-color: transparent;
+      color: #e6911a; }
   .state-warning h1,
   .state-warning h2,
   .state-warning h3,
@@ -3024,8 +2833,8 @@ icon,
   .state-warning .panel-header:first-child,
   .state-warning.panel .panel-header,
   .state-warning.panel .panel-header:first-child {
-    background-color: #e6911a;
-    color: white; }
+    background-color: transparent;
+    color: #e6911a; }
 
 .table {
   width: 100%; }
@@ -3155,45 +2964,45 @@ icon,
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff") format("woff");
+  font-stretch: normal;
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal; }
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff") format("woff");
+  font-stretch: normal;
+  font-style: italic;
   font-weight: 300;
-  font-style: italic;
-  font-stretch: normal; }
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff") format("woff");
-  font-weight: 700;
+  font-stretch: normal;
   font-style: normal;
-  font-stretch: normal; }
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff") format("woff");
   font-weight: 700;
-  font-style: italic;
-  font-stretch: normal; }
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff") format("woff");
-  font-weight: 900;
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 700;
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-bolditalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Raleway";
+  font-stretch: normal;
   font-style: normal;
-  font-stretch: normal; }
+  font-weight: 900;
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-black.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff") format("woff");
-  font-weight: 900;
+  font-stretch: normal;
   font-style: italic;
-  font-stretch: normal; }
+  font-weight: 900;
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-blackitalic.woff") format("woff"); }
 
 .black {
   font-weight: 900; }
@@ -4274,7 +4083,7 @@ pre[class*='language-'] {
   .kss-body app-parameters + .kss-source {
     border-top-width: 0; }
   .kss-body section {
-    margin: 2rem 0; }
+    margin: 2rem 0 3rem; }
   .kss-body .panel h1 {
     font-size: 1.6rem;
     font-weight: 700;
@@ -4298,7 +4107,7 @@ pre[class*='language-'] {
       color: black;
       text-decoration: none; }
       .kss-breadcrumb li:last-child a:active, .kss-breadcrumb li:last-child a:focus, .kss-breadcrumb li:last-child a:hover {
-        color: white; }
+        color: black; }
     .kss-breadcrumb li + li:before {
       color: #a3c5f5;
       content: ' ➔ ';
@@ -4308,14 +4117,16 @@ pre[class*='language-'] {
   margin-bottom: 2rem; }
 
 .kss-directive.panel {
-  border-color: #0a2c5c; }
+  border-color: #0f428a;
+  padding: 0; }
   .kss-directive.panel .panel-header {
-    background-color: #0a2c5c; }
+    background-color: #0f428a;
+    margin: 0; }
 
 .kss-directive pre {
   border-width: 0;
   font-family: "Operator Mono", Hack, Consolas, Menlo, Monaco, "Ubuntu Mono", "Courier New", Courier, monospace;
-  padding: 2rem 2rem 0; }
+  padding: 0; }
 
 .kss-home pre {
   margin-bottom: 2rem; }
@@ -4371,6 +4182,8 @@ pre[class*='language-'] {
   margin: 0; }
   .kss-panel + .kss-source {
     border-top-width: 0; }
+  .kss-panel > :first-child > :last-child {
+    margin-bottom: 0; }
 
 .kss-parameters {
   background-color: #f6f9fe;
@@ -4393,7 +4206,7 @@ pre[class*='language-'] {
   @media (min-width: 800px) {
     .kss-parameters-color-sample {
       height: 2rem;
-      width: 4rem; } }
+      width: 2rem; } }
   .kss-parameters-color-sample rect {
     height: 100%;
     width: 100%; }
@@ -4411,6 +4224,11 @@ pre[class*='language-'] {
 .kss-parameters-var {
   font-weight: 700;
   white-space: nowrap; }
+  .kss-parameters-var + .kss-parameters-value {
+    margin-bottom: 2rem; }
+    @media (min-width: 800px) {
+      .kss-parameters-var + .kss-parameters-value {
+        margin-bottom: 0; } }
 
 .kss-ref {
   display: none;
@@ -4429,7 +4247,6 @@ pre[class*='language-'] {
   white-space: nowrap; }
 
 .kss-source {
-  margin: 0 0 5rem;
   padding: 1rem 2rem; }
 
 .kss-spacer {
@@ -4446,3 +4263,17 @@ pre[class*='language-'] {
       grid-template-rows: auto; } }
   .kss-spacer-grid div {
     white-space: nowrap; }
+
+.kss-sub-section-links li {
+  font-size: 1.92rem;
+  font-weight: 700; }
+
+.kss-swatch {
+  border: 1px solid #737d8c;
+  bottom: -3px;
+  height: 2rem;
+  position: relative;
+  width: 2rem; }
+  .kss-swatch rect {
+    height: 100%;
+    width: 100%; }

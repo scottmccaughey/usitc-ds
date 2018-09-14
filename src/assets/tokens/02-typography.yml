@@ -143,15 +143,15 @@ font:
     # Styleguide Tokens.Typography.Sizes.Scale
     #
     # Weight: 1
-    xxs: ms(-3)
-    xs: ms(-2)
-    s: ms(-1)
-    m: ms(0)
-    l: ms(1)
-    xl: ms(2)
-    xxl: ms(3)
-    xxxl: ms(4)
-    xxxxl: ms(5)
+    xxs: ms($font-size-scale-ratio, $font-size-base, -3)
+    xs: ms($font-size-scale-ratio, $font-size-base, -2)
+    s: ms($font-size-scale-ratio, $font-size-base, -1)
+    m: ms($font-size-scale-ratio, $font-size-base, 0)
+    l: ms($font-size-scale-ratio, $font-size-base, 1)
+    xl: ms($font-size-scale-ratio, $font-size-base, 2)
+    xxl: ms($font-size-scale-ratio, $font-size-base, 3)
+    xxxl: ms($font-size-scale-ratio, $font-size-base, 4)
+    xxxxl: ms($font-size-scale-ratio, $font-size-base, 5)
 
     # Header Sizes
     #
