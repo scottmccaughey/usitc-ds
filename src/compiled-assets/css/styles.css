@@ -3804,13 +3804,16 @@ a rect {
       .table-searches.table-responsive th:first-child,
       .table-searches.table-responsive td:first-child {
         padding-top: 0.5rem !important; } }
+    @media (min-width: 800px) {
+      .table-searches.table-responsive th:first-child,
+      .table-searches.table-responsive td:first-child {
+        min-width: 300px; } }
   .table-searches.table-responsive th:last-child,
   .table-searches.table-responsive td:last-child {
     padding-bottom: 2rem !important; }
     @media (min-width: 600px) {
       .table-searches.table-responsive th:last-child,
       .table-searches.table-responsive td:last-child {
-        white-space: nowrap;
         padding-bottom: 0.5rem !important; } }
   @media (min-width: 600px) {
     .table-searches.table-responsive th,
@@ -3832,6 +3835,16 @@ a rect {
 .table-searches.table-responsive .query-system,
 .table-searches.table-responsive .query-type {
   white-space: nowrap; }
+
+.table-searches.table-responsive .table-button-cell button {
+  margin: 0.25rem;
+  white-space: nowrap; }
+  .table-searches.table-responsive .table-button-cell button + button {
+    margin-left: 0.25rem; }
+
+@media (min-width: 1200px) {
+  .table-searches.table-responsive .table-button-wrapper {
+    white-space: nowrap; } }
 
 .table-selector {
   margin-bottom: 2rem; }

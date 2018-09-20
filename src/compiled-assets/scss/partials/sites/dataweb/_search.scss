@@ -505,13 +505,16 @@
       @include breakpoint(s) {
         padding-top: $space-xs !important;
       }
+
+      @include breakpoint(m) {
+        min-width: 300px;
+      }
     }
 
     &:last-child {
       padding-bottom: $space-m !important;
 
       @include breakpoint(s) {
-        white-space: nowrap;
         padding-bottom: $space-xs !important;
       }
     }
@@ -540,6 +543,23 @@
   .query-system,
   .query-type {
     white-space: nowrap;
+  }
+
+  .table-button-cell {
+    button {
+      margin: 0.25rem;
+      white-space: nowrap;
+
+      + button {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  .table-button-wrapper {
+    @include breakpoint(l) {
+      white-space: nowrap;
+    }
   }
 }
 
