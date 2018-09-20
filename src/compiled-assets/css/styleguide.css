@@ -1353,6 +1353,13 @@ simple-select + simple-select .select-child-field {
     .floating-label-group label + app-field-error-display > .state-error {
       border-top-width: 0; }
 
+.floating-label-select {
+  padding-top: 0; }
+  .floating-label-select label {
+    opacity: 1;
+    position: relative;
+    top: 0; }
+
 .form-control-inline {
   display: block; }
   @media (min-width: 600px) {
