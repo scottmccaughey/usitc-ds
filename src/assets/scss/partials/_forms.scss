@@ -263,6 +263,16 @@ simple-select {
   }
 }
 
+.floating-label-select {
+  padding-top: 0;
+
+  label {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+
 .form-control-inline {
   display: block;
 
