@@ -688,7 +688,7 @@ a.button {
   a.button:active,
   a.button:focus,
   a.button:hover {
-    background-color: #0f428a;
+    background-color: #1458b8;
     color: white; }
   button + button,
   button + input[type='button'],
@@ -791,7 +791,7 @@ a.button {
     a.button.button-primary-alt:active,
     a.button.button-primary-alt:focus,
     a.button.button-primary-alt:hover {
-      background-color: #0f428a;
+      background-color: #1458b8;
       color: white; }
       .on-dark button.button-primary-alt:active, .on-dark button.button-primary-alt:focus, .on-dark button.button-primary-alt:hover, .on-dark
       input[type='button'].button-primary-alt:active, .on-dark

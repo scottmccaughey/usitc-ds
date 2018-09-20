@@ -55,7 +55,7 @@ a.button {
   &:active,
   &:focus,
   &:hover {
-    background-color: $color-theme-dark-background-alt;
+    background-color: color(blue, 40);
     color: $color-theme-dark-text;
   }
 
@@ -256,7 +256,7 @@ a.button {
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-theme-dark-background;
+      background-color: color(blue, 20);
       color: $color-theme-dark-text;
 
       .on-dark & {
@@ -277,13 +277,13 @@ a.button {
   // Weight: 2
   &.button-primary-alt {
     border-color: transparent;
-    background-color: $color-theme-dark-background;
+    background-color: color(blue, 20);
     color: $color-theme-dark-text;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: $color-theme-dark-background-alt;
+      background-color: color(blue, 40);
       color: $color-theme-dark-text;
 
       .on-dark & {
