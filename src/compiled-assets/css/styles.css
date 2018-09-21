@@ -669,7 +669,7 @@ a.button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-weight: 300;
+  font-weight: 400;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1009,7 +1009,7 @@ simple-select + simple-select .select-child-field {
   max-height: 400px;
   overflow-y: scroll; }
   .controls-boxed label {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1;
     margin: 0 !important;
     text-transform: none; }
@@ -1152,7 +1152,7 @@ simple-select + simple-select .select-child-field {
     margin-bottom: 2rem; }
 
 .form-group .control-label {
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none; }
 
 .form-groups {
@@ -1301,7 +1301,7 @@ simple-select + simple-select .select-child-field {
 .label-plain {
   font-size: 1.33333rem; }
   .form-group label.label-plain {
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none; }
 
 .progress {
@@ -1591,7 +1591,7 @@ simple-select + simple-select .select-child-field {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0;
     padding: 1rem 2rem;
     text-align: center;
@@ -1618,7 +1618,7 @@ body {
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
   font-variant-numeric: lining-nums;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   position: relative; }
   body.has-off-canvas {
@@ -2159,7 +2159,7 @@ h6,
 .header-overall {
   color: #737d8c;
   font-size: 8vw;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -1px;
   margin-bottom: 1rem; }
   @media (min-width: 800px) {
@@ -2192,7 +2192,7 @@ h6,
 
 .header-tagline {
   font-size: 1.33333rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .header-tagline {
@@ -2205,7 +2205,7 @@ h6,
 .subhead {
   color: #2e3238;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: -1rem; }
 
 .subhead-table {
@@ -2956,7 +2956,7 @@ icon,
     .check-tabs-contents {
       padding: 2rem 3rem; } }
   .check-tabs-contents .panel.state-info {
-    font-weight: 300; }
+    font-weight: 400; }
     .check-tabs-contents .panel.state-info:last-child {
       margin-bottom: 0; }
 
@@ -2972,15 +2972,15 @@ icon,
   font-family: "Raleway";
   font-stretch: normal;
   font-style: normal;
-  font-weight: 300;
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-light.woff") format("woff"); }
+  font-weight: 400;
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-regular.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
   font-stretch: normal;
   font-style: italic;
-  font-weight: 300;
-  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-lightitalic.woff") format("woff"); }
+  font-weight: 400;
+  src: url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-italic.woff2") format("woff2"), url("../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts/raleway-italic.woff") format("woff"); }
 
 @font-face {
   font-family: "Raleway";
@@ -3070,7 +3070,7 @@ icon,
   text-align: right; }
 
 .unbold {
-  font-weight: 300 !important; }
+  font-weight: 400 !important; }
 
 .uppercase {
   text-transform: uppercase; }

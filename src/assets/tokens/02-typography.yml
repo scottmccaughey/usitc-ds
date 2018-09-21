@@ -20,12 +20,12 @@ font:
   family:
     files--map:
       Raleway:
-        light:
-          weight: 300
+        regular:
+          weight: 400
           style: normal
           stretch: normal
-        lightitalic:
-          weight: 300
+        italic:
+          weight: 400
           style: italic
           stretch: normal
         bold:
@@ -76,17 +76,17 @@ font:
 
   # Font Weights
   #
-  # We use two main weights of Raleway — *Light (300)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
+  # We use two main weights of Raleway — *Regular (400)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
   #
   # <div class="border padded margin-bottom">
   #
-  # This is Raleway Light.<br>
+  # This is Raleway Regular.<br>
   # <strong>This is Raleway Bold.</strong><br>
   # <span class="black">This is Raleway Black.</span>
   #
   # </div>
   #
-  # $font-weight-normal = 300 - ​
+  # $font-weight-normal = 400 - ​
   # $font-weight-bold   = 700 - ​
   # $font-weight-black  = 900 - ​
   #
@@ -94,7 +94,7 @@ font:
   #
   # Weight: 2
   weight:
-    normal: 300 !default
+    normal: 400 !default
     bold: 700 !default
     black: 900 !default
 
