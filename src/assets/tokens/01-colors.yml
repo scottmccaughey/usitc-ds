@@ -223,15 +223,15 @@ color:
     #
     # </div>
     #
-    # $color-state-error-background       = color(red, 95)  - #fcebe8
-    # $color-state-error-background-alt   = color(red, 90)  - #fad8d1
-    # $color-state-error-border           = color(red, 40)  - #b83014
+    # $color-state-error-background       = color(red, 95)  - #fce8ea
+    # $color-state-error-background-alt   = color(red, 90)  - #fad1d4
+    # $color-state-error-border           = color(red, 40)  - #b81422
     # $color-state-error-text             = color(grey, 20) - #2b383b
-    # $color-state-error-accent           = color(red, 30)  - #8a0f24
-    # $color-state-error-link             = color(red, 40)  - #b83014
+    # $color-state-error-accent           = color(red, 30)  - #8a0f19
+    # $color-state-error-link             = color(red, 40)  - #b81422
     # $color-state-error-hover-background = transparent     - transparent
-    # $color-state-error-hover-text       = color(red, 60)  - #eb4763
-    # $color-state-error-spinner          = color(red, 40)  - #b83014
+    # $color-state-error-hover-text       = color(red, 60)  - #eb4755
+    # $color-state-error-spinner          = color(red, 40)  - #b81422
     #
     # Styleguide Tokens.Colors.State.Error
     #
@@ -291,15 +291,15 @@ color:
     #
     # </div>
     #
-    # $color-state-success-background       = color(green, 95)  - #e8fceb
-    # $color-state-success-background-alt   = color(green, 90)  - #d1fad8
-    # $color-state-success-border           = color(green, 20)  - #185c0a
-    # $color-state-success-text             = color(grey, 20)   - #2b383b
-    # $color-state-success-accent           = color(green, 20)  - #185c0a
-    # $color-state-success-link             = color(green, 20)  - #185c0a
+    # $color-state-success-background       = color(green, 95)  - #eafce8
+    # $color-state-success-background-alt   = color(green, 90)  - #d5fad1
+    # $color-state-success-border           = color(green, 20)  - #115c0a
+    # $color-state-success-text             = color(grey, 20)   - #2e3638
+    # $color-state-success-accent           = color(green, 20)  - #115c0a
+    # $color-state-success-link             = color(green, 30)  - #1a8a0f
     # $color-state-success-hover-background = transparent       - transparent
     # $color-state-success-hover-text       = color(green)      - #3ce619
-    # $color-state-success-spinner          = color(green, 30)  - #0f8a24
+    # $color-state-success-spinner          = color(green, 30)  - #1a8a0f
     #
     # Styleguide Tokens.Colors.State.Success
     #
@@ -310,7 +310,7 @@ color:
       border:           color(green, 20) !default
       text:             color(grey, 20) !default
       accent:           color(green, 20) !default
-      link:             color(green, 20) !default
+      link:             color(green, 30) !default
       hover-background: transparent !default
       hover-text:       color(green) !default
       spinner:          color(green, 30) !default
@@ -325,12 +325,12 @@ color:
     #
     # </div>
     #
-    # $color-state-warning-background       = color(orange, 95) - #fcf6e8
-    # $color-state-warning-background-alt   = color(orange, 90) - #faecd1
+    # $color-state-warning-background       = color(orange, 95) - #fcf1e8
+    # $color-state-warning-background-alt   = color(orange, 90) - #fae2d1
     # $color-state-warning-border           = color(orange, 40) - #b85814
-    # $color-state-warning-text             = color(grey, 20)   - #2b383b
-    # $color-state-warning-accent           = color(orange, 30) - #8a570f
-    # $color-state-warning-link             = color(orange, 30) - #8a570f
+    # $color-state-warning-text             = color(grey, 20)   - #2e3638
+    # $color-state-warning-accent           = color(orange, 30) - #8a420f
+    # $color-state-warning-link             = color(orange, 30) - #8a420f
     # $color-state-warning-hover-background = transparent       - transparent
     # $color-state-warning-hover-text       = color(orange)     - #e6a219
     # $color-state-warning-spinner          = color(orange)     - #e6a219

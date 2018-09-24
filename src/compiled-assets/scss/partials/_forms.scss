@@ -355,7 +355,7 @@ simple-select {
   &:hover {
     icon {
       use {
-        fill: color(white);
+        fill: $color-theme-base-text;
       }
 
       path {
@@ -703,11 +703,11 @@ simple-select {
     }
 
     option:checked {
-      background: $color-state-info-background-alt
+      background: $color-state-info-background
         linear-gradient(
           0deg,
-          $color-state-info-background-alt 0%,
-          $color-state-info-background-alt 100%
+          $color-state-info-background 0%,
+          $color-state-info-background 100%
         );
       color: color(black) !important;
     }

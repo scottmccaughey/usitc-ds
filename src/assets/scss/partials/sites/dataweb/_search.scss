@@ -38,7 +38,7 @@
   &:focus,
   &:hover {
     > div {
-      background-color: $color-state-success-link;
+      background-color: color(green, 40);
 
       &.button-icon {
         background-color: $color-theme-base-background;
@@ -47,7 +47,7 @@
   }
 
   > div {
-    background-color: $color-state-success-border;
+    background-color: $color-state-success-link;
     color: $color-theme-dark-text;
     padding: $space-m;
 
