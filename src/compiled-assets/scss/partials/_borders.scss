@@ -23,7 +23,7 @@
 
 // Side-Specific Borders
 //
-// You can add these classes to any <abbr>HTML</abbr> element:
+// You can add these classes to any <abbr>HTML</abbr> element to give it a border on one side (they can also be combined):
 //
 // .border-top    - Adds our base border only on the top of the element.
 // .border-right  - Adds our base border only on the right of the element.
@@ -57,12 +57,13 @@
 
 // Border Removal
 //
-// You can add these classes to any <abbr>HTML</abbr> element:
+// You can add these classes to any <abbr>HTML</abbr> element to *remove* a border from an element:
 //
-// .border-top-none    - Removes the border only on the top of the element.
-// .border-right-none  - Removes the border only on the right of the element.
-// .border-bottom-none - Removes the border only on the bottom of the element.
-// .border-left-none   - Removes the border only on the left of the element.
+// .border-none         - Removes the border from all sides of the element.
+// .border-top-none     - Removes the border only on the top of the element.
+// .border-right-none   - Removes the border only on the right of the element.
+// .border-bottom-none  - Removes the border only on the bottom of the element.
+// .border-left-none    - Removes the border only on the left of the element.
 //
 // Markup:
 // <div class="border border-top-none">This element has no top border.</div>

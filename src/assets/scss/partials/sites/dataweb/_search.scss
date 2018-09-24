@@ -116,6 +116,56 @@
   }
 }
 
+.ind-comm {
+  align-items: center;
+  border-bottom: 1px solid color(black, 0, 10);
+
+  @include breakpoint(m) {
+    display: flex;
+  }
+}
+
+.ind-comm-value {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  padding: $space-xs $space-s 0;
+  text-align: center;
+
+  @include breakpoint(m) {
+    border-right: 1px solid color(black, 0, 10);
+    flex: 0 0 auto;
+    padding: $space-s;
+    text-align: left;
+    width: 120px;
+  }
+}
+
+.ind-comm-name {
+  padding: $space-xs $space-s;
+  text-align: center;
+
+  @include breakpoint(m) {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+}
+
+.ind-comm-button {
+  padding: $space-xs $space-s $space-s;
+  text-align: center;
+
+  @include breakpoint(m) {
+    flex: 0 0 auto;
+    padding: $space-xs $space-s;
+    text-align: right;
+  }
+
+  button {
+    font-size: $font-size-xs;
+    padding: $space-xs;
+  }
+}
+
 .new-request-button {
   > div {
     display: inline-block;

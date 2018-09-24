@@ -7,6 +7,20 @@
 // 888  888 Y88..88P 888  888  888 Y8b.
 // 888  888  "Y88P"  888  888  888  "Y8888
 
+.home-africa {
+  ol li {
+    list-style-type: upper-roman;
+
+    ol {
+      margin-top: $space-s;
+    }
+
+    li {
+      list-style-type: upper-latin;
+    }
+  }
+}
+
 .home-intro {
   em {
     color: color(red, 40);

@@ -108,8 +108,8 @@
 
   .panel-header,
   .panel-header:first-child {
-    background-color: $color-state-error-hover-background;
-    color: $color-state-error-hover-text;
+    background-color: $color-state-error-border;
+    color: $color-theme-dark-text;
   }
 }
 
@@ -157,8 +157,8 @@
 
   .panel-header,
   .panel-header:first-child {
-    background-color: $color-state-info-hover-background;
-    color: $color-state-info-hover-text;
+    background-color: $color-state-info-border;
+    color: $color-theme-dark-text;
   }
 }
 
@@ -206,8 +206,8 @@
 
   .panel-header,
   .panel-header:first-child {
-    background-color: $color-state-success-hover-background;
-    color: $color-state-success-hover-text;
+    background-color: $color-state-success-border;
+    color: $color-theme-dark-text;
   }
 }
 
@@ -255,7 +255,7 @@
 
   .panel-header,
   .panel-header:first-child {
-    background-color: $color-state-warning-hover-background;
-    color: $color-state-warning-hover-text;
+    background-color: $color-state-warning-border;
+    color: $color-theme-dark-text;
   }
 }

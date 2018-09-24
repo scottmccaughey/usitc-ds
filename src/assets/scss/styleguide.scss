@@ -11,7 +11,6 @@
 //                  "Y88P"                "Y88P"
 
 @import 'styles';
-@import 'styleguide/colors';
 @import 'styleguide/prism';
 
 .kss-body {
@@ -99,6 +98,137 @@
   }
 }
 
+.kss-colors {
+  display: grid;
+  line-height: $line-height-button;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+  margin-bottom: $space-m;
+
+  @include breakpoint(l) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.kss-color-samples {
+  .kss-color-sample {
+    display: grid;
+    align-items: end;
+    padding: $space-m;
+    grid-template-areas:
+      'code code code'
+      'lum hex score';
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem auto 2rem;
+
+    @include breakpoint(s) {
+      grid-template-areas: 'lum code hex score';
+      grid-template-columns: 4rem auto 4.5rem 3.5rem;
+      grid-template-rows: auto;
+    }
+
+    .kss-color-name {
+      display: none;
+    }
+
+    &:first-child {
+      display: grid;
+      margin-bottom: $space-xs;
+      grid-template-areas:
+        'name name name'
+        'code code code'
+        'lum hex score';
+      grid-template-columns: 4rem auto 3.5rem;
+      grid-template-rows: 4rem 2rem 2rem;
+
+      @include breakpoint(s) {
+        grid-template-areas:
+          'name name name name'
+          'lum code hex score';
+        grid-template-columns: 4rem auto 4.5rem 3.5rem;
+        grid-template-rows: 6rem 2rem;
+      }
+
+      .kss-color-name {
+        display: block;
+      }
+
+      .kss-opt-lum {
+        display: none;
+      }
+    }
+  }
+}
+
+.kss-color-name {
+  align-self: start;
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  grid-area: name;
+}
+
+.kss-color-lum {
+  grid-area: lum;
+}
+
+.kss-color-code {
+  align-self: start;
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-normal;
+  grid-area: code;
+
+  @include breakpoint(s) {
+    align-self: end;
+  }
+}
+
+.kss-color-hex {
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  text-align: right;
+  grid-area: hex;
+}
+
+.kss-color-score {
+  padding-left: $space-m;
+  text-align: center;
+  grid-area: score;
+
+  .tag-label {
+    cursor: help;
+  }
+}
+
+.kss-color-sample-white {
+  border: $border-base;
+}
+
+.kss-contrast-aaa,
+.kss-contrast-aa,
+.kss-contrast-aa18,
+.kss-contrast-dnp {
+  text-transform: uppercase;
+}
+
+.kss-contrast-aaa,
+.kss-contrast-aa {
+  background-color: color(green);
+}
+
+.kss-contrast-aa18 {
+  background-color: color(orange, 60);
+}
+
+.kss-contrast-dnp {
+  background-color: color(red, 80);
+}
+
 .kss-description {
   margin-bottom: $space-m;
 }
@@ -118,6 +248,20 @@
     border-width: 0;
     font-family: $font-family-mono;
     padding: 0;
+  }
+}
+
+.kss-gradients {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+
+  @include breakpoint(laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(desktop) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

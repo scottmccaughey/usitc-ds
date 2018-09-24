@@ -242,6 +242,10 @@ pre {
   &.on-dark-alt {
     background-color: $color-theme-dark-background-alt;
   }
+
+  .on-dark-grey {
+    background-color: color(grey, 20);
+  }
 }
 
 .pull-left {
@@ -272,6 +276,16 @@ pre {
   }
 }
 
+.scrollable {
+  max-height: 400px;
+  min-height: $space-l;
+  overflow-y: scroll;
+
+  &.mh-250 {
+    max-height: 250px;
+  }
+}
+
 .tag-label {
   background-color: $color-theme-base-background-alt;
   color: $color-theme-base-text;
@@ -290,6 +304,10 @@ pre {
   &:last-child {
     margin-right: 0;
   }
+}
+
+.unpad {
+  margin: (-$space-m) !important;
 }
 
 .visually-hidden {
