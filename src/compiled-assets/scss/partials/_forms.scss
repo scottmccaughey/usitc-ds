@@ -24,12 +24,12 @@ label {
 
 select {
   &[multiple] {
-    height: $space-xxl;
+    height: $space-xxxxl;
     padding: 0;
     width: 100%;
 
     &.boxed {
-      height: 400px;
+      height: 40rem;
     }
 
     option {
@@ -181,7 +181,7 @@ simple-select {
   }
 
   input:focus ~ .file-custom {
-    outline: $space-xs auto color(cyan, 30);
+    outline: $shadows-box-focus;
   }
 }
 
@@ -249,7 +249,7 @@ simple-select {
   }
 
   label {
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -376,7 +376,7 @@ simple-select {
     }
 
     use {
-      fill: color(cyan, 30);
+      fill: $color-theme-base-accent;
     }
 
     path {
@@ -390,7 +390,7 @@ simple-select {
 }
 
 .form-settings {
-  background-color: color(cyan, 20);
+  background-color: $color-theme-dark-background;
   display: grid;
   grid-template-columns: min-content auto;
   padding: 0;
@@ -405,7 +405,7 @@ simple-select {
 
   > i {
     align-items: center;
-    background-color: color(cyan, 30);
+    background-color: $color-theme-dark-background-alt;
     color: color(white);
     display: flex;
     justify-content: center;
@@ -460,19 +460,19 @@ simple-select {
   }
 
   &.state-error > i {
-    background-color: $color-state-error-hover-background;
+    background-color: $color-state-error-border;
   }
 
   &.state-info > i {
-    background-color: $color-state-info-hover-background;
+    background-color: $color-state-info-border;
   }
 
   &.state-success > i {
-    background-color: $color-state-success-hover-background;
+    background-color: $color-state-success-border;
   }
 
   &.state-warning > i {
-    background-color: $color-state-warning-hover-background;
+    background-color: $color-state-warning-border;
   }
 
   input {
@@ -502,8 +502,8 @@ simple-select {
 }
 
 .label-parent {
-  color: color(cyan, 30);
-  font-size: $font-size-s;
+  color: $color-theme-dark-background-alt;
+  font-size: $font-size-m;
   font-weight: $font-weight-bold;
   margin-top: 0;
 
@@ -548,7 +548,7 @@ simple-select {
   &[value] {
     appearance: none;
     border: 0;
-    color: color(cyan, 30);
+    color: $color-theme-dark-background-alt;
 
     &::-webkit-progress-bar {
       background-color: color(grey, 95);
@@ -556,7 +556,7 @@ simple-select {
     }
 
     &::-webkit-progress-value {
-      background-color: color(cyan, 30);
+      background-color: $color-theme-dark-background-alt;
       border-bottom-left-radius: $border-radius-base;
       border-top-left-radius: $border-radius-base;
     }
@@ -583,7 +583,7 @@ simple-select {
 }
 
 .read-more-content {
-  background-color: color(cyan, 90);
+  background-color: $color-state-info-background-alt;
   padding: $space-m;
 
   h4 {
@@ -626,7 +626,7 @@ simple-select {
     select {
       background-color: transparent;
       border: $border-base;
-      padding-left: ($space-l + $space-m);
+      padding-left: $space-xxl;
       position: relative;
       z-index: 2;
     }
@@ -638,7 +638,7 @@ simple-select {
     }
 
     option[disabled] {
-      background-color: color(cyan, 20);
+      background-color: $color-theme-dark-background;
       color: color(white);
       cursor: default;
       font-weight: $font-weight-bold;
@@ -677,13 +677,18 @@ simple-select {
       padding: 0;
 
       &.select-icon-left {
-        padding-left: 3rem;
+        padding-left: 6rem;
       }
     }
 
     &:focus {
       option:checked {
-        background: color(cyan, 30) linear-gradient(0deg, color(cyan, 30) 0%, color(cyan, 30) 100%);
+        background: $color-theme-dark-background-alt
+          linear-gradient(
+            0deg,
+            $color-theme-dark-background-alt 0%,
+            $color-theme-dark-background-alt 100%
+          );
         color: color(white) !important;
       }
     }
@@ -698,7 +703,12 @@ simple-select {
     }
 
     option:checked {
-      background: color(cyan, 90) linear-gradient(0deg, color(cyan, 90) 0%, color(cyan, 90) 100%);
+      background: $color-state-info-background-alt
+        linear-gradient(
+          0deg,
+          $color-state-info-background-alt 0%,
+          $color-state-info-background-alt 100%
+        );
       color: color(black) !important;
     }
   }
@@ -819,7 +829,7 @@ simple-select {
 
     @include breakpoint(l) {
       border: none;
-      border-top: 1px dashed color(cyan, 30);
+      border-top: 1px dashed $color-theme-base-accent;
       display: inline-block;
       flex-shrink: 0;
       height: 1px;
@@ -829,7 +839,7 @@ simple-select {
   }
 
   i {
-    color: color(cyan, 30);
+    color: $color-theme-base-accent;
     height: 100%;
     margin-right: $space-s;
 
@@ -875,13 +885,13 @@ simple-select {
     }
 
     &:checked + label {
-      background-color: color(cyan, 30);
+      background-color: $color-theme-base-accent;
       color: color(white);
     }
   }
 
   label {
-    background-color: color(cyan, 90);
+    background-color: $color-state-info-background-alt;
     border-right: $border-base;
     flex-grow: 1;
     font-weight: $font-weight-normal;
@@ -904,7 +914,7 @@ simple-select {
     &:active,
     &:focus,
     &:hover {
-      background-color: color(cyan, 30);
+      background-color: $color-theme-dark-background-alt;
       color: color(white);
     }
   }

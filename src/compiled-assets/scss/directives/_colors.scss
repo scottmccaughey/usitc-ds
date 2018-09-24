@@ -1,74 +1,119 @@
-/*
-                   888
-                   888
-                   888
-   .d8888b .d88b.  888  .d88b.  888d888 .d8888b
-  d88P"   d88""88b 888 d88""88b 888P"   88K
-  888     888  888 888 888  888 888     "Y8888b.
-  Y88b.   Y88..88P 888 Y88..88P 888          X88
-   "Y8888P "Y88P"  888  "Y88P"  888      88888P'
+//                  888
+//                  888
+//                  888
+//  .d8888b .d88b.  888  .d88b.  888d888 .d8888b
+// d88P"   d88""88b 888 d88""88b 888P"   88K
+// 888     888  888 888 888  888 888     "Y8888b.
+// Y88b.   Y88..88P 888 Y88..88P 888          X88
+//  "Y8888P "Y88P"  888  "Y88P"  888      88888P'
 
-  Color Variations function
-
-  color($key, $luminosity, $alpha)
-
-  Uses the $colors list as defined in _settings.scss (@section 1a).
-
-  The color() function takes three parameters, only the first of which is required. You must
-  pass in the color name ($key) - this will render the base color:
-
-    color(blue) - will render the BASE blue, equivalent to #3871c7 or rgba(56, 113, 199, 1)
-
-  You may pass in an optional brightness variable ($luminosity), which can be any percentage,
-  though it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. The higher
-  the number, the brighter the color:
-
-    color(blue, 20) - will render a very DARK blue, equivalent to #162d50 or
-                      rgba(56, 113, 199, 1)
-    color(blue, 50) - will render the BASE blue, equivalent to #3871c7 or
-                      rgba(56, 113, 199, 1)
-    color(blue, 80) - will render a very LIGHT blue, equivalent to #afc6e9 or
-                      rgba(56, 113, 199, 1)
-
-  color(black) and color(white) are special cases in that their brightness is set by
-  definition and cannot be adjusted:
-
-    color(black) - is the same as color(grey, 0), equivalent to #000000 or
-                    rgba(0, 0, 0, 1)
-    color(white) - is the same as color(grey, 100), equivalent to #ffffff or
-                    rgba(255, 255, 255, 1)
-
-  You may pass in an optional opacity variable ($alpha), which can be any percentage, though
-  it is recommended to use only multiples of ten: 10, 20, 30 ... 80, 90. If you want to use
-  $alpha, you MUST also pass a $luminosity — it is recommended to always pass 50 so that you
-  are creating only transparent versions of the BASE color. The higher the number, the more
-  opaque the color:
-
-    color(blue, 50, 20) -  will render a NEARLY TRANSPARENT base blue, equivalent to
-                            rgba(56, 113, 199, 0.2)
-    color(blue, 50, 50) -  will render a HALF TRANSPARENT base blue, equivalent to
-                            rgba(56, 113, 199, 0.5)
-    color(blue, 50, 100) - will render a COMPLETELY OPAQUE base blue, equivalent to
-                            rgba(56, 113, 199, 1)
-
-  Unlike brightness, opacity CAN be set on color(black) and color(white):
-
-    color(black, 0, 20) -   will render a NEARLY TRANSPARENT black equivalent to
-                            rgba(0, 0, 0, 0.2)
-    color(white, 100, 50) - will render a HALF TRANSPARENT white, equivalent to
-                            rgba(255, 255, 255, 0.5)
-
-*/
-
-@function color($key: lime, $luminosity: 50, $alpha: 100) {
-	$map: map-get($colors, $key);
-	$hue: map-get($map, hue);
-	$sat: map-get($map, sat);
-	$lum: $luminosity;
-	@if map-has-key($map, lum) {
-		$lum: map-get($map, lum);
-	}
-	$alp: $alpha / 100;
-	$hsla: hsla($hue, $sat, $lum, $alp);
-	@return $hsla;
+// Colors
+//
+// <div class="panel kss-directive border">
+// <div class="panel-header">Sass Function</div>
+// <pre class="language-scss">
+// color($key, $luminosity, $alpha)
+// </pre>
+// </div>
+// </div>
+//
+// The `color()` Sass function takes three parameters, only the first of which is required. You must pass in a color name (`$key`) from the *Available Colors* in [Tokens ➔ Colors](/tokens/colors).
+//
+// For example, this SCSS code:
+//
+// <pre class="language-scss">
+// p {
+//   color: color(cyan);
+// }
+// </pre>
+//
+// will render paragraph text in the *base* cyan <svg class="kss-swatch"><rect style="fill: #19c3e6;"></rect></svg> equivalent to `#19c3e6` or `rgba(25, 195, 230, 1)`.
+//
+// Markup:
+// Source
+//
+// Styleguide SassDirectives.Colors
+//
+// Weight: 4
+@function color($key, $luminosity: 50, $alpha: 100) {
+  $map: map-get($colors, $key);
+  $hue: map-get($map, hue);
+  $sat: map-get($map, sat);
+  $lum: $luminosity;
+  @if map-has-key($map, lum) {
+    $lum: map-get($map, lum);
+  }
+  $alp: $alpha / 100;
+  $hsla: hsla($hue, $sat, $lum, $alp);
+  @return $hsla;
 }
+
+// Brightness
+//
+// You may pass in an optional brightness variable (`$luminosity`), which can be any percentage, though it is recommended to use only multiples of ten (10, 20, 30 … 80, 90). The higher the number, the brighter the color:
+//
+// <pre class="language-scss">
+// h1 {
+//   color: color(cyan, 20);
+// }
+//
+// h2 {
+//   color: color(cyan, 50);
+// }
+//
+// h3 {
+//   color: color(cyan, 80);
+// }
+// </pre>
+//
+// will compile to CSS that renders:
+//
+// * `H1` text in a *dark* cyan <svg class="kss-swatch"><rect style="fill: #0a4e5c;"></rect></svg> equivalent to `#0a4e5c` or `rgba(10, 78, 92, 1)`
+// * `H2` text in the *base* cyan <svg class="kss-swatch"><rect style="fill: #19c3e6;"></rect></svg> equivalent to `#19c3e6` or `rgba(25, 195, 230, 1)`
+// * `H3` text in a *light* cyan <svg class="kss-swatch"><rect style="fill: #a3e7f5;"></rect></svg> equivalent to `#a3e7f5` or `rgba(163, 231, 245, 1)`
+//
+// Styleguide SassDirectives.Colors.Brightness
+
+// Black & White
+//
+// `color(black)` and `color(white)` are special cases in that their brightness is set by definition and cannot be adjusted:
+//
+// * `color(black)` is the same as `color(grey, 0)` <svg class="kss-swatch"><rect style="fill: #000000;"></rect></svg> equivalent to `#000000` or `rgba(0, 0, 0, 1)`
+// * `color(white)` is the same as `color(grey, 100)` <svg class="kss-swatch"><rect style="fill: #ffffff;"></rect></svg> equivalent to `#ffffff` or `rgba(255, 255, 255, 1)`
+//
+// Styleguide SassDirectives.Colors.Brightness.BlackAndWhite
+
+// Opacity
+//
+// You may pass in an optional opacity variable (`$alpha`), which can be any percentage, though it is recommended to use only multiples of ten: 10, 20, 30 … 80, 90. If you want to use `$alpha`, you **must** also pass a `$luminosity` — it is recommended to always pass 50 so that you are creating only transparent versions of the *base* color. The higher the number, the more opaque the color:
+//
+// <pre class="language-scss">
+// h1 {
+//   color: color(cyan, 50, 20);
+// }
+//
+// h2 {
+//   color: color(cyan, 50, 50);
+// }
+//
+// h3 {
+//   color: color(cyan, 80, 100);
+// }
+// </pre>
+//
+// will compile to CSS that renders:
+//
+// * `H1` text in a *nearly transparent* base cyan <svg class="kss-swatch"><rect style="fill: rgba(25, 195, 230, 0.2);"></rect></svg> equivalent to `rgba(25, 195, 230, 0.2)`
+// * `H2` text in the *half transparent* base cyan <svg class="kss-swatch"><rect style="fill: rgba(25, 195, 230, 0.5);"></rect></svg> equivalent to `rgba(25, 195, 230, 0.5)`
+// * `H3` text in a *completely opaque* base cyan <svg class="kss-swatch"><rect style="fill: rgba(25, 195, 230, 1);"></rect></svg> equivalent to `rgba(25, 195, 230, 1)`
+//
+// Styleguide SassDirectives.Colors.Opacity
+
+// Black & White
+//
+// Unlike brightness, opacity CAN be set on `color(black)` and `color(white)`:
+//
+// * `color(black, 0, 20)` will render a *nearly transparent* black <svg class="kss-swatch"><rect style="fill: rgba(0, 0, 0, 0.2);"></rect></svg> equivalent to `rgba(0, 0, 0, 0.2)`
+// * `color(white, 100, 50)` will render a *half transparent* white <svg class="kss-swatch"><rect style="fill: rgba(255, 255, 255, 0.5);"></rect></svg> equivalent to `rgba(255, 255, 255, 0.5)`
+//
+// Styleguide SassDirectives.Colors.Opacity.BlackAndWhite

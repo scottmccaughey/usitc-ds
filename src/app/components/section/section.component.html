@@ -1,11 +1,12 @@
-<section *ngIf="section" [id]="section.referenceURI">
+<section *ngIf="section"
+  [id]="section.referenceURI">
   <div class="kss-ref"
     *ngIf="section.referenceNumber">{{section.referenceNumber}} ({{section.weight}})</div>
   <div *ngIf="section.name"
     [innerHTML]="section.name"></div>
   <div *ngIf="section.description"
     class="kss-description"
-    [innerHTML]="section.description"></div>
+    [innerHTML]="section.description | KeepHtmlPipe"></div>
   <app-colors *ngIf="section.colors.length > 0"
     [colorVals]="section.colors"></app-colors>
   <app-parameters *ngIf="section.parameters.length > 0"
@@ -14,7 +15,6 @@
     [parameterVals]="section.modifiers"></app-parameters>
   <div class="panel kss-panel padding-none border"
     *ngIf="section.markup">
-    <div class="panel-header">Example</div>
     <div *ngIf="!section.scss"
       class="alt-off padded"
       [ngClass]="section.markupClass"

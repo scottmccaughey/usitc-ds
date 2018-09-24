@@ -11,10 +11,6 @@
 //                  "Y88P"                "Y88P"
 
 @import 'styles';
-
-@import 'styleguide/colors';
-@import 'styleguide/parameters';
-
 @import 'styleguide/prism';
 
 .kss-body {
@@ -46,16 +42,6 @@
     + .kss-source {
       border-top-width: 0;
     }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: color(cyan, 30);
-    font-weight: $font-weight-black;
-    margin: $space-m 0 $space-s;
-    text-transform: uppercase;
   }
 
   section {
@@ -100,16 +86,147 @@
       &:active,
       &:focus,
       &:hover {
-        color: color(white);
+        color: color(black);
       }
     }
 
     + li:before {
-      color: color(grey, 70);
+      color: color(cyan, 30, 50);
       content: ' ➔ ';
       padding: 0 $space-s;
     }
   }
+}
+
+.kss-colors {
+  display: grid;
+  line-height: $line-height-button;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+  margin-bottom: $space-m;
+
+  @include breakpoint(l) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.kss-color-samples {
+  .kss-color-sample {
+    display: grid;
+    align-items: end;
+    padding: $space-m;
+    grid-template-areas:
+      'code code code'
+      'lum hex score';
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 2rem auto 2rem;
+
+    @include breakpoint(s) {
+      grid-template-areas: 'lum code hex score';
+      grid-template-columns: 4rem auto 4.5rem 3.5rem;
+      grid-template-rows: auto;
+    }
+
+    .kss-color-name {
+      display: none;
+    }
+
+    &:first-child {
+      display: grid;
+      margin-bottom: $space-xs;
+      grid-template-areas:
+        'name name name'
+        'code code code'
+        'lum hex score';
+      grid-template-columns: 4rem auto 3.5rem;
+      grid-template-rows: 4rem 2rem 2rem;
+
+      @include breakpoint(s) {
+        grid-template-areas:
+          'name name name name'
+          'lum code hex score';
+        grid-template-columns: 4rem auto 4.5rem 3.5rem;
+        grid-template-rows: 6rem 2rem;
+      }
+
+      .kss-color-name {
+        display: block;
+      }
+
+      .kss-opt-lum {
+        display: none;
+      }
+    }
+  }
+}
+
+.kss-color-name {
+  align-self: start;
+  font-size: $font-size-l;
+  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  grid-area: name;
+}
+
+.kss-color-lum {
+  grid-area: lum;
+}
+
+.kss-color-code {
+  align-self: start;
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-normal;
+  grid-area: code;
+
+  @include breakpoint(s) {
+    align-self: end;
+  }
+}
+
+.kss-color-hex {
+  font-family: $font-family-mono;
+  font-size: $font-size-xs;
+  text-align: right;
+  grid-area: hex;
+}
+
+.kss-color-score {
+  padding-left: $space-m;
+  text-align: center;
+  grid-area: score;
+
+  .tag-label {
+    cursor: help;
+  }
+}
+
+.kss-color-sample-white {
+  border: $border-base;
+}
+
+.kss-contrast-aaa,
+.kss-contrast-aa,
+.kss-contrast-aa18,
+.kss-contrast-dnp {
+  text-transform: uppercase;
+}
+
+.kss-contrast-aaa,
+.kss-contrast-aa {
+  background-color: color(green);
+}
+
+.kss-contrast-aa18 {
+  background-color: color(orange, 60);
+}
+
+.kss-contrast-dnp {
+  background-color: color(red, 80);
 }
 
 .kss-description {
@@ -118,40 +235,37 @@
 
 .kss-directive {
   &.panel {
-    border-color: color(cyan, 20);
+    border-color: color(cyan, 30);
+    padding: 0;
 
     .panel-header {
-      background-color: color(cyan, 20);
+      background-color: color(cyan, 30);
+      margin: 0;
     }
   }
 
   pre {
     border-width: 0;
     font-family: $font-family-mono;
-    padding: $space-m $space-m 0;
+    padding: 0;
+  }
+}
+
+.kss-gradients {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $space-m;
+
+  @include breakpoint(laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(desktop) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .kss-home {
-  h1 {
-    color: inherit;
-    font-weight: $font-weight-bold;
-    margin: $space-s 0 0;
-    text-transform: none;
-  }
-
-  h2 {
-    color: color(cyan, 30);
-    font-weight: $font-weight-black;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-weight: $font-weight-bold;
-    margin: 0 0 $space-s;
-    text-transform: uppercase;
-  }
-
   pre {
     margin-bottom: $space-m;
   }
@@ -159,7 +273,6 @@
   .kss-home-subheader {
     font-size: $font-size-m;
     font-weight: $font-weight-normal;
-    margin-top: $space-s;
     text-transform: none;
   }
 }
@@ -176,6 +289,7 @@
   position: relative;
 
   [ngxClipboard] {
+    background-color: color(cyan, 40);
     padding: $space-xs;
     position: absolute;
     right: $space-s;
@@ -185,36 +299,39 @@
     &:focus,
     &:hover {
       background-color: color(white);
-      color: color(cyan, 30);
+      color: color(cyan, 40);
     }
   }
 }
 
 .kss-menu {
-  background-color: color(cyan, 20);
-  color: color(white);
   padding: $space-m 0;
   width: 100%;
 
   a {
+    color: $color-theme-dark-text;
     display: block;
+    font-size: $font-size-l;
     font-weight: $font-weight-bold;
     padding: $space-xs $space-m;
     text-decoration: none;
 
-    &.kss-menu-child {
-      font-size: $font-size-s;
-      font-weight: $font-weight-normal;
-      padding: $space-xxs $space-m $space-xxs $space-l;
+    &:active,
+    &:focus,
+    &:hover,
+    &.kss-menu-active {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
     }
 
-    &.kss-menu-active {
-      background-color: color(cyan, 10);
+    &.kss-menu-child {
+      font-size: $font-size-m;
+      font-weight: $font-weight-normal;
+      padding: $space-xxs $space-m $space-xxs $space-l;
     }
   }
 
   li {
-    font-size: $font-size-m;
     list-style: none;
     margin: 0;
   }
@@ -231,6 +348,68 @@
   + .kss-source {
     border-top-width: 0;
   }
+
+  > :first-child > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.kss-parameters {
+  background-color: $color-state-info-background;
+  border: $border-base;
+  font-family: $font-family-mono;
+  display: grid;
+  grid-column-gap: $grid-gap-col;
+  grid-row-gap: $space-xs;
+  padding: $space-m;
+
+  @include breakpoint(m) {
+    grid-template-columns: min-content auto auto;
+    grid-template-rows: auto;
+  }
+}
+
+.kss-parameters-color-sample {
+  border: $border-base;
+  height: $space-l;
+  width: 100%;
+
+  @include breakpoint(m) {
+    height: $space-m;
+    width: $space-m;
+  }
+
+  rect {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.kss-parameters-description {
+  color: $color-state-info-accent;
+  font-style: italic;
+  margin-bottom: $space-m;
+
+  @include breakpoint(m) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.kss-parameters-var {
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
+
+  + .kss-parameters-value {
+    margin-bottom: $space-m;
+
+    @include breakpoint(m) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .kss-ref {
@@ -246,8 +425,16 @@
   white-space: nowrap;
 }
 
+.kss-section-borders {
+  > div {
+    background-color: color(grey, 95);
+    padding: $space-s;
+    margin-bottom: $space-m;
+  }
+}
+
 .kss-source {
-  margin: 0 0 ($space-l + $space-m);
+  margin-bottom: $space-l;
   padding: $space-s $space-m;
 }
 
@@ -267,5 +454,25 @@
 
   div {
     white-space: nowrap;
+  }
+}
+
+.kss-sub-section-links {
+  li {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.kss-swatch {
+  border: $border-base;
+  bottom: -3px;
+  height: $space-m;
+  position: relative;
+  width: $space-m;
+
+  rect {
+    height: 100%;
+    width: 100%;
   }
 }

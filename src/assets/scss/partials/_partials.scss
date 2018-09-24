@@ -10,8 +10,14 @@
 // 888
 // 888
 
+// Components
+//
+// These are individual components that can be used in your project.
+//
+// Weight: 3
+//
+// Styleguide Components
 @import 'borders';
-@import 'boxes';
 @import 'buttons';
 @import 'errors';
 @import 'flex';
@@ -22,6 +28,7 @@
 @import 'icons';
 @import 'off-canvas';
 @import 'pagination';
+@import 'panels';
 @import 'print';
 @import 'responsive';
 @import 'spacing';
@@ -33,12 +40,3 @@
 @import 'visualizations';
 
 @import 'sites/sites';
-@import 'browsers/browsers';
-
-// Components
-//
-// These are individual components that can be used in your project.
-//
-// Weight: 3
-//
-// Styleguide Components

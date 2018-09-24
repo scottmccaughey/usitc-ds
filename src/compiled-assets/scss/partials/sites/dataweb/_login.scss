@@ -10,41 +10,6 @@
 //              Y8b d88P
 //               "Y88P"
 
-.login-bottom {
-  h1 {
-    font-size: $font-size-s;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.2rem;
-    margin-bottom: $space-m;
-    text-transform: uppercase;
-
-    @include breakpoint(l) {
-      font-size: $font-size-m;
-    }
-  }
-
-  li {
-    font-size: $font-size-xs;
-    list-style: none;
-  }
-
-  p {
-    font-size: $font-size-xs;
-  }
-
-  svg-icon {
-    display: block;
-    margin: 0 auto $space-m;
-    max-width: 150px;
-    width: 80%;
-  }
-
-  ul {
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-}
-
 .login-error input {
   border-color: $color-state-error-border;
 }
@@ -60,7 +25,7 @@
 
   @include breakpoint(l) {
     grid-gap: $grid-gap-row $grid-gap-col;
-    grid-template-columns: 5rem repeat(3, 1fr);
+    grid-template-columns: 10rem repeat(3, 1fr);
     max-width: 100%;
   }
 
@@ -138,8 +103,8 @@
     display: block;
 
     @include breakpoint(l) {
-      height: 3rem;
-      width: 3rem;
+      height: 6rem;
+      width: 6rem;
     }
   }
 
@@ -198,7 +163,7 @@
   align-self: center;
 
   @include breakpoint(l) {
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
   }
 
   ul {
@@ -225,10 +190,10 @@
 }
 
 .login-password-strength {
-  font-size: $font-size-xs;
+  font-size: $font-size-s;
 
   h2 {
-    font-size: $font-size-s;
+    font-size: $font-size-m;
   }
 }
 

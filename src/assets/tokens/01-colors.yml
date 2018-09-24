@@ -15,7 +15,7 @@
 
 # Available Colors
 #
-# Below are the available colors in the USITC Design System, along with acceptable variations in lightness. You can reference these colors in Sass by using the `color()` function shown with each variation, such as `color: color(blue, 20);` or `background-color: color(red);`. More information on the `color()` function (including how to optionally control opacity), refer to the [color() Directive](/directives/color).
+# Below are the available colors in the USITC Design System, along with acceptable variations in lightness. You can reference these colors in Sass by using the `color()` function shown with each variation, such as `color: color(cyan, 20);` or `background-color: color(red);`. More information on the `color()` function (including how to optionally control opacity), refer to the [color() function](/directives/color).
 #
 # If you don’t provide a *lightness*, it will default to a lightness of `50`. **Black** and **white** are special cases in that they have no lightness variations. Black will always have `0` lightness and white will always have `100` lightness.
 #
@@ -129,12 +129,12 @@ color:
     # <div class="border">
     # <div class="padded">
     #
-    # This is an example of our <a href="#tokens-colors-theme-base">base theme</a> in action.
+    # This is an example of our <a href="#">base theme</a> in action.
     #
     # </div>
     # <div class="padded padded-top alt">
     #
-    # This is an example of our <a href="#tokens-colors-theme-base">base theme</a> on the alternate background color.
+    # This is an example of our <a href="#">base theme</a> on the alternate background color.
     #
     # </div>
     # </div>
@@ -143,9 +143,10 @@ color:
     # $color-theme-base-background-alt    = color(grey, 90) - #e2e8e9
     # $color-theme-base-border            = color(grey, 20) - #2b383b
     # $color-theme-base-text              = color(grey, 20) - #2b383b
+    # $color-theme-base-accent            = color(cyan, 30) - #0f758a
     # $color-theme-base-link              = color(cyan, 30) - #0f758a
-    # $color-theme-base-hover-background  = color(cyan, 30) - #0f758a
-    # $color-theme-base-hover-text        = color(white)    - #ffffff
+    # $color-theme-base-hover-background  = transparent     - transparent
+    # $color-theme-base-hover-text        = color(cyan, 10) - #05272e
     # $color-theme-base-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.Theme.Base
@@ -156,9 +157,10 @@ color:
       background-alt:   color(grey, 90) !default
       border:           color(grey, 20) !default
       text:             color(grey, 20) !default
+      accent:           color(cyan, 30) !default
       link:             color(cyan, 30) !default
-      hover-background: color(cyan, 30) !default
-      hover-text:       color(white) !default
+      hover-background: transparent !default
+      hover-text:       color(cyan, 10) !default
       spinner:          color(cyan, 30) !default
 
     # Dark Theme
@@ -168,12 +170,12 @@ color:
     # <div class="border on-dark">
     # <div class="padded">
     #
-    # This is an example of our <a href="#tokens-colors-theme-dark">dark theme</a> in action.
+    # This is an example of our <a href="#">dark theme</a> in action.
     #
     # </div>
     # <div class="padded padded-top on-dark on-dark-alt">
     #
-    # This is an example of our <a href="#tokens-colors-theme-dark">dark theme</a> on the alternate background. color
+    # This is an example of our <a href="#">dark theme</a> on the alternate background color.
     #
     # </div>
     # </div>
@@ -182,9 +184,10 @@ color:
     # $color-theme-dark-background-alt    = color(cyan, 30) - #0f758a
     # $color-theme-dark-border            = color(cyan, 20) - #0a4e5c
     # $color-theme-dark-text              = color(white)    - #ffffff
+    # $color-theme-dark-accent            = color(cyan, 80) - #a3c5f5
     # $color-theme-dark-link              = color(white)    - #ffffff
-    # $color-theme-dark-hover-background  = color(white)    - #ffffff
-    # $color-theme-dark-hover-text        = color(cyan, 30) - #0f758a
+    # $color-theme-dark-hover-background  = transparent     - transparent
+    # $color-theme-dark-hover-text        = color(cyan, 80) - #a3c5f5
     # $color-theme-dark-spinner           = color(white)    - #ffffff
     #
     # Styleguide Tokens.Colors.Theme.Dark
@@ -195,9 +198,10 @@ color:
       background-alt:   color(cyan, 30) !default
       border:           color(cyan, 20) !default
       text:             color(white) !default
+      accent:           color(cyan, 80) !default
       link:             color(white) !default
-      hover-background: color(white) !default
-      hover-text:       color(cyan, 30) !default
+      hover-background: transparent !default
+      hover-text:       color(cyan, 80) !default
       spinner:          color(white) !default
 
   # State Colors
@@ -215,31 +219,33 @@ color:
     #
     # <div class="panel border state-error">
     #
-    # This is an example of our <a href="#tokens-colors-state-error">error state</a> in action.
+    # This is an example of our <a href="#">error state</a> in action.
     #
     # </div>
     #
-    # $color-state-error-background       = color(red,  95) - #fcebe8
-    # $color-state-error-background-alt   = color(red,  90) - #fad8d1
-    # $color-state-error-border           = color(red,  40) - #b83014
+    # $color-state-error-background       = color(red, 95)  - #fcebe8
+    # $color-state-error-background-alt   = color(red, 90)  - #fad8d1
+    # $color-state-error-border           = color(red, 40)  - #b83014
     # $color-state-error-text             = color(grey, 20) - #2b383b
-    # $color-state-error-link             = color(red,  40) - #b83014
-    # $color-state-error-hover-background = color(red,  40) - #b83014
-    # $color-state-error-hover-text       = color(white)    - #ffffff
-    # $color-state-error-spinner          = color(red,  40) - #b83014
+    # $color-state-error-accent           = color(red, 30)  - #8a0f24
+    # $color-state-error-link             = color(red, 40)  - #b83014
+    # $color-state-error-hover-background = transparent     - transparent
+    # $color-state-error-hover-text       = color(red, 60)  - #eb4763
+    # $color-state-error-spinner          = color(red, 40)  - #b83014
     #
     # Styleguide Tokens.Colors.State.Error
     #
     # Weight: 1
     error:
-      background:       color(red,  95) !default
-      background-alt:   color(red,  90) !default
-      border:           color(red,  40) !default
+      background:       color(red, 95) !default
+      background-alt:   color(red, 90) !default
+      border:           color(red, 40) !default
       text:             color(grey, 20) !default
-      link:             color(red,  40) !default
-      hover-background: color(red,  40) !default
-      hover-text:       color(white) !default
-      spinner:          color(red,  40) !default
+      accent:           color(red, 30) !default
+      link:             color(red, 40) !default
+      hover-background: transparent !default
+      hover-text:       color(red, 60) !default
+      spinner:          color(red, 40) !default
 
     # Info State
     #
@@ -247,17 +253,18 @@ color:
     #
     # <div class="panel border state-info">
     #
-    # This is an example of our <a href="#tokens-colors-state-info">info state</a> in action.
+    # This is an example of our <a href="#">info state</a> in action.
     #
     # </div>
     #
-    # $color-state-info-background        = color(cyan, 95) - #e8f9fd
+    # $color-state-info-background        = color(cyan, 95) - #e8f9fc
     # $color-state-info-background-alt    = color(cyan, 90) - #d1f3fa
     # $color-state-info-border            = color(cyan, 30) - #0f758a
-    # $color-state-info-text              = color(grey, 20) - #2b383b
+    # $color-state-info-text              = color(grey, 20) - #2e3238
+    # $color-state-info-accent            = color(cyan, 30) - #0f758a
     # $color-state-info-link              = color(cyan, 30) - #0f758a
-    # $color-state-info-hover-background  = color(cyan, 30) - #0f758a
-    # $color-state-info-hover-text        = color(white)    - #ffffff
+    # $color-state-info-hover-background  = transparent     - transparent
+    # $color-state-info-hover-text        = color(cyan, 10) - #05272e
     # $color-state-info-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.State.Info
@@ -268,9 +275,10 @@ color:
       background-alt:   color(cyan, 90) !default
       border:           color(cyan, 30) !default
       text:             color(grey, 20) !default
+      accent:           color(cyan, 30) !default
       link:             color(cyan, 30) !default
-      hover-background: color(cyan, 30) !default
-      hover-text:       color(white) !default
+      hover-background: transparent !default
+      hover-text:       color(cyan, 10) !default
       spinner:          color(cyan, 30) !default
 
     # Success State
@@ -279,17 +287,18 @@ color:
     #
     # <div class="panel border state-success">
     #
-    # This is an example of our <a href="#tokens-colors-state-success">success state</a> in action.
+    # This is an example of our <a href="#">success state</a> in action.
     #
     # </div>
     #
     # $color-state-success-background       = color(green, 95)  - #e8fceb
     # $color-state-success-background-alt   = color(green, 90)  - #d1fad8
-    # $color-state-success-border           = color(green, 30)  - #0f8a24
-    # $color-state-success-text             = color(grey,  20)  - #2b383b
-    # $color-state-success-link             = color(green, 30)  - #0f8a24
-    # $color-state-success-hover-background = color(green, 30)  - #0f8a24
-    # $color-state-success-hover-text       = color(white)      - #ffffff
+    # $color-state-success-border           = color(green, 20)  - #185c0a
+    # $color-state-success-text             = color(grey, 20)   - #2b383b
+    # $color-state-success-accent           = color(green, 20)  - #185c0a
+    # $color-state-success-link             = color(green, 20)  - #185c0a
+    # $color-state-success-hover-background = transparent       - transparent
+    # $color-state-success-hover-text       = color(green)      - #3ce619
     # $color-state-success-spinner          = color(green, 30)  - #0f8a24
     #
     # Styleguide Tokens.Colors.State.Success
@@ -298,11 +307,12 @@ color:
     success:
       background:       color(green, 95) !default
       background-alt:   color(green, 90) !default
-      border:           color(green, 30) !default
-      text:             color(grey,  20) !default
-      link:             color(green, 30) !default
-      hover-background: color(green, 30) !default
-      hover-text:       color(white) !default
+      border:           color(green, 20) !default
+      text:             color(grey, 20) !default
+      accent:           color(green, 20) !default
+      link:             color(green, 20) !default
+      hover-background: transparent !default
+      hover-text:       color(green) !default
       spinner:          color(green, 30) !default
 
     # Warning State
@@ -311,18 +321,19 @@ color:
     #
     # <div class="panel border state-warning">
     #
-    # This is an example of our <a href="#tokens-colors-state-warning">warning state</a> in action.
+    # This is an example of our <a href="#">warning state</a> in action.
     #
     # </div>
     #
     # $color-state-warning-background       = color(orange, 95) - #fcf6e8
     # $color-state-warning-background-alt   = color(orange, 90) - #faecd1
-    # $color-state-warning-border           = color(orange, 50) - #e6a219
-    # $color-state-warning-text             = color(grey,   20) - #2b383b
-    # $color-state-warning-link             = color(orange, 50) - #e6a219
-    # $color-state-warning-hover-background = color(orange, 50) - #e6a219
-    # $color-state-warning-hover-text       = color(white)      - #ffffff
-    # $color-state-warning-spinner          = color(orange, 50) - #e6a219
+    # $color-state-warning-border           = color(orange, 40) - #b85814
+    # $color-state-warning-text             = color(grey, 20)   - #2b383b
+    # $color-state-warning-accent           = color(orange, 30) - #8a570f
+    # $color-state-warning-link             = color(orange, 30) - #8a570f
+    # $color-state-warning-hover-background = transparent       - transparent
+    # $color-state-warning-hover-text       = color(orange)     - #e6a219
+    # $color-state-warning-spinner          = color(orange)     - #e6a219
     #
     # Styleguide Tokens.Colors.State.Warning
     #
@@ -330,9 +341,10 @@ color:
     warning:
       background:       color(orange, 95) !default
       background-alt:   color(orange, 90) !default
-      border:           color(orange, 50) !default
-      text:             color(grey,   20) !default
-      link:             color(orange, 50) !default
-      hover-background: color(orange, 50) !default
-      hover-text:       color(white) !default
-      spinner:          color(orange, 50) !default
+      border:           color(orange, 40) !default
+      text:             color(grey, 20) !default
+      accent:           color(orange, 30) !default
+      link:             color(orange, 30) !default
+      hover-background: transparent !default
+      hover-text:       color(orange) !default
+      spinner:          color(orange) !default

@@ -21,7 +21,7 @@
   }
 }
 
-.button-new-request {
+.button.button-new-request {
   align-items: stretch;
   display: flex;
   flex-direction: row;
@@ -38,17 +38,17 @@
   &:focus,
   &:hover {
     > div {
-      background-color: color(green, 20);
+      background-color: $color-state-success-link;
 
       &.button-icon {
-        background-color: color(white);
+        background-color: $color-theme-base-background;
       }
     }
   }
 
   > div {
-    background-color: color(green, 30);
-    color: color(white);
+    background-color: $color-state-success-border;
+    color: $color-theme-dark-text;
     padding: $space-m;
 
     @include breakpoint(m) {
@@ -56,16 +56,16 @@
     }
 
     &.button-icon {
-      background-color: color(white);
+      background-color: $color-theme-base-background;
       color: color(grey);
       display: flex;
       flex-direction: column;
       padding: $space-s;
-      width: $space-l;
+      width: $space-xl;
 
       @include breakpoint(m) {
         padding: $space-m;
-        width: $space-xl;
+        width: 7rem;
       }
 
       > * {
@@ -76,7 +76,7 @@
         width: $space-m;
 
         @include breakpoint(m) {
-          width: $space-l;
+          width: $space-xl;
         }
       }
     }
@@ -95,6 +95,11 @@
   }
 }
 
+.button-search-submit {
+  height: $space-xxl;
+  width: $space-xxxxl;
+}
+
 .commodities-select .input-with-button button {
   padding: 0 $space-m;
 }
@@ -108,6 +113,56 @@
   @include breakpoint(m) {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.ind-comm {
+  align-items: center;
+  border-bottom: 1px solid color(black, 0, 10);
+
+  @include breakpoint(m) {
+    display: flex;
+  }
+}
+
+.ind-comm-value {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  padding: $space-xs $space-s 0;
+  text-align: center;
+
+  @include breakpoint(m) {
+    border-right: 1px solid color(black, 0, 10);
+    flex: 0 0 auto;
+    padding: $space-s;
+    text-align: left;
+    width: 120px;
+  }
+}
+
+.ind-comm-name {
+  padding: $space-xs $space-s;
+  text-align: center;
+
+  @include breakpoint(m) {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+}
+
+.ind-comm-button {
+  padding: $space-xs $space-s $space-s;
+  text-align: center;
+
+  @include breakpoint(m) {
+    flex: 0 0 auto;
+    padding: $space-xs $space-s;
+    text-align: right;
+  }
+
+  button {
+    font-size: $font-size-xs;
+    padding: $space-xs;
   }
 }
 
@@ -129,38 +184,42 @@
 
   button,
   .button {
-    text-transform: none;
-  }
-
-  .button-primary {
-    &:active,
-    &:focus,
-    &:hover {
+    &.button-primary {
       background-color: color(cyan, 90);
       color: color(black);
-    }
-  }
 
-  .button-success {
-    &:active,
-    &:focus,
-    &:hover {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(cyan, 70);
+      }
+    }
+
+    &.button-success {
       background-color: color(green, 90);
       color: color(black);
-    }
-  }
 
-  .button-cancel {
-    &:active,
-    &:focus,
-    &:hover {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(green, 70);
+      }
+    }
+
+    &.button-cancel {
       background-color: color(red, 90);
       color: color(black);
-    }
-  }
 
-  .button-spinner {
-    min-height: 40.75px;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: color(red, 70);
+      }
+    }
+
+    &.button-spinner {
+      min-height: 40.75px;
+    }
   }
 }
 
@@ -176,7 +235,7 @@
   }
 
   label {
-    color: color(white);
+    color: $color-theme-dark-text;
   }
 }
 
@@ -239,11 +298,6 @@
   }
 }
 
-.button-search-submit {
-  height: $space-l;
-  width: 10rem;
-}
-
 .show-query {
   white-space: pre-wrap;
 }
@@ -285,7 +339,7 @@
 }
 
 .site-search-header {
-  background-color: color(cyan, 20);
+  background-color: $color-theme-dark-background;
 }
 
 .table-results {
@@ -342,7 +396,7 @@
   .total {
     th,
     td {
-      background-color: #f2f3f3;
+      background-color: color(grey, 98);
       font-weight: $font-weight-bold;
     }
   }
@@ -389,11 +443,11 @@
   tbody {
     tr {
       &:nth-child(odd) td {
-        background-color: color(cyan, 30);
+        background-color: color(grey, 90);
       }
 
       &.sample-row td {
-        background-color: color(orange, 95);
+        background-color: $color-state-warning-background;
         color: color(black);
 
         &:last-child {
@@ -407,7 +461,7 @@
 
         span {
           background-color: color(orange, 40);
-          color: color(white);
+          color: $color-theme-dark-text;
           display: inline-block;
           font-weight: $font-weight-bold;
           margin-right: $space-s;
@@ -436,14 +490,14 @@
       &.sample-row {
         &:nth-child(even) {
           td {
-            background-color: #fcefd6;
+            background-color: color(grey, 98);
           }
         }
 
         td {
           em {
             background-color: color(orange, 40);
-            color: color(white);
+            color: $color-theme-dark-text;
             display: block;
             font-weight: $font-weight-bold;
             margin: (-$space-m) (-$space-m) $space-m;
@@ -529,7 +583,7 @@
   }
 
   .query-desc {
-    font-size: $font-size-xs;
+    font-size: $font-size-s;
   }
 
   .query-name {
@@ -567,7 +621,7 @@
   }
 
   select {
-    background-color: color(cyan, 90);
+    background-color: $color-theme-dark-link;
     border-width: 0;
     font-weight: $font-weight-bold;
   }

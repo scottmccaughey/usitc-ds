@@ -5,4 +5,11 @@
     <app-section *ngFor="let section of subSections"
       [section]="section"></app-section>
   </ng-container>
+  <ul *ngIf="subSectionLinks"
+    class="kss-sub-section-links">
+    <li *ngFor="let section of subSectionLinks">
+      <a [routerLink]="section.url"
+        [innerHTML]="section.header"></a>
+    </li>
+  </ul>
 </ng-container>

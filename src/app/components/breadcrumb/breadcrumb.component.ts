@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { ConfigService } from '../../services/config.service';
+
 @Component({
   selector: 'app-breadcrumb',
   templateUrl: './breadcrumb.component.html',
@@ -10,7 +12,7 @@ export class BreadcrumbComponent implements OnInit {
   section: any;
   breadcrumbs = [];
 
-  constructor() {}
+  constructor(private config: ConfigService) {}
 
   ngOnInit() {
     const routeSplit = this.section.reference.split('.');
@@ -21,16 +23,11 @@ export class BreadcrumbComponent implements OnInit {
     routeSplit.forEach(breadcrumb => {
       crumbTrail += '/' + breadcrumb.toLowerCase();
       this.breadcrumbs.push({
-        name: this.unCamelCase(breadcrumb),
+        name: this.config.unCamelCase(breadcrumb),
         link: crumbTrail
       });
     });
 
     this.breadcrumbs[this.breadcrumbs.length - 1]['name'] = this.section.header;
-  }
-
-  unCamelCase(str) {
-    str = str.replace(/([a-z\xE0-\xFF])([A-Z\xC0\xDF])/g, '$1 $2');
-    return str;
   }
 }

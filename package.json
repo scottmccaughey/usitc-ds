@@ -1,14 +1,15 @@
 {
   "name": "@usitc/usitc-ds",
   "description": "USITC Design System — resources, tooling and guidelines for building websites with USITC’s front-end framework.",
-  "version": "0.12.18",
+  "version": "1.0.0",
   "homepage": "https://github.com/scottmccaughey/usitc-ds",
   "bugs": {
     "url": "https://github.com/scottmccaughey/usitc-ds/issues"
   },
   "author": "Scott McCaughey <scott@scott.vegas> (https://scott.vegas)",
   "contributors": [
-    "Todd Messer <todd@mediaspiders.com>"
+    "Todd Messer <todd@mediaspiders.com>",
+    "Aaron Pollon <aaron.pollon@tcg.com>"
   ],
   "keywords": [
     "usitc",

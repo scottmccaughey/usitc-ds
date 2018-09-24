@@ -11,8 +11,8 @@
 #
 # These settings are our default CSS shadows. Shadows are used very sparingly across our design system, but can occasionally be very useful.
 #
-# $shadows-box-base  = 0 $space-xxs $space-xxs 0 color(black)   - The default box shadow
-# $shadows-box-focus = 0 0 $space-xs $space-xs color(cyan, 30)  - The box shadow we use when an element has focus
+# $shadows-box-base  = 0 $space-xxs $space-xxs 0 color(black)     - The default box shadow
+# $shadows-box-focus = 0 0 $space-xxs $space-xxs color(cyan, 30)  - The box shadow we use when an element has focus
 #
 # Styleguide Tokens.Shadows
 #
@@ -20,4 +20,4 @@
 shadows:
   box:
     base:           0 $space-xxs $space-xxs 0 color(black)
-    focus:          0 0 $space-xs $space-xs color(cyan, 30)
+    focus:          0 0 $space-xxs $space-xxs color(cyan, 30)

@@ -18,7 +18,9 @@ body {
   background-color: $color-theme-base-background;
   color: $color-theme-base-text;
   font-family: $font-family-base;
-  font-size: $font-size-s;
+  font-size: $font-size-m;
+  font-variant-ligatures: common-ligatures;
+  font-variant-numeric: lining-nums;
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
   position: relative;
@@ -52,14 +54,14 @@ body {
 }
 
 ::selection {
-  background-color: $color-theme-base-hover-background;
-  color: $color-theme-base-hover-text;
+  background-color: $color-theme-dark-background-alt;
+  color: $color-theme-dark-text;
   text-shadow: 0;
 }
 
 ::-moz-selection {
-  background-color: $color-theme-base-hover-background;
-  color: $color-theme-base-hover-text;
+  background-color: $color-theme-dark-background-alt;
+  color: $color-theme-dark-text;
   text-shadow: 0;
 }
 
@@ -79,19 +81,12 @@ a {
   text-decoration: underline;
   transition: $transition-base;
 
-  @supports (text-decoration-color: $color-theme-base-link) {
-    color: inherit;
-    text-decoration-color: $color-theme-base-link;
-  }
-
   .on-dark & {
-    color: inherit;
-    text-decoration-color: $color-theme-dark-link;
+    color: $color-theme-dark-link;
   }
 
   .on-light & {
-    color: inherit;
-    text-decoration-color: $color-theme-base-link;
+    color: $color-theme-base-link;
   }
 
   &:active,
@@ -110,6 +105,11 @@ a {
       color: $color-theme-base-hover-text;
     }
   }
+}
+
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 app-layout,
@@ -172,7 +172,7 @@ table {
 ol,
 ul {
   margin-bottom: $space-m;
-  padding-left: 1.75rem;
+  padding-left: $space-l;
 
   &:only-child,
   &:last-child li:last-child {
@@ -242,6 +242,10 @@ pre {
   &.on-dark-alt {
     background-color: $color-theme-dark-background-alt;
   }
+
+  .on-dark-grey {
+    background-color: color(grey, 20);
+  }
 }
 
 .pull-left {
@@ -272,6 +276,16 @@ pre {
   }
 }
 
+.scrollable {
+  max-height: 400px;
+  min-height: $space-l;
+  overflow-y: scroll;
+
+  &.mh-250 {
+    max-height: 250px;
+  }
+}
+
 .tag-label {
   background-color: $color-theme-base-background-alt;
   color: $color-theme-base-text;
@@ -290,6 +304,10 @@ pre {
   &:last-child {
     margin-right: 0;
   }
+}
+
+.unpad {
+  margin: (-$space-m) !important;
 }
 
 .visually-hidden {

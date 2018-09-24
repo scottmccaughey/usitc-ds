@@ -1,38 +1,28 @@
 <article class="kss-home">
-  <h1>USITC Design System</h1>
-  <p class="kss-home-subheader">Resources, tooling and design guidelines for building websites with USITC’s front-end framework.</p>
-  <h2>Introduction</h2>
+  <h1 class="margin-bottom-half">USITC Design System</h1>
+  <h2 class="h5 unbold">Resources, tooling and design guidelines for building websites with USITC’s front-end framework.</h2>
+  <h3>Introduction</h3>
   <p>Our goal is to create a system that enables us to build consistent user experiences with ease, yet with enough flexibility to support the needs of USITC’s different websites and applications. This goal is embedded in our design and code decisions.</p>
   <p>This style guide is living documentation that will be updated as we continue to improve and evolve our design system.</p>
-  <h2>Using the USITC Design System</h2>
-  <p>The USITC Design System is distributed via
-    <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
-  <p>After
-    <a href="https://docs.npmjs.com/getting-started/installing-node">installing npm</a>, you can install the USITC Design System with this command:</p>
-  <app-code [language]="'bash'"
-    [code]="'$ npm install --save @usitc/usitc-ds'"></app-code>
-  <h3>SCSS</h3>
-  <p>The style source files included are written in
-    <a href="http://sass-lang.com/"
-      rel="nofollow">Sass</a> (SCSS).</p>
-  <p>To use the Sass files, you can point your Sass
-    <code>include-path</code> at your
-    <code>node_modules</code> directory and import it like this:
+  <h3>Using the USITC Design System</h3>
+  <p>The USITC Design System is distributed via <a href="https://www.npmjs.com/package/@usitc/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
+  <p>After <a href="https://docs.npmjs.com/getting-started/installing-node">installing npm</a>, you can install the USITC Design System with this command:</p>
+  <app-code [language]="'bash'" [code]="'$ npm install --save @usitc/usitc-ds'"></app-code>
+  <h4><abbr>SCSS</abbr></h4>
+  <p>The style source files included are written in <a href="http://sass-lang.com/" rel="nofollow">Sass</a> (<abbr>SCSS</abbr>).</p>
+  <p>To use the Sass files, you can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this:
   </p>
-  <app-code [language]="'css'"
-    [code]="'@import \'@usitc/usitc-ds/src/compiled-assets/scss/styles\';'"></app-code>
+  <app-code [language]="'css'" [code]="'@import \'@usitc/usitc-ds/src/compiled-assets/scss/styles\';'"></app-code>
   <p>This will allow you to take advantage of the Sass functions and variables generated from our design tokens, and use them to write your own styles using our color system, spacing scale, etc.</p>
-  <p>You can also import specific portions of the code by importing those partials from the
-    <code>usitc-ds/dist/scss</code> folder and its subfolders.
-    <em>Make sure you import any requirements along with these.</em>
+  <p>You can also import specific portions of the code by importing those partials from the <code>src/compiled-assets/scss</code> folder and its subfolders. <em>Make sure you import any requirements along with these.</em>
   </p>
-  <h3>CSS</h3>
-  <p>To use the compiled CSS, you can add this line to your HTML:</p>
-  <app-code [language]="'markup'"
-    [code]="'<link rel=\'stylesheet\' href=\'/node_modules/@usitc/usitc-ds/src/compiled-assets/css/styles.css\'>'"></app-code>
+  <h4><abbr>CSS</abbr></h4>
+  <p>To use the compiled <abbr>CSS</abbr>, you can add this line to your <abbr>HTML</abbr>:</p>
+  <app-code [language]="'markup'" [code]="'<link rel=\'stylesheet\' href=\'/node_modules/@usitc/usitc-ds/src/compiled-assets/css/styles.css\'>'"></app-code>
 </article>
 
 <article>
+
   <hr>
 
   <section>
@@ -159,27 +149,27 @@
 
   <hr>
 
-  <div class="panel">
+  <div class="panel border">
     <h5>Test Header</h5>
     <p>The USITC Design System is distributed via
       <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
   </div>
-  <div class="panel state-error">
+  <div class="panel border state-error">
     <h5>Test Header</h5>
     <p>The USITC Design System is distributed via
       <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
   </div>
-  <div class="panel state-info">
+  <div class="panel border state-info">
     <h5>Test Header</h5>
     <p>The USITC Design System is distributed via
       <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
   </div>
-  <div class="panel state-success">
+  <div class="panel border state-success">
     <h5>Test Header</h5>
     <p>The USITC Design System is distributed via
       <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
   </div>
-  <div class="panel state-warning">
+  <div class="panel border state-warning">
     <h5>Test Header</h5>
     <p>The USITC Design System is distributed via
       <a href="https://www.npmjs.com/package/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>

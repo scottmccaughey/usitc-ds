@@ -50,9 +50,10 @@ export const tokens = {
         "background-alt": "color(grey, 90) !default",
         "border": "color(grey, 20) !default",
         "text": "color(grey, 20) !default",
+        "accent": "color(cyan, 30) !default",
         "link": "color(cyan, 30) !default",
-        "hover-background": "color(cyan, 30) !default",
-        "hover-text": "color(white) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(cyan, 10) !default",
         "spinner": "color(cyan, 30) !default"
       },
       "dark": {
@@ -60,52 +61,57 @@ export const tokens = {
         "background-alt": "color(cyan, 30) !default",
         "border": "color(cyan, 20) !default",
         "text": "color(white) !default",
+        "accent": "color(cyan, 80) !default",
         "link": "color(white) !default",
-        "hover-background": "color(white) !default",
-        "hover-text": "color(cyan, 30) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(cyan, 80) !default",
         "spinner": "color(white) !default"
       }
     },
     "state": {
       "error": {
-        "background": "color(red,  95) !default",
-        "background-alt": "color(red,  90) !default",
-        "border": "color(red,  40) !default",
+        "background": "color(red, 95) !default",
+        "background-alt": "color(red, 90) !default",
+        "border": "color(red, 40) !default",
         "text": "color(grey, 20) !default",
-        "link": "color(red,  40) !default",
-        "hover-background": "color(red,  40) !default",
-        "hover-text": "color(white) !default",
-        "spinner": "color(red,  40) !default"
+        "accent": "color(red, 30) !default",
+        "link": "color(red, 40) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(red, 60) !default",
+        "spinner": "color(red, 40) !default"
       },
       "info": {
         "background": "color(cyan, 95) !default",
         "background-alt": "color(cyan, 90) !default",
         "border": "color(cyan, 30) !default",
         "text": "color(grey, 20) !default",
+        "accent": "color(cyan, 30) !default",
         "link": "color(cyan, 30) !default",
-        "hover-background": "color(cyan, 30) !default",
-        "hover-text": "color(white) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(cyan, 10) !default",
         "spinner": "color(cyan, 30) !default"
       },
       "success": {
         "background": "color(green, 95) !default",
         "background-alt": "color(green, 90) !default",
-        "border": "color(green, 30) !default",
-        "text": "color(grey,  20) !default",
-        "link": "color(green, 30) !default",
-        "hover-background": "color(green, 30) !default",
-        "hover-text": "color(white) !default",
+        "border": "color(green, 20) !default",
+        "text": "color(grey, 20) !default",
+        "accent": "color(green, 20) !default",
+        "link": "color(green, 20) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(green) !default",
         "spinner": "color(green, 30) !default"
       },
       "warning": {
         "background": "color(orange, 95) !default",
         "background-alt": "color(orange, 90) !default",
-        "border": "color(orange, 50) !default",
-        "text": "color(grey,   20) !default",
-        "link": "color(orange, 50) !default",
-        "hover-background": "color(orange, 50) !default",
-        "hover-text": "color(white) !default",
-        "spinner": "color(orange, 50) !default"
+        "border": "color(orange, 40) !default",
+        "text": "color(grey, 20) !default",
+        "accent": "color(orange, 30) !default",
+        "link": "color(orange, 30) !default",
+        "hover-background": "transparent !default",
+        "hover-text": "color(orange) !default",
+        "spinner": "color(orange) !default"
       }
     }
   },
@@ -114,13 +120,13 @@ export const tokens = {
     "family": {
       "files--map": {
         "Montserrat": {
-          "light": {
-            "weight": 300,
+          "regular": {
+            "weight": 400,
             "style": "normal",
             "stretch": "normal"
           },
-          "lightitalic": {
-            "weight": 300,
+          "italic": {
+            "weight": 400,
             "style": "italic",
             "stretch": "normal"
           },
@@ -150,30 +156,28 @@ export const tokens = {
       "mono": "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
     },
     "weight": {
-      "normal": "300 !default",
+      "normal": "400 !default",
       "bold": "700 !default",
       "black": "900 !default"
     },
     "size": {
-      "root": "20px !default",
-      "base": "1rem !default",
+      "root": "10px !default",
+      "base": "1.6rem !default",
       "scale-ratio": "1.2 !default",
-      "xxxxs": "ms(-5)",
-      "xxxs": "ms(-4)",
-      "xxs": "ms(-3)",
-      "xs": "ms(-2)",
-      "s": "ms(-1)",
-      "m": "ms(0)",
-      "l": "ms(1)",
-      "xl": "ms(2)",
-      "xxl": "ms(3)",
-      "xxxl": "ms(4)",
-      "xxxxl": "ms(5)",
-      "h1": "$font-size-xxl !default",
-      "h2": "$font-size-xl !default",
-      "h3": "$font-size-l !default",
-      "h4": "$font-size-m !default",
-      "h5": "$font-size-m !default",
+      "xxs": "ms($font-size-scale-ratio, $font-size-base, -3)",
+      "xs": "ms($font-size-scale-ratio, $font-size-base, -2)",
+      "s": "ms($font-size-scale-ratio, $font-size-base, -1)",
+      "m": "ms($font-size-scale-ratio, $font-size-base, 0)",
+      "l": "ms($font-size-scale-ratio, $font-size-base, 1)",
+      "xl": "ms($font-size-scale-ratio, $font-size-base, 2)",
+      "xxl": "ms($font-size-scale-ratio, $font-size-base, 3)",
+      "xxxl": "ms($font-size-scale-ratio, $font-size-base, 4)",
+      "xxxxl": "ms($font-size-scale-ratio, $font-size-base, 5)",
+      "h1": "$font-size-xxxxl !default",
+      "h2": "$font-size-xxxl !default",
+      "h3": "$font-size-xxl !default",
+      "h4": "$font-size-xl !default",
+      "h5": "$font-size-l !default",
       "h6": "$font-size-m !default"
     }
   },
@@ -181,21 +185,22 @@ export const tokens = {
     "base": "1.5 !default",
     "header": "1.25 !default",
     "button": "1 !default",
-    "form": "2.5rem !default"
+    "form": "5rem !default"
   },
   "max-line-length": "50em !default",
   "space": {
-    "xxxs": "$font-size-base / 8 !default",
-    "xxs": "$font-size-base / 6 !default",
-    "xs": "$font-size-base / 4 !default",
-    "s": "$font-size-base / 2 !default",
-    "m": "$font-size-base !default",
-    "l": "$font-size-base * 2 !default",
-    "xl": "$font-size-base * 4 !default",
-    "xxl": "$font-size-base * 6 !default",
-    "xxxl": "$font-size-base * 8 !default",
+    "base": "1rem !default",
+    "xxs": "$space-base / 3 !default",
+    "xs": "$space-base / 2 !default",
+    "s": "$space-base !default",
+    "m": "$space-base * 2 !default",
+    "l": "$space-base * 3 !default",
+    "xl": "$space-base * 4 !default",
+    "xxl": "$space-base * 6 !default",
+    "xxxl": "$space-base * 8 !default",
+    "xxxxl": "$space-base * 12 !default",
+    "xxxxxl": "$space-base * 16 !default",
     "stack": {
-      "xxxs": "0 0 $space-xxxs 0",
       "xxs": "0 0 $space-xxs 0",
       "xs": "0 0 $space-xs 0",
       "s": "0 0 $space-s 0",
@@ -203,10 +208,11 @@ export const tokens = {
       "l": "0 0 $space-l 0",
       "xl": "0 0 $space-xl 0",
       "xxl": "0 0 $space-xxl 0",
-      "xxxl": "0 0 $space-xxxl 0"
+      "xxxl": "0 0 $space-xxxl 0",
+      "xxxxl": "0 0 $space-xxxxl 0",
+      "xxxxxl": "0 0 $space-xxxxxl 0"
     },
     "inline": {
-      "xxxs": "0 $space-xxxs 0 0",
       "xxs": "0 $space-xxs 0 0",
       "xs": "0 $space-xs 0 0",
       "s": "0 $space-s 0 0",
@@ -214,7 +220,9 @@ export const tokens = {
       "l": "0 $space-l 0 0",
       "xl": "0 $space-xl 0 0",
       "xxl": "0 $space-xxl 0 0",
-      "xxxl": "0 $space-xxxl 0 0"
+      "xxxl": "0 $space-xxxl 0 0",
+      "xxxxl": "0 $space-xxxxl 0 0",
+      "xxxxxl": "0 $space-xxxxxl 0 0"
     }
   },
   "border": {
@@ -252,7 +260,7 @@ export const tokens = {
   "shadows": {
     "box": {
       "base": "0 $space-xxs $space-xxs 0 color(black)",
-      "focus": "0 0 $space-xs $space-xs color(cyan, 30)"
+      "focus": "0 0 $space-xxs $space-xxs color(cyan, 30)"
     }
   },
   "form-control": {
@@ -277,17 +285,17 @@ export const tokens = {
   "icon-size": {
     "base": "0.75em",
     "scale-ratio": 1.5,
-    "xxxxs": "msi(-5)",
-    "xxxs": "msi(-4)",
-    "xxs": "msi(-3)",
-    "xs": "msi(-2)",
-    "s": "msi(-1)",
-    "m": "msi(0)",
-    "l": "msi(1)",
-    "xl": "msi(2)",
-    "xxl": "msi(3)",
-    "xxxl": "msi(4)",
-    "xxxxl": "msi(5)"
+    "xxxxs": "ms($icon-size-scale-ratio, $icon-size-base, -5)",
+    "xxxs": "ms($icon-size-scale-ratio, $icon-size-base, -4)",
+    "xxs": "ms($icon-size-scale-ratio, $icon-size-base, -3)",
+    "xs": "ms($icon-size-scale-ratio, $icon-size-base, -2)",
+    "s": "ms($icon-size-scale-ratio, $icon-size-base, -1)",
+    "m": "ms($icon-size-scale-ratio, $icon-size-base, 0)",
+    "l": "ms($icon-size-scale-ratio, $icon-size-base, 1)",
+    "xl": "ms($icon-size-scale-ratio, $icon-size-base, 2)",
+    "xxl": "ms($icon-size-scale-ratio, $icon-size-base, 3)",
+    "xxxl": "ms($icon-size-scale-ratio, $icon-size-base, 4)",
+    "xxxxl": "ms($icon-size-scale-ratio, $icon-size-base, 5)"
   },
   "print": {
     "color": {

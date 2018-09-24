@@ -1,0 +1,104 @@
+//                                     888
+//                                     888
+//                                     888
+// 88888b.   8888b.  88888b.   .d88b.  888 .d8888b
+// 888 "88b     "88b 888 "88b d8P  Y8b 888 88K
+// 888  888 .d888888 888  888 88888888 888 "Y8888b.
+// 888 d88P 888  888 888  888 Y8b.     888      X88
+// 88888P"  "Y888888 888  888  "Y8888  888  88888P'
+// 888
+// 888
+// 888
+
+.panel {
+  @include state-default;
+  margin-bottom: $space-m;
+  padding: $space-m;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding: 0 $space-m;
+
+    li:only-child {
+      list-style: none;
+      text-align: center;
+    }
+  }
+
+  .panel-grid-list {
+    padding: 0;
+
+    > li {
+      list-style: none;
+      margin-bottom: 0;
+      padding: $space-s;
+
+      &:nth-child(even) {
+        background-color: color(grey, 95);
+      }
+    }
+  }
+}
+
+.panel-header,
+.panel-header:first-child {
+  align-items: center;
+  display: flex;
+  font-size: $font-size-m;
+  font-weight: $font-weight-bold;
+  justify-content: space-between;
+  margin: (-$space-m) (-$space-m) $space-m;
+  padding: $space-s $space-m;
+
+  .padding-none & {
+    margin: 0;
+  }
+}
+
+.panel-grid {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: auto;
+
+  &.panel-grid-2 {
+    @include breakpoint(m) {
+      grid-template-columns: min-content auto;
+    }
+
+    > * {
+      &:nth-child(4n + 3),
+      &:nth-child(4n + 4) {
+        background-color: color(grey, 95);
+      }
+    }
+  }
+
+  &.panel-grid-3 {
+    @include breakpoint(m) {
+      grid-template-columns: min-content auto min-content;
+    }
+
+    > * {
+      &:nth-child(6n + 4),
+      &:nth-child(6n + 5),
+      &:nth-child(6n + 6) {
+        background-color: color(grey, 95);
+      }
+    }
+  }
+
+  > * {
+    align-items: center;
+    display: grid;
+    font-size: $font-size-xs;
+    padding: $space-s;
+    text-align: center;
+
+    @include breakpoint(m) {
+      text-align: left;
+    }
+  }
+}

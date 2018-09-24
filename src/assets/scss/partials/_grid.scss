@@ -10,6 +10,8 @@
 // Y8b d88P
 //  "Y88P"
 
+@include build-grid();
+
 .grid {
   display: grid;
   grid-template-rows: auto;
@@ -61,12 +63,10 @@
 
 .grid-separated {
   > * {
-    border-right: 1px solid color(grey, 90);
+    border-right: 1px solid $color-theme-base-background-alt;
 
     &:last-child {
       border-right-width: 0;
     }
   }
 }
-
-@include build-grid();

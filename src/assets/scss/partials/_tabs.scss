@@ -19,12 +19,12 @@
   &:active,
   &:focus,
   &:hover {
-    background-color: color(white);
+    background-color: $color-theme-base-background;
   }
 
   &.active {
     border: 1px solid color(grey, 90);
-    border-bottom-color: color(white);
+    border-bottom-color: $color-theme-base-background;
   }
 
   .control input {
@@ -41,7 +41,7 @@
 }
 
 .check-tabs-contents {
-  background-color: color(white);
+  background-color: $color-theme-base-background;
   border: 1px solid color(grey, 90);
   border-top-width: 0;
   padding: $space-m;
@@ -67,7 +67,7 @@
 }
 
 .check-tabs-select {
-  background-color: color(white);
+  background-color: $color-theme-base-background;
   border: 1px solid color(grey, 90);
   border-bottom-width: 0;
   padding: $space-m $space-m 0;

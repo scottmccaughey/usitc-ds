@@ -24,13 +24,17 @@ export class SectionComponent implements OnInit {
     if (this.section.markup && this.section.markup.startsWith('SCSS')) {
       this.section.scss = true;
       this.section.scssSrc = this.section.markup.substr(6);
+    } else if (this.section.markup && this.section.markup.startsWith('Source')) {
+      this.section.sourceFlag = true;
+      this.section.markup = '';
     }
 
     if (
       this.section.colors.length > 0 ||
       this.section.modifiers.length > 0 ||
       this.section.parameters.length > 0 ||
-      this.section.markup
+      this.section.markup ||
+      this.section.sourceFlag
     ) {
       this.section.showSource = true;
     }
