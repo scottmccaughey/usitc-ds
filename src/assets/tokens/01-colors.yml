@@ -15,7 +15,7 @@
 
 # Available Colors
 #
-# Below are the available colors in the USITC Design System, along with acceptable variations in lightness. You can reference these colors in Sass by using the `color()` function shown with each variation, such as `color: color(blue, 20);` or `background-color: color(red);`. More information on the `color()` function (including how to optionally control opacity), refer to the [color() function](/directives/color).
+# Below are the available colors in the USITC Design System, along with acceptable variations in lightness. You can reference these colors in Sass by using the `color()` function shown with each variation, such as `color: color(cyan, 20);` or `background-color: color(red);`. More information on the `color()` function (including how to optionally control opacity), refer to the [color() function](/directives/color).
 #
 # If you don’t provide a *lightness*, it will default to a lightness of `50`. **Black** and **white** are special cases in that they have no lightness variations. Black will always have `0` lightness and white will always have `100` lightness.
 #
@@ -63,14 +63,14 @@
 # </div>
 #
 # Colors:
-# @red:     hsl(350, 80, 50)
-# @orange:  hsl(35,  80, 50)
-# @yellow:  hsl(65,  80, 50)
-# @green:   hsl(110, 80, 50)
-# @cyan:    hsl(185, 80, 50)
-# @blue:    hsl(215, 80, 50)
-# @purple:  hsl(275, 80, 50)
-# @grey:    hsl(215, 10, 50)
+# @red:     hsl(355, 80, 50)
+# @orange:  hsl(25,  80, 50)
+# @yellow:  hsl(55,  80, 50)
+# @green:   hsl(115, 80, 50)
+# @cyan:    hsl(190, 80, 50)
+# @blue:    hsl(220, 80, 50)
+# @purple:  hsl(280, 80, 50)
+# @grey:    hsl(190, 10, 50)
 # @black:   hsl(0,   0,  0)
 # @white:   hsl(0,   0,  100)
 #
@@ -87,28 +87,28 @@ colors--map:
     sat:                0
     lum:                100
   grey:
-    hue:                215
+    hue:                190
     sat:                10
   red:
-    hue:                350
+    hue:                355
     sat:                80
   orange:
-    hue:                35
+    hue:                25
     sat:                80
   yellow:
-    hue:                65
+    hue:                55
     sat:                80
   green:
-    hue:                110
+    hue:                115
     sat:                80
   cyan:
-    hue:                185
+    hue:                190
     sat:                80
   blue:
-    hue:                215
+    hue:                220
     sat:                80
   purple:
-    hue:                275
+    hue:                280
     sat:                80
 
 color:
@@ -140,28 +140,28 @@ color:
     # </div>
     #
     # $color-theme-base-background        = color(white)    - #ffffff
-    # $color-theme-base-background-alt    = color(grey, 95) - #f1f2f4
-    # $color-theme-base-border            = color(grey, 20) - #2e3238
-    # $color-theme-base-text              = color(grey, 20) - #2e3238
-    # $color-theme-base-accent            = color(blue, 30) - #0f428a
-    # $color-theme-base-link              = color(blue, 40) - #1458b8
+    # $color-theme-base-background-alt    = color(grey, 90) - #e2e8e9
+    # $color-theme-base-border            = color(grey, 20) - #2b383b
+    # $color-theme-base-text              = color(grey, 20) - #2b383b
+    # $color-theme-base-accent            = color(cyan, 30) - #0f758a
+    # $color-theme-base-link              = color(cyan, 30) - #0f758a
     # $color-theme-base-hover-background  = transparent     - transparent
-    # $color-theme-base-hover-text        = color(blue, 60) - #478beb
-    # $color-theme-base-spinner           = color(blue, 30) - #0f428a
+    # $color-theme-base-hover-text        = color(cyan, 10) - #05272e
+    # $color-theme-base-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.Theme.Base
     #
     # Weight: 1
     base:
       background:       color(white) !default
-      background-alt:   color(grey, 95) !default
+      background-alt:   color(grey, 90) !default
       border:           color(grey, 20) !default
       text:             color(grey, 20) !default
-      accent:           color(blue, 30) !default
-      link:             color(blue, 40) !default
+      accent:           color(cyan, 30) !default
+      link:             color(cyan, 30) !default
       hover-background: transparent !default
-      hover-text:       color(blue, 60) !default
-      spinner:          color(blue, 30) !default
+      hover-text:       color(cyan, 10) !default
+      spinner:          color(cyan, 30) !default
 
     # Dark Theme
     #
@@ -180,28 +180,28 @@ color:
     # </div>
     # </div>
     #
-    # $color-theme-dark-background        = color(blue, 20) - #0a2c5c
-    # $color-theme-dark-background-alt    = color(blue, 30) - #0f428a
-    # $color-theme-dark-border            = color(blue, 20) - #0a2c5c
+    # $color-theme-dark-background        = color(cyan, 20) - #0a4e5c
+    # $color-theme-dark-background-alt    = color(cyan, 30) - #0f758a
+    # $color-theme-dark-border            = color(cyan, 20) - #0a4e5c
     # $color-theme-dark-text              = color(white)    - #ffffff
-    # $color-theme-dark-accent            = color(blue, 80) - #a3c5f5
-    # $color-theme-dark-link              = color(blue, 90) - #d1e2fa
+    # $color-theme-dark-accent            = color(cyan, 80) - #a3c5f5
+    # $color-theme-dark-link              = color(white)    - #ffffff
     # $color-theme-dark-hover-background  = transparent     - transparent
-    # $color-theme-dark-hover-text        = color(white)    - #ffffff
+    # $color-theme-dark-hover-text        = color(cyan, 80) - #a3c5f5
     # $color-theme-dark-spinner           = color(white)    - #ffffff
     #
     # Styleguide Tokens.Colors.Theme.Dark
     #
     # Weight: 2
     dark:
-      background:       color(blue, 20) !default
-      background-alt:   color(blue, 30) !default
-      border:           color(blue, 20) !default
+      background:       color(cyan, 20) !default
+      background-alt:   color(cyan, 30) !default
+      border:           color(cyan, 20) !default
       text:             color(white) !default
-      accent:           color(blue, 80) !default
-      link:             color(blue, 90) !default
+      accent:           color(cyan, 80) !default
+      link:             color(white) !default
       hover-background: transparent !default
-      hover-text:       color(white) !default
+      hover-text:       color(cyan, 80) !default
       spinner:          color(white) !default
 
   # State Colors
@@ -257,29 +257,29 @@ color:
     #
     # </div>
     #
-    # $color-state-info-background        = color(blue, 98) - #f6f9fe
-    # $color-state-info-background-alt    = color(blue, 95) - #e8f1fc
-    # $color-state-info-border            = color(blue)     - #196ee6
+    # $color-state-info-background        = color(cyan, 95) - #e8f9fc
+    # $color-state-info-background-alt    = color(cyan, 90) - #d1f3fa
+    # $color-state-info-border            = color(cyan, 30) - #0f758a
     # $color-state-info-text              = color(grey, 20) - #2e3238
-    # $color-state-info-accent            = color(blue, 30) - #0f428a
-    # $color-state-info-link              = color(blue, 40) - #1458b8
+    # $color-state-info-accent            = color(cyan, 30) - #0f758a
+    # $color-state-info-link              = color(cyan, 30) - #0f758a
     # $color-state-info-hover-background  = transparent     - transparent
-    # $color-state-info-hover-text        = color(blue, 60) - #478beb
-    # $color-state-info-spinner           = color(blue, 30) - #0f428a
+    # $color-state-info-hover-text        = color(cyan, 10) - #05272e
+    # $color-state-info-spinner           = color(cyan, 30) - #0f758a
     #
     # Styleguide Tokens.Colors.State.Info
     #
     # Weight: 2
     info:
-      background:       color(blue, 98) !default
-      background-alt:   color(blue, 95) !default
-      border:           color(blue) !default
+      background:       color(cyan, 95) !default
+      background-alt:   color(cyan, 90) !default
+      border:           color(cyan, 30) !default
       text:             color(grey, 20) !default
-      accent:           color(blue, 30) !default
-      link:             color(blue, 40) !default
+      accent:           color(cyan, 30) !default
+      link:             color(cyan, 30) !default
       hover-background: transparent !default
-      hover-text:       color(blue, 60) !default
-      spinner:          color(blue, 30) !default
+      hover-text:       color(cyan, 10) !default
+      spinner:          color(cyan, 30) !default
 
     # Success State
     #
@@ -293,7 +293,7 @@ color:
     #
     # $color-state-success-background       = color(green, 95)  - #e8fceb
     # $color-state-success-background-alt   = color(green, 90)  - #d1fad8
-    # $color-state-success-border           = color(green, 30)  - #0f8a24
+    # $color-state-success-border           = color(green, 20)  - #185c0a
     # $color-state-success-text             = color(grey, 20)   - #2b383b
     # $color-state-success-accent           = color(green, 20)  - #185c0a
     # $color-state-success-link             = color(green, 20)  - #185c0a
@@ -307,7 +307,7 @@ color:
     success:
       background:       color(green, 95) !default
       background-alt:   color(green, 90) !default
-      border:           color(green, 30) !default
+      border:           color(green, 20) !default
       text:             color(grey, 20) !default
       accent:           color(green, 20) !default
       link:             color(green, 20) !default
@@ -327,12 +327,12 @@ color:
     #
     # $color-state-warning-background       = color(orange, 95) - #fcf6e8
     # $color-state-warning-background-alt   = color(orange, 90) - #faecd1
-    # $color-state-warning-border           = color(orange)     - #e6a219
+    # $color-state-warning-border           = color(orange, 40) - #b85814
     # $color-state-warning-text             = color(grey, 20)   - #2b383b
     # $color-state-warning-accent           = color(orange, 30) - #8a570f
     # $color-state-warning-link             = color(orange, 30) - #8a570f
     # $color-state-warning-hover-background = transparent       - transparent
-    # $color-state-warning-hover-text       = color(orange)      - #e6a219
+    # $color-state-warning-hover-text       = color(orange)     - #e6a219
     # $color-state-warning-spinner          = color(orange)     - #e6a219
     #
     # Styleguide Tokens.Colors.State.Warning
@@ -341,7 +341,7 @@ color:
     warning:
       background:       color(orange, 95) !default
       background-alt:   color(orange, 90) !default
-      border:           color(orange) !default
+      border:           color(orange, 40) !default
       text:             color(grey, 20) !default
       accent:           color(orange, 30) !default
       link:             color(orange, 30) !default

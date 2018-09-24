@@ -45,7 +45,7 @@
   }
 
   section {
-    margin: $space-m 0 $space-l;
+    margin: $space-m 0;
   }
 
   .panel {
@@ -91,7 +91,7 @@
     }
 
     + li:before {
-      color: color(blue, 80);
+      color: color(cyan, 30, 50);
       content: ' ➔ ';
       padding: 0 $space-s;
     }
@@ -235,11 +235,11 @@
 
 .kss-directive {
   &.panel {
-    border-color: color(blue, 30);
+    border-color: color(cyan, 30);
     padding: 0;
 
     .panel-header {
-      background-color: color(blue, 30);
+      background-color: color(cyan, 30);
       margin: 0;
     }
   }
@@ -289,7 +289,7 @@
   position: relative;
 
   [ngxClipboard] {
-    background-color: color(blue, 40);
+    background-color: color(cyan, 40);
     padding: $space-xs;
     position: absolute;
     right: $space-s;
@@ -299,7 +299,7 @@
     &:focus,
     &:hover {
       background-color: color(white);
-      color: color(blue, 40);
+      color: color(cyan, 40);
     }
   }
 }
@@ -316,15 +316,18 @@
     padding: $space-xs $space-m;
     text-decoration: none;
 
+    &:active,
+    &:focus,
+    &:hover,
+    &.kss-menu-active {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+    }
+
     &.kss-menu-child {
       font-size: $font-size-m;
       font-weight: $font-weight-normal;
       padding: $space-xxs $space-m $space-xxs $space-l;
-    }
-
-    &.kss-menu-active {
-      background-color: $color-theme-dark-background;
-      color: $color-theme-dark-text;
     }
   }
 
@@ -424,13 +427,14 @@
 
 .kss-section-borders {
   > div {
-    background-color: $color-theme-base-background-alt;
+    background-color: color(grey, 95);
     padding: $space-s;
     margin-bottom: $space-m;
   }
 }
 
 .kss-source {
+  margin-bottom: $space-l;
   padding: $space-s $space-m;
 }
 

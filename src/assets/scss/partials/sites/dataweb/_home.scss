@@ -73,7 +73,7 @@
 
   button {
     align-items: center;
-    background-color: color(blue, 40);
+    background-color: color(cyan, 40);
     color: color(white);
     display: flex;
     font-size: $font-size-xl;
@@ -89,7 +89,7 @@
     &:active,
     &:focus,
     &:hover {
-      background-color: color(blue, 30);
+      background-color: color(cyan, 30);
     }
 
     icon {
@@ -149,7 +149,7 @@
     &:active,
     &:focus,
     &:hover {
-      background: color(blue, 30);
+      background: color(cyan, 30);
       color: color(white);
     }
   }

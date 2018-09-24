@@ -34,7 +34,8 @@
 // Styleguide Components.Buttons
 button,
 input[type='button'],
-a.button {
+a.button,
+a.button[role='button'] {
   align-items: center;
   background-color: $color-theme-base-background;
   background-image: none;
@@ -55,7 +56,7 @@ a.button {
   &:active,
   &:focus,
   &:hover {
-    background-color: color(blue, 40);
+    background-color: $color-theme-dark-background-alt;
     color: $color-theme-dark-text;
   }
 
@@ -250,13 +251,13 @@ a.button {
   // Weight: 1
   &.button-primary {
     border-color: transparent;
-    background-color: color(blue, 40);
+    background-color: $color-theme-dark-background-alt;
     color: $color-theme-dark-text;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: color(blue, 20);
+      background-color: $color-theme-dark-background;
       color: $color-theme-dark-text;
 
       .on-dark & {
@@ -277,13 +278,13 @@ a.button {
   // Weight: 2
   &.button-primary-alt {
     border-color: transparent;
-    background-color: color(blue, 20);
+    background-color: $color-theme-dark-background;
     color: $color-theme-dark-text;
 
     &:active,
     &:focus,
     &:hover {
-      background-color: color(blue, 40);
+      background-color: $color-theme-dark-background-alt;
       color: $color-theme-dark-text;
 
       .on-dark & {

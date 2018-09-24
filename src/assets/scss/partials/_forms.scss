@@ -460,19 +460,19 @@ simple-select {
   }
 
   &.state-error > i {
-    background-color: $color-state-error-hover-background;
+    background-color: $color-state-error-border;
   }
 
   &.state-info > i {
-    background-color: $color-state-info-hover-background;
+    background-color: $color-state-info-border;
   }
 
   &.state-success > i {
-    background-color: $color-state-success-hover-background;
+    background-color: $color-state-success-border;
   }
 
   &.state-warning > i {
-    background-color: $color-state-warning-hover-background;
+    background-color: $color-state-warning-border;
   }
 
   input {

@@ -7,7 +7,7 @@
 
 .kss-body code[class*='language-'],
 .kss-body pre[class*='language-'] {
-  background: color(blue, 15);
+  background: color(cyan, 15);
   color: color(white);
   font-family: $font-family-mono;
   font-size: 100%;
@@ -32,7 +32,7 @@
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: color(blue, 15);
+  background: color(cyan, 15);
 }
 
 /* Inline code */

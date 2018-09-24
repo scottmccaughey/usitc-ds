@@ -19,7 +19,7 @@ font:
   path: "'../node_modules/@usitc/usitc-ds/src/compiled-assets/fonts' !default"
   family:
     files--map:
-      Raleway:
+      Montserrat:
         regular:
           weight: 400
           style: normal
@@ -47,9 +47,9 @@ font:
 
     # Font Families
     #
-    # Our base font family is **[Raleway](https://www.theleagueofmoveabletype.com/raleway)** by [The League of Movable Type](https://www.theleagueofmoveabletype.com). Raleway is an elegant sans-serif typeface, initially designed by [Matt McInerney](http://pixelspread.com) as a single thin weight. It was expanded into a 9 weight family by [Pablo Impallari](http://www.impallari.com) and [Rodrigo Fuenzalida](http://www.rfuenzalida.com) in 2012.
+    # Our base font family is **[Montserrat](https://github.com/JulietaUla/Montserrat)**, a geometric sans-serif typeface designed by Argentinian designer [Julieta Ulanovsky](https://github.com/JulietaUla/). The design was inspired by signage from her historical Buenos Aires neighborhood of the same name.
     #
-    # We load Raleway as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
+    # We load Montserrat as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
     #
     # <div class="border padded margin-bottom">
     #
@@ -57,7 +57,7 @@ font:
     #
     # </div>
     #
-    # We also have a monospace font stack for times when it’s needed, and it’s very visible in the code snippets all over this styleguide. We’ve chosen our favorite monospace font — **[Operator Mono](https://www.typography.com/fonts/operator/overview/)** — as the base, and several good fallback options.
+    # We also have a monospace font stack for times when it’s needed, and it’s very visible in the code snippets all over this styleguide. We’ve chosen our favorite monospace font — [Operator Mono](https://www.typography.com/fonts/operator/overview/) — as the base, and several good fallback options.
     #
     # <div class="border padded mono">
     #
@@ -65,24 +65,24 @@ font:
     #
     # </div>
     #
-    # $font-family-base = Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif - ​
+    # $font-family-base = Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif - ​
     # $font-family-mono = 'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace - ​
     #
     # Styleguide Tokens.Typography.Families
     #
     # Weight: 1
-    base: "Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default"
+    base: "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default"
     mono: "'Operator Mono', Hack, Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', Courier, monospace !default"
 
   # Font Weights
   #
-  # We use two main weights of Raleway — *Regular (400)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
+  # We use two main weights of Montserrat — *Regular (400)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
   #
   # <div class="border padded margin-bottom">
   #
-  # This is Raleway Regular.<br>
-  # <strong>This is Raleway Bold.</strong><br>
-  # <span class="black">This is Raleway Black.</span>
+  # This is Montserrat Regular.<br>
+  # <strong>This is Montserrat Bold.</strong><br>
+  # <span class="black">This is Montserrat Black.</span>
   #
   # </div>
   #

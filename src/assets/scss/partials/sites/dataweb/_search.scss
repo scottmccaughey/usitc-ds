@@ -185,13 +185,13 @@
   button,
   .button {
     &.button-primary {
-      background-color: color(blue, 90);
+      background-color: color(cyan, 90);
       color: color(black);
 
       &:active,
       &:focus,
       &:hover {
-        background-color: color(blue, 70);
+        background-color: color(cyan, 70);
       }
     }
 
