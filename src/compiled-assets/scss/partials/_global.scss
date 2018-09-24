@@ -243,7 +243,7 @@ pre {
     background-color: $color-theme-dark-background-alt;
   }
 
-  .on-dark-grey {
+  &.on-dark-grey {
     background-color: color(grey, 20);
   }
 }
