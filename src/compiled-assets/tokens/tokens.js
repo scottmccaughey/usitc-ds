@@ -47,7 +47,7 @@ module.exports = {
     "theme": {
       "base": {
         "background": "color(white) !default",
-        "background-alt": "color(grey, 90) !default",
+        "background-alt": "color(grey, 95) !default",
         "border": "color(grey, 20) !default",
         "text": "color(grey, 20) !default",
         "accent": "color(blue, 30) !default",

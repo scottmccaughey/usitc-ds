@@ -278,6 +278,14 @@
   white-space: nowrap;
 }
 
+.kss-section-borders {
+  > div {
+    background-color: $color-theme-base-background-alt;
+    padding: $space-s;
+    margin-bottom: $space-m;
+  }
+}
+
 .kss-source {
   padding: $space-s $space-m;
 }

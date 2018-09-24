@@ -140,7 +140,7 @@ color:
     # </div>
     #
     # $color-theme-base-background        = color(white)    - #ffffff
-    # $color-theme-base-background-alt    = color(grey, 90) - #e3e5e8
+    # $color-theme-base-background-alt    = color(grey, 95) - #f1f2f4
     # $color-theme-base-border            = color(grey, 20) - #2e3238
     # $color-theme-base-text              = color(grey, 20) - #2e3238
     # $color-theme-base-accent            = color(blue, 30) - #0f428a
@@ -154,7 +154,7 @@ color:
     # Weight: 1
     base:
       background:       color(white) !default
-      background-alt:   color(grey, 90) !default
+      background-alt:   color(grey, 95) !default
       border:           color(grey, 20) !default
       text:             color(grey, 20) !default
       accent:           color(blue, 30) !default

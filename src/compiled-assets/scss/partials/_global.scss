@@ -54,14 +54,14 @@ body {
 }
 
 ::selection {
-  background-color: $color-theme-base-hover-background;
-  color: $color-theme-base-hover-text;
+  background-color: $color-theme-dark-background-alt;
+  color: $color-theme-dark-text;
   text-shadow: 0;
 }
 
 ::-moz-selection {
-  background-color: $color-theme-base-hover-background;
-  color: $color-theme-base-hover-text;
+  background-color: $color-theme-dark-background-alt;
+  color: $color-theme-dark-text;
   text-shadow: 0;
 }
 
@@ -105,6 +105,11 @@ a {
       color: $color-theme-base-hover-text;
     }
   }
+}
+
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 app-layout,
@@ -202,7 +207,7 @@ pre {
 }
 
 .alt {
-  background-color: color(grey, 98);
+  background-color: color(grey, 95);
 }
 
 .alt-off {
