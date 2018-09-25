@@ -266,6 +266,22 @@ a.button[role='button'] {
     }
   }
 
+  &.button-primary-light {
+    border-color: transparent;
+    background-color: color(cyan, 90);
+    color: color(cyan, 20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(cyan, 70);
+
+      .on-dark & {
+        border-color: $color-theme-dark-text;
+      }
+    }
+  }
+
   // Alternate Primary Button
   //
   // Use the `.button-primary-alt` class if you need a darker *primary* button.
@@ -315,6 +331,21 @@ a.button[role='button'] {
     }
   }
 
+  &.button-success-light {
+    border-color: transparent;
+    background-color: color(green, 90);
+    color: color(green, 20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(green, 70);
+
+      .on-dark & {
+        border-color: $color-theme-dark-text;
+      }
+    }
+  }
   // Cancel Button
   //
   // Add a `.button-cancel` class for an action that requires caution before being triggered, such as:
@@ -337,6 +368,22 @@ a.button[role='button'] {
     &:focus,
     &:hover {
       background-color: color(red, 20);
+    }
+  }
+
+  &.button-cancel-light {
+    border-color: transparent;
+    background-color: color(red, 90);
+    color: color(red, 20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(red, 70);
+
+      .on-dark & {
+        border-color: $color-theme-dark-text;
+      }
     }
   }
 

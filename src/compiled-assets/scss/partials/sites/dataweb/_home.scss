@@ -15,7 +15,7 @@
 }
 
 .home-links {
-  margin-bottom: $space-m;
+  margin-bottom: $space-xxxl;
 
   ul {
     padding-left: 0;
@@ -39,16 +39,9 @@
       margin-bottom: 0;
     }
   }
-}
 
-.site-home-big-select {
-  select {
-    background-color: $color-theme-base-background;
-    border: 1px solid color(grey, 70);
-    color: $color-theme-base-text;
-    height: $space-xxl;
-    line-height: $space-xxl;
-    padding: 0 $space-xxxl 0 $space-l;
+  .header-overall {
+    margin-top: $space-m;
   }
 }
 
@@ -100,6 +93,7 @@
     border: 1px solid color(grey, 70);
     color: $color-theme-base-text;
     font-size: $space-m;
+    height: $space-xxl;
     padding: 0 $space-xxxl 0 $space-l;
 
     @include breakpoint(m) {

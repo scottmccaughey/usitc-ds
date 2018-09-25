@@ -182,44 +182,8 @@
     text-align: right;
   }
 
-  button,
-  .button {
-    &.button-primary {
-      background-color: color(cyan, 90);
-      color: color(black);
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: color(cyan, 70);
-      }
-    }
-
-    &.button-success {
-      background-color: color(green, 90);
-      color: color(black);
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: color(green, 70);
-      }
-    }
-
-    &.button-cancel {
-      background-color: color(red, 90);
-      color: color(black);
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: color(red, 70);
-      }
-    }
-
-    &.button-spinner {
-      min-height: 40.75px;
-    }
+  .button-spinner {
+    min-height: 40.75px;
   }
 }
 
