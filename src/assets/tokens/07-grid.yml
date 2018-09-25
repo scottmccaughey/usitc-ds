@@ -18,7 +18,7 @@
 # $grid-gap-col = $space-m  - The default size of the gutter between grid columns
 # $grid-gap-row = $space-m  - The default size of the gutter between grid rows
 #
-# Styleguide Tokens.Grid
+# Styleguide Tokens.GridSystem
 #
 # Weight: 7
 grid:

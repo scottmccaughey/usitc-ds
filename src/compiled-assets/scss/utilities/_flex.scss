@@ -1,0 +1,56 @@
+//  .d888 888
+//  d88P"  888
+//  888    888
+//  888888 888  .d88b.  888  888
+//  888    888 d8P  Y8b `Y8bd8P'
+//  888    888 88888888   X88K
+//  888    888 Y8b.     .d8""8b.
+//  888    888  "Y8888  888  888
+
+// Flex
+//
+// The `.flex` class can be added to an element to display the element’s children as [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) items if the viewport width is above the medium breakpoint defined in [Tokens ➔ Breakpoints](/tokens/breakpoints). At smaller widths, these classes have no effect.
+//
+// .flex            - Display children as Flexbox items.
+// .flex-separated  - Add left and right padding, and a separating border between items.
+//
+// Markup:
+// <div class="flex flex-separated">
+//   <div>First Item</div>
+//   <div>Second Item</div>
+//   <div>Third Item</div>
+// </div>
+//
+// Styleguide Utilities.Flex
+.flex {
+  @include breakpoint(m) {
+    align-content: center;
+    align-items: stretch;
+    display: flex;
+
+    > * {
+      align-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+.flex-separated {
+  @include breakpoint(m) {
+    > * {
+      border-right: 1px solid $color-theme-base-background-alt;
+      padding-left: $space-m;
+      padding-right: $space-m;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right-width: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

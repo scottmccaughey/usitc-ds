@@ -1,0 +1,120 @@
+//                  d8b      888
+//                  Y8P      888
+//                           888
+//  .d88b.  888d888 888  .d88888
+// d88P"88b 888P"   888 d88" 888
+// 888  888 888     888 888  888
+// Y88b 888 888     888 Y88b 888
+//  "Y88888 888     888  "Y88888
+//      888
+// Y8b d88P
+//  "Y88P"
+
+// Grid
+//
+// Our grid system uses the [Sass Directives ➔ Grid Builder](/sassdirectives/gridbuilder) mixin to generate the grid. By default, it is a responsive 12-column wide grid and includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+//
+// <table class="table table-bordered">
+//   <thead>
+//     <tr>
+//       <th scope="col"></th>
+//       <th scope="col" class="text-center">
+//         Extra small<br>
+//         <small>≥400px</small>
+//       </th>
+//       <th scope="col" class="text-center">
+//         Small<br>
+//         <small>≥600px</small>
+//       </th>
+//       <th scope="col" class="text-center">
+//         Medium<br>
+//         <small>≥800px</small>
+//       </th>
+//       <th scope="col" class="text-center">
+//         Large<br>
+//         <small>≥1200px</small>
+//       </th>
+//       <th scope="col" class="text-center">
+//         Extra large<br>
+//         <small>≥1600px</small>
+//       </th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <th class="text-left" scope="row">Class prefix</th>
+//       <td class="text-center"><code>.g-xs-</code></td>
+//       <td class="text-center"><code>.g-sm-</code></td>
+//       <td class="text-center"><code>.g-md-</code></td>
+//       <td class="text-center"><code>.g-lg-</code></td>
+//       <td class="text-center"><code>.g-xl-</code></td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide Utilities.Grid
+@include build-grid();
+
+// Basic Usage
+//
+// Add a `grid` class to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.
+//
+// Styleguide Utilities.Grid.BasicUsage
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+
+  > * {
+    grid-area: span 1 / span $grid-columns;
+  }
+
+  > .padded + .padded {
+    padding: $space-m;
+  }
+}
+
+.grid-gap {
+  grid-gap: $grid-gap-row $grid-gap-col;
+}
+
+.grid-gap-col {
+  grid-column-gap: $grid-gap-col;
+}
+
+.grid-gap-row {
+  grid-row-gap: $grid-gap-row;
+}
+
+.grid-self-align-center {
+  align-self: center;
+}
+
+.grid-self-align-end {
+  align-self: end;
+}
+
+.grid-self-align-start {
+  align-self: start;
+}
+
+.grid-self-justify-center {
+  justify-self: center;
+}
+
+.grid-self-justify-end {
+  justify-self: end;
+}
+
+.grid-self-justify-start {
+  justify-self: start;
+}
+
+.grid-separated {
+  > * {
+    border-right: 1px solid $color-theme-base-background-alt;
+
+    &:last-child {
+      border-right-width: 0;
+    }
+  }
+}

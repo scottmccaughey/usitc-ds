@@ -10,6 +10,11 @@
 // Y8b d88P
 //  "Y88P"
 
+// Global
+//
+// Coming soon...
+//
+// Styleguide Components.Global
 html {
   font-size: $font-size-root;
 }
@@ -235,6 +240,12 @@ pre {
   white-space: nowrap;
 }
 
+.nowrap-at-m {
+  @include breakpoint(m) {
+    white-space: nowrap;
+  }
+}
+
 .on-dark {
   background-color: $color-theme-dark-background;
   color: $color-theme-dark-text;
@@ -273,6 +284,20 @@ pre {
 
   dt:first-child {
     margin-top: $space-m;
+  }
+}
+
+.roman-outline {
+  ol li {
+    list-style-type: upper-roman;
+
+    ol {
+      margin-top: $space-s;
+    }
+
+    li {
+      list-style-type: upper-latin;
+    }
   }
 }
 

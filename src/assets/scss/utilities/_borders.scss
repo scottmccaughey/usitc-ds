@@ -16,7 +16,7 @@
 // Markup:
 // <div class="border">This element has a border around it.</div>
 //
-// Styleguide Components.Borders
+// Styleguide Utilities.Borders
 .border {
   border: $border-base;
 }
@@ -36,7 +36,7 @@
 // <div class="border-bottom">This element has a bottom border.</div>
 // <div class="border-left">This element has a left border.</div>
 //
-// Styleguide Components.Borders.SideSpecific
+// Styleguide Utilities.Borders.SideSpecific
 //
 // Weight: 1
 .border-bottom {
@@ -71,7 +71,7 @@
 // <div class="border border-bottom-none">This element has no bottom border.</div>
 // <div class="border border-left-none">This element has no left border.</div>
 //
-// Styleguide Components.Borders.BorderRemoval
+// Styleguide Utilities.Borders.BorderRemoval
 //
 // Weight: 2
 .border-none {
