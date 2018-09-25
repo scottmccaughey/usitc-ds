@@ -128,45 +128,49 @@
   padding-top: 0 !important;
 }
 
-.padded {
+.padding {
   padding: $space-m;
 
-  + .padded {
+  + .padding {
     padding-top: 0;
 
-    &.padded-top {
+    &.padding-top {
       padding-top: $space-m;
     }
   }
 }
 
-.padded-double {
+.padding-half {
+  padding: $space-s;
+}
+
+.padding-double {
   padding: $space-l;
 }
 
-.padded-left-right {
+.padding-left-right {
   padding-left: $space-m;
   padding-right: $space-m;
 }
 
-.padded-top-bottom {
+.padding-top-bottom {
   padding-bottom: $space-m;
   padding-top: $space-m;
 }
 
-.padded-top {
+.padding-top {
   padding-top: $space-m;
 }
 
-.padded-right {
+.padding-right {
   padding-right: $space-m;
 }
 
-.padded-bottom {
+.padding-bottom {
   padding-bottom: $space-m;
 }
 
-.padded-left {
+.padding-left {
   padding-left: $space-m;
 }
 

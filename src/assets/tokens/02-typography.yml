@@ -51,7 +51,7 @@ font:
     #
     # We load Montserrat as a webfont, but if it is unavailable our font stack falls back to the system font for any modern operating system ([San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont) on macOS and iOS, [Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331) on Windows, [Droid Sans](https://fonts.google.com/specimen/Droid+Sans) on Android, etc.).
     #
-    # <div class="border padded margin-bottom">
+    # <div class="border padding margin-bottom">
     #
     # This text is set in our **base** *font stack*.
     #
@@ -59,7 +59,7 @@ font:
     #
     # We also have a monospace font stack for times when it’s needed, and it’s very visible in the code snippets all over this styleguide. We’ve chosen our favorite monospace font — [Operator Mono](https://www.typography.com/fonts/operator/overview/) — as the base, and several good fallback options.
     #
-    # <div class="border padded mono">
+    # <div class="border padding mono">
     #
     # This text is set in our **monospace** *font stack*.
     #
@@ -78,7 +78,7 @@ font:
   #
   # We use two main weights of Montserrat — *Regular (400)* and *Bold (700)*. We occasionally use the *Black (900)* weight for headers, and we also have an *Italic* version of each weight.
   #
-  # <div class="border padded margin-bottom">
+  # <div class="border padding margin-bottom">
   #
   # This is Montserrat Regular.<br>
   # <strong>This is Montserrat Bold.</strong><br>
@@ -116,7 +116,7 @@ font:
     #
     # While we have all of the following sizes available, use your judgment on whether a particular size looks reasonable (and readable) in the situation where it is used.
     #
-    # <div class="border padded margin-bottom">
+    # <div class="border padding margin-bottom">
     #
     # <span class="size-xxs">This is our XXS font size.</span><br>
     # <span class="size-xs">This is our XS font size.</span><br>
@@ -164,7 +164,7 @@ font:
     #
     # </div>
     #
-    # <div class="border padded margin-bottom no-guide-styles">
+    # <div class="border padding margin-bottom no-guide-styles">
     #
     # <span class="size-xxxxl">This is an H1 heading.</span><br>
     # <span class="size-xxxl">This is an H2 heading.</span><br>

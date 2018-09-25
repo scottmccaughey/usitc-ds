@@ -127,12 +127,12 @@ color:
     # These are the colors that should be used by default on USITC websites. You can use these variables in Sass, such as `border-color: $color-theme-base-border;` or `color: $color-theme-base-hover-text;`.
     #
     # <div class="border">
-    # <div class="padded">
+    # <div class="padding">
     #
     # This is an example of our <a href="#">base theme</a> in action.
     #
     # </div>
-    # <div class="padded padded-top alt">
+    # <div class="padding padding-top alt">
     #
     # This is an example of our <a href="#">base theme</a> on the alternate background color.
     #
@@ -168,12 +168,12 @@ color:
     # When you want to use a dark background, use these colors.
     #
     # <div class="border on-dark">
-    # <div class="padded">
+    # <div class="padding">
     #
     # This is an example of our <a href="#">dark theme</a> in action.
     #
     # </div>
-    # <div class="padded padded-top on-dark on-dark-alt">
+    # <div class="padding padding-top on-dark on-dark-alt">
     #
     # This is an example of our <a href="#">dark theme</a> on the alternate background color.
     #

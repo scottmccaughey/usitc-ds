@@ -12,7 +12,9 @@
 
 // Grid
 //
-// Our responsive grid system uses the [Sass Directives ➔ Grid Builder](/sassdirectives/gridbuilder) mixin to generate the grid. By default, it is a 12-column wide grid and includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+// Our responsive grid system uses the [Sass Directives ➔ Grid Builder](/sassdirectives/gridbuilder) mixin to generate the grid. By default, it is a 12-column wide grid and includes five tiers of predefined classes for building complex responsive layouts.
+//
+// Add a `grid` class to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.
 //
 // <table class="table table-bordered">
 //   <thead>
@@ -53,13 +55,25 @@
 // </table>
 //
 // Styleguide Utilities.Grid
+
+// Sample Layouts
+//
+// Styleguide Utilities.Grid.SampleLayouts
+
+// Simple Two-Column Layout
+//
+// Collapses to a single column when the screen width is less than the <strong>medium</strong> breakpoint (`800px`).
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-m-6">.g-m-6</div>
+//   <div class="g-m-6">.g-m-6</div>
+// </div>
+//
+// Styleguide Utilities.Grid.SampleLayouts.SimpleTwoColumnLayout
+
 @include build-grid();
 
-// Basic Usage
-//
-// Add a `grid` class to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.
-//
-// Styleguide Utilities.Grid.BasicUsage
 .grid {
   display: grid;
   grid-template-rows: auto;
@@ -68,7 +82,7 @@
     grid-area: span 1 / span $grid-columns;
   }
 
-  > .padded + .padded {
+  > .padding + .padding {
     padding: $space-m;
   }
 }

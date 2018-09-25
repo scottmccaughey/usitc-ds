@@ -14,7 +14,7 @@
 #
 # We use a spacing scale starting at a `2rem (20px)` base, going up and down from there. You can use these variables in Sass, such as `padding: $space-m;` or `margin: $space-xl $space-l;`.
 #
-# <div class="border padded margin-bottom">
+# <div class="border padding margin-bottom">
 # <div class="kss-spacer-grid">
 #
 # <div>This is our XXS space size:</div><div class="kss-spacer space-xxs"></div>

@@ -433,6 +433,41 @@
   }
 }
 
+.kss-section-grid {
+  .grid {
+    > * {
+      padding: $space-s;
+    }
+
+    > :first-child {
+      background-color: color(cyan, 20);
+      color: $color-theme-dark-text;
+    }
+
+    > :nth-child(2) {
+      background-color: color(cyan, 30);
+      color: $color-theme-dark-text;
+    }
+
+    > :nth-child(3) {
+      background-color: color(cyan, 40);
+      color: $color-theme-dark-text;
+    }
+
+    > :nth-child(4) {
+      background-color: color(cyan, 50);
+    }
+
+    > :nth-child(5) {
+      background-color: color(cyan, 60);
+    }
+
+    > :nth-child(6) {
+      background-color: color(cyan, 70);
+    }
+  }
+}
+
 .kss-source {
   margin-bottom: $space-l;
   padding: $space-s $space-m;

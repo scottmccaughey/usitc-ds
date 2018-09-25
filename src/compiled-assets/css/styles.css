@@ -604,7 +604,7 @@ textarea {
   grid-template-rows: auto; }
   .grid > * {
     grid-area: span 1/span 12; }
-  .grid > .padded + .padded {
+  .grid > .padding + .padding {
     padding: 2rem; }
 
 .grid-gap {
@@ -2590,34 +2590,37 @@ icon,
 .padding-top-none {
   padding-top: 0 !important; }
 
-.padded {
+.padding {
   padding: 2rem; }
-  .padded + .padded {
+  .padding + .padding {
     padding-top: 0; }
-    .padded + .padded.padded-top {
+    .padding + .padding.padding-top {
       padding-top: 2rem; }
 
-.padded-double {
+.padding-half {
+  padding: 1rem; }
+
+.padding-double {
   padding: 3rem; }
 
-.padded-left-right {
+.padding-left-right {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.padded-top-bottom {
+.padding-top-bottom {
   padding-bottom: 2rem;
   padding-top: 2rem; }
 
-.padded-top {
+.padding-top {
   padding-top: 2rem; }
 
-.padded-right {
+.padding-right {
   padding-right: 2rem; }
 
-.padded-bottom {
+.padding-bottom {
   padding-bottom: 2rem; }
 
-.padded-left {
+.padding-left {
   padding-left: 2rem; }
 
 .space-xxs {
@@ -2864,8 +2867,8 @@ icon,
     .table th:last-child,
     .table td:last-child {
       padding-right: 0; }
-    .table th.padded,
-    .table td.padded {
+    .table th.padding,
+    .table td.padding {
       padding: 2rem !important; }
     .table th.text-center, .table th.text-left, .table th.text-right,
     .table td.text-center,
