@@ -71,6 +71,64 @@
 // </div>
 //
 // Styleguide Utilities.Grid.SampleLayouts.SimpleTwoColumnLayout
+//
+// Weight: 1
+
+// Simple Three-Column Layout
+//
+// Collapses to a single column when the screen width is less than the <strong>small</strong> breakpoint (`600px`).
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+// </div>
+//
+// Styleguide Utilities.Grid.SampleLayouts.SimpleThreeColumnLayout
+//
+// Weight: 2
+
+// Simple Four-Column Layout
+//
+// Collapses to two columns when the screen width is less than the <strong>small</strong> breakpoint (`600px`), and to a single column when the screen width is less than the <strong>medium</strong> breakpoint (`800px`).
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+//   <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+//   <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+//   <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
+// </div>
+//
+// Styleguide Utilities.Grid.SampleLayouts.SimpleFourColumnLayout
+//
+// Weight: 3
+
+// Complex Multi-Row Layout
+//
+// Our grid system doesn’t limit you to a single row. Your content can flow onto multiple rows at different screen widths.
+//
+// <div class="panel state-warning">
+//
+// # Tip
+// Test your grid at different screen widths to ensure that things collapse as you expect. If a grid cell won’t fit on a row, it will simply drop down to the next row.
+//
+// </div>
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-m-8 g-l-6">.g-m-8 .g-l-6</div>
+//   <div class="g-m-4 g-l-4">.g-m-4 .g-l-4</div>
+//   <div class="g-m-6 g-l-2">.g-m-6 .g-l-2</div>
+//   <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+//   <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+//   <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
+// </div>
+//
+// Styleguide Utilities.Grid.SampleLayouts.ComplexMultiRowLayout
+//
+// Weight: 4
 
 @include build-grid();
 

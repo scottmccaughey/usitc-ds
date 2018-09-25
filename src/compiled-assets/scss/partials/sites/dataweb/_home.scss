@@ -131,7 +131,6 @@
 .trade-data-reports {
   > a {
     background: color(grey, 95);
-    color: color(black);
     display: block;
     padding: $space-m;
     text-align: center;
@@ -139,8 +138,16 @@
     &:active,
     &:focus,
     &:hover {
-      background: color(cyan, 30);
-      color: color(white);
+      background: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+
+      icon {
+        color: $color-theme-dark-text;
+      }
+    }
+
+    icon {
+      color: $color-theme-base-text;
     }
   }
 }

@@ -3282,13 +3282,16 @@ a rect {
 
 .trade-data-reports > a {
   background: #f1f3f4;
-  color: black;
   display: block;
   padding: 2rem;
   text-align: center; }
   .trade-data-reports > a:active, .trade-data-reports > a:focus, .trade-data-reports > a:hover {
     background: #0f758a;
     color: white; }
+    .trade-data-reports > a:active icon, .trade-data-reports > a:focus icon, .trade-data-reports > a:hover icon {
+      color: white; }
+  .trade-data-reports > a icon {
+    color: #2e3638; }
 
 .login-error input {
   border-color: #b81422; }
