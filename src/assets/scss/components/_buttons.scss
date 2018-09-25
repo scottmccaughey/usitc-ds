@@ -266,6 +266,16 @@ a.button[role='button'] {
     }
   }
 
+  // Light Primary Button
+  //
+  // Use the `.button-primary-light` class if you need a lighter *primary* button.
+  //
+  // Markup:
+  // <button type="button" class="button-primary-light">Light Primary Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.LightPrimary
+  //
+  // Weight: 2
   &.button-primary-light {
     border-color: transparent;
     background-color: color(cyan, 90);
@@ -282,17 +292,17 @@ a.button[role='button'] {
     }
   }
 
-  // Alternate Primary Button
+  // Dark Primary Button
   //
-  // Use the `.button-primary-alt` class if you need a darker *primary* button.
+  // Use the `.button-primary-dark` class if you need a darker *primary* button.
   //
   // Markup:
-  // <button type="button" class="button-primary-alt">Alternate Primary Button</button>
+  // <button type="button" class="button-primary-dark">Dark Primary Button</button>
   //
-  // Styleguide Components.Buttons.Colors.AlternatePrimary
+  // Styleguide Components.Buttons.Colors.DarkPrimary
   //
-  // Weight: 2
-  &.button-primary-alt {
+  // Weight: 3
+  &.button-primary-dark {
     border-color: transparent;
     background-color: $color-theme-dark-background;
     color: $color-theme-dark-text;
@@ -318,7 +328,7 @@ a.button[role='button'] {
   //
   // Styleguide Components.Buttons.Colors.Success
   //
-  // Weight: 3
+  // Weight: 4
   &.button-success {
     background-color: $color-state-success-link;
     border-color: transparent;
@@ -331,6 +341,16 @@ a.button[role='button'] {
     }
   }
 
+  // Light Success Button
+  //
+  // Use the `.button-success-light` class if you need a lighter *success* button.
+  //
+  // Markup:
+  // <button type="button" class="button-success-light">Light Success Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.LightSuccess
+  //
+  // Weight: 5
   &.button-success-light {
     border-color: transparent;
     background-color: color(green, 90);
@@ -358,7 +378,7 @@ a.button[role='button'] {
   //
   // Styleguide Components.Buttons.Colors.Cancel
   //
-  // Weight: 4
+  // Weight: 6
   &.button-cancel {
     background-color: $color-state-error-link;
     border-color: transparent;
@@ -371,6 +391,16 @@ a.button[role='button'] {
     }
   }
 
+  // Light Cancel Button
+  //
+  // Use the `.button-cancel-light` class if you need a lighter *cancel* button.
+  //
+  // Markup:
+  // <button type="button" class="button-cancel-light">Light Cancel Button</button>
+  //
+  // Styleguide Components.Buttons.Colors.LightCancel
+  //
+  // Weight: 7
   &.button-cancel-light {
     border-color: transparent;
     background-color: color(red, 90);

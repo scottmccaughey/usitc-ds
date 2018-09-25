@@ -823,35 +823,35 @@ a.button[role='button'] {
       a.button[role='button'].button-primary-light:focus, .on-dark
       a.button[role='button'].button-primary-light:hover {
         border-color: white; }
-  button.button-primary-alt,
-  input[type='button'].button-primary-alt,
-  a.button.button-primary-alt,
-  a.button[role='button'].button-primary-alt {
+  button.button-primary-dark,
+  input[type='button'].button-primary-dark,
+  a.button.button-primary-dark,
+  a.button[role='button'].button-primary-dark {
     border-color: transparent;
     background-color: #0a4e5c;
     color: white; }
-    button.button-primary-alt:active, button.button-primary-alt:focus, button.button-primary-alt:hover,
-    input[type='button'].button-primary-alt:active,
-    input[type='button'].button-primary-alt:focus,
-    input[type='button'].button-primary-alt:hover,
-    a.button.button-primary-alt:active,
-    a.button.button-primary-alt:focus,
-    a.button.button-primary-alt:hover,
-    a.button[role='button'].button-primary-alt:active,
-    a.button[role='button'].button-primary-alt:focus,
-    a.button[role='button'].button-primary-alt:hover {
+    button.button-primary-dark:active, button.button-primary-dark:focus, button.button-primary-dark:hover,
+    input[type='button'].button-primary-dark:active,
+    input[type='button'].button-primary-dark:focus,
+    input[type='button'].button-primary-dark:hover,
+    a.button.button-primary-dark:active,
+    a.button.button-primary-dark:focus,
+    a.button.button-primary-dark:hover,
+    a.button[role='button'].button-primary-dark:active,
+    a.button[role='button'].button-primary-dark:focus,
+    a.button[role='button'].button-primary-dark:hover {
       background-color: #0f758a;
       color: white; }
-      .on-dark button.button-primary-alt:active, .on-dark button.button-primary-alt:focus, .on-dark button.button-primary-alt:hover, .on-dark
-      input[type='button'].button-primary-alt:active, .on-dark
-      input[type='button'].button-primary-alt:focus, .on-dark
-      input[type='button'].button-primary-alt:hover, .on-dark
-      a.button.button-primary-alt:active, .on-dark
-      a.button.button-primary-alt:focus, .on-dark
-      a.button.button-primary-alt:hover, .on-dark
-      a.button[role='button'].button-primary-alt:active, .on-dark
-      a.button[role='button'].button-primary-alt:focus, .on-dark
-      a.button[role='button'].button-primary-alt:hover {
+      .on-dark button.button-primary-dark:active, .on-dark button.button-primary-dark:focus, .on-dark button.button-primary-dark:hover, .on-dark
+      input[type='button'].button-primary-dark:active, .on-dark
+      input[type='button'].button-primary-dark:focus, .on-dark
+      input[type='button'].button-primary-dark:hover, .on-dark
+      a.button.button-primary-dark:active, .on-dark
+      a.button.button-primary-dark:focus, .on-dark
+      a.button.button-primary-dark:hover, .on-dark
+      a.button[role='button'].button-primary-dark:active, .on-dark
+      a.button[role='button'].button-primary-dark:focus, .on-dark
+      a.button[role='button'].button-primary-dark:hover {
         border-color: white; }
   button.button-success,
   input[type='button'].button-success,

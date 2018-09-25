@@ -824,35 +824,35 @@ a.button[role='button'] {
       a.button[role='button'].button-primary-light:focus, .on-dark
       a.button[role='button'].button-primary-light:hover {
         border-color: white; }
-  button.button-primary-alt,
-  input[type='button'].button-primary-alt,
-  a.button.button-primary-alt,
-  a.button[role='button'].button-primary-alt {
+  button.button-primary-dark,
+  input[type='button'].button-primary-dark,
+  a.button.button-primary-dark,
+  a.button[role='button'].button-primary-dark {
     border-color: transparent;
     background-color: #0a4e5c;
     color: white; }
-    button.button-primary-alt:active, button.button-primary-alt:focus, button.button-primary-alt:hover,
-    input[type='button'].button-primary-alt:active,
-    input[type='button'].button-primary-alt:focus,
-    input[type='button'].button-primary-alt:hover,
-    a.button.button-primary-alt:active,
-    a.button.button-primary-alt:focus,
-    a.button.button-primary-alt:hover,
-    a.button[role='button'].button-primary-alt:active,
-    a.button[role='button'].button-primary-alt:focus,
-    a.button[role='button'].button-primary-alt:hover {
+    button.button-primary-dark:active, button.button-primary-dark:focus, button.button-primary-dark:hover,
+    input[type='button'].button-primary-dark:active,
+    input[type='button'].button-primary-dark:focus,
+    input[type='button'].button-primary-dark:hover,
+    a.button.button-primary-dark:active,
+    a.button.button-primary-dark:focus,
+    a.button.button-primary-dark:hover,
+    a.button[role='button'].button-primary-dark:active,
+    a.button[role='button'].button-primary-dark:focus,
+    a.button[role='button'].button-primary-dark:hover {
       background-color: #0f758a;
       color: white; }
-      .on-dark button.button-primary-alt:active, .on-dark button.button-primary-alt:focus, .on-dark button.button-primary-alt:hover, .on-dark
-      input[type='button'].button-primary-alt:active, .on-dark
-      input[type='button'].button-primary-alt:focus, .on-dark
-      input[type='button'].button-primary-alt:hover, .on-dark
-      a.button.button-primary-alt:active, .on-dark
-      a.button.button-primary-alt:focus, .on-dark
-      a.button.button-primary-alt:hover, .on-dark
-      a.button[role='button'].button-primary-alt:active, .on-dark
-      a.button[role='button'].button-primary-alt:focus, .on-dark
-      a.button[role='button'].button-primary-alt:hover {
+      .on-dark button.button-primary-dark:active, .on-dark button.button-primary-dark:focus, .on-dark button.button-primary-dark:hover, .on-dark
+      input[type='button'].button-primary-dark:active, .on-dark
+      input[type='button'].button-primary-dark:focus, .on-dark
+      input[type='button'].button-primary-dark:hover, .on-dark
+      a.button.button-primary-dark:active, .on-dark
+      a.button.button-primary-dark:focus, .on-dark
+      a.button.button-primary-dark:hover, .on-dark
+      a.button[role='button'].button-primary-dark:active, .on-dark
+      a.button[role='button'].button-primary-dark:focus, .on-dark
+      a.button[role='button'].button-primary-dark:hover {
         border-color: white; }
   button.button-success,
   input[type='button'].button-success,
@@ -2336,6 +2336,93 @@ icon,
           background-color: #0a4e5c; }
       .pagination > *.select:after {
         border-top-color: white; }
+
+.panel {
+  background-color: white;
+  border-color: #0f758a;
+  color: #2e3638;
+  margin-bottom: 2rem;
+  padding: 2rem; }
+  .panel a {
+    color: #0f758a; }
+    .panel a:active, .panel a:focus, .panel a:hover {
+      background-color: transparent;
+      color: #05272e; }
+  .panel h1,
+  .panel h2,
+  .panel h3,
+  .panel h4,
+  .panel h5,
+  .panel h6 {
+    color: #0f758a; }
+  .panel .panel-header,
+  .panel .panel-header:first-child {
+    background-color: #0f758a;
+    color: white; }
+  .panel > *:last-child {
+    margin-bottom: 0; }
+  .panel ul {
+    padding: 0 2rem; }
+    .panel ul li:only-child {
+      list-style: none;
+      text-align: center; }
+  .panel .panel-grid-list {
+    padding: 0; }
+    .panel .panel-grid-list > li {
+      list-style: none;
+      margin-bottom: 0;
+      padding: 1rem; }
+      .panel .panel-grid-list > li:nth-child(even) {
+        background-color: #f1f3f4; }
+
+.panel-header,
+.panel-header:first-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -2rem -2rem 2rem;
+  padding: 1rem 2rem; }
+  .padding-none .panel-header, .padding-none
+  .panel-header:first-child {
+    margin: 0; }
+
+.panel-grid {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: grid;
+  grid-template-columns: auto; }
+  @media (min-width: 800px) {
+    .panel-grid.panel-grid-2 {
+      grid-template-columns: -webkit-min-content auto;
+      grid-template-columns: min-content auto; } }
+  .panel-grid.panel-grid-2 > *:nth-child(4n + 3), .panel-grid.panel-grid-2 > *:nth-child(4n + 4) {
+    background-color: #f1f3f4; }
+  @media (min-width: 800px) {
+    .panel-grid.panel-grid-3 {
+      grid-template-columns: -webkit-min-content auto -webkit-min-content;
+      grid-template-columns: min-content auto min-content; } }
+  .panel-grid.panel-grid-3 > *:nth-child(6n + 4), .panel-grid.panel-grid-3 > *:nth-child(6n + 5), .panel-grid.panel-grid-3 > *:nth-child(6n + 6) {
+    background-color: #f1f3f4; }
+  .panel-grid > * {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: grid;
+    font-size: 1.33333rem;
+    padding: 1rem;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .panel-grid > * {
+        text-align: left; } }
 
 @media print {
   @page {
