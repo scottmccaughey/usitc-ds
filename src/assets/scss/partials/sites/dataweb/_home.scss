@@ -32,7 +32,7 @@
 }
 
 .site-home {
-  .header-caps.flex-nowrap {
+  .header-caps.nowrap-at-m {
     margin-bottom: $space-s;
 
     @include breakpoint(m) {

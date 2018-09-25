@@ -3207,10 +3207,10 @@ a rect {
     padding: 0 2rem 0 0;
     white-space: nowrap; }
 
-.site-home .header-caps.flex-nowrap {
+.site-home .header-caps.nowrap-at-m {
   margin-bottom: 1rem; }
   @media (min-width: 800px) {
-    .site-home .header-caps.flex-nowrap {
+    .site-home .header-caps.nowrap-at-m {
       margin-bottom: 0; } }
 
 .site-home .header-overall {
