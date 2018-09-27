@@ -23,6 +23,10 @@ select {
   }
 }
 
+input[type='number']:invalid {
+  @include state-error;
+}
+
 label {
   cursor: pointer;
 }

@@ -149,6 +149,13 @@ dl {
   }
 }
 
+hr {
+  background-color: $color-theme-base-border;
+  border-width: 0;
+  height: 1px;
+  margin: $space-m 0;
+}
+
 p {
   margin-bottom: $space-m;
 

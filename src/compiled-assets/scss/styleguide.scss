@@ -24,7 +24,7 @@
       min-height: 100vh;
       grid-template-rows: min-content min-content auto;
 
-      @include breakpoint(l) {
+      @include breakpoint(m) {
         grid-template-rows: min-content auto;
       }
     }

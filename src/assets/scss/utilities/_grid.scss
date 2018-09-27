@@ -59,6 +59,8 @@
 // Sample Layouts
 //
 // Styleguide Utilities.Grid.SampleLayouts
+//
+// Weight: 1
 
 // Simple Two-Column Layout
 //
@@ -129,6 +131,42 @@
 // Styleguide Utilities.Grid.SampleLayouts.ComplexMultiRowLayout
 //
 // Weight: 4
+
+// Gutters
+//
+// You can add gutters to your grid by adding a `grid-gap` class. You can also use `grid-gap-col` for only horizontal gutters and `grid-gap-row` for only vertical gutters.
+//
+// Markup:
+// <div class="grid grid-gap">
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+// </div>
+// <hr>
+// <div class="grid grid-gap-col">
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+// </div>
+// <hr>
+// <div class="grid grid-gap-row">
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+//   <div class="g-s-4">.g-s-4</div>
+// </div>
+//
+// Styleguide Utilities.Grid.Gutters
+//
+// Weight: 2
 
 @include build-grid();
 

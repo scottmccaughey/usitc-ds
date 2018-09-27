@@ -980,6 +980,27 @@ select {
   select {
     color: black; }
 
+input[type='number']:invalid {
+  background-color: #fce8ea;
+  border-color: #b81422;
+  color: #2e3638; }
+  input[type='number']:invalid a {
+    color: #b81422; }
+    input[type='number']:invalid a:active, input[type='number']:invalid a:focus, input[type='number']:invalid a:hover {
+      background-color: transparent;
+      color: #eb4755; }
+  input[type='number']:invalid h1,
+  input[type='number']:invalid h2,
+  input[type='number']:invalid h3,
+  input[type='number']:invalid h4,
+  input[type='number']:invalid h5,
+  input[type='number']:invalid h6 {
+    color: #8a0f1a; }
+  input[type='number']:invalid .panel-header,
+  input[type='number']:invalid .panel-header:first-child {
+    background-color: #b81422;
+    color: white; }
+
 label {
   cursor: pointer; }
 
@@ -1789,6 +1810,12 @@ dl dd {
   margin-bottom: 1rem; }
   dl dd:last-child {
     margin-bottom: 0; }
+
+hr {
+  background-color: #2e3638;
+  border-width: 0;
+  height: 1px;
+  margin: 2rem 0; }
 
 p {
   margin-bottom: 2rem; }
