@@ -165,8 +165,9 @@ dl {
 
 hr {
   background-color: $color-theme-base-border;
-  border-width: 0;
-  height: 1px;
+  border: none;
+  border-top: $border-base;
+  height: 0;
   margin: $space-m 0;
 }
 

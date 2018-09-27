@@ -1625,12 +1625,9 @@ simple-select + simple-select .select-child-field {
     display: none; }
     @media (min-width: 1200px) {
       .select-read-more hr {
-        border: none;
-        border-top: 1px dashed #0f758a;
-        display: inline-block;
+        border-top-color: #0f758a;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-        height: 1px;
         margin: 0;
         width: 4rem; } }
   .select-read-more i {
@@ -1822,8 +1819,9 @@ dl dd {
 
 hr {
   background-color: #2e3638;
-  border-width: 0;
-  height: 1px;
+  border: none;
+  border-top: 1px solid #73888c;
+  height: 0;
   margin: 2rem 0; }
 
 p {
@@ -2406,14 +2404,20 @@ icon,
     .panel ol.clean,
     .panel ul.clean {
       padding: 0; }
-  .panel .panel-grid-list {
-    padding: 0; }
-    .panel .panel-grid-list > li {
-      list-style: none;
-      margin-bottom: 0;
-      padding: 1rem; }
-      .panel .panel-grid-list > li:nth-child(even) {
-        background-color: #f1f3f4; }
+    .panel ol.panel-grid-list,
+    .panel ul.panel-grid-list {
+      padding: 0; }
+      .panel ol.panel-grid-list > li,
+      .panel ul.panel-grid-list > li {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 1rem; }
+        .panel ol.panel-grid-list > li:only-child,
+        .panel ul.panel-grid-list > li:only-child {
+          text-align: left; }
+        .panel ol.panel-grid-list > li:nth-child(even),
+        .panel ul.panel-grid-list > li:nth-child(even) {
+          background-color: #f1f3f4; }
 
 .panel-header,
 .panel-header:first-child {
