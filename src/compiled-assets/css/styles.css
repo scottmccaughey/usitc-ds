@@ -2405,14 +2405,20 @@ icon,
     .panel ol.clean,
     .panel ul.clean {
       padding: 0; }
-  .panel .panel-grid-list {
-    padding: 0; }
-    .panel .panel-grid-list > li {
-      list-style: none;
-      margin-bottom: 0;
-      padding: 1rem; }
-      .panel .panel-grid-list > li:nth-child(even) {
-        background-color: #f1f3f4; }
+    .panel ol.panel-grid-list,
+    .panel ul.panel-grid-list {
+      padding: 0; }
+      .panel ol.panel-grid-list > li,
+      .panel ul.panel-grid-list > li {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 1rem; }
+        .panel ol.panel-grid-list > li:only-child,
+        .panel ul.panel-grid-list > li:only-child {
+          text-align: left; }
+        .panel ol.panel-grid-list > li:nth-child(even),
+        .panel ul.panel-grid-list > li:nth-child(even) {
+          background-color: #f1f3f4; }
 
 .panel-header,
 .panel-header:first-child {

@@ -31,18 +31,22 @@
     &.clean {
       padding: 0;
     }
-  }
 
-  .panel-grid-list {
-    padding: 0;
+    &.panel-grid-list {
+      padding: 0;
 
-    > li {
-      list-style: none;
-      margin-bottom: 0;
-      padding: $space-s;
+      > li {
+        list-style: none;
+        margin-bottom: 0;
+        padding: $space-s;
 
-      &:nth-child(even) {
-        background-color: color(grey, 95);
+        &:only-child {
+          text-align: left;
+        }
+
+        &:nth-child(even) {
+          background-color: color(grey, 95);
+        }
       }
     }
   }

@@ -12,7 +12,7 @@
 
 // Grid
 //
-// Our responsive grid system uses the [Sass Directives ➔ Grid Builder](/sassdirectives/gridbuilder) mixin to generate the grid. By default, it is a 12-column wide grid and includes five tiers of predefined classes for building complex responsive layouts.
+// Our responsive grid system is built using [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids) and uses our [Sass Directives ➔ Grid Builder](/sassdirectives/gridbuilder) mixin to generate the grid. By default, it is a 12-column wide grid and includes five tiers of predefined classes for building complex responsive layouts.
 //
 // Add a `grid` class to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.
 //
@@ -132,9 +132,29 @@
 //
 // Weight: 4
 
+
+@include build-grid();
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+
+  > * {
+    grid-area: span 1 / span $grid-columns;
+  }
+
+  > .padding + .padding {
+    padding: $space-m;
+  }
+}
+
 // Gutters
 //
 // You can add gutters to your grid by adding a `grid-gap` class. You can also use `grid-gap-col` for only horizontal gutters and `grid-gap-row` for only vertical gutters.
+//
+// .grid-gap      - Add gutters between all cells.
+// .grid-gap-col  - Add gutters only between columns.
+// .grid-gap-row  - Add gutters only between rows.
 //
 // Markup:
 // <div class="grid grid-gap">
@@ -167,22 +187,6 @@
 // Styleguide Utilities.Grid.Gutters
 //
 // Weight: 2
-
-@include build-grid();
-
-.grid {
-  display: grid;
-  grid-template-rows: auto;
-
-  > * {
-    grid-area: span 1 / span $grid-columns;
-  }
-
-  > .padding + .padding {
-    padding: $space-m;
-  }
-}
-
 .grid-gap {
   grid-gap: $grid-gap-row $grid-gap-col;
 }
