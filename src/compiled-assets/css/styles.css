@@ -1624,7 +1624,8 @@ simple-select + simple-select .select-child-field {
     display: none; }
     @media (min-width: 1200px) {
       .select-read-more hr {
-        border-top-color: #0f758a;
+        border-top: 1px dashed #0f758a;
+        display: block;
         -ms-flex-negative: 0;
             flex-shrink: 0;
         margin: 0;
@@ -1817,7 +1818,6 @@ dl dd {
     margin-bottom: 0; }
 
 hr {
-  background-color: #2e3638;
   border: none;
   border-top: 1px solid #73888c;
   height: 0;

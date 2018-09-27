@@ -833,7 +833,8 @@ simple-select {
     display: none;
 
     @include breakpoint(l) {
-      border-top-color: $color-theme-base-accent;
+      border-top: 1px dashed $color-theme-base-accent;
+      display: block;
       flex-shrink: 0;
       margin: 0;
       width: $space-xl;
