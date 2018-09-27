@@ -19,12 +19,17 @@
     margin-bottom: 0;
   }
 
+  ol,
   ul {
     padding: 0 $space-m;
 
     li:only-child {
       list-style: none;
       text-align: center;
+    }
+
+    &.clean {
+      padding: 0;
     }
   }
 
