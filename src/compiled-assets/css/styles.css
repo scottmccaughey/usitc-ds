@@ -1757,11 +1757,11 @@ body {
     overflow: auto; }
     body.body-scrollable .constrained {
       margin-left: 1vw;
-      margin-right: 0;
-      max-width: 95vw; }
+      margin-right: 1vw;
+      width: 98vw; }
     body.body-scrollable .site-content {
       overflow: initial;
-      width: 100vw; }
+      width: calc(100vw - 20px); }
     body.body-scrollable .site-layout {
       grid-template-columns: 400px auto;
       width: calc(100% + $off-canvas-width); }
@@ -3555,10 +3555,6 @@ a rect {
       .button.button-new-request svg {
         height: 3rem;
         width: 3rem; } }
-
-.button-search-submit {
-  height: 6rem;
-  width: 12rem; }
 
 .commodities-select .input-with-button button {
   padding: 0 2rem; }
