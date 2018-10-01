@@ -6,41 +6,45 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { PrismModule } from '@ngx-prism/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ErrorComponent } from './components/error/error.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { StyleguideComponent } from './components/styleguide/styleguide.component';
+
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
-import { SectionComponent } from './components/section/section.component';
+
+import { AppComponent } from './app.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { CodeComponent } from './components/code/code.component';
 import { ColorsComponent } from './components/colors/colors.component';
+import { ErrorComponent } from './components/error/error.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { IconComponent } from './components/icon/icon.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { ParametersComponent } from './components/parameters/parameters.component';
+import { SectionComponent } from './components/section/section.component';
+import { StyleguideComponent } from './components/styleguide/styleguide.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StyleguideComponent,
-    HeaderComponent,
-    MenuComponent,
-    HomeComponent,
-    ErrorComponent,
-    KeepHtmlPipe,
-    SectionComponent,
     BreadcrumbComponent,
     CodeComponent,
     ColorsComponent,
-    ParametersComponent
+    ErrorComponent,
+    HeaderComponent,
+    HomeComponent,
+    IconComponent,
+    KeepHtmlPipe,
+    MenuComponent,
+    ParametersComponent,
+    SectionComponent,
+    StyleguideComponent
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
-    PrismModule,
-    ClipboardModule
+    BrowserModule,
+    ClipboardModule,
+    HttpClientModule,
+    PrismModule
   ],
   exports: [StyleguideComponent],
   providers: [],

@@ -616,6 +616,10 @@ textarea {
 .grid-gap-row {
   grid-row-gap: 2rem; }
 
+.grid-self-align-start {
+  -ms-flex-item-align: start;
+      align-self: start; }
+
 .grid-self-align-center {
   -ms-flex-item-align: center;
       align-self: center; }
@@ -624,9 +628,12 @@ textarea {
   -ms-flex-item-align: end;
       align-self: end; }
 
-.grid-self-align-start {
-  -ms-flex-item-align: start;
-      align-self: start; }
+.grid-self-align-stretch {
+  -ms-flex-item-align: stretch;
+      align-self: stretch; }
+
+.grid-self-justify-start {
+  justify-self: start; }
 
 .grid-self-justify-center {
   justify-self: center; }
@@ -634,13 +641,8 @@ textarea {
 .grid-self-justify-end {
   justify-self: end; }
 
-.grid-self-justify-start {
-  justify-self: start; }
-
-.grid-separated > * {
-  border-right: 1px solid #e3e7e8; }
-  .grid-separated > *:last-child {
-    border-right-width: 0; }
+.grid-self-justify-stretch {
+  justify-self: stretch; }
 
 button,
 input[type='button'],
@@ -735,17 +737,17 @@ a.button[role='button'] {
   input[type='button'].button-l,
   a.button.button-l,
   a.button[role='button'].button-l {
-    font-size: 1.6rem; }
+    font-size: 1.92rem; }
   button.button-xl,
   input[type='button'].button-xl,
   a.button.button-xl,
   a.button[role='button'].button-xl {
-    font-size: 1.92rem; }
+    font-size: 2.304rem; }
   button.button-xxl,
   input[type='button'].button-xxl,
   a.button.button-xxl,
   a.button[role='button'].button-xxl {
-    font-size: 2.304rem; }
+    font-size: 2.7648rem; }
   button.button-full-width,
   input[type='button'].button-full-width,
   a.button.button-full-width,
@@ -2187,30 +2189,10 @@ icon,
             justify-content: stretch;
     stroke: none;
     width: 100%; }
-  icon.icon-xxxxs,
-  .icon.icon-xxxxs {
-    height: 0.09877em;
-    width: 0.09877em; }
-  icon.icon-xxxs,
-  .icon.icon-xxxs {
-    height: 0.14815em;
-    width: 0.14815em; }
-  icon.icon-xxs,
-  .icon.icon-xxs {
-    height: 0.22222em;
-    width: 0.22222em; }
-  icon.icon-xs,
-  .icon.icon-xs {
-    height: 0.33333em;
-    width: 0.33333em; }
   icon.icon-s,
   .icon.icon-s {
     height: 0.5em;
     width: 0.5em; }
-  icon.icon-m,
-  .icon.icon-m {
-    height: 0.75em;
-    width: 0.75em; }
   icon.icon-l,
   .icon.icon-l {
     height: 1.125em;
@@ -2231,16 +2213,17 @@ icon,
   .icon.icon-xxxxl {
     height: 5.69531em;
     width: 5.69531em; }
-  icon.icon-block,
-  .icon.icon-block {
-    display: block;
-    max-height: 100%;
-    max-width: 100%; }
   icon.icon-centered,
   .icon.icon-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-height: 100%;
+    max-width: 100%; }
+  icon.icon-right,
+  .icon.icon-right {
+    display: block;
+    margin-left: auto;
     max-height: 100%;
     max-width: 100%; }
 
@@ -3234,6 +3217,11 @@ a rect {
         .site-header > nav > ul li a:active, .site-header > nav > ul li a:focus, .site-header > nav > ul li a:hover {
           background-color: #0f758a;
           color: white; }
+
+.grid-separated > * {
+  border-right: 1px solid #e3e7e8; }
+  .grid-separated > *:last-child {
+    border-right-width: 0; }
 
 .home-intro em {
   color: #b81422;

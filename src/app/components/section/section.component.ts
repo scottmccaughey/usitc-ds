@@ -17,9 +17,16 @@ export class SectionComponent implements OnInit {
     const secSplit = this.section.referenceURI.split('-');
     const depth = this.section.depth > 1 ? this.section.depth - 1 : 1;
     this.section.name = '<h' + depth + '>' + this.section.header + '</h' + depth + '>';
-    this.section.markupClass = 'kss-section-' + secSplit[1];
     this.section.source.file = environment._devAssetsLocation + this.section.source.filename;
     this.section.showSource = false;
+
+    this.section.markupClass = 'kss-section-' + secSplit[1];
+    if (depth > 1) {
+      this.section.markupClass += ' kss-section-' + secSplit[2];
+    }
+    if (depth > 2) {
+      this.section.markupClass += ' kss-section-' + secSplit[3];
+    }
 
     if (this.section.markup && this.section.markup.startsWith('SCSS')) {
       this.section.scss = true;

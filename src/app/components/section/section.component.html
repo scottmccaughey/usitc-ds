@@ -17,8 +17,12 @@
     *ngIf="section.markup">
     <div *ngIf="!section.scss"
       class="alt-off padding"
-      [ngClass]="section.markupClass"
-      [innerHTML]="section.markup | KeepHtmlPipe"></div>
+      [ngClass]="section.markupClass">
+      <ng-container *ngIf="section.header === 'Icons'">
+        <icon name="globe"></icon>
+      </ng-container>
+      <span [innerHTML]="section.markup | KeepHtmlPipe"></span>
+    </div>
     <div class="kss-markup">
       <app-code *ngIf="!section.scss"
         [language]="'markup'"

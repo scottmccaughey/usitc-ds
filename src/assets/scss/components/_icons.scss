@@ -1,0 +1,220 @@
+// d8b
+// Y8P
+//
+// 888  .d8888b .d88b.  88888b.  .d8888b
+// 888 d88P"   d88""88b 888 "88b 88K
+// 888 888     888  888 888  888 "Y8888b.
+// 888 Y88b.   Y88..88P 888  888      X88
+// 888  "Y8888P "Y88P"  888  888  88888P'
+
+// Icons
+//
+// We have a selection of standard icons that can be used. They can be used in your project several different ways:
+//
+// * If your project is built in Angular, you can use the included `<icon>` Angular component.
+// * You can use `<svg class="icon">` along with a `<use>` element.
+// * You can link directly to the icon using an `<img class="icon">` element.
+//
+// If you use either of the first two, you’ll be able to style the icon using your own CSS, and by default the icon will be displayed in the active color.
+//
+// Markup:
+// <icon name="globe"></icon>
+// ​
+// <svg class="icon">
+//   <use xlink:href="/assets/icons/symbol/icons.svg#download"></use>
+// </svg>
+// ​
+// <img class="icon" src="/assets/icons/check.svg">
+//
+// Styleguide Components.Icons
+icon,
+.icon {
+  display: inline-block;
+  height: $icon-size-base;
+  position: relative;
+  width: $icon-size-base;
+
+  &.svg,
+  > svg {
+    align-items: stretch;
+    display: flex;
+    height: 100%;
+    fill: currentColor;
+    justify-content: stretch;
+    stroke: none;
+    width: 100%;
+  }
+
+  // Icon Sizes
+  //
+  // By default, icons should be close in size to the text around them. You can use the below classes to make them larger or smaller.
+  //
+  // Styleguide Components.Icons.Sizes
+  //
+  // Weight: 1
+
+  // Small Icon
+  //
+  // Add an `.icon-s` class for a smaller icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-s">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.Small
+  //
+  // Weight: 1
+  &.icon-s {
+    height: $icon-size-s;
+    width: $icon-size-s;
+  }
+
+  // Large Icon
+  //
+  // Add an `.icon-l` class for a larger icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-l">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.Large
+  //
+  // Weight: 2
+  &.icon-l {
+    height: $icon-size-l;
+    width: $icon-size-l;
+  }
+
+  // XL Icon
+  //
+  // Add an `.icon-xl` class for an XL icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-xl">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.XL
+  //
+  // Weight: 3
+  &.icon-xl {
+    height: $icon-size-xl;
+    width: $icon-size-xl;
+  }
+
+  // XXL Icon
+  //
+  // Add an `.icon-xxl` class for an XXL icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-xxl">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.XXL
+  //
+  // Weight: 4
+  &.icon-xxl {
+    height: $icon-size-xxl;
+    width: $icon-size-xxl;
+  }
+
+  // XXXL Icon
+  //
+  // Add an `.icon-xxxl` class for an XXXL icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-xxxl">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.XXXL
+  //
+  // Weight: 5
+  &.icon-xxxl {
+    height: $icon-size-xxxl;
+    width: $icon-size-xxxl;
+  }
+
+  // XXXXL Icon
+  //
+  // Add an `.icon-xxxxl` class for an XXXXL icon.
+  //
+  // Markup:
+  // <svg class="icon">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  // <svg class="icon icon-xxxxl">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Sizes.XXXXL
+  //
+  // Weight: 6
+  &.icon-xxxxl {
+    height: $icon-size-xxxxl;
+    width: $icon-size-xxxxl;
+  }
+
+  // Icon Alignment
+  //
+  // Styleguide Components.Icons.Alignment
+  //
+  // Weight: 2
+
+  // Centered Icon
+  //
+  // Add an `.icon-centered` class for an icon that will be centered on its own line.
+  //
+  // Markup:
+  // <svg class="icon icon-xl icon-centered">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Alignment.Centered
+  //
+  // Weight: 1
+  &.icon-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  // Right-Aligned Icon
+  //
+  // Add a `.icon-right` class for an icon that will be right-aligned on its own line.
+  //
+  // Markup:
+  // <svg class="icon icon-xl icon-right">
+  //   <use xlink:href="/assets/icons/symbol/icons.svg#globe"></use>
+  // </svg>
+  //
+  // Styleguide Components.Icons.Alignment.RightAligned
+  //
+  // Weight: 2
+  &.icon-right {
+    display: block;
+    margin-left: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

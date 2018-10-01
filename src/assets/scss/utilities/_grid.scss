@@ -199,6 +199,36 @@
   grid-row-gap: $grid-gap-row;
 }
 
+// Alignment
+//
+// There are classes available to make content alignment in cells easier.
+//
+// Styleguide Utilities.Grid.Alignment
+//
+// Weight: 3
+
+// Column-Axis Alignment
+//
+// The <abbr>CSS</abbr> property `align-self` aligns a grid item inside a cell along the block (column) axis. This value applies to the grid item inside a single cell. By default, grid items will stretch to fill the entire cell. You can add `grid-self-align-*` classes to individual grid elements to align their content.
+//
+// .grid-self-align-start   - Aligns the grid item to be flush with the start edge of the cell (minus any padding).
+// .grid-self-align-center  - Aligns the grid item in the center of the cell.
+// .grid-self-align-end     - Aligns the grid item to be flush with the end edge of the cell (minus any padding).
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-s-4 grid-self-align-start">.grid-self-align-start</div>
+//   <div class="g-s-4 grid-self-align-center">.grid-self-align-center</div>
+//   <div class="g-s-4 grid-self-align-end">.grid-self-align-end</div>
+// </div>
+//
+// Styleguide Utilities.Grid.Alignment.ColumnAxis
+//
+// Weight: 1
+.grid-self-align-start {
+  align-self: start;
+}
+
 .grid-self-align-center {
   align-self: center;
 }
@@ -207,8 +237,30 @@
   align-self: end;
 }
 
-.grid-self-align-start {
-  align-self: start;
+.grid-self-align-stretch {
+  align-self: stretch;
+}
+
+// Row-Axis Alignment
+//
+// The <abbr>CSS</abbr> property `justify-self` aligns a grid item inside a cell along the inline (row) axis. This value applies to a grid item inside a single cell. By default, grid items will stretch to fill the entire cell. You can add `grid-self-justify-*` classes to individual grid elements to align their content.
+//
+// .grid-self-justify-start   - Aligns the grid item to be flush with the start edge of the cell (minus any padding).
+// .grid-self-justify-center  - Aligns the grid item in the center of the cell.
+// .grid-self-justify-end     - Aligns the grid item to be flush with the end edge of the cell (minus any padding).
+//
+// Markup:
+// <div class="grid">
+//   <div class="g-s-4 grid-self-justify-start">.grid-self-justify-start</div>
+//   <div class="g-s-4 grid-self-justify-center">.grid-self-justify-center</div>
+//   <div class="g-s-4 grid-self-justify-end">.grid-self-justify-end</div>
+// </div>
+//
+// Styleguide Utilities.Grid.Alignment.RowAxis
+//
+// Weight: 2
+.grid-self-justify-start {
+  justify-self: start;
 }
 
 .grid-self-justify-center {
@@ -219,16 +271,6 @@
   justify-self: end;
 }
 
-.grid-self-justify-start {
-  justify-self: start;
-}
-
-.grid-separated {
-  > * {
-    border-right: 1px solid $color-theme-base-background-alt;
-
-    &:last-child {
-      border-right-width: 0;
-    }
-  }
+.grid-self-justify-stretch {
+  justify-self: stretch;
 }
