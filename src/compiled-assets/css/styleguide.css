@@ -645,6 +645,41 @@ textarea {
 .grid-self-justify-stretch {
   justify-self: stretch; }
 
+.site-content {
+  grid-area: site-content;
+  overflow: auto; }
+
+.site-layout {
+  display: grid;
+  grid-template-areas: 'off-canvas-left site-content';
+  grid-template-columns: 400px 100vw;
+  height: 100vh;
+  left: -400px;
+  position: relative;
+  -webkit-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+  width: calc(100vw + $off-canvas-width); }
+  .site-layout.off-canvas-open-left {
+    left: 0; }
+
+.off-canvas {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  -webkit-transition: left 0.75s ease-in-out;
+  transition: left 0.75s ease-in-out;
+  width: 400px; }
+  .off-canvas > .button-close:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .off-canvas > section {
+    padding: 2rem; }
+    .off-canvas > section > :first-child {
+      margin-right: 2rem; }
+
+.off-canvas-left {
+  grid-area: off-canvas-left; }
+
 button,
 input[type='button'],
 a.button,
@@ -1725,10 +1760,9 @@ body {
       margin-left: 1vw;
       margin-right: 0;
       max-width: 95vw; }
-    body.body-scrollable .off-canvas-right {
-      display: none; }
     body.body-scrollable .site-content {
-      overflow: initial; }
+      overflow: initial;
+      width: 100vw; }
     body.body-scrollable .site-layout {
       grid-template-columns: 400px auto;
       width: calc(100% + $off-canvas-width); }
@@ -2227,46 +2261,6 @@ icon,
     margin-left: auto;
     max-height: 100%;
     max-width: 100%; }
-
-.site-content {
-  grid-area: site-content;
-  overflow: auto; }
-
-.site-layout {
-  display: grid;
-  grid-template-areas: 'off-canvas-left site-content off-canvas-right';
-  grid-template-columns: 400px 100vw 400px;
-  height: 100vh;
-  left: -400px;
-  position: relative;
-  -webkit-transition: left 0.75s ease-in-out;
-  transition: left 0.75s ease-in-out;
-  width: calc(100vw + (2 * 400px)); }
-  .site-layout.off-canvas-open-left {
-    left: 0; }
-  .site-layout.off-canvas-open-right {
-    left: -800px; }
-
-.off-canvas {
-  height: 100vh;
-  overflow: auto;
-  position: relative;
-  -webkit-transition: left 0.75s ease-in-out;
-  transition: left 0.75s ease-in-out;
-  width: 400px; }
-  .off-canvas > .button-close:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .off-canvas > section {
-    padding: 2rem; }
-    .off-canvas > section > :first-child {
-      margin-right: 2rem; }
-
-.off-canvas-left {
-  grid-area: off-canvas-left; }
-
-.off-canvas-right {
-  grid-area: off-canvas-right; }
 
 .pagination {
   display: -webkit-box;
