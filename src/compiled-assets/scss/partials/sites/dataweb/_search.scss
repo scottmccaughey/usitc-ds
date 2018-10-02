@@ -326,13 +326,9 @@
       white-space: nowrap;
     }
 
-    tr:not(.subtotal):not(.total) td:first-child {
-      display: none;
-    }
-
     .group-off,
     .group-on {
-      td:nth-child(2) {
+      td:first-child {
         border-bottom-width: 0;
         border-top-width: 0;
       }
