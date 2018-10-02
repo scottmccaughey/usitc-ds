@@ -3741,7 +3741,7 @@ a rect {
 .table-results tbody .group-on td {
   background-color: #f1f3f4; }
 
-.table-results tbody .group-start td:nth-child(2) {
+.table-results tbody .group-start td:first-child {
   border-top-width: 1px; }
 
 .table-results tbody .subtotal th,
