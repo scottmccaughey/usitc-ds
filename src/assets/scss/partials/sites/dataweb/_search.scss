@@ -277,14 +277,6 @@
       margin-top: 0;
     }
   }
-
-  .nav-tabs {
-    display: none;
-  }
-
-  .nav-tabs-pane {
-    border-top-width: 0;
-  }
 }
 
 .site-search {
@@ -329,52 +321,50 @@
     }
   }
 
-  tbody td {
-    white-space: nowrap;
-  }
-
-  th:first-child,
-  td:first-child {
-    border-left-width: 0;
-
-    @include breakpoint(l) {
-      border-left-width: 1px;
-    }
-  }
-
-  th:last-child,
-  td:last-child {
-    border-right-width: 0;
-
-    @include breakpoint(l) {
-      border-right-width: 1px;
-    }
-  }
-
-  .subtotal,
-  .total {
-    th,
+  tbody {
     td {
-      background-color: color(grey, 98);
-      font-weight: $font-weight-bold;
+      white-space: nowrap;
     }
-  }
 
-  .total {
-    th,
-    td {
+    tr:not(.subtotal):not(.total) td:first-child {
+      display: none;
+    }
+
+    .group-off,
+    .group-on {
+      td:nth-child(2) {
+        border-bottom-width: 0;
+        border-top-width: 0;
+      }
+    }
+
+    .group-on td {
       background-color: color(grey, 95);
-      white-space: normal;
+    }
+
+    .group-start {
+      td:nth-child(2) {
+        border-top-width: 1px;
+      }
+    }
+
+    .subtotal,
+    .total {
+      th,
+      td {
+        background-color: color(grey, 90);
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .total {
+      th,
+      td {
+        background-color: color(grey, 85);
+        white-space: normal;
+      }
     }
   }
-}
-
-.table-results-font-s {
-  font-size: $font-size-xxs;
-}
-
-.table-results-font-l {
-  font-size: $font-size-l;
 }
 
 .table-searches.table-responsive tbody {

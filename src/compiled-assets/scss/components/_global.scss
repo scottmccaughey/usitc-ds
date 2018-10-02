@@ -40,12 +40,13 @@ body {
     .constrained {
       margin-left: 1vw;
       margin-right: 1vw;
+      max-width: none;
       width: 98vw;
     }
 
     .site-content {
       overflow: initial;
-      width: calc(100vw - 20px);
+      width: calc(100vw - 17px);
     }
 
     .site-layout {

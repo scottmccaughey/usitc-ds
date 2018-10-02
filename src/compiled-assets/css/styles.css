@@ -1758,10 +1758,11 @@ body {
     body.body-scrollable .constrained {
       margin-left: 1vw;
       margin-right: 1vw;
+      max-width: none;
       width: 98vw; }
     body.body-scrollable .site-content {
       overflow: initial;
-      width: calc(100vw - 20px); }
+      width: calc(100vw - 17px); }
     body.body-scrollable .site-layout {
       grid-template-columns: 400px auto;
       width: calc(100% + $off-canvas-width); }
@@ -2872,6 +2873,7 @@ icon,
     color: white; }
 
 .table {
+  font-variant-numeric: tabular-nums;
   width: 100%; }
   .table tbody th {
     vertical-align: middle; }
@@ -3702,12 +3704,6 @@ a rect {
 .site-query simple-select:first-child .form-group {
   margin-top: 0; }
 
-.site-query .nav-tabs {
-  display: none; }
-
-.site-query .nav-tabs-pane {
-  border-top-width: 0; }
-
 .site-search:not(.site-query-loading) {
   margin-top: -2rem; }
 
@@ -3737,38 +3733,31 @@ a rect {
 .table-results tbody td {
   white-space: nowrap; }
 
-.table-results th:first-child,
-.table-results td:first-child {
-  border-left-width: 0; }
-  @media (min-width: 1200px) {
-    .table-results th:first-child,
-    .table-results td:first-child {
-      border-left-width: 1px; } }
+.table-results tbody tr:not(.subtotal):not(.total) td:first-child {
+  display: none; }
 
-.table-results th:last-child,
-.table-results td:last-child {
-  border-right-width: 0; }
-  @media (min-width: 1200px) {
-    .table-results th:last-child,
-    .table-results td:last-child {
-      border-right-width: 1px; } }
+.table-results tbody .group-off td:nth-child(2),
+.table-results tbody .group-on td:nth-child(2) {
+  border-bottom-width: 0;
+  border-top-width: 0; }
 
-.table-results .subtotal th,
-.table-results .subtotal td,
-.table-results .total th,
-.table-results .total td {
-  background-color: #f9fafa;
-  font-weight: 700; }
-
-.table-results .total th,
-.table-results .total td {
+.table-results tbody .group-on td {
   background-color: #f1f3f4; }
 
-.table-results-font-s {
-  font-size: 0.92593rem; }
+.table-results tbody .group-start td:nth-child(2) {
+  border-top-width: 1px; }
 
-.table-results-font-l {
-  font-size: 1.92rem; }
+.table-results tbody .subtotal th,
+.table-results tbody .subtotal td,
+.table-results tbody .total th,
+.table-results tbody .total td {
+  background-color: #e3e7e8;
+  font-weight: 700; }
+
+.table-results tbody .total th,
+.table-results tbody .total td {
+  background-color: #d5dbdd;
+  white-space: normal; }
 
 .table-searches.table-responsive tbody tr td.query-deleted {
   background-color: #fad1d5;
