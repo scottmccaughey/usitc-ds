@@ -30,6 +30,7 @@
 icon,
 .icon {
   display: inline-block;
+  fill: currentColor;
   height: $icon-size-base;
   position: relative;
   width: $icon-size-base;
@@ -44,6 +45,69 @@ icon,
     stroke: none;
     width: 100%;
   }
+
+  // Available Icons
+  //
+  // Following are the currently available icons in the design system. Please send a request to the team if you would like to add new icons.
+  //
+  // Markup:
+  // Icons:
+  // africa
+  // alert
+  // arrow-down-circle
+  // arrow-down
+  // arrow-left-circle
+  // arrow-left
+  // arrow-right-circle
+  // arrow-right
+  // arrow-up-circle
+  // arrow-up
+  // back-to-start
+  // back
+  // chart-upward
+  // check-circle
+  // check
+  // chevron-down-circle
+  // chevron-down
+  // chevron-left-circle
+  // chevron-left
+  // chevron-right-circle
+  // chevron-right
+  // chevron-up-circle
+  // chevron-up
+  // circle-open
+  // circle
+  // copy-to-clipboard
+  // copy
+  // database
+  // download
+  // edit
+  // external
+  // forward-to-end
+  // forward
+  // globe-with-marker
+  // globe
+  // info
+  // link
+  // menu
+  // minus-circle
+  // minus
+  // plus-circle
+  // plus
+  // save
+  // search
+  // settings
+  // shaking-hands
+  // share
+  // table
+  // trash
+  // user
+  // x-circle
+  // x
+  //
+  // Styleguide Components.Icons.AvailableIcons
+  //
+  // Weight: 1
 
   // Icon Sizes
   //
@@ -177,7 +241,7 @@ icon,
   //
   // Styleguide Components.Icons.Alignment
   //
-  // Weight: 2
+  // Weight: 3
 
   // Centered Icon
   //

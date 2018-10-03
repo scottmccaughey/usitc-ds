@@ -17,6 +17,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { IconComponent } from './components/icon/icon.component';
+import { IconsComponent } from './components/icons/icons.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ParametersComponent } from './components/parameters/parameters.component';
 import { SectionComponent } from './components/section/section.component';
@@ -32,6 +33,7 @@ import { StyleguideComponent } from './components/styleguide/styleguide.componen
     HeaderComponent,
     HomeComponent,
     IconComponent,
+    IconsComponent,
     KeepHtmlPipe,
     MenuComponent,
     ParametersComponent,

@@ -1,0 +1,8 @@
+<ul class="kss-icons">
+  <li *ngFor="let icon of icons">
+    <div class="bold">{{icon}}</div>
+    <svg class="margin-top-half icon icon-xxxl">
+      <use [attr.xlink:href]="'/assets/icons/symbol/icons.svg#' + icon"></use>
+    </svg>
+  </li>
+</ul>

@@ -285,6 +285,31 @@
   }
 }
 
+.kss-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: $grid-gap-row $grid-gap-col;
+  padding: $space-m !important;
+
+  @include breakpoint(m) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(l) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  li {
+    border: $border-base;
+    color: $color-theme-base-text;
+    list-style: none;
+    margin-bottom: 0;
+    padding: $space-m;
+    text-align: center;
+  }
+}
+
 .kss-markup {
   position: relative;
 

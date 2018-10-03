@@ -15,7 +15,7 @@
     [parameterVals]="section.modifiers"></app-parameters>
   <div class="panel kss-panel padding-none border"
     *ngIf="section.markup">
-    <div *ngIf="!section.scss"
+    <div *ngIf="!section.scss && !section.icons"
       class="alt-off padding"
       [ngClass]="section.markupClass">
       <ng-container *ngIf="section.header === 'Icons'">
@@ -24,12 +24,14 @@
       <span [innerHTML]="section.markup | KeepHtmlPipe"></span>
     </div>
     <div class="kss-markup">
-      <app-code *ngIf="!section.scss"
+      <app-code *ngIf="!section.scss && !section.icons"
         [language]="'markup'"
         [code]="section.markup"></app-code>
       <app-code *ngIf="section.scss"
         [language]="'css'"
         [code]="section.scssSrc"></app-code>
+      <app-icons *ngIf="section.icons"
+        [icons]="section.iconsArray"></app-icons>
     </div>
   </div>
   <div *ngIf="section.showSource"

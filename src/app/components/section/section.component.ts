@@ -31,6 +31,9 @@ export class SectionComponent implements OnInit {
     if (this.section.markup && this.section.markup.startsWith('SCSS')) {
       this.section.scss = true;
       this.section.scssSrc = this.section.markup.substr(6);
+    } else if (this.section.markup && this.section.markup.startsWith('Icons')) {
+      this.section.icons = true;
+      this.section.iconsArray = this.section.markup.substr(7).split('\n');
     } else if (this.section.markup && this.section.markup.startsWith('Source')) {
       this.section.sourceFlag = true;
       this.section.markup = '';
@@ -45,5 +48,7 @@ export class SectionComponent implements OnInit {
     ) {
       this.section.showSource = true;
     }
+
+    console.log(this.section);
   }
 }
