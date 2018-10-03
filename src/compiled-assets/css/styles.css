@@ -651,9 +651,9 @@ textarea {
 .site-layout {
   display: grid;
   grid-template-areas: 'off-canvas-left site-content';
-  grid-template-columns: 400px 100vw;
+  grid-template-columns: 250px 100vw;
   height: 100vh;
-  left: -400px;
+  left: -250px;
   position: relative;
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
@@ -667,7 +667,7 @@ textarea {
   position: relative;
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
-  width: 400px; }
+  width: 250px; }
   .off-canvas > .button-close:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -1764,7 +1764,7 @@ body {
       overflow: initial;
       width: calc(100vw - 17px); }
     body.body-scrollable .site-layout {
-      grid-template-columns: 400px auto;
+      grid-template-columns: 250px auto;
       width: calc(100% + $off-canvas-width); }
 
 ::-moz-selection {

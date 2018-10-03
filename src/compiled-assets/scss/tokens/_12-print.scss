@@ -1,5 +1,5 @@
-$print-color-base: color(black);
-$print-color-background: color(white);
-$print-font-size: 12pt;
-$print-font-size-results: 5.5pt;
-$print-page-margin: 1cm;
+$print-color-base: color(black) !default;
+$print-color-background: color(white) !default;
+$print-font-size: 12pt !default;
+$print-font-size-results: 5.5pt !default;
+$print-page-margin: 1cm !default;

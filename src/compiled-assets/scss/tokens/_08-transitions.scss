@@ -1,5 +1,5 @@
-$transition-base: all 0.25s ease-in-out;
-$transition-base-time: 0.25s;
-$transition-base-easing: ease-in-out;
-$transition-long-time: 0.75s;
-$transition-max: 99rem;
+$transition-base: all 0.25s ease-in-out !default;
+$transition-base-time: 0.25s !default;
+$transition-base-easing: ease-in-out !default;
+$transition-long-time: 0.75s !default;
+$transition-max: 99rem !default;

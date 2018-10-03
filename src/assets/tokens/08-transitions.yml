@@ -21,8 +21,8 @@
 #
 # Weight: 8
 transition:
-  base:             all 0.25s ease-in-out
-  base-time:        0.25s
-  base-easing:      ease-in-out
-  long-time:        0.75s
-  max:              99rem
+  base:             all 0.25s ease-in-out !default
+  base-time:        0.25s !default
+  base-easing:      ease-in-out !default
+  long-time:        0.75s !default
+  max:              99rem !default

@@ -1,2 +1,2 @@
-$shadows-box-base: 0 $space-xxs $space-xxs 0 color(black);
-$shadows-box-focus: 0 0 $space-xxs $space-xxs color(cyan, 30);
+$shadows-box-base: 0 $space-xxs $space-xxs 0 color(black) !default;
+$shadows-box-focus: 0 0 $space-xxs $space-xxs color(cyan, 30) !default;

@@ -25,9 +25,9 @@
 # Weight: 12
 print:
   color:
-    base:           color(black)
-    background:     color(white)
+    base:           color(black) !default
+    background:     color(white) !default
   font:
-    size:           12pt
-    size-results:   5.5pt
-  page-margin:      1cm
+    size:           12pt !default
+    size-results:   5.5pt !default
+  page-margin:      1cm !default

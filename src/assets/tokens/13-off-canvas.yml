@@ -20,7 +20,7 @@
 #
 # Weight: 13
 off-canvas:
-  height:           100vh
-  shadow:           5px 0 10px 0 color(black, 0, 25)
-  transition:       left 0.75s ease-in-out
-  width:            400px
+  height:           100vh !default
+  shadow:           5px 0 10px 0 color(black, 0, 25) !default
+  transition:       left 0.75s ease-in-out !default
+  width:            250px !default
