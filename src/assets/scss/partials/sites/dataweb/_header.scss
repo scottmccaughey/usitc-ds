@@ -10,87 +10,45 @@
 .site-header {
   background-color: color(grey, 95);
   margin-bottom: $space-m;
+  text-align: center;
 
-  > nav > ul {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+  a {
+    color: $color-theme-base-text;
+    display: inline-block;
+    padding: $space-s;
+    text-decoration: none;
 
-    @include breakpoint(l) {
-      flex-wrap: nowrap;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border-width: 0;
+    color: inherit;
+    font-size: $font-size-xxl;
+    left: $space-s;
+    padding: 7px $space-s $space-s;
+    position: absolute;
+    top: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
     }
 
-    li {
-      align-items: stretch;
-      border-bottom: 1px solid color(grey, 90);
-      border-right: 1px solid color(grey, 90);
-      display: flex;
-      flex: 0 0 50%;
-      font-weight: $font-weight-bold;
-      list-style: none;
-      margin: 0;
-      max-width: 100%;
-      text-transform: uppercase;
-
-      &:first-child {
-        flex: 0 0 100%;
-      }
-
-      &:last-child {
-        border-right-width: 0;
-      }
-
-      @include breakpoint(m) {
-        flex: 0 0 25%;
-
-        &:first-child {
-          flex: 0 0 100%;
-        }
-      }
-
-      @include breakpoint(l) {
-        border-bottom-width: 0;
-        flex: 0 1 auto;
-
-        &:first-child {
-          flex: 1 1 auto;
-        }
-      }
-
-      &.site-name {
-        border-right-width: 0;
-        grid-column: 1 / span $content-header-links;
-        text-transform: uppercase;
-
-        @include breakpoint(l) {
-          grid-column: 1 / span 1;
-        }
-      }
-
-      a {
-        align-items: center;
-        background-image: none;
-        color: color(grey, 20);
-        display: flex;
-        justify-content: center;
-        padding: $space-s;
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-
-        @include breakpoint(l) {
-          padding: $space-s $space-m;
-          width: auto;
-        }
-
-        &:active,
-        &:focus,
-        &:hover {
-          background-color: color(cyan, 30);
-          color: color(white);
-        }
-      }
+    @include breakpoint(xl) {
+      top: -$space-xxl;
     }
+  }
+
+  .constrained {
+    position: relative;
   }
 }

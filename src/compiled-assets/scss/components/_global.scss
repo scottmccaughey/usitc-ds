@@ -28,11 +28,8 @@ body {
   font-variant-numeric: lining-nums;
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
+  overflow: hidden;
   position: relative;
-
-  &.has-off-canvas {
-    overflow: hidden;
-  }
 
   &.body-scrollable {
     overflow: auto;
@@ -45,6 +42,9 @@ body {
     }
 
     .site-content {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       overflow: initial;
       width: calc(100vw - 17px);
     }

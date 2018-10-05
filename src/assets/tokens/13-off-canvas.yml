@@ -14,7 +14,7 @@
 # $off-canvas-height      = 100vh                             - Sets the height of off-canvas elements
 # $off-canvas-shadow      = 5px 0 10px 0 color(black, 0, 25)  - Sets the box-shadow for off-canvas elements
 # $off-canvas-transition  = left 0.75s ease-in-out            - Sets the CSS transition when toggling off-canvas elements
-# $off-canvas-width       = 400px                             - Sets the width of off-canvas elements
+# $off-canvas-width       = 250px                             - Sets the width of off-canvas elements
 #
 # Styleguide Tokens.OffCanvas
 #
