@@ -129,11 +129,6 @@ abbr {
   text-transform: lowercase;
 }
 
-app-layout,
-app-root {
-  min-height: 100vh;
-}
-
 article {
   section {
     + section {

@@ -7,12 +7,12 @@
   <div *ngIf="section.description"
     class="kss-description"
     [innerHTML]="section.description | KeepHtmlPipe"></div>
-  <app-colors *ngIf="section.colors.length > 0"
-    [colorVals]="section.colors"></app-colors>
-  <app-parameters *ngIf="section.parameters.length > 0"
-    [parameterVals]="section.parameters"></app-parameters>
-  <app-parameters *ngIf="section.modifiers.length > 0"
-    [parameterVals]="section.modifiers"></app-parameters>
+  <ds-colors *ngIf="section.colors.length > 0"
+    [colorVals]="section.colors"></ds-colors>
+  <ds-parameters *ngIf="section.parameters.length > 0"
+    [parameterVals]="section.parameters"></ds-parameters>
+  <ds-parameters *ngIf="section.modifiers.length > 0"
+    [parameterVals]="section.modifiers"></ds-parameters>
   <div class="panel kss-panel padding-none border"
     *ngIf="section.markup">
     <div *ngIf="!section.scss && !section.icons"
@@ -24,14 +24,14 @@
       <span [innerHTML]="section.markup | KeepHtmlPipe"></span>
     </div>
     <div class="kss-markup">
-      <app-code *ngIf="!section.scss && !section.icons"
+      <ds-code *ngIf="!section.scss && !section.icons"
         [language]="'markup'"
-        [code]="section.markup"></app-code>
-      <app-code *ngIf="section.scss"
+        [code]="section.markup"></ds-code>
+      <ds-code *ngIf="section.scss"
         [language]="'css'"
-        [code]="section.scssSrc"></app-code>
-      <app-icons *ngIf="section.icons"
-        [icons]="section.iconsArray"></app-icons>
+        [code]="section.scssSrc"></ds-code>
+      <ds-icons *ngIf="section.icons"
+        [icons]="section.iconsArray"></ds-icons>
     </div>
   </div>
   <div *ngIf="section.showSource"

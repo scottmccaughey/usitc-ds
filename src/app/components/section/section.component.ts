@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-section',
+  selector: 'ds-section',
   templateUrl: './section.component.html',
   styles: []
 })
@@ -48,7 +48,5 @@ export class SectionComponent implements OnInit {
     ) {
       this.section.showSource = true;
     }
-
-    console.log(this.section);
   }
 }

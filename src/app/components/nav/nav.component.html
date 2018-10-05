@@ -1,0 +1,7 @@
+<ul *ngIf="menu">
+  <li *ngFor="let item of menu">
+    <a [class.nav-active]="item.url === route"
+      [class.nav-child]="item.child"
+      [routerLink]="item.url">{{item.name}}</a>
+  </li>
+</ul>

@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { mostReadable, readability, TinyColor } from '@ctrl/tinycolor';
 
 @Component({
-  selector: 'app-colors',
+  selector: 'ds-colors',
   templateUrl: './colors.component.html',
   styles: []
 })

@@ -17,24 +17,7 @@
   display: flex;
   min-height: 100vh;
 
-  > app-root {
-    width: 100%;
-
-    > .grid {
-      min-height: 100vh;
-      grid-template-rows: min-content min-content auto;
-
-      @include breakpoint(m) {
-        grid-template-rows: min-content auto;
-      }
-    }
-  }
-
-  app-menu {
-    display: flex;
-  }
-
-  app-parameters {
+  ds-parameters {
     + .kss-panel {
       margin-top: $space-m;
     }
@@ -42,10 +25,6 @@
     + .kss-source {
       border-top-width: 0;
     }
-  }
-
-  section {
-    margin: $space-m 0;
   }
 
   .panel {
@@ -329,44 +308,6 @@
   }
 }
 
-.kss-menu {
-  padding: $space-m 0;
-  width: 100%;
-
-  a {
-    color: $color-theme-dark-text;
-    display: block;
-    font-size: $font-size-l;
-    font-weight: $font-weight-bold;
-    padding: $space-xs $space-m;
-    text-decoration: none;
-
-    &:active,
-    &:focus,
-    &:hover,
-    &.kss-menu-active {
-      background-color: $color-theme-dark-background-alt;
-      color: $color-theme-dark-text;
-    }
-
-    &.kss-menu-child {
-      font-size: $font-size-m;
-      font-weight: $font-weight-normal;
-      padding: $space-xxs $space-m $space-xxs $space-l;
-    }
-  }
-
-  li {
-    list-style: none;
-    margin: 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-}
-
 .kss-panel {
   margin: 0;
 
@@ -563,5 +504,11 @@
   rect {
     height: 100%;
     width: 100%;
+  }
+}
+
+.site-outlet-kss {
+  section {
+    margin: $space-m 0;
   }
 }

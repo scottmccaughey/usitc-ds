@@ -685,46 +685,46 @@ textarea {
     .site-layout {
       grid-template-columns: 250px 1fr;
       left: 0;
-      width: 100%; } }
+      width: 100vw; } }
   .site-layout.site-nav-open {
     left: 0; }
 
-.site-nav {
+.site-nav.on-dark {
   background-color: #083b45;
   grid-area: site-nav;
   height: 100vh;
   overflow-y: auto;
   position: relative; }
-  .site-nav > .button-close {
+  .site-nav.on-dark > .button-close {
     background-color: #083b45;
     color: white; }
-    .site-nav > .button-close:active, .site-nav > .button-close:focus, .site-nav > .button-close:hover {
+    .site-nav.on-dark > .button-close:active, .site-nav.on-dark > .button-close:focus, .site-nav.on-dark > .button-close:hover {
       background-color: #083b45;
       color: #a3e7f5; }
     @media (min-width: 1600px) {
-      .site-nav > .button-close {
+      .site-nav.on-dark > .button-close {
         display: none; } }
-  .site-nav a {
+  .site-nav.on-dark a {
     display: block;
     font-size: 1.92rem;
     font-weight: 700;
     padding: 0.83333rem 2rem;
     text-decoration: none; }
-    .site-nav a:active, .site-nav a:focus, .site-nav a:hover, .site-nav a.nav-active {
+    .site-nav.on-dark a:active, .site-nav.on-dark a:focus, .site-nav.on-dark a:hover, .site-nav.on-dark a.nav-active {
       background-color: #0f758a;
       color: white; }
-    .site-nav a.nav-child {
+    .site-nav.on-dark a.nav-child {
       font-size: 1.6rem;
       font-weight: 400;
       padding: 0.33333rem 3rem; }
-    .site-nav a[href*='//']:not([href*="dataweb.usitc.gov"]) {
+    .site-nav.on-dark a[href*='//']:not([href*="dataweb.usitc.gov"]) {
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiB3aGl0ZTsgfTwvc3R5bGU+PHBhdGggZD0iTTk0OC43NSwzMjQuMTQsODc5LjI1LDIyMSw2NzYuNTksNDIzLjY0YTIwLjc2LDIwLjc2LDAsMCwxLTI5LjI2LDBsLTczLjE2LTczLjE2YTIwLjc2LDIwLjc2LDAsMCwxLDAtMjkuMjdMNzc2LjgyLDExOC41NmwtMTAxLTY3LjMxYy0xNi44My0xMS04Ljc4LTM2LjU4LDExLTM3LjMxTDk3OC43NCwwYzEyLjQ0LS43MywyMiw4Ljc4LDIxLjIyLDIxLjIybC0xMy45LDI5MS45Qzk4NC42LDMzMy42NSw5NTkuNzIsMzQxLDk0OC43NSwzMjQuMTRaIi8+PHBhdGggZD0iTTgyNi4zMiwzNTUuMjVWODEwLjUzYTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LDE1LjI2SDE4OWExNS42NywxNS42NywwLDAsMS0xNS4yNy0xNS4yNlYxODguNDJjMC03LjgzLDYuODUtMTQuMjEsMTUuMjctMTQuMjFINjQzLjY3bDUwLTUwSDE4OWMtMzUuNzksMC02NS4yNywyOC40Mi02NS4yNyw2NC4yMVY4MTAuNTNjMCwzNS43OSwyOS40OCw2NS4yNiw2NS4yNyw2NS4yNmg2MjIuMWMzNS43OSwwLDY1LjI3LTI5LjQ3LDY1LjI3LTY1LjI2VjMwNS4yNVoiLz48L3N2Zz4=) !important;
       background-position: center right 2rem;
       padding-right: 3rem; }
-  .site-nav li {
+  .site-nav.on-dark li {
     list-style: none;
     margin: 0; }
-  .site-nav ul {
+  .site-nav.on-dark ul {
     margin: 0;
     padding: 0; }
 
@@ -1284,7 +1284,7 @@ simple-select + simple-select .select-child-field {
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     z-index: 1; }
-    .floating-label-group label + app-field-error-display > .state-error {
+    .floating-label-group label + .field-error-display > .state-error {
       border-top-width: 0; }
 
 .floating-label-select {
@@ -1321,7 +1321,7 @@ simple-select + simple-select .select-child-field {
 
 .form-group input {
   width: 100%; }
-  .form-group input + app-field-error-display > .state-error {
+  .form-group input + .field-error-display > .state-error {
     border-top-width: 0; }
 
 .form-group label {
@@ -1452,7 +1452,7 @@ simple-select + simple-select .select-child-field {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%; }
-  .input-icon + app-field-error-display > [class*='state-'] {
+  .input-icon + .field-error-display > [class*='state-'] {
     border-top-width: 0 !important; }
 
 .input-with-button {
@@ -1895,10 +1895,6 @@ a {
 abbr {
   font-variant: small-caps;
   text-transform: lowercase; }
-
-app-layout,
-app-root {
-  min-height: 100vh; }
 
 article section + section {
   margin-top: 3rem; }
@@ -3364,7 +3360,7 @@ a rect {
     .login-form.login-error > div:last-child, .login-form.login-message > div:last-child, .login-form.login-success > div:last-child, .login-form.login-warning > div:last-child {
       padding: 0 2rem 2rem 0; } }
   @media (min-width: 1200px) {
-    .login-form.login-error app-error-message, .login-form.login-message app-error-message, .login-form.login-success app-error-message, .login-form.login-warning app-error-message {
+    .login-form.login-error .login-error-message, .login-form.login-message .login-error-message, .login-form.login-success .login-error-message, .login-form.login-warning .login-error-message {
       grid-column-start: 2;
       grid-column-end: 5; } }
   @media (min-width: 800px) {

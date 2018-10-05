@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-parameters',
+  selector: 'ds-parameters',
   templateUrl: './parameters.component.html',
   styles: []
 })

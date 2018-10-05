@@ -1,4 +1,4 @@
-<article class="kss-home">
+<article class="kss-home constrained padding">
   <h1 class="margin-bottom-half">USITC Design System</h1>
   <h2 class="h5 unbold">Resources, tooling and design guidelines for building websites with USITC’s front-end framework.</h2>
   <h3>Introduction</h3>
@@ -7,21 +7,21 @@
   <h3>Using the USITC Design System</h3>
   <p>The USITC Design System is distributed via <a href="https://www.npmjs.com/package/@usitc/usitc-ds">npm</a>. As the design system grows, it may be split into individual npm packages, but at the present time you’ll need to add the entire system to your project.</p>
   <p>After <a href="https://docs.npmjs.com/getting-started/installing-node">installing npm</a>, you can install the USITC Design System with this command:</p>
-  <app-code [language]="'bash'" [code]="'$ npm install --save @usitc/usitc-ds'"></app-code>
+  <ds-code [language]="'bash'" [code]="'$ npm install --save @usitc/usitc-ds'"></ds-code>
   <h4><abbr>SCSS</abbr></h4>
   <p>The style source files included are written in <a href="http://sass-lang.com/" rel="nofollow">Sass</a> (<abbr>SCSS</abbr>).</p>
   <p>To use the Sass files, you can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this:
   </p>
-  <app-code [language]="'css'" [code]="'@import \'@usitc/usitc-ds/src/compiled-assets/scss/styles\';'"></app-code>
+  <ds-code [language]="'css'" [code]="'@import \'@usitc/usitc-ds/src/compiled-assets/scss/styles\';'"></ds-code>
   <p>This will allow you to take advantage of the Sass functions and variables generated from our design tokens, and use them to write your own styles using our color system, spacing scale, etc.</p>
   <p>You can also import specific portions of the code by importing those partials from the <code>src/compiled-assets/scss</code> folder and its subfolders. <em>Make sure you import any requirements along with these.</em>
   </p>
   <h4><abbr>CSS</abbr></h4>
   <p>To use the compiled <abbr>CSS</abbr>, you can add this line to your <abbr>HTML</abbr>:</p>
-  <app-code [language]="'markup'" [code]="'<link rel=\'stylesheet\' href=\'/node_modules/@usitc/usitc-ds/src/compiled-assets/css/styles.css\'>'"></app-code>
+  <ds-code [language]="'markup'" [code]="'<link rel=\'stylesheet\' href=\'/node_modules/@usitc/usitc-ds/src/compiled-assets/css/styles.css\'>'"></ds-code>
 </article>
 
-<article>
+<article class="kss-home constrained padding">
 
   <hr>
 
@@ -209,7 +209,7 @@
   </div>
 </article>
 
-<article class="margin-top-double margin-bottom-double">
+<article class="kss-home constrained padding margin-top-double margin-bottom-double">
   <table class="table margin-bottom">
     <tr>
       <td style="height: 100px; background-color: hsl(215, 10%, 20%);"></td>
@@ -349,7 +349,7 @@
   </table>
 </article>
 
-<article>
+<article class="kss-home constrained padding">
   <section>
     <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Integer congue malesuada tortor, sed volutpat nisi euismod at. Aliquam id purus quam. Etiam sollicitudin turpis sed metus vulputate pulvinar. Nullam sapien libero, dictum sit amet tristique vitae, ullamcorper dictum nulla. Integer eleifend iaculis metus ut cursus. Nullam blandit iaculis augue. Etiam dignissim bibendum lacus, in semper nisl. Pellentesque nec iaculis tortor, in interdum orci. Cras placerat posuere neque tempus consequat. Donec a tellus vestibulum, sollicitudin nulla vitae, convallis ante. Nullam vel nisl at nulla euismod tincidunt. Mauris eget sollicitudin magna.</p>
   </section>
@@ -426,130 +426,5 @@
     <progress class="progress" value="100" max="100">
       100%
     </progress>
-  </section>
-
-  <section>
-    <h2>Grid System</h2>
-    <p>Our grid has 12 columns and includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col" class="text-center">
-            Extra small<br>
-            <small>≥400px</small>
-          </th>
-          <th scope="col" class="text-center">
-            Small<br>
-            <small>≥600px</small>
-          </th>
-          <th scope="col" class="text-center">
-            Medium<br>
-            <small>≥800px</small>
-          </th>
-          <th scope="col" class="text-center">
-            Large<br>
-            <small>≥1200px</small>
-          </th>
-          <th scope="col" class="text-center">
-            Extra large<br>
-            <small>≥1600px</small>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th class="text-left" scope="row">Class prefix</th>
-          <td class="text-center"><code>.g-xs-</code></td>
-          <td class="text-center"><code>.g-sm-</code></td>
-          <td class="text-center"><code>.g-md-</code></td>
-          <td class="text-center"><code>.g-lg-</code></td>
-          <td class="text-center"><code>.g-xl-</code></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h3>Basic Usage</h3>
-    <p>Add a <code class="language-markup">class="grid"</code> to an element that wraps around your grid cells. Any direct children of that element will be a grid cell. You can add classes to these grid cells to control their width at different screen widths. See the examples below to get a basic understanding of the code required.</p>
-  </section>
-
-  <section>
-    <h3>Simple Two-Column Layout</h3>
-    <p>Collapses to a single column when the screen width is less than the <strong>medium</strong> breakpoint (800px).</p>
-    <div class="grid">
-      <div class="g-m-6">.g-m-6</div>
-      <div class="g-m-6">.g-m-6</div>
-    </div>
-    <!-- <prism-block [code]="grid1" [language]="'markup'"></prism-block> -->
-  </section>
-
-  <section>
-    <h3>Simple Three-Column Layout</h3>
-    <p>Collapses to a single column when the screen width is less than the <strong>small</strong> breakpoint (600px).</p>
-    <div class="grid">
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-    </div>
-    <!-- <prism-block [code]="grid2" [language]="'markup'"></prism-block> -->
-  </section>
-
-  <section>
-    <h3>Simple Four-Column Layout</h3>
-    <p>Collapses to two columns when the screen width is less than the <strong>small</strong> breakpoint (600px), and to a single column when the screen width is less than the <strong>medium</strong> breakpoint (800px).</p>
-    <div class="grid">
-      <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
-      <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
-      <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
-      <div class="g-s-6 g-m-3">.g-s-6 .g-m-3</div>
-    </div>
-    <!-- <prism-block [code]="grid3" [language]="'markup'"></prism-block> -->
-  </section>
-
-  <section>
-    <h3>Complex Multi-Row Layout</h3>
-    <p>Our grid system doesn’t limit you to a single row. Your content can flow onto multiple rows at different screen widths.</p>
-    <p class="tip"><strong>Tip:</strong> Test your grid at different screen widths to ensure that things collapse as you expect. If a grid cell won’t fit on a row, it will simply drop down to the next row.</p>
-    <div class="grid">
-      <div class="g-m-8 g-l-6">.g-m-8 .g-l-6</div>
-      <div class="g-m-4 g-l-4">.g-m-4 .g-l-4</div>
-      <div class="g-m-6 g-l-2">.g-m-6 .g-l-2</div>
-      <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
-      <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
-      <div class="g-m-6 g-l-4">.g-m-6 .g-l-4</div>
-    </div>
-    <!-- <prism-block [code]="grid4" [language]="'markup'"></prism-block> -->
-  </section>
-
-  <section>
-    <h3>Gutters</h3>
-    <p>You can add gutters to your grid using <code class="language-markup">class="grid-gap"</code>. You can also use <code class="language-markup">class="grid-gap-col"</code> for only horizontal gutters and <code class="language-markup">class="grid-gap-row"</code> for only vertical gutters.</p>
-    <div class="grid grid-gap">
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-    </div>
-    <div class="grid grid-gap-col">
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-    </div>
-    <div class="grid grid-gap-row">
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-      <div class="g-s-4">.g-s-4</div>
-    </div>
-    <!-- <prism-block [code]="grid5" [language]="'markup'"></prism-block> -->
   </section>
 </article>

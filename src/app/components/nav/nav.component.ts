@@ -3,11 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../../services/config.service';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styles: []
+  selector: 'ds-nav',
+  templateUrl: './nav.component.html'
 })
-export class MenuComponent implements OnInit {
+export class NavComponent implements OnInit {
   kss: object;
   menu = [];
   route: string;

@@ -50,7 +50,7 @@
   @include breakpoint(xl) {
     grid-template-columns: $off-canvas-width 1fr;
     left: 0;
-    width: 100%;
+    width: 100vw;
   }
 
   &.site-nav-open {
@@ -58,7 +58,7 @@
   }
 }
 
-.site-nav {
+.site-nav.on-dark {
   background-color: color(cyan, 15);
   grid-area: site-nav;
   height: $off-canvas-height;

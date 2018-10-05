@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ConfigService } from '../../services/config.service';
 
 @Component({
-  selector: 'app-breadcrumb',
+  selector: 'ds-breadcrumb',
   templateUrl: './breadcrumb.component.html',
   styles: []
 })

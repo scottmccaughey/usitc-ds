@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-error',
+  selector: 'ds-error',
   templateUrl: './error.component.html',
   styles: []
 })

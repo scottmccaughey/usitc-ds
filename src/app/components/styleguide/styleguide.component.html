@@ -1,9 +1,10 @@
-<ng-container *ngIf="section">
-  <app-breadcrumb [section]="section"></app-breadcrumb>
-  <app-section [section]="section"></app-section>
+<div *ngIf="section"
+  class="constrained padding">
+  <ds-breadcrumb [section]="section"></ds-breadcrumb>
+  <ds-section [section]="section"></ds-section>
   <ng-container *ngIf="subSections">
-    <app-section *ngFor="let section of subSections"
-      [section]="section"></app-section>
+    <ds-section *ngFor="let section of subSections"
+      [section]="section"></ds-section>
   </ng-container>
   <ul *ngIf="subSectionLinks"
     class="kss-sub-section-links">
@@ -12,4 +13,4 @@
         [innerHTML]="section.header"></a>
     </li>
   </ul>
-</ng-container>
+</div>

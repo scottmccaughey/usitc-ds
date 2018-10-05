@@ -11,10 +11,9 @@ import { ConfigService } from './services/config.service';
 import { StyleguideComponent } from './components/styleguide/styleguide.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styles: [],
-  providers: [ Location, { provide: LocationStrategy, useClass: PathLocationStrategy } ]
+  selector: 'ds-root',
+  template: `<ds-layout></ds-layout>`,
+  providers: [Location, { provide: LocationStrategy, useClass: PathLocationStrategy }]
 })
 export class AppComponent implements OnInit {
   kss: object;
@@ -28,10 +27,10 @@ export class AppComponent implements OnInit {
     private location: Location,
     private config: ConfigService
   ) {
-    this.config.kss.subscribe((kss) => (this.kss = kss));
-    this.config.route.subscribe((route) => (this.route = route));
+    this.config.kss.subscribe(kss => (this.kss = kss));
+    this.config.route.subscribe(route => (this.route = route));
 
-    this.kss['sections'].forEach((section) => {
+    this.kss['sections'].forEach(section => {
       const obj = {};
 
       obj['path'] = section.referenceURI.replace(/-/g, '/');
@@ -44,19 +43,19 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
+      .pipe(filter(event => event instanceof NavigationEnd))
       .pipe(map(() => this.activatedRoute))
       .pipe(
-        map((route) => {
+        map(route => {
           while (route.firstChild) {
             route = route.firstChild;
           }
           return route;
         })
       )
-      .pipe(filter((route) => route.outlet === 'primary'))
-      .pipe(mergeMap((route) => route.data))
-      .subscribe((event) => {
+      .pipe(filter(route => route.outlet === 'primary'))
+      .pipe(mergeMap(route => route.data))
+      .subscribe(event => {
         const pageTitle =
           event['title'] === 'Home'
             ? 'USITC Design System'
@@ -64,5 +63,13 @@ export class AppComponent implements OnInit {
         this.titleService.setTitle(pageTitle);
         this.config.changeRoute(this.location.path());
       });
+
+    this.router.events.subscribe(evt => {
+      if (evt instanceof NavigationEnd) {
+        this.router.navigated = false;
+        this.config.toggleNav(true);
+        window.scrollTo(0, 0);
+      }
+    });
   }
 }

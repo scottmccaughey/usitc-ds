@@ -8,15 +8,21 @@ import * as kssConfig from '../../compiled-assets/styleguide/kss.json';
 })
 export class ConfigService {
   private configSource = new BehaviorSubject<object>(kssConfig);
-  private routeSource = new BehaviorSubject<string>('');
-
   kss = this.configSource.asObservable();
+
+  private routeSource = new BehaviorSubject<string>('');
   route = this.routeSource.asObservable();
 
-  constructor() {}
+  private navOpenSource = new BehaviorSubject<boolean>(false);
+  navOpen = this.navOpenSource.asObservable();
 
   changeRoute(route: string) {
     this.routeSource.next(route);
+  }
+
+  toggleNav(navOpen: boolean) {
+    navOpen = !navOpen;
+    this.navOpenSource.next(navOpen);
   }
 
   unCamelCase(str) {

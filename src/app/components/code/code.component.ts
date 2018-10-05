@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-code',
+  selector: 'ds-code',
   templateUrl: './code.component.html',
   styles: []
 })

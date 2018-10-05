@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../../services/config.service';
 
 @Component({
-  selector: 'app-styleguide',
+  selector: 'ds-styleguide',
   templateUrl: './styleguide.component.html',
   styles: []
 })
