@@ -3199,9 +3199,8 @@ a rect {
     background-color: transparent;
     border-width: 0;
     color: inherit;
-    font-size: 2.7648rem;
     left: 1rem;
-    padding: 7px 1rem 1rem;
+    padding: 0.85rem 1rem;
     position: absolute;
     top: 0; }
     .site-header button:active, .site-header button:focus, .site-header button:hover {

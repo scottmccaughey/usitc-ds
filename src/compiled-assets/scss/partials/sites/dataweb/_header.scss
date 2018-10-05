@@ -30,9 +30,8 @@
     background-color: transparent;
     border-width: 0;
     color: inherit;
-    font-size: $font-size-xxl;
     left: $space-s;
-    padding: 7px $space-s $space-s;
+    padding: ($space-s * 0.85) $space-s;
     position: absolute;
     top: 0;
 
