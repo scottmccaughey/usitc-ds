@@ -85,7 +85,8 @@
     display: block;
     font-size: $font-size-l;
     font-weight: $font-weight-bold;
-    padding: ($space-xs + $space-xxs) $space-m;
+    line-height: $line-height-header;
+    padding: $space-s $space-m;
     text-decoration: none;
 
     &:active,
@@ -99,7 +100,7 @@
     &.nav-child {
       font-size: $font-size-m;
       font-weight: $font-weight-normal;
-      padding: $space-xxs $space-l;
+      padding: $space-xs $space-l;
     }
 
     &[href*='//']:not([href*="dataweb.usitc.gov"]) {
