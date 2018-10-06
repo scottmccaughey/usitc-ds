@@ -683,7 +683,7 @@ textarea {
   width: calc(100vw + 250px); }
   @media (min-width: 1600px) {
     .site-layout {
-      grid-template-columns: 250px 1fr;
+      grid-template-columns: 250px auto;
       left: 0;
       width: 100vw; } }
   .site-layout.site-nav-open {
@@ -1813,7 +1813,7 @@ body {
       margin-left: 1vw;
       margin-right: 1vw;
       max-width: none;
-      width: 98vw; }
+      width: calc(98vw - 250px); }
     body.body-scrollable .site-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1827,7 +1827,7 @@ body {
       width: calc(100vw - 17px); }
     body.body-scrollable .site-layout {
       grid-template-columns: 250px auto;
-      width: calc(100% + $off-canvas-width); }
+      width: calc(100% + 250px); }
 
 ::-moz-selection {
   background-color: #0f758a;

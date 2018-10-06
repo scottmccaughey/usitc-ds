@@ -48,7 +48,7 @@
   width: calc(100vw + #{$off-canvas-width});
 
   @include breakpoint(xl) {
-    grid-template-columns: $off-canvas-width 1fr;
+    grid-template-columns: $off-canvas-width auto;
     left: 0;
     width: 100vw;
   }
