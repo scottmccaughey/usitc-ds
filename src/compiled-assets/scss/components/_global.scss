@@ -32,6 +32,10 @@ body {
   position: relative;
 
   &.body-scrollable {
+    .constrained {
+      width: initial;
+    }
+
     .site-content {
       display: flex;
       flex-direction: column;

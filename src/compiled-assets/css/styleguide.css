@@ -1808,6 +1808,8 @@ body {
   line-height: 1.5;
   overflow: hidden;
   position: relative; }
+  body.body-scrollable .constrained {
+    width: initial; }
   body.body-scrollable .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
