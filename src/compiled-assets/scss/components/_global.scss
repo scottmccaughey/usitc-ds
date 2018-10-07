@@ -32,12 +32,6 @@ body {
   position: relative;
 
   &.body-scrollable {
-    .constrained {
-      margin-left: 1vw;
-      margin-right: 1vw;
-      width: initial;
-    }
-
     .site-content {
       display: flex;
       flex-direction: column;
