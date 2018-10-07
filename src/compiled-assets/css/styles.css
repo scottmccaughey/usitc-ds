@@ -1807,27 +1807,21 @@ body {
   line-height: 1.5;
   overflow: hidden;
   position: relative; }
-  body.body-scrollable {
-    overflow: auto; }
-    body.body-scrollable .constrained {
-      margin-left: 1vw;
-      margin-right: 1vw;
-      max-width: none;
-      width: calc(98vw - 250px); }
-    body.body-scrollable .site-content {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      min-height: 100vh;
-      overflow: initial;
-      width: calc(100vw - 17px); }
-    body.body-scrollable .site-layout {
-      grid-template-columns: 250px auto;
-      width: calc(100% + 250px); }
+  body.body-scrollable .constrained {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: initial; }
+  body.body-scrollable .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh; }
+  body.body-scrollable .site-layout {
+    grid-template-columns: 250px auto; }
 
 ::-moz-selection {
   background-color: #0f758a;

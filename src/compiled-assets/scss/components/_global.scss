@@ -35,21 +35,17 @@ body {
     .constrained {
       margin-left: 1vw;
       margin-right: 1vw;
-      max-width: none;
-      width: calc(98vw - #{$off-canvas-width});
+      width: initial;
     }
 
     .site-content {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      overflow: auto;
-      width: calc(100vw - 17px);
     }
 
     .site-layout {
       grid-template-columns: $off-canvas-width auto;
-      width: calc(100% + #{$off-canvas-width});
     }
   }
 }
