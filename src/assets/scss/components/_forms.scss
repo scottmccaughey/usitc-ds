@@ -47,12 +47,12 @@ select {
   }
 }
 
-simple-select {
+dw-simple-select {
   .select-child-field {
     margin-top: 0;
   }
 
-  + simple-select .select-child-field {
+  + dw-simple-select .select-child-field {
     margin-top: $space-m;
 
     @include breakpoint(l) {
@@ -362,7 +362,7 @@ simple-select {
   &:active,
   &:focus,
   &:hover {
-    icon {
+    dw-icon {
       use {
         fill: $color-theme-base-text;
       }
@@ -373,7 +373,7 @@ simple-select {
     }
   }
 
-  icon {
+  dw-icon {
     flex-shrink: 0;
     height: $icon-size-l;
     margin-right: $space-s;

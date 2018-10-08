@@ -1105,13 +1105,13 @@ select[multiple] {
   select[multiple] option {
     padding: 0.5rem 2rem; }
 
-simple-select .select-child-field {
+dw-simple-select .select-child-field {
   margin-top: 0; }
 
-simple-select + simple-select .select-child-field {
+dw-simple-select + dw-simple-select .select-child-field {
   margin-top: 2rem; }
   @media (min-width: 1200px) {
-    simple-select + simple-select .select-child-field {
+    dw-simple-select + dw-simple-select .select-child-field {
       margin-top: 0; } }
 
 .checkbox input ~ .control-indicator::before {
@@ -1349,25 +1349,25 @@ simple-select + simple-select .select-child-field {
   .form-groups > * + * > .form-group {
     padding-top: 0; }
 
-.form-read-more:active icon use, .form-read-more:focus icon use, .form-read-more:hover icon use {
+.form-read-more:active dw-icon use, .form-read-more:focus dw-icon use, .form-read-more:hover dw-icon use {
   fill: #2e3638; }
 
-.form-read-more:active icon path, .form-read-more:focus icon path, .form-read-more:hover icon path {
+.form-read-more:active dw-icon path, .form-read-more:focus dw-icon path, .form-read-more:hover dw-icon path {
   all: inherit; }
 
-.form-read-more icon {
+.form-read-more dw-icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 1.125em;
   margin-right: 1rem;
   width: 1.125em; }
   @media (min-width: 1200px) {
-    .form-read-more icon {
+    .form-read-more dw-icon {
       height: 1.6875em;
       width: 1.6875em; } }
-  .form-read-more icon use {
+  .form-read-more dw-icon use {
     fill: #0f758a; }
-  .form-read-more icon path {
+  .form-read-more dw-icon path {
     all: inherit; }
 
 .form-read-more span {
@@ -2251,15 +2251,15 @@ h6,
   margin-top: -1rem;
   text-transform: uppercase; }
 
-icon,
+dw-icon,
 .icon {
   display: inline-block;
   fill: currentColor;
   height: 0.75em;
   position: relative;
   width: 0.75em; }
-  icon.svg,
-  icon > svg,
+  dw-icon.svg,
+  dw-icon > svg,
   .icon.svg,
   .icon > svg {
     -webkit-box-align: stretch;
@@ -2275,38 +2275,38 @@ icon,
             justify-content: stretch;
     stroke: none;
     width: 100%; }
-  icon.icon-s,
+  dw-icon.icon-s,
   .icon.icon-s {
     height: 0.5em;
     width: 0.5em; }
-  icon.icon-l,
+  dw-icon.icon-l,
   .icon.icon-l {
     height: 1.125em;
     width: 1.125em; }
-  icon.icon-xl,
+  dw-icon.icon-xl,
   .icon.icon-xl {
     height: 1.6875em;
     width: 1.6875em; }
-  icon.icon-xxl,
+  dw-icon.icon-xxl,
   .icon.icon-xxl {
     height: 2.53125em;
     width: 2.53125em; }
-  icon.icon-xxxl,
+  dw-icon.icon-xxxl,
   .icon.icon-xxxl {
     height: 3.79688em;
     width: 3.79688em; }
-  icon.icon-xxxxl,
+  dw-icon.icon-xxxxl,
   .icon.icon-xxxxl {
     height: 5.69531em;
     width: 5.69531em; }
-  icon.icon-centered,
+  dw-icon.icon-centered,
   .icon.icon-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-height: 100%;
     max-width: 100%; }
-  icon.icon-right,
+  dw-icon.icon-right,
   .icon.icon-right {
     display: block;
     margin-left: auto;
@@ -3281,7 +3281,7 @@ a rect {
         font-size: 2.7648rem; } }
     .site-home-big-select button:active, .site-home-big-select button:focus, .site-home-big-select button:hover {
       background-color: #0f758a; }
-    .site-home-big-select button icon {
+    .site-home-big-select button dw-icon {
       height: 1.125em;
       margin-left: 1rem;
       width: 1.125em; }
@@ -3321,9 +3321,9 @@ a rect {
   .trade-data-reports > a:active, .trade-data-reports > a:focus, .trade-data-reports > a:hover {
     background: #0f758a;
     color: white; }
-    .trade-data-reports > a:active icon, .trade-data-reports > a:focus icon, .trade-data-reports > a:hover icon {
+    .trade-data-reports > a:active dw-icon, .trade-data-reports > a:focus dw-icon, .trade-data-reports > a:hover dw-icon {
       color: white; }
-  .trade-data-reports > a icon {
+  .trade-data-reports > a dw-icon {
     color: #2e3638; }
 
 .login-error input {

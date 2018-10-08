@@ -107,7 +107,7 @@
       background-color: color(cyan, 30);
     }
 
-    icon {
+    dw-icon {
       height: $icon-size-l;
       margin-left: $space-s;
       width: $icon-size-l;
@@ -167,12 +167,12 @@
       background: $color-theme-dark-background-alt;
       color: $color-theme-dark-text;
 
-      icon {
+      dw-icon {
         color: $color-theme-dark-text;
       }
     }
 
-    icon {
+    dw-icon {
       color: $color-theme-base-text;
     }
   }
