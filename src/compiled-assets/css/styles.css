@@ -3703,10 +3703,10 @@ a rect {
   .show-query-button-container {
     text-align: right; } }
 
-.site-query simple-select .form-group {
+.site-query dw-simple-select .form-group {
   margin-top: 2rem; }
 
-.site-query simple-select:first-child .form-group {
+.site-query dw-simple-select:first-child .form-group {
   margin-top: 0; }
 
 .site-search:not(.site-query-loading) {
