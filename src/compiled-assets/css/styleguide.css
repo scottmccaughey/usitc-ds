@@ -449,6 +449,9 @@ textarea {
       display: -ms-flexbox;
       display: flex; } }
 
+.flex-separated > *:last-child {
+  margin-top: 2rem; }
+
 @media (min-width: 800px) {
   .flex-separated > * {
     border-right: 1px solid #e3e7e8;
@@ -458,6 +461,7 @@ textarea {
       padding-left: 0; }
     .flex-separated > *:last-child {
       border-right-width: 0;
+      margin-top: 1rem;
       padding-right: 0; } }
 
 @media (min-width: 400px) {
@@ -3039,6 +3043,9 @@ dw-icon,
 
 .bold {
   font-weight: 700; }
+
+.italic {
+  font-style: italic; }
 
 .max-line blockquote,
 .max-line h1,
