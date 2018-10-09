@@ -1,6 +1,10 @@
 <header role="header" id="site-header" class="site-header">
-  <div class="constrained">
-    <button (click)="config.toggleNav(navOpen)">☰</button>
-    <a routerLink="/"><strong>design</strong>.usitc.gov</a>
-  </div>
+  <ul class="header-nav constrained">
+    <li class="button-nav">
+      <button (click)="config.toggleNav(navOpen)">
+        <icon name="menu" class="icon-xl"></icon>
+      </button>
+    </li>
+    <li class="header-home"><a routerLink="/"><strong>dataweb</strong>.usitc.gov</a></li>
+  </ul>
 </header>

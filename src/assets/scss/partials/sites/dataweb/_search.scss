@@ -280,10 +280,6 @@
 }
 
 .site-search {
-  &:not(.site-query-loading) {
-    margin-top: (-$space-m);
-  }
-
   h2:only-child {
     margin-bottom: 0;
   }
