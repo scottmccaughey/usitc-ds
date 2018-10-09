@@ -9,7 +9,6 @@
 
 .site-header {
   background-color: color(grey, 95);
-  margin-bottom: $space-m;
   text-align: center;
 
   a {
@@ -50,4 +49,9 @@
   .constrained {
     position: relative;
   }
+}
+
+.site-home-header {
+  padding: $space-xxxl $space-m;
+  text-align: center;
 }

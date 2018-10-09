@@ -16,3 +16,16 @@
     text-align: center;
   }
 }
+
+.footer-links {
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    list-style: none;
+    padding: 0 $space-s 0;
+    white-space: nowrap;
+  }
+}
