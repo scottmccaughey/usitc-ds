@@ -14,7 +14,7 @@
 #
 # These settings (in the form of a [Sass map](https://www.sitepoint.com/using-sass-maps/)) control the breakpoints for our media queries for responsive design.
 #
-# $breakpoints = (xs: 400px, s: 600px, m: 800px, l: 1200px, xl: 1600px) - ​
+# $breakpoints = (xs: 400px, s: 600px, m: 800px, l: 1200px, xl: 1600px, xxl: 2400px, xxxl: 4800px) - ​
 #
 # Styleguide Tokens.Breakpoints
 #
@@ -25,3 +25,5 @@ breakpoints--map:
   m:                800px
   l:                1200px
   xl:               1600px
+  xxl:              2400px
+  xxxl:             4800px

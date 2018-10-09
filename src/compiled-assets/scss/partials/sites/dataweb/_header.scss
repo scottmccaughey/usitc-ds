@@ -53,7 +53,7 @@
   }
 
   .button-nav {
-    @include breakpoint(xl) {
+    @include breakpoint(xxxl) {
       display: none;
     }
   }

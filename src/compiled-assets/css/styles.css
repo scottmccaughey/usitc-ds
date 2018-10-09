@@ -603,6 +603,62 @@ textarea {
     .grid .g-xl-12 {
       grid-area: span 1/span 12; } }
 
+@media (min-width: 2400px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-xxl-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-xxl-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-xxl-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-xxl-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-xxl-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-xxl-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-xxl-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-xxl-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-xxl-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-xxl-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-xxl-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-xxl-12 {
+      grid-area: span 1/span 12; } }
+
+@media (min-width: 4800px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr); }
+    .grid .g-xxxl-1 {
+      grid-area: span 1/span 1; }
+    .grid .g-xxxl-2 {
+      grid-area: span 1/span 2; }
+    .grid .g-xxxl-3 {
+      grid-area: span 1/span 3; }
+    .grid .g-xxxl-4 {
+      grid-area: span 1/span 4; }
+    .grid .g-xxxl-5 {
+      grid-area: span 1/span 5; }
+    .grid .g-xxxl-6 {
+      grid-area: span 1/span 6; }
+    .grid .g-xxxl-7 {
+      grid-area: span 1/span 7; }
+    .grid .g-xxxl-8 {
+      grid-area: span 1/span 8; }
+    .grid .g-xxxl-9 {
+      grid-area: span 1/span 9; }
+    .grid .g-xxxl-10 {
+      grid-area: span 1/span 10; }
+    .grid .g-xxxl-11 {
+      grid-area: span 1/span 11; }
+    .grid .g-xxxl-12 {
+      grid-area: span 1/span 12; } }
+
 .grid {
   display: grid;
   grid-template-rows: auto; }
@@ -685,7 +741,7 @@ textarea {
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
   width: calc(100vw + 250px); }
-  @media (min-width: 1600px) {
+  @media (min-width: 4800px) {
     .site-layout {
       grid-template-columns: 250px auto;
       left: 0;
@@ -705,7 +761,7 @@ textarea {
     .site-nav.on-dark > .button-close:active, .site-nav.on-dark > .button-close:focus, .site-nav.on-dark > .button-close:hover {
       background-color: #083b45;
       color: #a3e7f5; }
-    @media (min-width: 1600px) {
+    @media (min-width: 4800px) {
       .site-nav.on-dark > .button-close {
         display: none; } }
   .site-nav.on-dark a {
@@ -3158,7 +3214,7 @@ a rect {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  @media (min-width: 1600px) {
+  @media (min-width: 4800px) {
     .header-nav .button-nav {
       display: none; } }
 
