@@ -9,7 +9,6 @@
 
 .site-header {
   background-color: color(grey, 95);
-  text-align: center;
 
   a {
     color: $color-theme-base-text;
@@ -29,10 +28,7 @@
     background-color: transparent;
     border-width: 0;
     color: inherit;
-    left: $space-s;
     padding: ($space-s * 0.85) $space-s;
-    position: absolute;
-    top: 0;
 
     &:active,
     &:focus,
@@ -40,18 +36,25 @@
       background-color: $color-theme-dark-background-alt;
       color: $color-theme-dark-text;
     }
-
-    @include breakpoint(xl) {
-      top: -$space-xxl;
-    }
-  }
-
-  .constrained {
-    position: relative;
   }
 }
 
-.site-home-header {
-  padding: $space-xxxl $space-m;
-  text-align: center;
+.header-nav {
+  display: flex;
+  padding: 0 $space-m;
+
+  li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .header-home {
+    flex-grow: 1;
+  }
+
+  .button-nav {
+    @include breakpoint(xl) {
+      display: none;
+    }
+  }
 }

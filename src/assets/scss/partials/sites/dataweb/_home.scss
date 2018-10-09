@@ -65,10 +65,6 @@
       margin-bottom: 0;
     }
   }
-
-  .header-overall {
-    margin-top: $space-m;
-  }
 }
 
 .site-home-big-select {
@@ -176,4 +172,8 @@
       color: $color-theme-base-text;
     }
   }
+}
+
+.site-home-header {
+  padding: $space-xxxl $space-m ($space-xxxl + $space-m);
 }

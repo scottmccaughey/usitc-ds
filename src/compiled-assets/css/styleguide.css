@@ -2210,7 +2210,7 @@ h6,
   font-size: 8vw;
   font-weight: 400;
   letter-spacing: -1px;
-  margin-bottom: 1rem; }
+  margin: 0; }
   @media (min-width: 800px) {
     .header-overall {
       font-size: 8rem;
@@ -3197,9 +3197,7 @@ a rect {
     white-space: nowrap; }
 
 .site-header {
-  background-color: #f1f3f4;
-  margin-bottom: 2rem;
-  text-align: center; }
+  background-color: #f1f3f4; }
   .site-header a {
     color: #2e3638;
     display: inline-block;
@@ -3212,18 +3210,26 @@ a rect {
     background-color: transparent;
     border-width: 0;
     color: inherit;
-    left: 1rem;
-    padding: 0.85rem 1rem;
-    position: absolute;
-    top: 0; }
+    padding: 0.85rem 1rem; }
     .site-header button:active, .site-header button:focus, .site-header button:hover {
       background-color: #0f758a;
       color: white; }
-    @media (min-width: 1600px) {
-      .site-header button {
-        top: -6rem; } }
-  .site-header .constrained {
-    position: relative; }
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem; }
+  .header-nav li {
+    list-style: none;
+    margin: 0; }
+  .header-nav .header-home {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  @media (min-width: 1600px) {
+    .header-nav .button-nav {
+      display: none; } }
 
 .grid-separated > * {
   border-right: 1px solid #e3e7e8; }
@@ -3266,9 +3272,6 @@ a rect {
   @media (min-width: 800px) {
     .site-home .header-caps.nowrap-at-m {
       margin-bottom: 0; } }
-
-.site-home .header-overall {
-  margin-top: 2rem; }
 
 .site-home-big-select {
   margin: 3rem 0; }
@@ -3346,6 +3349,9 @@ a rect {
       color: white; }
   .trade-data-reports > a dw-icon {
     color: #2e3638; }
+
+.site-home-header {
+  padding: 8rem 2rem 10rem; }
 
 .login-error input {
   border-color: #b81422; }
