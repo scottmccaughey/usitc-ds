@@ -2039,10 +2039,6 @@ pre {
 .alt-off {
   background-color: white; }
 
-.app-version {
-  font-size: 1.11111rem;
-  font-style: italic; }
-
 .beta {
   color: #b81422; }
 
@@ -2055,6 +2051,21 @@ pre {
 
 .disclaimer {
   font-size: 1.11111rem; }
+
+.grid-link {
+  display: grid;
+  justify-self: stretch;
+  margin: 0 !important;
+  text-align: center; }
+  .grid-link a {
+    background-color: #f1f3f4;
+    color: #2e3638;
+    display: block;
+    padding: 2rem;
+    text-decoration: none; }
+    .grid-link a:active, .grid-link a:focus, .grid-link a:hover {
+      background-color: #0f758a;
+      color: white; }
 
 .nowrap {
   white-space: nowrap; }
@@ -2928,6 +2939,13 @@ dw-icon,
     background-color: #b85814;
     color: white; }
 
+.hover-row:active td,
+.hover-row:active th, .hover-row:focus td,
+.hover-row:focus th, .hover-row:hover td,
+.hover-row:hover th {
+  background-color: #a3e7f5;
+  cursor: pointer; }
+
 .table {
   font-variant-numeric: tabular-nums;
   width: 100%; }
@@ -3176,22 +3194,15 @@ a polygon,
 a rect {
   fill: currentColor; }
 
+.app-version {
+  font-size: 1.11111rem;
+  font-style: italic; }
+
 .site-footer {
-  background-color: #e3e7e8;
-  color: #2e3638; }
+  background-color: #e3e7e8; }
   .site-footer > section {
     padding: 3rem;
     text-align: center; }
-
-.footer-links {
-  padding-left: 0; }
-  .footer-links li {
-    display: inline-block;
-    font-weight: 700;
-    line-height: 1;
-    list-style: none;
-    padding: 0 1rem 0;
-    white-space: nowrap; }
 
 .site-header {
   background-color: #f1f3f4; }

@@ -229,11 +229,6 @@ pre {
   background-color: $color-theme-base-background;
 }
 
-.app-version {
-  font-size: $font-size-xs;
-  font-style: italic;
-}
-
 .beta {
   color: color(red, 40);
 }
@@ -244,6 +239,28 @@ pre {
 
 .disclaimer {
   font-size: $font-size-xs;
+}
+
+.grid-link {
+  display: grid;
+  justify-self: stretch;
+  margin: 0 !important;
+  text-align: center;
+
+  a {
+    background-color: color(grey, 95);
+    color: $color-theme-base-text;
+    display: block;
+    padding: $space-m;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+    }
+  }
 }
 
 .nowrap {

@@ -7,25 +7,16 @@
 // 888   Y88..88P Y88..88P Y88b. Y8b.     888
 // 888    "Y88P"   "Y88P"   "Y888 "Y8888  888
 
+.app-version {
+  font-size: $font-size-xs;
+  font-style: italic;
+}
+
 .site-footer {
   background-color: $color-theme-base-background-alt;
-  color: $color-theme-base-text;
 
   > section {
     padding: $space-l;
     text-align: center;
-  }
-}
-
-.footer-links {
-  padding-left: 0;
-
-  li {
-    display: inline-block;
-    font-weight: $font-weight-bold;
-    line-height: 1;
-    list-style: none;
-    padding: 0 $space-s 0;
-    white-space: nowrap;
   }
 }
