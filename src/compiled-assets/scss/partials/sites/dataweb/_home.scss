@@ -8,11 +8,26 @@
 // 888  888  "Y88P"  888  888  888  "Y8888
 
 .grid-separated {
+  @include breakpoint(m) {
+    margin: 0 (-$space-s);
+  }
+
   > * {
     border-right: 1px solid $color-theme-base-background-alt;
+    padding: $space-m $space-m 0;
 
-    &:last-child {
-      border-right-width: 0;
+    @include breakpoint(m) {
+      padding: $space-l;
+    }
+  }
+
+  .header-caps {
+    @include breakpoint(m) {
+      font-size: $font-size-h4;
+    }
+
+    @include breakpoint(l) {
+      font-size: $font-size-h2;
     }
   }
 }
@@ -54,6 +69,57 @@
     list-style: none;
     padding: 0 $space-m 0 0;
     white-space: nowrap;
+  }
+}
+
+.home-section-classification {
+  border-right-width: 0;
+  padding-bottom: $space-m;
+
+  @include breakpoint(m) {
+    padding: $space-l;
+  }
+}
+
+.home-section-reports {
+  padding: $space-m;
+
+  @include breakpoint(m) {
+    padding: $space-l;
+  }
+
+  @include breakpoint(l) {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  > div {
+    @include breakpoint(l) {
+      @include constrained;
+      padding: 0 $space-m;
+    }
+  }
+
+  .grid a {
+    background: transparent; //
+    display: block;
+    padding: $space-m;
+    text-align: center;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text; //
+
+      dw-icon {
+        color: $color-theme-dark-text; //
+      }
+    }
+
+    dw-icon {
+      color: $color-theme-dark-text; //
+    }
   }
 }
 
@@ -135,10 +201,11 @@
 }
 
 .site-home-list {
-  margin-bottom: 0;
+  margin-bottom: $space-s;
+  padding-left: $space-xl;
 
   li {
-    font-weight: $font-weight-bold;
+    margin-bottom: $space-xs;
   }
 }
 
@@ -147,30 +214,6 @@
 
   @include breakpoint(m) {
     padding: $space-xxl $space-m $space-xxxxl;
-  }
-}
-
-.trade-data-reports {
-  > a {
-    background: color(grey, 95);
-    display: block;
-    padding: $space-m;
-    text-align: center;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background: $color-theme-dark-background-alt;
-      color: $color-theme-dark-text;
-
-      dw-icon {
-        color: $color-theme-dark-text;
-      }
-    }
-
-    dw-icon {
-      color: $color-theme-base-text;
-    }
   }
 }
 

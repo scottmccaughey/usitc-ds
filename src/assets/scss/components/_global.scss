@@ -155,6 +155,10 @@ hr {
   margin: $space-m 0;
 }
 
+main > article > h1:first-child {
+  margin-top: 0;
+}
+
 p {
   margin-bottom: $space-m;
 

@@ -61,7 +61,7 @@ h6,
 }
 
 .header-caps {
-  color: $color-theme-base-accent;
+  color: color(grey, 30);
   font-weight: $font-weight-black;
   text-transform: uppercase;
 }
@@ -119,11 +119,15 @@ h6,
   @include breakpoint(m) {
     font-size: $font-size-m;
   }
+
+  @include breakpoint(l) {
+    margin-bottom: $space-m;
+  }
 }
 
 .subhead {
   color: $color-theme-base-text;
-  font-size: $font-size-m;
+  font-size: $font-size-s;
   font-weight: $font-weight-normal;
   margin-top: (-$space-s);
 }
