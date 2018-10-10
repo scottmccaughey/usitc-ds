@@ -1,5 +1,5 @@
 %svg-common {
-	background: url("icons-17ad81f8.svg") no-repeat;
+	background: url("icons-a0f48708.svg") no-repeat;
 }
 
 .icon-africa {
@@ -14,7 +14,7 @@
 
 .icon-alert {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 16.666666666666668%;
+	background-position: 14.285714285714286% 71.42857142857143%;
 }
 
 .icon-alert-dims {
@@ -24,7 +24,7 @@
 
 .icon-arrow-down {
 	@extend %svg-common;
-	background-position: 0 16.666666666666668%;
+	background-position: 0 14.285714285714286%;
 }
 
 .icon-arrow-down-dims {
@@ -34,7 +34,7 @@
 
 .icon-arrow-down-circle {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 16.666666666666668%;
+	background-position: 14.285714285714286% 14.285714285714286%;
 }
 
 .icon-arrow-down-circle-dims {
@@ -54,7 +54,7 @@
 
 .icon-arrow-left-circle {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 16.666666666666668%;
+	background-position: 28.571428571428573% 14.285714285714286%;
 }
 
 .icon-arrow-left-circle-dims {
@@ -64,7 +64,7 @@
 
 .icon-arrow-right {
 	@extend %svg-common;
-	background-position: 0 33.333333333333336%;
+	background-position: 0 28.571428571428573%;
 }
 
 .icon-arrow-right-dims {
@@ -74,7 +74,7 @@
 
 .icon-arrow-right-circle {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 33.333333333333336%;
+	background-position: 14.285714285714286% 28.571428571428573%;
 }
 
 .icon-arrow-right-circle-dims {
@@ -84,7 +84,7 @@
 
 .icon-arrow-up {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 33.333333333333336%;
+	background-position: 28.571428571428573% 28.571428571428573%;
 }
 
 .icon-arrow-up-dims {
@@ -102,9 +102,19 @@
 	height: 1000px;
 }
 
+.icon-australia {
+	@extend %svg-common;
+	background-position: 42.857142857142854% 14.285714285714286%;
+}
+
+.icon-australia-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-back {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 16.666666666666668%;
+	background-position: 42.857142857142854% 28.571428571428573%;
 }
 
 .icon-back-dims {
@@ -114,7 +124,7 @@
 
 .icon-back-to-start {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 33.333333333333336%;
+	background-position: 0 42.857142857142854%;
 }
 
 .icon-back-to-start-dims {
@@ -122,9 +132,19 @@
 	height: 1000px;
 }
 
+.icon-bahrain {
+	@extend %svg-common;
+	background-position: 14.285714285714286% 42.857142857142854%;
+}
+
+.icon-bahrain-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-chart-upward {
 	@extend %svg-common;
-	background-position: 0 50%;
+	background-position: 28.571428571428573% 42.857142857142854%;
 }
 
 .icon-chart-upward-dims {
@@ -134,7 +154,7 @@
 
 .icon-check {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 50%;
+	background-position: 42.857142857142854% 42.857142857142854%;
 }
 
 .icon-check-dims {
@@ -144,7 +164,7 @@
 
 .icon-check-circle {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 50%;
+	background-position: 57.142857142857146% 0;
 }
 
 .icon-check-circle-dims {
@@ -154,7 +174,7 @@
 
 .icon-chevron-down {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 50%;
+	background-position: 57.142857142857146% 14.285714285714286%;
 }
 
 .icon-chevron-down-dims {
@@ -164,7 +184,7 @@
 
 .icon-chevron-down-circle {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 0;
+	background-position: 57.142857142857146% 28.571428571428573%;
 }
 
 .icon-chevron-down-circle-dims {
@@ -174,7 +194,7 @@
 
 .icon-chevron-left {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 16.666666666666668%;
+	background-position: 57.142857142857146% 42.857142857142854%;
 }
 
 .icon-chevron-left-dims {
@@ -184,7 +204,7 @@
 
 .icon-chevron-left-circle {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 33.333333333333336%;
+	background-position: 0 57.142857142857146%;
 }
 
 .icon-chevron-left-circle-dims {
@@ -194,7 +214,7 @@
 
 .icon-chevron-right {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 50%;
+	background-position: 14.285714285714286% 57.142857142857146%;
 }
 
 .icon-chevron-right-dims {
@@ -204,7 +224,7 @@
 
 .icon-chevron-right-circle {
 	@extend %svg-common;
-	background-position: 0 66.66666666666667%;
+	background-position: 28.571428571428573% 57.142857142857146%;
 }
 
 .icon-chevron-right-circle-dims {
@@ -214,7 +234,7 @@
 
 .icon-chevron-up {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 66.66666666666667%;
+	background-position: 42.857142857142854% 57.142857142857146%;
 }
 
 .icon-chevron-up-dims {
@@ -224,7 +244,7 @@
 
 .icon-chevron-up-circle {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 66.66666666666667%;
+	background-position: 57.142857142857146% 57.142857142857146%;
 }
 
 .icon-chevron-up-circle-dims {
@@ -232,9 +252,19 @@
 	height: 1000px;
 }
 
+.icon-chile {
+	@extend %svg-common;
+	background-position: 71.42857142857143% 0;
+}
+
+.icon-chile-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-circle {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 66.66666666666667%;
+	background-position: 71.42857142857143% 14.285714285714286%;
 }
 
 .icon-circle-dims {
@@ -244,7 +274,7 @@
 
 .icon-circle-open {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 66.66666666666667%;
+	background-position: 71.42857142857143% 28.571428571428573%;
 }
 
 .icon-circle-open-dims {
@@ -252,9 +282,19 @@
 	height: 1000px;
 }
 
+.icon-colombia {
+	@extend %svg-common;
+	background-position: 71.42857142857143% 42.857142857142854%;
+}
+
+.icon-colombia-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-copy {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 0;
+	background-position: 71.42857142857143% 57.142857142857146%;
 }
 
 .icon-copy-dims {
@@ -264,7 +304,7 @@
 
 .icon-copy-to-clipboard {
 	@extend %svg-common;
-	background-position: 0 0;
+	background-position: 0 71.42857142857143%;
 }
 
 .icon-copy-to-clipboard-dims {
@@ -274,7 +314,7 @@
 
 .icon-database {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 33.333333333333336%;
+	background-position: 0 0;
 }
 
 .icon-database-dims {
@@ -282,9 +322,19 @@
 	height: 1000px;
 }
 
+.icon-dominican-republic {
+	@extend %svg-common;
+	background-position: 28.571428571428573% 71.42857142857143%;
+}
+
+.icon-dominican-republic-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-download {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 50%;
+	background-position: 42.857142857142854% 71.42857142857143%;
 }
 
 .icon-download-dims {
@@ -294,7 +344,7 @@
 
 .icon-edit {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 66.66666666666667%;
+	background-position: 57.142857142857146% 71.42857142857143%;
 }
 
 .icon-edit-dims {
@@ -304,7 +354,7 @@
 
 .icon-external {
 	@extend %svg-common;
-	background-position: 0 83.33333333333333%;
+	background-position: 71.42857142857143% 71.42857142857143%;
 }
 
 .icon-external-dims {
@@ -314,7 +364,7 @@
 
 .icon-forward {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 83.33333333333333%;
+	background-position: 85.71428571428571% 0;
 }
 
 .icon-forward-dims {
@@ -324,7 +374,7 @@
 
 .icon-forward-to-end {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 83.33333333333333%;
+	background-position: 85.71428571428571% 14.285714285714286%;
 }
 
 .icon-forward-to-end-dims {
@@ -334,7 +384,7 @@
 
 .icon-globe {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 83.33333333333333%;
+	background-position: 85.71428571428571% 28.571428571428573%;
 }
 
 .icon-globe-dims {
@@ -344,7 +394,7 @@
 
 .icon-globe-with-marker {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 83.33333333333333%;
+	background-position: 85.71428571428571% 42.857142857142854%;
 }
 
 .icon-globe-with-marker-dims {
@@ -354,7 +404,7 @@
 
 .icon-info {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 83.33333333333333%;
+	background-position: 85.71428571428571% 57.142857142857146%;
 }
 
 .icon-info-dims {
@@ -364,7 +414,7 @@
 
 .icon-link {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 0;
+	background-position: 85.71428571428571% 71.42857142857143%;
 }
 
 .icon-link-dims {
@@ -374,7 +424,7 @@
 
 .icon-menu {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 16.666666666666668%;
+	background-position: 0 85.71428571428571%;
 }
 
 .icon-menu-dims {
@@ -384,7 +434,7 @@
 
 .icon-minus {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 33.333333333333336%;
+	background-position: 14.285714285714286% 85.71428571428571%;
 }
 
 .icon-minus-dims {
@@ -394,7 +444,7 @@
 
 .icon-minus-circle {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 50%;
+	background-position: 28.571428571428573% 85.71428571428571%;
 }
 
 .icon-minus-circle-dims {
@@ -402,9 +452,49 @@
 	height: 1000px;
 }
 
+.icon-morocco {
+	@extend %svg-common;
+	background-position: 42.857142857142854% 85.71428571428571%;
+}
+
+.icon-morocco-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-oman {
+	@extend %svg-common;
+	background-position: 57.142857142857146% 85.71428571428571%;
+}
+
+.icon-oman-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-panama {
+	@extend %svg-common;
+	background-position: 71.42857142857143% 85.71428571428571%;
+}
+
+.icon-panama-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-peru {
+	@extend %svg-common;
+	background-position: 85.71428571428571% 85.71428571428571%;
+}
+
+.icon-peru-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-plus {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 66.66666666666667%;
+	background-position: 100% 0;
 }
 
 .icon-plus-dims {
@@ -414,7 +504,7 @@
 
 .icon-plus-circle {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 83.33333333333333%;
+	background-position: 100% 14.285714285714286%;
 }
 
 .icon-plus-circle-dims {
@@ -424,7 +514,7 @@
 
 .icon-save {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 100% 28.571428571428573%;
 }
 
 .icon-save-dims {
@@ -434,7 +524,7 @@
 
 .icon-search {
 	@extend %svg-common;
-	background-position: 14.285714285714286% 100%;
+	background-position: 100% 42.857142857142854%;
 }
 
 .icon-search-dims {
@@ -444,7 +534,7 @@
 
 .icon-settings {
 	@extend %svg-common;
-	background-position: 28.571428571428573% 100%;
+	background-position: 100% 57.142857142857146%;
 }
 
 .icon-settings-dims {
@@ -454,7 +544,7 @@
 
 .icon-shaking-hands {
 	@extend %svg-common;
-	background-position: 42.857142857142854% 100%;
+	background-position: 100% 71.42857142857143%;
 }
 
 .icon-shaking-hands-dims {
@@ -464,7 +554,7 @@
 
 .icon-share {
 	@extend %svg-common;
-	background-position: 57.142857142857146% 100%;
+	background-position: 100% 85.71428571428571%;
 }
 
 .icon-share-dims {
@@ -472,9 +562,29 @@
 	height: 1000px;
 }
 
+.icon-singapore {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.icon-singapore-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
+.icon-south-korea {
+	@extend %svg-common;
+	background-position: 14.285714285714286% 100%;
+}
+
+.icon-south-korea-dims {
+	width: 1000px;
+	height: 1000px;
+}
+
 .icon-table {
 	@extend %svg-common;
-	background-position: 71.42857142857143% 100%;
+	background-position: 28.571428571428573% 100%;
 }
 
 .icon-table-dims {
@@ -484,7 +594,7 @@
 
 .icon-trash {
 	@extend %svg-common;
-	background-position: 85.71428571428571% 100%;
+	background-position: 42.857142857142854% 100%;
 }
 
 .icon-trash-dims {
@@ -494,7 +604,7 @@
 
 .icon-user {
 	@extend %svg-common;
-	background-position: 100% 0;
+	background-position: 57.142857142857146% 100%;
 }
 
 .icon-user-dims {
@@ -504,7 +614,7 @@
 
 .icon-x {
 	@extend %svg-common;
-	background-position: 100% 16.666666666666668%;
+	background-position: 71.42857142857143% 100%;
 }
 
 .icon-x-dims {
@@ -514,7 +624,7 @@
 
 .icon-x-circle {
 	@extend %svg-common;
-	background-position: 100% 33.333333333333336%;
+	background-position: 85.71428571428571% 100%;
 }
 
 .icon-x-circle-dims {

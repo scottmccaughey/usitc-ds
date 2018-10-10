@@ -257,7 +257,7 @@ gulp.task('build:scss', 'Compile the SCSS, then generate the styleguide.', funct
   Convert the icons, then generate the styleguide.
 */
 gulp.task('build:icons', 'Convert the icons, then generate the styleguide.', function(cb) {
-  sequence('convert:icon', 'generate:styleguide')(cb);
+  sequence('convert:icons', 'generate:styleguide')(cb);
 });
 
 /*
