@@ -1,0 +1,77 @@
+// 88888b.   8888b.  888  888
+// 888 "88b     "88b 888  888
+// 888  888 .d888888 Y88  88P
+// 888  888 888  888  Y8bd8P
+// 888  888 "Y888888   Y88P
+
+.nav-on-page {
+  background-color: $color-theme-base-background-alt;
+
+  @include breakpoint(m) {
+    margin-right: $space-m;
+  }
+
+  h2 {
+    color: $color-theme-base-text;
+    font-size: $font-size-s;
+    font-weight: $font-weight-normal;
+    margin: 0 $space-m $space-s;
+
+    strong {
+      display: block;
+      font-size: $font-size-m;
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: $font-size-s;
+    font-variant-numeric: tabular-nums;
+    list-style: none;
+    margin-bottom: 0;
+
+    a {
+      display: block;
+      padding: $space-xs $space-l;
+      text-decoration: none;
+
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $color-theme-dark-background-alt;
+        color: $color-theme-dark-text;
+      }
+
+      @include breakpoint(m) {
+        &.active {
+          position: relative;
+
+          &::after {
+            border-bottom: 14px solid transparent;
+            border-left: $space-m solid $color-theme-dark-background-alt;
+            border-top: 15px solid transparent;
+            content: '';
+            margin-top: -15px;
+            position: absolute;
+            right: (-$space-m);
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-on-page-block {
+  border-bottom: 1px solid color(grey, 80);
+  padding: $space-m 0;
+
+  &:last-child {
+    border-bottom-width: 0;
+  }
+}
