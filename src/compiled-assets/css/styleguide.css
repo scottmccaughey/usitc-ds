@@ -3231,11 +3231,6 @@ dw-icon,
 .uppercase {
   text-transform: uppercase; }
 
-a path,
-a polygon,
-a rect {
-  fill: currentColor; }
-
 .app-version {
   font-size: 1.11111rem;
   font-style: italic; }
