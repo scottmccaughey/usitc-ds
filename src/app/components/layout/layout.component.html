@@ -4,20 +4,11 @@
   <div class="site-content">
     <ds-header></ds-header>
     <div class="site-outlet site-outlet-kss">
-      <router-outlet #routerOutlet="outlet"></router-outlet>
+      <router-outlet></router-outlet>
     </div>
     <ds-footer></ds-footer>
   </div>
 
-  <nav class="site-nav on-dark">
-    <button
-      [attr.tabindex]="navOpen ? 0 : -1"
-      class="button-close"
-      title="Close"
-      (click)="config.toggleNav(navOpen)">
-      <icon name="x"></icon>
-    </button>
-    <ds-nav></ds-nav>
-  </nav>
+  <ds-nav></ds-nav>
 
 </div>

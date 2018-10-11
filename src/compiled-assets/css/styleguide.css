@@ -708,13 +708,9 @@ textarea {
 .off-canvas {
   height: 100vh;
   overflow: auto;
-  position: relative;
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
   width: 250px; }
-  .off-canvas > .button-close:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
   .off-canvas > section {
     padding: 2rem; }
     .off-canvas > section > :first-child {
@@ -749,6 +745,14 @@ textarea {
       width: 100vw; } }
   .site-layout.site-nav-open {
     left: 0; }
+    .site-layout.site-nav-open .button-nav svg path:first-child {
+      -webkit-transform: rotate(45deg) translateY(50%) translateX(-50%);
+              transform: rotate(45deg) translateY(50%) translateX(-50%); }
+    .site-layout.site-nav-open .button-nav svg path:nth-child(2) {
+      opacity: 0; }
+    .site-layout.site-nav-open .button-nav svg path:last-child {
+      -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-50%);
+              transform: rotate(-45deg) translateY(-50%) translateX(-50%); }
 
 .site-nav.on-dark {
   background-color: #083b45;
@@ -756,15 +760,6 @@ textarea {
   height: 100vh;
   overflow-y: auto;
   position: relative; }
-  .site-nav.on-dark > .button-close {
-    background-color: #083b45;
-    color: white; }
-    .site-nav.on-dark > .button-close:active, .site-nav.on-dark > .button-close:focus, .site-nav.on-dark > .button-close:hover {
-      background-color: #083b45;
-      color: #a3e7f5; }
-    @media (min-width: 4800px) {
-      .site-nav.on-dark > .button-close {
-        display: none; } }
   .site-nav.on-dark a {
     display: block;
     font-size: 1.92rem;
@@ -3285,6 +3280,66 @@ a rect {
   @media (min-width: 4800px) {
     .header-nav .button-nav {
       display: none; } }
+  .header-nav .button-nav button {
+    height: 44px;
+    padding: 12px 10px !important;
+    width: 44px; }
+    .header-nav .button-nav button:active div, .header-nav .button-nav button:active div::before, .header-nav .button-nav button:active div::after, .header-nav .button-nav button:focus div, .header-nav .button-nav button:focus div::before, .header-nav .button-nav button:focus div::after, .header-nav .button-nav button:hover div, .header-nav .button-nav button:hover div::before, .header-nav .button-nav button:hover div::after {
+      background-color: white; }
+    .header-nav .button-nav button div {
+      margin-top: -2px;
+      top: 50%;
+      -webkit-transition-duration: 0.075s;
+              transition-duration: 0.075s;
+      -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+              transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      .site-nav-open .header-nav .button-nav button div {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition-delay: 0.12s;
+                transition-delay: 0.12s;
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+        .site-nav-open .header-nav .button-nav button div::before {
+          opacity: 0;
+          top: 0;
+          -webkit-transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+          transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+        .site-nav-open .header-nav .button-nav button div::after {
+          bottom: 0;
+          -webkit-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          -webkit-transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: bottom 0.075s ease, -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+      .header-nav .button-nav button div, .header-nav .button-nav button div::before, .header-nav .button-nav button div::after {
+        background-color: #2e3638;
+        border-radius: 4px;
+        height: 4px;
+        position: absolute;
+        -webkit-transition-duration: 0.15s;
+                transition-duration: 0.15s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-timing-function: ease;
+                transition-timing-function: ease;
+        width: 24px; }
+      .header-nav .button-nav button div::before, .header-nav .button-nav button div::after {
+        content: '';
+        display: block; }
+      .header-nav .button-nav button div::before {
+        top: -8px;
+        -webkit-transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+        transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+      .header-nav .button-nav button div::after {
+        bottom: -8px;
+        -webkit-transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition: bottom 0.075s 0.12s ease, -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 @media (min-width: 800px) {
   .grid-separated {

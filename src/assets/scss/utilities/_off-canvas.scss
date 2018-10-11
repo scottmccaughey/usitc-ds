@@ -10,15 +10,8 @@
 .off-canvas {
   height: $off-canvas-height;
   overflow: auto;
-  position: relative;
   transition: $off-canvas-transition;
   width: $off-canvas-width;
-
-  > .button-close {
-    &:focus {
-      box-shadow: none;
-    }
-  }
 
   > section {
     padding: $space-m;
@@ -55,6 +48,20 @@
 
   &.site-nav-open {
     left: 0;
+
+    .button-nav svg path {
+      &:first-child {
+        transform: rotate(45deg) translateY(50%) translateX(-50%);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translateY(-50%) translateX(-50%);
+      }
+    }
   }
 }
 
@@ -64,22 +71,6 @@
   height: $off-canvas-height;
   overflow-y: auto;
   position: relative;
-
-  > .button-close {
-    background-color: color(cyan, 15);
-    color: $color-theme-dark-text;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: color(cyan, 15);
-      color: $color-theme-dark-accent;
-    }
-
-    @include breakpoint(xxxl) {
-      display: none;
-    }
-  }
 
   a {
     display: block;
