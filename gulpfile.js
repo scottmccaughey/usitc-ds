@@ -123,8 +123,9 @@ gulp.task('convert:scss', 'Convert YAML Design Tokens into SCSS.', function() {
 */
 gulp.task('compile', 'Copy and compile SCSS, copy fonts, and convert icons.', function(cb) {
   sequence(
-    'copy:fonts',
     'copy:favicons',
+    'copy:flags',
+    'copy:fonts',
     'convert:icons',
     'compile:scss',
     'generate:styleguide'
@@ -156,6 +157,22 @@ gulp.task(
       .src(config.path.favicons.src)
       .pipe(plumber())
       .pipe(gulp.dest(config.path.favicons.dist));
+  }
+);
+
+/*
+  TASK: 'copy:flags'
+
+  Copy flag SVGs from the source folder to the destination folder.
+*/
+gulp.task(
+  'copy:flags',
+  'Copy flag SVGs from the source folder to the destination folder.',
+  function() {
+    return gulp
+      .src(config.path.flags.src)
+      .pipe(plumber())
+      .pipe(gulp.dest(config.path.flags.dist));
   }
 );
 
@@ -280,6 +297,7 @@ gulp.task('watch', 'Watch files for processing.', function() {
   gulp.watch(config.path.icons.src, ['build:icons']);
   gulp.watch(config.path.fonts.src, ['copy:fonts']);
   gulp.watch(config.path.favicons.src, ['copy:favicons']);
+  gulp.watch(config.path.flags.src, ['copy:flags']);
 });
 
 /*

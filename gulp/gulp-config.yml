@@ -22,13 +22,17 @@ path:
   css:
     dist:               src/compiled-assets/css
 
-  fonts:
-    src:                src/assets/fonts/**/*.{woff,woff2}
-    dist:               src/compiled-assets/fonts
-
   favicons:
     src:                src/assets/favicons/**/*
     dist:               src/compiled-assets/favicons
+
+  flags:
+    src:                src/assets/flags/**/*.svg
+    dist:               src/compiled-assets/flags
+
+  fonts:
+    src:                src/assets/fonts/**/*.{woff,woff2}
+    dist:               src/compiled-assets/fonts
 
   icons:
     src:                src/assets/icons/**/*.svg
