@@ -3418,7 +3418,8 @@ dw-icon,
         padding: 2rem;
         text-align: center; }
         .home-section-reports ul li a:active, .home-section-reports ul li a:focus, .home-section-reports ul li a:hover {
-          background: #0f758a; }
+          background: #0f758a;
+          color: white; }
 
 .site-home .header-caps.nowrap-at-m {
   margin-bottom: 1rem; }
