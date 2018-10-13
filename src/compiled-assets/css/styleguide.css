@@ -754,47 +754,6 @@ textarea {
       -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-50%);
               transform: rotate(-45deg) translateY(-50%) translateX(-50%); }
 
-.site-nav.on-dark {
-  background-color: #083b45;
-  grid-area: site-nav;
-  height: 100vh;
-  overflow-y: auto;
-  position: relative; }
-  .site-nav.on-dark a {
-    display: block;
-    font-size: 1.92rem;
-    font-weight: 700;
-    line-height: 1.25;
-    padding: 1rem 2rem;
-    text-decoration: none; }
-    .site-nav.on-dark a:active, .site-nav.on-dark a:focus, .site-nav.on-dark a:hover, .site-nav.on-dark a.nav-active {
-      background-color: #0f758a;
-      color: white; }
-    .site-nav.on-dark a.nav-child {
-      font-size: 1.6rem;
-      font-weight: 400;
-      padding: 0.5rem 3rem; }
-    .site-nav.on-dark a[href*='//']:not([href*="dataweb.usitc.gov"]) {
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiB3aGl0ZTsgfTwvc3R5bGU+PHBhdGggZD0iTTk0OC43NSwzMjQuMTQsODc5LjI1LDIyMSw2NzYuNTksNDIzLjY0YTIwLjc2LDIwLjc2LDAsMCwxLTI5LjI2LDBsLTczLjE2LTczLjE2YTIwLjc2LDIwLjc2LDAsMCwxLDAtMjkuMjdMNzc2LjgyLDExOC41NmwtMTAxLTY3LjMxYy0xNi44My0xMS04Ljc4LTM2LjU4LDExLTM3LjMxTDk3OC43NCwwYzEyLjQ0LS43MywyMiw4Ljc4LDIxLjIyLDIxLjIybC0xMy45LDI5MS45Qzk4NC42LDMzMy42NSw5NTkuNzIsMzQxLDk0OC43NSwzMjQuMTRaIi8+PHBhdGggZD0iTTgyNi4zMiwzNTUuMjVWODEwLjUzYTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LDE1LjI2SDE4OWExNS42NywxNS42NywwLDAsMS0xNS4yNy0xNS4yNlYxODguNDJjMC03LjgzLDYuODUtMTQuMjEsMTUuMjctMTQuMjFINjQzLjY3bDUwLTUwSDE4OWMtMzUuNzksMC02NS4yNywyOC40Mi02NS4yNyw2NC4yMVY4MTAuNTNjMCwzNS43OSwyOS40OCw2NS4yNiw2NS4yNyw2NS4yNmg2MjIuMWMzNS43OSwwLDY1LjI3LTI5LjQ3LDY1LjI3LTY1LjI2VjMwNS4yNVoiLz48L3N2Zz4=) !important;
-      background-position: center right 2rem;
-      padding-right: 3rem; }
-  .site-nav.on-dark span {
-    display: block;
-    font-size: 1.92rem;
-    font-weight: 700;
-    line-height: 1.25;
-    padding: 1rem 2rem; }
-    .site-nav.on-dark span.nav-child {
-      font-size: 1.6rem;
-      font-weight: 400;
-      padding: 0.5rem 3rem; }
-  .site-nav.on-dark ul {
-    margin: 0;
-    padding: 0; }
-    .site-nav.on-dark ul li {
-      list-style: none;
-      margin: 0; }
-
 .site-outlet {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2371,6 +2330,43 @@ dw-icon,
   .nav-on-page-block:last-child {
     border-bottom-width: 0; }
 
+.site-nav.on-dark {
+  background-color: #083b45;
+  grid-area: site-nav;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative; }
+  .site-nav.on-dark a {
+    display: block;
+    font-size: 1.92rem;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: 1rem 2rem;
+    text-decoration: none; }
+    .site-nav.on-dark a:active, .site-nav.on-dark a:focus, .site-nav.on-dark a:hover, .site-nav.on-dark a.nav-active {
+      background-color: #0f758a;
+      color: white; }
+    .site-nav.on-dark a[href*='//']:not([href*="dataweb.usitc.gov"]) {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiB3aGl0ZTsgfTwvc3R5bGU+PHBhdGggZD0iTTk0OC43NSwzMjQuMTQsODc5LjI1LDIyMSw2NzYuNTksNDIzLjY0YTIwLjc2LDIwLjc2LDAsMCwxLTI5LjI2LDBsLTczLjE2LTczLjE2YTIwLjc2LDIwLjc2LDAsMCwxLDAtMjkuMjdMNzc2LjgyLDExOC41NmwtMTAxLTY3LjMxYy0xNi44My0xMS04Ljc4LTM2LjU4LDExLTM3LjMxTDk3OC43NCwwYzEyLjQ0LS43MywyMiw4Ljc4LDIxLjIyLDIxLjIybC0xMy45LDI5MS45Qzk4NC42LDMzMy42NSw5NTkuNzIsMzQxLDk0OC43NSwzMjQuMTRaIi8+PHBhdGggZD0iTTgyNi4zMiwzNTUuMjVWODEwLjUzYTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LDE1LjI2SDE4OWExNS42NywxNS42NywwLDAsMS0xNS4yNy0xNS4yNlYxODguNDJjMC03LjgzLDYuODUtMTQuMjEsMTUuMjctMTQuMjFINjQzLjY3bDUwLTUwSDE4OWMtMzUuNzksMC02NS4yNywyOC40Mi02NS4yNyw2NC4yMVY4MTAuNTNjMCwzNS43OSwyOS40OCw2NS4yNiw2NS4yNyw2NS4yNmg2MjIuMWMzNS43OSwwLDY1LjI3LTI5LjQ3LDY1LjI3LTY1LjI2VjMwNS4yNVoiLz48L3N2Zz4=) !important;
+      background-position: center right 2rem;
+      padding-right: 3rem; }
+  .site-nav.on-dark span {
+    display: block;
+    font-size: 1.92rem;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: 1rem 2rem; }
+  .site-nav.on-dark ul {
+    margin: 0;
+    padding: 0; }
+    .site-nav.on-dark ul li {
+      list-style: none;
+      margin: 0; }
+  .site-nav.on-dark .site-nav-children a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0.5rem 3rem; }
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3411,77 +3407,24 @@ dw-icon,
       margin-right: auto;
       max-width: 1200px;
       width: 100%; } }
-  .home-section-reports .grid a {
-    background: transparent;
-    display: block;
-    padding: 2rem;
-    text-align: center; }
-    .home-section-reports .grid a:active, .home-section-reports .grid a:focus, .home-section-reports .grid a:hover {
-      background: #0f758a;
-      color: white; }
-      .home-section-reports .grid a:active dw-icon, .home-section-reports .grid a:focus dw-icon, .home-section-reports .grid a:hover dw-icon {
-        color: white; }
-    .home-section-reports .grid a dw-icon {
-      color: white; }
+  .home-section-reports ul {
+    margin: 0;
+    padding: 0; }
+    .home-section-reports ul li {
+      list-style: none;
+      margin: 0; }
+      .home-section-reports ul li a {
+        display: block;
+        padding: 2rem;
+        text-align: center; }
+        .home-section-reports ul li a:active, .home-section-reports ul li a:focus, .home-section-reports ul li a:hover {
+          background: #0f758a; }
 
 .site-home .header-caps.nowrap-at-m {
   margin-bottom: 1rem; }
   @media (min-width: 800px) {
     .site-home .header-caps.nowrap-at-m {
       margin-bottom: 0; } }
-
-.site-home-big-select {
-  margin: 3rem 0; }
-  @media (min-width: 800px) {
-    .site-home-big-select {
-      grid-column-gap: 0.5rem; } }
-  .site-home-big-select button,
-  .site-home-big-select select {
-    border-width: 0;
-    height: 6rem;
-    line-height: 6rem;
-    width: 100%; }
-  .site-home-big-select button {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #149cb8;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 2.304rem;
-    font-weight: 900;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    text-transform: uppercase; }
-    @media (min-width: 800px) {
-      .site-home-big-select button {
-        font-size: 2.7648rem; } }
-    .site-home-big-select button:active, .site-home-big-select button:focus, .site-home-big-select button:hover {
-      background-color: #0f758a; }
-    .site-home-big-select button dw-icon {
-      height: 1.125em;
-      margin-left: 1rem;
-      width: 1.125em; }
-  .site-home-big-select select {
-    background-color: white;
-    border: 1px solid #abb8ba;
-    color: #2e3638;
-    font-size: 2rem;
-    height: 6rem;
-    padding: 0 8rem 0 3rem; }
-    @media (min-width: 800px) {
-      .site-home-big-select select {
-        font-size: 3rem; } }
-  .site-home-big-select .select::after {
-    border-left-width: 2rem;
-    border-right-width: 2rem;
-    border-top: 2rem solid #2e3638;
-    margin-top: -1rem;
-    right: 3rem; }
 
 .site-home-list {
   margin-bottom: 1rem;

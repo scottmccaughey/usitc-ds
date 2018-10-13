@@ -75,3 +75,58 @@
     border-bottom-width: 0;
   }
 }
+
+.site-nav.on-dark {
+  background-color: color(cyan, 15);
+  grid-area: site-nav;
+  height: $off-canvas-height;
+  overflow-y: auto;
+  position: relative;
+
+  a {
+    display: block;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-header;
+    padding: $space-s $space-m;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.nav-active {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+    }
+
+    &[href*='//']:not([href*="dataweb.usitc.gov"]) {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiB3aGl0ZTsgfTwvc3R5bGU+PHBhdGggZD0iTTk0OC43NSwzMjQuMTQsODc5LjI1LDIyMSw2NzYuNTksNDIzLjY0YTIwLjc2LDIwLjc2LDAsMCwxLTI5LjI2LDBsLTczLjE2LTczLjE2YTIwLjc2LDIwLjc2LDAsMCwxLDAtMjkuMjdMNzc2LjgyLDExOC41NmwtMTAxLTY3LjMxYy0xNi44My0xMS04Ljc4LTM2LjU4LDExLTM3LjMxTDk3OC43NCwwYzEyLjQ0LS43MywyMiw4Ljc4LDIxLjIyLDIxLjIybC0xMy45LDI5MS45Qzk4NC42LDMzMy42NSw5NTkuNzIsMzQxLDk0OC43NSwzMjQuMTRaIi8+PHBhdGggZD0iTTgyNi4zMiwzNTUuMjVWODEwLjUzYTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LDE1LjI2SDE4OWExNS42NywxNS42NywwLDAsMS0xNS4yNy0xNS4yNlYxODguNDJjMC03LjgzLDYuODUtMTQuMjEsMTUuMjctMTQuMjFINjQzLjY3bDUwLTUwSDE4OWMtMzUuNzksMC02NS4yNywyOC40Mi02NS4yNyw2NC4yMVY4MTAuNTNjMCwzNS43OSwyOS40OCw2NS4yNiw2NS4yNyw2NS4yNmg2MjIuMWMzNS43OSwwLDY1LjI3LTI5LjQ3LDY1LjI3LTY1LjI2VjMwNS4yNVoiLz48L3N2Zz4=) !important;
+      background-position: center right $space-m;
+      padding-right: $space-l;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-header;
+    padding: $space-s $space-m;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+    }
+  }
+
+  .site-nav-children a {
+    font-size: $font-size-m;
+    font-weight: $font-weight-normal;
+    padding: $space-xs $space-l;
+  }
+}
