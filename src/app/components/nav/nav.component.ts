@@ -17,6 +17,7 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.kss);
     this.buildMenu();
   }
 

@@ -1,9 +1,18 @@
 <nav class="site-nav on-dark">
   <ul *ngIf="menu">
     <li *ngFor="let item of menu">
-      <a [class.nav-active]="item.url === route"
-        [class.nav-child]="item.child"
-        [routerLink]="item.url">{{item.name}}</a>
+      <ng-container *ngIf="!item.child">
+        <a [class.nav-active]="item.url === route"
+          [routerLink]="item.url">{{item.name}}</a>
+      </ng-container>
+      <ng-container *ngIf="item.child">
+        <ul class="site-nav-children">
+          <li>
+            <a [class.nav-active]="item.url === route"
+              [routerLink]="item.url">{{item.name}}</a>
+          </li>
+        </ul>
+      </ng-container>
     </li>
   </ul>
 </nav>
