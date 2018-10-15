@@ -196,7 +196,7 @@ ul {
 
   li {
     margin: 0 0 $space-s;
-    list-style: square;
+    list-style: disc;
   }
 
   &.clean {
@@ -239,6 +239,10 @@ pre {
 
 .disclaimer {
   font-size: $font-size-xs;
+}
+
+.display-grid {
+  display: grid;
 }
 
 .grid-link {

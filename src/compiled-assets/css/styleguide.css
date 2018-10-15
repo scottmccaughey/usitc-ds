@@ -1968,7 +1968,7 @@ ul {
   ol li,
   ul li {
     margin: 0 0 1rem;
-    list-style: square; }
+    list-style: disc; }
   ol.clean,
   ul.clean {
     padding: 0; }
@@ -2005,6 +2005,9 @@ pre {
 
 .disclaimer {
   font-size: 1.11111rem; }
+
+.display-grid {
+  display: grid; }
 
 .grid-link {
   display: grid;
@@ -2201,8 +2204,9 @@ h6,
 
 .subhead {
   color: #2e3638;
-  font-size: 1.33333rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
   margin-top: -1rem; }
 
 .subhead-table {
@@ -3312,6 +3316,21 @@ dw-icon,
 
 .margin-top-half {
   margin-top: 1rem; }
+
+.margin-quarter {
+  margin: 0.5rem; }
+
+.margin-bottom-quarter {
+  margin-bottom: 0.5rem; }
+
+.margin-left-quarter {
+  margin-left: 0.5rem; }
+
+.margin-right-quarter {
+  margin-right: 0.5rem; }
+
+.margin-top-quarter {
+  margin-top: 0.5rem; }
 
 .margin-double {
   margin: 3rem; }
