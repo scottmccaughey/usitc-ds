@@ -8,7 +8,7 @@
 // 888  888  "Y8888  "Y888888  "Y88888  "Y8888  888
 
 .site-header {
-  background-color: color(grey, 95);
+  background-color: $color-theme-base-background-alt;
 
   a {
     color: $color-theme-base-text;
