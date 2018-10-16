@@ -1912,8 +1912,9 @@ a {
       background-color: transparent;
       color: #05272e; }
 
-abbr {
+abbr, abbr[title] {
   font-variant: small-caps;
+  text-decoration: none;
   text-transform: lowercase; }
 
 article section + section {
@@ -2007,6 +2008,62 @@ pre {
 
 .display-grid {
   display: grid; }
+
+@media (min-width: 800px) {
+  .dlist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto); } }
+
+.dlist-grid dt {
+  font-weight: 700;
+  padding: 1rem 1rem 0; }
+  .dlist-grid dt::after {
+    content: ':'; }
+  @media (min-width: 800px) {
+    .dlist-grid dt {
+      border-bottom: 1px solid #c7cfd1;
+      margin-bottom: 1rem;
+      padding: 1rem; } }
+
+.dlist-grid dd {
+  border-bottom: 1px solid #c7cfd1;
+  margin-bottom: 1rem;
+  padding: 0 1rem 1rem; }
+  @media (min-width: 800px) {
+    .dlist-grid dd {
+      padding: 1rem; } }
+
+.dlist-grid h2,
+.dlist-grid h3,
+.dlist-grid h4,
+.dlist-grid h5,
+.dlist-grid h6 {
+  background-color: #f1f3f4;
+  margin: 2rem 0 0;
+  padding: 1rem 1rem 1.33333rem; }
+  @media (min-width: 800px) {
+    .dlist-grid h2,
+    .dlist-grid h3,
+    .dlist-grid h4,
+    .dlist-grid h5,
+    .dlist-grid h6 {
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+  .dlist-grid h2.section-header,
+  .dlist-grid h3.section-header,
+  .dlist-grid h4.section-header,
+  .dlist-grid h5.section-header,
+  .dlist-grid h6.section-header {
+    margin-top: 3rem; }
+  .dlist-grid h2 small,
+  .dlist-grid h3 small,
+  .dlist-grid h4 small,
+  .dlist-grid h5 small,
+  .dlist-grid h6 small {
+    display: block;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 0.5rem; }
 
 .grid-link {
   display: grid;
@@ -2200,6 +2257,15 @@ h6,
   @media (min-width: 1200px) {
     .header-tagline {
       margin-bottom: 2rem; } }
+
+.midhead {
+  color: #2e3638;
+  font-size: 2.304rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  margin-top: -1.5rem; }
+  .midhead + .subhead {
+    color: #0f758a; }
 
 .subhead {
   color: #2e3638;
@@ -3633,7 +3699,7 @@ dw-icon,
   width: 100%; }
   .table tbody th {
     vertical-align: middle; }
-  .table thead {
+  .table thead th {
     vertical-align: bottom; }
   .table th {
     text-align: left; }

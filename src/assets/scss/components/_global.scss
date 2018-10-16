@@ -117,8 +117,12 @@ a {
 }
 
 abbr {
-  font-variant: small-caps;
-  text-transform: lowercase;
+  &,
+  &[title] {
+    font-variant: small-caps;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
 }
 
 article {
@@ -243,6 +247,64 @@ pre {
 
 .display-grid {
   display: grid;
+}
+
+.dlist-grid {
+  @include breakpoint(m) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  dt {
+    font-weight: $font-weight-bold;
+    padding: $space-s $space-s 0;
+
+    &::after {
+      content: ':';
+    }
+
+    @include breakpoint(m) {
+      border-bottom: 1px solid color(grey, 80);
+      margin-bottom: $space-s;
+      padding: $space-s;
+    }
+  }
+
+  dd {
+    border-bottom: 1px solid color(grey, 80);
+    margin-bottom: $space-s;
+    padding: 0 $space-s $space-s;
+
+    @include breakpoint(m) {
+      padding: $space-s;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background-color: color(grey, 95);
+    margin: $space-m 0 0;
+    padding: $space-s $space-s ($space-s + $space-xxs);
+
+    @include breakpoint(m) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &.section-header {
+      margin-top: $space-l;
+    }
+
+    small {
+      display: block;
+      font-size: $font-size-m;
+      font-style: italic;
+      margin-top: $space-xs;
+    }
+  }
 }
 
 .grid-link {

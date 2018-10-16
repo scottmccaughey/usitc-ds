@@ -125,6 +125,18 @@ h6,
   }
 }
 
+.midhead {
+  color: $color-theme-base-text;
+  font-size: $font-size-xl;
+  font-style: italic;
+  margin-bottom: $space-m;
+  margin-top: (-$space-s - $space-xs);
+
+  + .subhead {
+    color: $color-theme-base-accent;
+  }
+}
+
 .subhead {
   color: $color-theme-base-text;
   font-size: $font-size-m;
