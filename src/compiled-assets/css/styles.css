@@ -2352,7 +2352,7 @@ dw-icon,
     .site-nav.on-dark a[href*='//']:not([href*="dataweb.usitc.gov"]) {
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiB3aGl0ZTsgfTwvc3R5bGU+PHBhdGggZD0iTTk0OC43NSwzMjQuMTQsODc5LjI1LDIyMSw2NzYuNTksNDIzLjY0YTIwLjc2LDIwLjc2LDAsMCwxLTI5LjI2LDBsLTczLjE2LTczLjE2YTIwLjc2LDIwLjc2LDAsMCwxLDAtMjkuMjdMNzc2LjgyLDExOC41NmwtMTAxLTY3LjMxYy0xNi44My0xMS04Ljc4LTM2LjU4LDExLTM3LjMxTDk3OC43NCwwYzEyLjQ0LS43MywyMiw4Ljc4LDIxLjIyLDIxLjIybC0xMy45LDI5MS45Qzk4NC42LDMzMy42NSw5NTkuNzIsMzQxLDk0OC43NSwzMjQuMTRaIi8+PHBhdGggZD0iTTgyNi4zMiwzNTUuMjVWODEwLjUzYTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LDE1LjI2SDE4OWExNS42NywxNS42NywwLDAsMS0xNS4yNy0xNS4yNlYxODguNDJjMC03LjgzLDYuODUtMTQuMjEsMTUuMjctMTQuMjFINjQzLjY3bDUwLTUwSDE4OWMtMzUuNzksMC02NS4yNywyOC40Mi02NS4yNyw2NC4yMVY4MTAuNTNjMCwzNS43OSwyOS40OCw2NS4yNiw2NS4yNyw2NS4yNmg2MjIuMWMzNS43OSwwLDY1LjI3LTI5LjQ3LDY1LjI3LTY1LjI2VjMwNS4yNVoiLz48L3N2Zz4=) !important;
       background-position: center right 2rem;
-      padding-right: 3rem; }
+      padding-right: 4rem; }
   .site-nav.on-dark span {
     display: block;
     font-size: 1.92rem;
