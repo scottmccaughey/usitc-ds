@@ -60,6 +60,10 @@ h6,
   font-size: $font-size-h6;
 }
 
+.big-header {
+  padding: $space-xxxl $space-m;
+}
+
 .header-caps {
   color: color(grey, 30);
   font-weight: $font-weight-black;

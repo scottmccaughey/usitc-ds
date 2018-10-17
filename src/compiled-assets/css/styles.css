@@ -1858,6 +1858,9 @@ h6,
 .h6 {
   font-size: 1.6rem; }
 
+.big-header {
+  padding: 8rem 2rem; }
+
 .header-caps {
   color: #455254;
   font-weight: 900;
