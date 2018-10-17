@@ -15,6 +15,14 @@
 // Coming soon...
 //
 // Styleguide Components.Global
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: $font-size-root;
 }
@@ -28,6 +36,7 @@ body {
   font-variant-numeric: lining-nums;
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
+  margin: 0;
   overflow: hidden;
   position: relative;
 
@@ -68,6 +77,18 @@ body {
 ::placeholder {
   color: color(grey, 75);
   opacity: 1;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[role='button'] {
+  touch-action: manipulation;
 }
 
 a {
@@ -119,6 +140,7 @@ a {
 abbr {
   &,
   &[title] {
+    cursor: help;
     font-variant: small-caps;
     text-decoration: none;
     text-transform: lowercase;
@@ -133,8 +155,20 @@ article {
   }
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 code,
-pre {
+kbd,
+pre,
+samp {
   font-family: $font-family-mono;
 }
 
@@ -223,6 +257,29 @@ pre {
   color: color(black);
   font-family: $font-family-mono;
   padding: $space-s;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 .alt {

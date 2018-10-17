@@ -7,6 +7,10 @@
 // Y88b.  888  888 888 d88P 888 Y8b.          X88
 //  "Y888 "Y888888 88888P"  888  "Y8888   88888P'
 
+table {
+  border-spacing: 0;
+}
+
 .hover-row {
   &:active,
   &:focus,

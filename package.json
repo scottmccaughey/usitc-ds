@@ -44,7 +44,6 @@
     "@ngx-prism/core": "^2.0.1",
     "@types/prismjs": "^1.9.0",
     "core-js": "^2.5.4",
-    "css-reset-and-normalize-sass": "^0.1.2",
     "lodash-es": "^4.17.10",
     "ng-inline-svg": "^8.1.0",
     "ngx-clipboard": "^11.1.3",

@@ -42,6 +42,7 @@ a.button[role='button'] {
   border: 1px solid $color-theme-base-border;
   border-radius: $border-radius-base;
   color: $color-theme-base-text;
+  cursor: pointer;
   display: inline-flex;
   font-weight: $font-weight-normal;
   height: auto;
