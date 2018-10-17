@@ -54,6 +54,10 @@ body {
     .site-layout {
       grid-template-columns: $off-canvas-width auto;
     }
+
+    .site-search.site-query {
+      overflow-x: visible;
+    }
   }
 }
 
