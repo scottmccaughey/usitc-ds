@@ -295,10 +295,6 @@ sub {
   background-color: $color-theme-base-background;
 }
 
-.beta {
-  color: color(red, 40);
-}
-
 .constrained {
   @include constrained;
 }
@@ -327,14 +323,12 @@ sub {
 
     @include breakpoint(m) {
       border-bottom: 1px solid color(grey, 80);
-      margin-bottom: 0; //
       padding: $space-s;
     }
   }
 
   dd {
     border-bottom: 1px solid color(grey, 80);
-    margin-bottom: 0; //
     padding: 0 $space-s $space-s;
 
     @include breakpoint(m) {
@@ -389,6 +383,10 @@ sub {
       color: $color-theme-dark-text;
     }
   }
+}
+
+.notice {
+  color: color(red, 40);
 }
 
 .nowrap {

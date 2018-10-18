@@ -1649,9 +1649,6 @@ sub {
 .alt-off {
   background-color: white; }
 
-.beta {
-  color: #b81422; }
-
 @media (min-width: 1200px) {
   .constrained {
     margin-left: auto;
@@ -1678,12 +1675,10 @@ sub {
   @media (min-width: 800px) {
     .dlist-grid dt {
       border-bottom: 1px solid #c7cfd1;
-      margin-bottom: 0;
       padding: 1rem; } }
 
 .dlist-grid dd {
   border-bottom: 1px solid #c7cfd1;
-  margin-bottom: 0;
   padding: 0 1rem 1rem; }
   @media (min-width: 800px) {
     .dlist-grid dd {
@@ -1735,6 +1730,9 @@ sub {
     .grid-link a:active, .grid-link a:focus, .grid-link a:hover {
       background-color: #0f758a;
       color: white; }
+
+.notice {
+  color: #b81422; }
 
 .nowrap {
   white-space: nowrap; }
