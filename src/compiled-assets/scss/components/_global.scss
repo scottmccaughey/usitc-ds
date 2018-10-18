@@ -440,17 +440,29 @@ sub {
   }
 }
 
-.roman-outline {
+.outline-list {
   li {
     list-style-type: upper-roman;
 
-    ol {
-      margin-top: $space-s;
-    }
-
     li {
       list-style-type: upper-latin;
+
+      li {
+        list-style-type: decimal;
+
+        li {
+          list-style-type: lower-latin;
+
+          li {
+            list-style-type: lower-roman;
+          }
+        }
+      }
     }
+  }
+
+  ol {
+    margin-top: $space-s;
   }
 }
 

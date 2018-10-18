@@ -1769,12 +1769,19 @@ sub {
 .read-more-content dt:first-child {
   margin-top: 2rem; }
 
-.roman-outline li {
+.outline-list li {
   list-style-type: upper-roman; }
-  .roman-outline li ol {
-    margin-top: 1rem; }
-  .roman-outline li li {
+  .outline-list li li {
     list-style-type: upper-latin; }
+    .outline-list li li li {
+      list-style-type: decimal; }
+      .outline-list li li li li {
+        list-style-type: lower-latin; }
+        .outline-list li li li li li {
+          list-style-type: lower-roman; }
+
+.outline-list ol {
+  margin-top: 1rem; }
 
 .scrollable {
   max-height: 400px;
