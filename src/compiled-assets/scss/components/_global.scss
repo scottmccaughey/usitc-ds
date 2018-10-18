@@ -327,14 +327,14 @@ sub {
 
     @include breakpoint(m) {
       border-bottom: 1px solid color(grey, 80);
-      margin-bottom: $space-s;
+      margin-bottom: 0; //
       padding: $space-s;
     }
   }
 
   dd {
     border-bottom: 1px solid color(grey, 80);
-    margin-bottom: $space-s;
+    margin-bottom: 0; //
     padding: 0 $space-s $space-s;
 
     @include breakpoint(m) {

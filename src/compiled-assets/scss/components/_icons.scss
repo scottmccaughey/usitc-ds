@@ -283,3 +283,33 @@ dw-icon,
     max-width: 100%;
   }
 }
+
+[class*='icon-pair-'] {
+  * {
+    vertical-align: middle;
+  }
+}
+
+.icon-pair-s {
+  line-height: $icon-size-s;
+}
+
+.icon-pair-l {
+  line-height: $icon-size-l;
+}
+
+.icon-pair-xl {
+  line-height: $icon-size-xl;
+}
+
+.icon-pair-xxl {
+  line-height: $icon-size-xxl;
+}
+
+.icon-pair-xxxl {
+  line-height: $icon-size-xxxl;
+}
+
+.icon-pair-xxxxl {
+  line-height: $icon-size-xxxxl;
+}

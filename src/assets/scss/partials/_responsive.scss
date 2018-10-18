@@ -10,6 +10,20 @@
 //                          888
 //                          888
 
+.hide-xs-down {
+  display: none;
+
+  @include breakpoint(s) {
+    display: block;
+  }
+}
+
+.hide-xs-up {
+  @include breakpoint(xs) {
+    display: none;
+  }
+}
+
 .hide-s-down {
   display: none;
 
@@ -18,8 +32,70 @@
   }
 }
 
+.hide-s-up {
+  @include breakpoint(s) {
+    display: none;
+  }
+}
+
+.hide-m-down {
+  display: none;
+
+  @include breakpoint(l) {
+    display: block;
+  }
+}
+
 .hide-m-up {
   @include breakpoint(m) {
+    display: none;
+  }
+}
+
+.hide-l-down {
+  display: none;
+
+  @include breakpoint(xl) {
+    display: block;
+  }
+}
+
+.hide-l-up {
+  @include breakpoint(l) {
+    display: none;
+  }
+}
+
+.hide-xl-down {
+  display: none;
+
+  @include breakpoint(xxl) {
+    display: block;
+  }
+}
+
+.hide-xl-up {
+  @include breakpoint(xl) {
+    display: none;
+  }
+}
+
+.hide-xxl-down {
+  display: none;
+
+  @include breakpoint(xxxl) {
+    display: block;
+  }
+}
+
+.hide-xxl-up {
+  @include breakpoint(xxl) {
+    display: none;
+  }
+}
+
+.hide-xxxl-up {
+  @include breakpoint(xxxl) {
     display: none;
   }
 }

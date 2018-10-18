@@ -11,10 +11,6 @@
 #
 # These settings control sizing for our icon system. Our base icon is `0.75em` in height and width, and scales up and down based on a [modular scale](https://alistapart.com/article/more-meaningful-typography) ratio of **1.5**. Unlike our typography sizes which will are based on `rem`, our icon sizes are based on `em` and depend on the font size of the containing element.
 #
-# $icon-size-xxxxs  = 0.099em - ​
-# $icon-size-xxxs   = 0.148em - ​
-# $icon-size-xxs    = 0.222em - ​
-# $icon-size-xs     = 0.333em - ​
 # $icon-size-s      = 0.500em - ​
 # $icon-size-m      = 0.750em - ​
 # $icon-size-l      = 1.125em - ​
@@ -30,10 +26,6 @@ icon-size:
   base:           0.75em !default
   scale-ratio:    1.5 !default
 
-  xxxxs:          ms($icon-size-scale-ratio, $icon-size-base, -5)
-  xxxs:           ms($icon-size-scale-ratio, $icon-size-base, -4)
-  xxs:            ms($icon-size-scale-ratio, $icon-size-base, -3)
-  xs:             ms($icon-size-scale-ratio, $icon-size-base, -2)
   s:              ms($icon-size-scale-ratio, $icon-size-base, -1)
   m:              ms($icon-size-scale-ratio, $icon-size-base, 0)
   l:              ms($icon-size-scale-ratio, $icon-size-base, 1)

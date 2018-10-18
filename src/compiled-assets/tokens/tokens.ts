@@ -287,10 +287,6 @@ export const tokens = {
   "icon-size": {
     "base": "0.75em !default",
     "scale-ratio": "1.5 !default",
-    "xxxxs": "ms($icon-size-scale-ratio, $icon-size-base, -5)",
-    "xxxs": "ms($icon-size-scale-ratio, $icon-size-base, -4)",
-    "xxs": "ms($icon-size-scale-ratio, $icon-size-base, -3)",
-    "xs": "ms($icon-size-scale-ratio, $icon-size-base, -2)",
     "s": "ms($icon-size-scale-ratio, $icon-size-base, -1)",
     "m": "ms($icon-size-scale-ratio, $icon-size-base, 0)",
     "l": "ms($icon-size-scale-ratio, $icon-size-base, 1)",
