@@ -155,3 +155,88 @@ table {
     border-bottom: $border-base;
   }
 }
+
+.table-data-with-id {
+  thead {
+    display: none;
+
+    @include breakpoint(s) {
+      thead {
+        display: table-header-group;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      td,
+      th {
+        @include breakpoint(s) {
+          background-color: $color-theme-base-background;
+        }
+      }
+    }
+
+    tr:nth-child(odd) {
+      td,
+      th {
+        @include breakpoint(s) {
+          background-color: color(grey, 95);
+        }
+      }
+    }
+
+    tr:nth-child(even),
+    tr:nth-child(odd) {
+      &:active,
+      &:focus,
+      &:hover {
+        td,
+        th {
+          @include breakpoint(s) {
+            background-color: color(cyan, 80);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    td,
+    th {
+      border-bottom-width: 0;
+      border-top-width: 0;
+      display: block;
+      padding-bottom: 0;
+      padding-top: 0;
+
+      @include breakpoint(s) {
+        border-bottom-width: 1px;
+        border-top-width: 1px;
+        display: table-cell;
+        padding-bottom: $space-m;
+        padding-top: $space-m;
+      }
+
+      &:first-child {
+        background-color: $color-theme-dark-background-alt;
+        color: $color-theme-dark-text;
+        padding-top: $space-m;
+
+        @include breakpoint(s) {
+          background-color: inherit;
+          color: $color-theme-base-text;
+        }
+      }
+
+      &:last-child {
+        border-bottom-width: 1px;
+        margin-bottom: $space-s;
+        padding-bottom: $space-m;
+
+        @include breakpoint(s) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

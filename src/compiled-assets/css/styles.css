@@ -1590,7 +1590,7 @@ table {
     margin-bottom: 0; }
   table td,
   table th {
-    padding: 1rem !important; }
+    padding: 1rem; }
   table th {
     font-weight: 700; }
 
@@ -3460,6 +3460,71 @@ table {
 
 .table-results-all table {
   border-bottom: 1px solid #73888c; }
+
+.table-data-with-id thead {
+  display: none; }
+  @media (min-width: 600px) {
+    .table-data-with-id thead thead {
+      display: table-header-group; } }
+
+@media (min-width: 600px) {
+  .table-data-with-id tbody tr:nth-child(even) td,
+  .table-data-with-id tbody tr:nth-child(even) th {
+    background-color: white; } }
+
+@media (min-width: 600px) {
+  .table-data-with-id tbody tr:nth-child(odd) td,
+  .table-data-with-id tbody tr:nth-child(odd) th {
+    background-color: #f1f3f4; } }
+
+@media (min-width: 600px) {
+  .table-data-with-id tbody tr:nth-child(even):active td,
+  .table-data-with-id tbody tr:nth-child(even):active th, .table-data-with-id tbody tr:nth-child(even):focus td,
+  .table-data-with-id tbody tr:nth-child(even):focus th, .table-data-with-id tbody tr:nth-child(even):hover td,
+  .table-data-with-id tbody tr:nth-child(even):hover th,
+  .table-data-with-id tbody tr:nth-child(odd):active td,
+  .table-data-with-id tbody tr:nth-child(odd):active th,
+  .table-data-with-id tbody tr:nth-child(odd):focus td,
+  .table-data-with-id tbody tr:nth-child(odd):focus th,
+  .table-data-with-id tbody tr:nth-child(odd):hover td,
+  .table-data-with-id tbody tr:nth-child(odd):hover th {
+    background-color: #a3e7f5;
+    cursor: pointer; } }
+
+.table-data-with-id tbody td,
+.table-data-with-id tbody th {
+  border-bottom-width: 0;
+  border-top-width: 0;
+  display: block;
+  padding-bottom: 0;
+  padding-top: 0; }
+  @media (min-width: 600px) {
+    .table-data-with-id tbody td,
+    .table-data-with-id tbody th {
+      border-bottom-width: 1px;
+      border-top-width: 1px;
+      display: table-cell;
+      padding-bottom: 2rem;
+      padding-top: 2rem; } }
+  .table-data-with-id tbody td:first-child,
+  .table-data-with-id tbody th:first-child {
+    background-color: #0f758a;
+    color: white;
+    padding-top: 2rem; }
+    @media (min-width: 600px) {
+      .table-data-with-id tbody td:first-child,
+      .table-data-with-id tbody th:first-child {
+        background-color: inherit;
+        color: #2e3638; } }
+  .table-data-with-id tbody td:last-child,
+  .table-data-with-id tbody th:last-child {
+    border-bottom-width: 1px;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem; }
+    @media (min-width: 600px) {
+      .table-data-with-id tbody td:last-child,
+      .table-data-with-id tbody th:last-child {
+        margin-bottom: 0; } }
 
 .check-tab {
   background-color: rgba(255, 255, 255, 0.8);
