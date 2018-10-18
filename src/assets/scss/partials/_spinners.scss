@@ -29,6 +29,14 @@
   }
 }
 
+.button-loader {
+  position: absolute;
+}
+
+.invisible-text {
+  color: transparent;
+}
+
 .spinner-circle {
   animation: spCircRot 0.6s infinite linear;
   border: 4px rgba($color-theme-base-spinner, 0.25) solid;

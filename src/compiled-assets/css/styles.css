@@ -3195,6 +3195,12 @@ dw-icon,
   .button-spinner .spinner {
     margin: 0 auto; }
 
+.button-loader {
+  position: absolute; }
+
+.invisible-text {
+  color: transparent; }
+
 .spinner-circle {
   -webkit-animation: spCircRot 0.6s infinite linear;
           animation: spCircRot 0.6s infinite linear;
