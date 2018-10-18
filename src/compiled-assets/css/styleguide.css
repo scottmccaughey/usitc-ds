@@ -1436,6 +1436,8 @@ body {
   background-color: white;
   color: #2e3638;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
   font-size: 1.6rem;
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
@@ -2499,11 +2501,24 @@ dw-icon,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -2rem -2rem -1rem;
+  margin: -2rem -2rem 2rem;
   padding: 1rem 2rem; }
   .padding-none .panel-header, .padding-none
   .panel-header:first-child {
     margin: 0; }
+  .panel-header + h1,
+  .panel-header + h2,
+  .panel-header + h3,
+  .panel-header + h4,
+  .panel-header + h5,
+  .panel-header + h6,
+  .panel-header:first-child + h1,
+  .panel-header:first-child + h2,
+  .panel-header:first-child + h3,
+  .panel-header:first-child + h4,
+  .panel-header:first-child + h5,
+  .panel-header:first-child + h6 {
+    margin-top: 0; }
 
 .panel-grid {
   -webkit-box-align: stretch;
