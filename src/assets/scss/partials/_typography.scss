@@ -90,17 +90,17 @@
 
 .text-center {
   display: block;
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
   display: block;
-  text-align: left;
+  text-align: left !important;
 }
 
 .text-right {
   display: block;
-  text-align: right;
+  text-align: right !important;
 }
 
 .unbold {

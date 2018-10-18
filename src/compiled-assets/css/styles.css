@@ -1769,11 +1769,11 @@ sub {
 .read-more-content dt:first-child {
   margin-top: 2rem; }
 
-.roman-outline ol li {
+.roman-outline li {
   list-style-type: upper-roman; }
-  .roman-outline ol li ol {
+  .roman-outline li ol {
     margin-top: 1rem; }
-  .roman-outline ol li li {
+  .roman-outline li li {
     list-style-type: upper-latin; }
 
 .scrollable {
@@ -3754,15 +3754,15 @@ table {
 
 .text-center {
   display: block;
-  text-align: center; }
+  text-align: center !important; }
 
 .text-left {
   display: block;
-  text-align: left; }
+  text-align: left !important; }
 
 .text-right {
   display: block;
-  text-align: right; }
+  text-align: right !important; }
 
 .unbold {
   font-weight: 400 !important; }
