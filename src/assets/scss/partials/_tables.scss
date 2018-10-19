@@ -81,6 +81,11 @@ table {
 .table-data {
   table-layout: fixed;
 
+  th,
+  td {
+    border: $border-base;
+  }
+
   thead {
     display: none;
 

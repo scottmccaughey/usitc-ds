@@ -3508,6 +3508,9 @@ table {
 
 .table-data {
   table-layout: fixed; }
+  .table-data th,
+  .table-data td {
+    border: 1px solid #73888c; }
   .table-data thead {
     display: none; }
     @media (min-width: 600px) {
