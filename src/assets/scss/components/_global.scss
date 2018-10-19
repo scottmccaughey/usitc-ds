@@ -315,6 +315,7 @@ sub {
 
   dt {
     font-weight: $font-weight-bold;
+    margin: 0;
     padding: $space-s $space-s 0;
 
     &::after {
@@ -329,6 +330,7 @@ sub {
 
   dd {
     border-bottom: 1px solid color(grey, 80);
+    margin: 0;
     padding: 0 $space-s $space-s;
 
     @include breakpoint(m) {
