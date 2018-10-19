@@ -200,6 +200,8 @@ export const tokens = {
     "xxxl": "$space-base * 8 !default",
     "xxxxl": "$space-base * 12 !default",
     "xxxxxl": "$space-base * 16 !default",
+    "xxxxxxl": "$space-base * 20 !default",
+    "xxxxxxxl": "$space-base * 24 !default",
     "stack": {
       "xxs": "0 0 $space-xxs 0",
       "xs": "0 0 $space-xs 0",
@@ -210,7 +212,9 @@ export const tokens = {
       "xxl": "0 0 $space-xxl 0",
       "xxxl": "0 0 $space-xxxl 0",
       "xxxxl": "0 0 $space-xxxxl 0",
-      "xxxxxl": "0 0 $space-xxxxxl 0"
+      "xxxxxl": "0 0 $space-xxxxxl 0",
+      "xxxxxxl": "0 0 $space-xxxxxxl 0",
+      "xxxxxxxl": "0 0 $space-xxxxxxxl 0"
     },
     "inline": {
       "xxs": "0 $space-xxs 0 0",
@@ -222,7 +226,9 @@ export const tokens = {
       "xxl": "0 $space-xxl 0 0",
       "xxxl": "0 $space-xxxl 0 0",
       "xxxxl": "0 $space-xxxxl 0 0",
-      "xxxxxl": "0 $space-xxxxxl 0 0"
+      "xxxxxl": "0 $space-xxxxxl 0 0",
+      "xxxxxxl": "0 $space-xxxxxxl 0 0",
+      "xxxxxxxl": "0 $space-xxxxxxxl 0 0"
     }
   },
   "border": {

@@ -1,9 +1,5 @@
 $icon-size-base: 0.75em !default;
 $icon-size-scale-ratio: 1.5 !default;
-$icon-size-xxxxs: ms($icon-size-scale-ratio, $icon-size-base, -5);
-$icon-size-xxxs: ms($icon-size-scale-ratio, $icon-size-base, -4);
-$icon-size-xxs: ms($icon-size-scale-ratio, $icon-size-base, -3);
-$icon-size-xs: ms($icon-size-scale-ratio, $icon-size-base, -2);
 $icon-size-s: ms($icon-size-scale-ratio, $icon-size-base, -1);
 $icon-size-m: ms($icon-size-scale-ratio, $icon-size-base, 0);
 $icon-size-l: ms($icon-size-scale-ratio, $icon-size-base, 1);

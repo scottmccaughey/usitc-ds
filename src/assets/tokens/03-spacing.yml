@@ -31,16 +31,18 @@
 # </div>
 # </div>
 #
-# $space-xxs    = 0.33rem   - 3px
-# $space-xs     = 0.5rem    - 5px
-# $space-s      = 1rem      - 10px
-# $space-m      = 2rem      - 20px
-# $space-l      = 3rem      - 30px
-# $space-xl     = 4rem      - 40px
-# $space-xxl    = 6rem      - 60px
-# $space-xxxl   = 8rem      - 80px
-# $space-xxxxl  = 12rem     - 120px
-# $space-xxxxxl = 16rem     - 160px
+# $space-xxs      = 0.33rem   - 3px
+# $space-xs       = 0.5rem    - 5px
+# $space-s        = 1rem      - 10px
+# $space-m        = 2rem      - 20px
+# $space-l        = 3rem      - 30px
+# $space-xl       = 4rem      - 40px
+# $space-xxl      = 6rem      - 60px
+# $space-xxxl     = 8rem      - 80px
+# $space-xxxxl    = 12rem     - 120px
+# $space-xxxxxl   = 16rem     - 160px
+# $space-xxxxxxl  = 20rem     - 20px
+# $space-xxxxxxxl = 24rem     - 240px
 #
 # Styleguide Tokens.Spacing
 #
@@ -58,6 +60,8 @@ space:
   xxxl:             $space-base * 8 !default
   xxxxl:            $space-base * 12 !default
   xxxxxl:           $space-base * 16 !default
+  xxxxxxl:          $space-base * 20 !default
+  xxxxxxxl:         $space-base * 24 !default
 
   stack:
     xxs:            0 0 $space-xxs 0
@@ -70,6 +74,8 @@ space:
     xxxl:           0 0 $space-xxxl 0
     xxxxl:          0 0 $space-xxxxl 0
     xxxxxl:         0 0 $space-xxxxxl 0
+    xxxxxxl:        0 0 $space-xxxxxxl 0
+    xxxxxxxl:       0 0 $space-xxxxxxxl 0
 
   inline:
     xxs:            0 $space-xxs 0 0
@@ -82,3 +88,5 @@ space:
     xxxl:           0 $space-xxxl 0 0
     xxxxl:          0 $space-xxxxl 0 0
     xxxxxl:         0 $space-xxxxxl 0 0
+    xxxxxxl:        0 $space-xxxxxxl 0 0
+    xxxxxxxl:       0 $space-xxxxxxxl 0 0

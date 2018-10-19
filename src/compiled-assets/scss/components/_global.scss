@@ -336,6 +336,25 @@ sub {
     @include breakpoint(m) {
       padding: $space-s;
     }
+
+    ul {
+      margin: $space-s (-$space-s) (-$space-s);
+      padding: 0;
+
+      @include breakpoint(m) {
+        margin-top: (-$space-s);
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 0;
+        padding: $space-s;
+
+        &:nth-child(odd) {
+          background-color: color(grey, 95);
+        }
+      }
+    }
   }
 
   h2,

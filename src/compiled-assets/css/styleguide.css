@@ -1686,6 +1686,18 @@ sub {
   @media (min-width: 800px) {
     .dlist-grid dd {
       padding: 1rem; } }
+  .dlist-grid dd ul {
+    margin: 1rem -1rem -1rem;
+    padding: 0; }
+    @media (min-width: 800px) {
+      .dlist-grid dd ul {
+        margin-top: -1rem; } }
+    .dlist-grid dd ul li {
+      list-style: none;
+      margin-bottom: 0;
+      padding: 1rem; }
+      .dlist-grid dd ul li:nth-child(odd) {
+        background-color: #f1f3f4; }
 
 .dlist-grid h2,
 .dlist-grid h3,
@@ -3592,8 +3604,20 @@ table {
     .table-data tbody th:first-child + td {
       padding-top: 1rem; }
   @media (min-width: 600px) {
-    .table-data .table-data-mini {
+    .table-data .table-data-cell-s {
+      width: 4rem; } }
+  @media (min-width: 600px) {
+    .table-data .table-data-cell-m {
+      width: 8rem; } }
+  @media (min-width: 600px) {
+    .table-data .table-data-cell-l {
       width: 16rem; } }
+  @media (min-width: 600px) {
+    .table-data .table-data-cell-xl {
+      width: 20rem; } }
+  @media (min-width: 600px) {
+    .table-data .table-data-cell-xxl {
+      width: 24rem; } }
 
 .table-striped tbody tr:nth-child(odd) th,
 .table-striped tbody tr:nth-child(odd) td {

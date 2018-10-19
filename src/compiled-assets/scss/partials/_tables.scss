@@ -214,9 +214,33 @@ table {
     }
   }
 
-  .table-data-mini {
+  .table-data-cell-s {
+    @include breakpoint(s) {
+      width: $space-xl;
+    }
+  }
+
+  .table-data-cell-m {
+    @include breakpoint(s) {
+      width: $space-xxxl;
+    }
+  }
+
+  .table-data-cell-l {
     @include breakpoint(s) {
       width: $space-xxxxxl;
+    }
+  }
+
+  .table-data-cell-xl {
+    @include breakpoint(s) {
+      width: $space-xxxxxxl;
+    }
+  }
+
+  .table-data-cell-xxl {
+    @include breakpoint(s) {
+      width: $space-xxxxxxxl;
     }
   }
 }
