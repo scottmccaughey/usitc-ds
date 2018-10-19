@@ -83,9 +83,7 @@ table {
     display: none;
 
     @include breakpoint(s) {
-      thead {
-        display: table-header-group;
-      }
+      display: table-header-group;
     }
   }
 

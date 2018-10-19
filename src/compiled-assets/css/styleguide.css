@@ -2043,14 +2043,6 @@ dw-icon,
   @media (min-width: 800px) {
     .nav-on-page {
       margin-right: 2rem; } }
-  .nav-on-page h2 {
-    color: #2e3638;
-    font-size: 1.33333rem;
-    font-weight: 400;
-    margin: 0 2rem 1rem; }
-    .nav-on-page h2 strong {
-      display: block;
-      font-size: 1.6rem; }
   .nav-on-page ul {
     margin-bottom: 0;
     padding: 0; }
@@ -2078,6 +2070,26 @@ dw-icon,
             position: absolute;
             right: -2rem;
             top: 50%; } }
+    .nav-on-page li:last-child ul {
+      margin-bottom: 0; }
+    .nav-on-page li ul {
+      margin-bottom: 1rem; }
+      .nav-on-page li ul a {
+        padding: 0.5rem 4rem; }
+  .nav-on-page .nav-on-page-header,
+  .nav-on-page .nav-on-page-subheader {
+    color: #2e3638;
+    font-size: 1.33333rem;
+    font-weight: 400;
+    margin: 0 2rem 1rem; }
+    .nav-on-page .nav-on-page-header strong,
+    .nav-on-page .nav-on-page-subheader strong {
+      display: block;
+      font-size: 1.6rem; }
+  .nav-on-page .nav-on-page-subheader {
+    font-weight: 700;
+    margin: 0 2rem;
+    padding: 0 1rem 0.5rem; }
 
 .nav-on-page-block {
   border-bottom: 1px solid #c7cfd1;
@@ -3495,7 +3507,7 @@ table {
 .table-data thead {
   display: none; }
   @media (min-width: 600px) {
-    .table-data thead thead {
+    .table-data thead {
       display: table-header-group; } }
 
 .table-data tbody tr {

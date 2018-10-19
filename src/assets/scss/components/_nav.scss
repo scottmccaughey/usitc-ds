@@ -11,18 +11,6 @@
     margin-right: $space-m;
   }
 
-  h2 {
-    color: $color-theme-base-text;
-    font-size: $font-size-s;
-    font-weight: $font-weight-normal;
-    margin: 0 $space-m $space-s;
-
-    strong {
-      display: block;
-      font-size: $font-size-m;
-    }
-  }
-
   ul {
     margin-bottom: 0;
     padding: 0;
@@ -64,6 +52,39 @@
         }
       }
     }
+
+    &:last-child {
+      ul {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      margin-bottom: $space-s;
+
+      a {
+        padding: $space-xs ($space-l + $space-s);
+      }
+    }
+  }
+
+  .nav-on-page-header,
+  .nav-on-page-subheader {
+    color: $color-theme-base-text;
+    font-size: $font-size-s;
+    font-weight: $font-weight-normal;
+    margin: 0 $space-m $space-s;
+
+    strong {
+      display: block;
+      font-size: $font-size-m;
+    }
+  }
+
+  .nav-on-page-subheader {
+    font-weight: $font-weight-bold;
+    margin: 0 $space-m;
+    padding: 0 $space-s $space-xs;
   }
 }
 
