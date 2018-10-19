@@ -210,7 +210,9 @@ table {
   }
 
   .table-data-mini {
-    width: $space-xxxxxl;
+    @include breakpoint(s) {
+      width: $space-xxxxxl;
+    }
   }
 }
 

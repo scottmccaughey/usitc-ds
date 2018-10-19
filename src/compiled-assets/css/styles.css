@@ -3585,8 +3585,9 @@ table {
         color: #2e3638; } }
     .table-data tbody th:first-child + td {
       padding-top: 1rem; }
-  .table-data .table-data-mini {
-    width: 16rem; }
+  @media (min-width: 600px) {
+    .table-data .table-data-mini {
+      width: 16rem; } }
 
 .table-striped tbody tr:nth-child(odd) th,
 .table-striped tbody tr:nth-child(odd) td {
