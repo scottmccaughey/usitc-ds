@@ -1,4 +1,7 @@
 // Set $font-path to local path for web fonts, overriding the variable set for the distributed Design System (located in node_modules).
 $font-path: 'compiled-assets/fonts';
 
+// Set $off-canvas-open-at to open off-canvas menu at the large breakpoint.
+$off-canvas-open-at: 'l';
+
 @import 'compiled-assets/scss/styleguide';

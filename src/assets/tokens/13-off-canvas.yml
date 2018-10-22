@@ -15,6 +15,7 @@
 # $off-canvas-shadow      = 5px 0 10px 0 color(black, 0, 25)  - Sets the box-shadow for off-canvas elements
 # $off-canvas-transition  = left 0.75s ease-in-out            - Sets the CSS transition when toggling off-canvas elements
 # $off-canvas-width       = 250px                             - Sets the width of off-canvas elements
+# $off-canvas-open-at     = xxxl                              - Keep the off-canvas menu open at a certain breakpoint
 #
 # Styleguide Tokens.OffCanvas
 #
@@ -24,3 +25,4 @@ off-canvas:
   shadow:           5px 0 10px 0 color(black, 0, 25) !default
   transition:       left 0.75s ease-in-out !default
   width:            250px !default
+  open-at:          xxxl !default

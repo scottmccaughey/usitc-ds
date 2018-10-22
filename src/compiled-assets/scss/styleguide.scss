@@ -235,11 +235,11 @@
   grid-template-columns: 1fr;
   grid-gap: $space-m;
 
-  @include breakpoint(laptop) {
+  @include breakpoint(l) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(xl) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

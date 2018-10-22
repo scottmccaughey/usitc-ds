@@ -40,7 +40,7 @@
   transition: $off-canvas-transition;
   width: calc(100vw + #{$off-canvas-width});
 
-  @include breakpoint(xxxl) {
+  @include breakpoint(#{$off-canvas-open-at}) {
     grid-template-columns: $off-canvas-width auto;
     left: 0;
     width: 100vw;
