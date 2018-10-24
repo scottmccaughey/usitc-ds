@@ -418,6 +418,34 @@ a.button[role='button'] {
     }
   }
 
+  &.button-warning {
+    background-color: $color-state-warning-link;
+    border-color: transparent;
+    color: color(white);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(orange, 20);
+    }
+  }
+
+  &.button-warning-light {
+    border-color: transparent;
+    background-color: color(orange, 90);
+    color: color(orange, 20);
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color(orange, 70);
+
+      .on-dark & {
+        border-color: $color-theme-dark-text;
+      }
+    }
+  }
+
   &.button-close {
     background-color: color(black, 0, 10);
     border: 0;

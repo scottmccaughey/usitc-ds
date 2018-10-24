@@ -664,6 +664,53 @@ a.button[role='button'] {
       a.button[role='button'].button-cancel-light:focus, .on-dark
       a.button[role='button'].button-cancel-light:hover {
         border-color: white; }
+  button.button-warning,
+  input[type='button'].button-warning,
+  a.button.button-warning,
+  a.button[role='button'].button-warning {
+    background-color: #8a420f;
+    border-color: transparent;
+    color: white; }
+    button.button-warning:active, button.button-warning:focus, button.button-warning:hover,
+    input[type='button'].button-warning:active,
+    input[type='button'].button-warning:focus,
+    input[type='button'].button-warning:hover,
+    a.button.button-warning:active,
+    a.button.button-warning:focus,
+    a.button.button-warning:hover,
+    a.button[role='button'].button-warning:active,
+    a.button[role='button'].button-warning:focus,
+    a.button[role='button'].button-warning:hover {
+      background-color: #5c2c0a; }
+  button.button-warning-light,
+  input[type='button'].button-warning-light,
+  a.button.button-warning-light,
+  a.button[role='button'].button-warning-light {
+    border-color: transparent;
+    background-color: #fae2d1;
+    color: #5c2c0a; }
+    button.button-warning-light:active, button.button-warning-light:focus, button.button-warning-light:hover,
+    input[type='button'].button-warning-light:active,
+    input[type='button'].button-warning-light:focus,
+    input[type='button'].button-warning-light:hover,
+    a.button.button-warning-light:active,
+    a.button.button-warning-light:focus,
+    a.button.button-warning-light:hover,
+    a.button[role='button'].button-warning-light:active,
+    a.button[role='button'].button-warning-light:focus,
+    a.button[role='button'].button-warning-light:hover {
+      background-color: #f0a875; }
+      .on-dark button.button-warning-light:active, .on-dark button.button-warning-light:focus, .on-dark button.button-warning-light:hover, .on-dark
+      input[type='button'].button-warning-light:active, .on-dark
+      input[type='button'].button-warning-light:focus, .on-dark
+      input[type='button'].button-warning-light:hover, .on-dark
+      a.button.button-warning-light:active, .on-dark
+      a.button.button-warning-light:focus, .on-dark
+      a.button.button-warning-light:hover, .on-dark
+      a.button[role='button'].button-warning-light:active, .on-dark
+      a.button[role='button'].button-warning-light:focus, .on-dark
+      a.button[role='button'].button-warning-light:hover {
+        border-color: white; }
   button.button-close,
   input[type='button'].button-close,
   a.button.button-close,
@@ -1763,6 +1810,9 @@ sub {
   .on-dark.on-dark-grey {
     background-color: #2e3638; }
 
+.pos-relative {
+  position: relative; }
+
 .pull-left {
   float: left; }
 
@@ -2138,7 +2188,7 @@ dw-icon,
     padding: 1rem 2rem; }
   .site-nav.on-dark ul {
     margin: 0;
-    padding: 0; }
+    padding: 0 0 2rem; }
     .site-nav.on-dark ul li {
       list-style: none;
       margin: 0; }
