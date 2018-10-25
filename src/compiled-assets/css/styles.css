@@ -2187,6 +2187,8 @@ dw-icon,
     .site-nav.on-dark ul li {
       list-style: none;
       margin: 0; }
+    .site-nav.on-dark ul ul {
+      padding: 0; }
   .site-nav.on-dark .site-nav-children a {
     font-size: 1.6rem;
     font-weight: 400;
