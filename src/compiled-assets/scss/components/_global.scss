@@ -68,12 +68,6 @@ body {
   text-shadow: 0;
 }
 
-::-moz-selection {
-  background-color: $color-theme-dark-background-alt;
-  color: $color-theme-dark-text;
-  text-shadow: 0;
-}
-
 :focus {
   box-shadow: $shadows-box-focus;
   outline: transparent;

@@ -1519,11 +1519,6 @@ body {
   color: white;
   text-shadow: 0; }
 
-::-moz-selection {
-  background-color: #0f758a;
-  color: white;
-  text-shadow: 0; }
-
 :focus {
   -webkit-box-shadow: 0 0 0.33333rem 0.33333rem #0f758a;
           box-shadow: 0 0 0.33333rem 0.33333rem #0f758a;
@@ -3354,7 +3349,10 @@ dw-icon,
 .button-loader {
   position: absolute; }
 
-.invisible-text {
+.invisible-text, .invisible-text::-moz-selection {
+  color: transparent; }
+
+.invisible-text, .invisible-text::selection {
   color: transparent; }
 
 .spinner-circle {

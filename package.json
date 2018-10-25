@@ -25,7 +25,7 @@
     "prestart": "gulp build",
     "start": "concurrently -k -r \"ng serve --port=4300\" \"gulp watch\"",
     "prebuild": "gulp build",
-    "build": "ng build",
+    "build": "ng build -c=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

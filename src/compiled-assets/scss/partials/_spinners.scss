@@ -34,7 +34,10 @@
 }
 
 .invisible-text {
-  color: transparent;
+  &,
+  &::selection {
+    color: transparent;
+  }
 }
 
 .spinner-circle {
