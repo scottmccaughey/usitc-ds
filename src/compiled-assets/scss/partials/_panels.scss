@@ -30,6 +30,11 @@
 
     &.clean {
       padding: 0;
+
+      li:only-child {
+        list-style: none;
+        text-align: center;
+      }
     }
 
     &.panel-grid-list {

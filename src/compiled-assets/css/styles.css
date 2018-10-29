@@ -2571,6 +2571,10 @@ dw-icon,
     .panel ol.clean,
     .panel ul.clean {
       padding: 0; }
+      .panel ol.clean li:only-child,
+      .panel ul.clean li:only-child {
+        list-style: none;
+        text-align: center; }
     .panel ol.panel-grid-list,
     .panel ul.panel-grid-list {
       padding: 0; }
