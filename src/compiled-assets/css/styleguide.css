@@ -2574,8 +2574,7 @@ dw-icon,
       padding: 0; }
       .panel ol.clean li:only-child,
       .panel ul.clean li:only-child {
-        list-style: none;
-        text-align: center; }
+        text-align: left; }
     .panel ol.panel-grid-list,
     .panel ul.panel-grid-list {
       padding: 0; }
