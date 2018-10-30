@@ -86,7 +86,7 @@
   }
 
   .button-nav {
-    @include breakpoint(xxxl) {
+    @include breakpoint($off-canvas-open-at) {
       display: none;
     }
 

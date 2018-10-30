@@ -27,7 +27,8 @@
   flex-direction: column;
   grid-area: site-content;
   min-height: 100vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .site-layout {
