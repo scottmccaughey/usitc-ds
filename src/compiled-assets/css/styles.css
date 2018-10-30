@@ -353,6 +353,8 @@
     .site-layout.site-nav-open .button-nav svg path:last-child {
       -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-50%);
               transform: rotate(-45deg) translateY(-50%) translateX(-50%); }
+  .site-layout .site-content {
+    overflow-x: auto; }
 
 .site-outlet {
   -webkit-box-flex: 1;
