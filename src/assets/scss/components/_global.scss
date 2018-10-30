@@ -55,6 +55,10 @@ body {
     .site-search.site-query {
       overflow-x: visible;
 
+      > article {
+        overflow-x: visible;
+      }
+
       .constrained {
         max-width: initial;
         width: initial;
