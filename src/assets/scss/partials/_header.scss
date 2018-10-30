@@ -76,6 +76,7 @@
       right: 0;
       top: 100%;
       transition: max-height $transition-base-time $transition-base-easing;
+      z-index: 999;
 
       a {
         display: block;

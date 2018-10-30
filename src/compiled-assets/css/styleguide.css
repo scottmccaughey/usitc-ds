@@ -1494,8 +1494,6 @@ body {
   margin: 0;
   overflow: hidden;
   position: relative; }
-  body.body-scrollable .constrained {
-    width: initial; }
   body.body-scrollable .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1509,6 +1507,9 @@ body {
     grid-template-columns: 250px auto; }
   body.body-scrollable .site-search.site-query {
     overflow-x: visible; }
+    body.body-scrollable .site-search.site-query .constrained {
+      max-width: initial;
+      width: initial; }
 
 ::-moz-selection {
   background-color: #0f758a;
@@ -2253,7 +2254,8 @@ dw-icon,
       right: 0;
       top: 100%;
       -webkit-transition: max-height 0.25s ease-in-out;
-      transition: max-height 0.25s ease-in-out; }
+      transition: max-height 0.25s ease-in-out;
+      z-index: 999; }
       .header-nav .button-account ul a {
         display: block;
         padding: 1rem 2rem;

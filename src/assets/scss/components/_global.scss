@@ -42,10 +42,6 @@ body {
   position: relative;
 
   &.body-scrollable {
-    .constrained {
-      width: initial;
-    }
-
     .site-content {
       display: flex;
       flex-direction: column;
@@ -58,6 +54,11 @@ body {
 
     .site-search.site-query {
       overflow-x: visible;
+
+      .constrained {
+        max-width: initial;
+        width: initial;
+      }
     }
   }
 }
