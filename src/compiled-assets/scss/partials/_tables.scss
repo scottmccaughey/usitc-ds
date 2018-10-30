@@ -125,17 +125,21 @@ table {
       &:active,
       &:focus,
       &:hover {
-        td,
-        th {
-          background-color: color(cyan, 80);
-          cursor: pointer;
-        }
-
-        th:first-child {
-          background-color: $color-theme-dark-background-alt;
-
-          @include breakpoint(s) {
+        &,
+        &:nth-child(even),
+        &:nth-child(odd) {
+          td,
+          th {
             background-color: color(cyan, 80);
+            cursor: pointer;
+          }
+
+          th:first-child {
+            background-color: $color-theme-dark-background-alt;
+
+            @include breakpoint(s) {
+              background-color: color(cyan, 80);
+            }
           }
         }
       }

@@ -3622,15 +3622,21 @@ table {
       .table-data tbody tr:nth-child(odd) th {
         background-color: #f1f3f4; } }
     .table-data tbody tr:active td,
-    .table-data tbody tr:active th, .table-data tbody tr:focus td,
-    .table-data tbody tr:focus th, .table-data tbody tr:hover td,
-    .table-data tbody tr:hover th {
+    .table-data tbody tr:active th, .table-data tbody tr:active:nth-child(even) td,
+    .table-data tbody tr:active:nth-child(even) th, .table-data tbody tr:active:nth-child(odd) td,
+    .table-data tbody tr:active:nth-child(odd) th, .table-data tbody tr:focus td,
+    .table-data tbody tr:focus th, .table-data tbody tr:focus:nth-child(even) td,
+    .table-data tbody tr:focus:nth-child(even) th, .table-data tbody tr:focus:nth-child(odd) td,
+    .table-data tbody tr:focus:nth-child(odd) th, .table-data tbody tr:hover td,
+    .table-data tbody tr:hover th, .table-data tbody tr:hover:nth-child(even) td,
+    .table-data tbody tr:hover:nth-child(even) th, .table-data tbody tr:hover:nth-child(odd) td,
+    .table-data tbody tr:hover:nth-child(odd) th {
       background-color: #a3e7f5;
       cursor: pointer; }
-    .table-data tbody tr:active th:first-child, .table-data tbody tr:focus th:first-child, .table-data tbody tr:hover th:first-child {
+    .table-data tbody tr:active th:first-child, .table-data tbody tr:active:nth-child(even) th:first-child, .table-data tbody tr:active:nth-child(odd) th:first-child, .table-data tbody tr:focus th:first-child, .table-data tbody tr:focus:nth-child(even) th:first-child, .table-data tbody tr:focus:nth-child(odd) th:first-child, .table-data tbody tr:hover th:first-child, .table-data tbody tr:hover:nth-child(even) th:first-child, .table-data tbody tr:hover:nth-child(odd) th:first-child {
       background-color: #0f758a; }
       @media (min-width: 600px) {
-        .table-data tbody tr:active th:first-child, .table-data tbody tr:focus th:first-child, .table-data tbody tr:hover th:first-child {
+        .table-data tbody tr:active th:first-child, .table-data tbody tr:active:nth-child(even) th:first-child, .table-data tbody tr:active:nth-child(odd) th:first-child, .table-data tbody tr:focus th:first-child, .table-data tbody tr:focus:nth-child(even) th:first-child, .table-data tbody tr:focus:nth-child(odd) th:first-child, .table-data tbody tr:hover th:first-child, .table-data tbody tr:hover:nth-child(even) th:first-child, .table-data tbody tr:hover:nth-child(odd) th:first-child {
           background-color: #a3e7f5; } }
     .table-data tbody tr.has-warning td,
     .table-data tbody tr.has-warning th {
