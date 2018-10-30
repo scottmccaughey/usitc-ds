@@ -325,8 +325,7 @@
           flex-direction: column;
   grid-area: site-content;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  overflow: auto; }
 
 .site-layout {
   display: grid;
@@ -353,8 +352,6 @@
     .site-layout.site-nav-open .button-nav svg path:last-child {
       -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-50%);
               transform: rotate(-45deg) translateY(-50%) translateX(-50%); }
-  .site-layout .site-content {
-    overflow-x: auto; }
 
 .site-outlet {
   -webkit-box-flex: 1;
