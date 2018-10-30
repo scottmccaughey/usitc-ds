@@ -52,6 +52,39 @@
     flex-grow: 1;
   }
 
+  .button-account {
+    position: relative;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-theme-dark-background-alt;
+      color: $color-theme-dark-text;
+
+      ul {
+        max-height: $transition-max;
+      }
+    }
+
+    ul {
+      background-color: $color-theme-base-background-alt;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      transition: max-height $transition-base-time $transition-base-easing;
+
+      a {
+        display: block;
+        padding: $space-s $space-m;
+        white-space: nowrap;
+      }
+    }
+  }
+
   .button-nav {
     @include breakpoint(xxxl) {
       display: none;

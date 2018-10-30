@@ -2236,6 +2236,28 @@ dw-icon,
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+  .header-nav .button-account {
+    position: relative; }
+    .header-nav .button-account:active, .header-nav .button-account:focus, .header-nav .button-account:hover {
+      background-color: #0f758a;
+      color: white; }
+      .header-nav .button-account:active ul, .header-nav .button-account:focus ul, .header-nav .button-account:hover ul {
+        max-height: 99rem; }
+    .header-nav .button-account ul {
+      background-color: #e3e7e8;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      -webkit-transition: max-height 0.25s ease-in-out;
+      transition: max-height 0.25s ease-in-out; }
+      .header-nav .button-account ul a {
+        display: block;
+        padding: 1rem 2rem;
+        white-space: nowrap; }
   @media (min-width: 4800px) {
     .header-nav .button-nav {
       display: none; } }
