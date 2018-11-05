@@ -314,9 +314,9 @@ export const tokens = {
   },
   "off-canvas": {
     "height": "100vh !default",
-    "shadow": "5px 0 10px 0 color(black, 0, 25) !default",
-    "transition": "left 0.75s ease-in-out !default",
     "width": "250px !default",
-    "open-at": "xxxl !default"
+    "open-at": "xxxl !default",
+    "shadow": "5px 0 10px 0 color(black, 0, 25) !default",
+    "transition": "left 0.75s ease-in-out !default"
   }
 };
