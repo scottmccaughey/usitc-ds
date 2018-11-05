@@ -713,8 +713,12 @@ dw-simple-select {
     }
 
     option:checked {
-      background: $color-state-info-background
-        linear-gradient(0deg, $color-state-info-background 0%, $color-state-info-background 100%);
+      background: $color-state-info-background-alt
+        linear-gradient(
+          0deg,
+          $color-state-info-background-alt 0%,
+          $color-state-info-background-alt 100%
+        );
       color: color(black) !important;
     }
   }
