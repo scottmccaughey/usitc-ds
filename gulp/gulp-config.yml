@@ -24,7 +24,7 @@ path:
 
   favicons:
     src:                src/assets/favicons/**/*
-    dist:               src/compiled-assets/favicons
+    dist:               src/compiled-assets/icons/favicons
 
   flags:
     src:                src/assets/flags/**/*.svg
