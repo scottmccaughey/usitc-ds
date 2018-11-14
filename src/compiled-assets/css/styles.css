@@ -1200,7 +1200,8 @@ dw-simple-select + dw-simple-select .select-child-field {
   background-color: #e8f9fc;
   padding: 2rem; }
   .read-more-content h4 {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 0; }
   .on-dark .read-more-content {
     color: #2e3638; }
     .on-dark .read-more-content h4 {
