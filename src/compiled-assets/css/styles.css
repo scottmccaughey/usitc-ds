@@ -1287,8 +1287,8 @@ dw-simple-select + dw-simple-select .select-child-field {
     .select select::-ms-expand {
       display: none; }
     .select select option:checked {
-      background: #d1f3fa -webkit-gradient(linear, left bottom, left top, from(#d1f3fa), to(#d1f3fa));
-      background: #d1f3fa linear-gradient(0deg, #d1f3fa 0%, #d1f3fa 100%);
+      background: #75dbf0 -webkit-gradient(linear, left bottom, left top, from(#75dbf0), to(#75dbf0));
+      background: #75dbf0 linear-gradient(0deg, #75dbf0 0%, #75dbf0 100%);
       color: black !important; }
   .select::after {
     border-bottom: 0.5rem solid transparent;

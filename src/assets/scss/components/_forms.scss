@@ -714,12 +714,7 @@ dw-simple-select {
     }
 
     option:checked {
-      background: $color-state-info-background-alt
-        linear-gradient(
-          0deg,
-          $color-state-info-background-alt 0%,
-          $color-state-info-background-alt 100%
-        );
+      background: color(cyan, 70) linear-gradient(0deg, color(cyan, 70) 0%, color(cyan, 70) 100%);
       color: color(black) !important;
     }
   }
