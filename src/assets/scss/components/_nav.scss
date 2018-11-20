@@ -98,11 +98,13 @@
 }
 
 .site-nav.on-dark {
-  background-color: color(cyan, 15);
   grid-area: site-nav;
   height: $off-canvas-height;
-  overflow-y: auto;
-  position: relative;
+  left: (-$off-canvas-width);
+  position: absolute;
+  top: 0;
+  transition: $off-canvas-transition;
+  width: $off-canvas-width;
 
   a {
     display: block;
@@ -146,6 +148,18 @@
 
     ul {
       padding: 0;
+    }
+  }
+
+  .button-close {
+    background-color: $color-theme-base-background;
+    color: $color-theme-base-accent;
+    padding: 13px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-state-info-background-alt;
     }
   }
 

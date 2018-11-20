@@ -1,15 +1,14 @@
 <nav class="site-nav on-dark">
+  <button class="button-close" (click)="config.toggleNav(navOpen)"><icon name="x"></icon></button>
   <ul *ngIf="menu">
     <li *ngFor="let item of menu">
       <ng-container *ngIf="!item.child">
-        <a [class.nav-active]="item.url === route"
-          [routerLink]="item.url">{{item.name}}</a>
+        <a [class.nav-active]="item.url === route" [routerLink]="item.url">{{ item.name }}</a>
       </ng-container>
       <ng-container *ngIf="item.child">
         <ul class="site-nav-children">
           <li>
-            <a [class.nav-active]="item.url === route"
-              [routerLink]="item.url">{{item.name}}</a>
+            <a [class.nav-active]="item.url === route" [routerLink]="item.url">{{ item.name }}</a>
           </li>
         </ul>
       </ng-container>

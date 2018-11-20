@@ -38,10 +38,13 @@ body {
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: initial;
   position: relative;
 
   &.body-scrollable {
+    overflow-x: initial;
+
     .site-content {
       display: flex;
       flex-direction: column;
@@ -74,8 +77,7 @@ body {
 }
 
 :focus {
-  box-shadow: $shadows-box-focus;
-  outline: transparent;
+  outline: none;
 }
 
 ::placeholder {
