@@ -2679,9 +2679,8 @@ dw-icon,
   a {
     color: black !important;
     font-weight: 700;
+    padding-right: 0 !important;
     text-decoration: underline; }
-    a::after {
-      content: " (" attr(href) ") "; }
   input,
   select,
   td {
@@ -2689,13 +2688,18 @@ dw-icon,
   table {
     max-width: 100vw !important; }
     table * {
-      border: 1px solid #73888c !important;
       color: black !important;
       white-space: normal !important; }
+    table td,
+    table th {
+      border: 1px solid #73888c !important; }
   .form-read-more,
   .no-print,
   .pagination,
+  .s-h-details,
   .search-actions button,
+  .site-nav,
+  .site-search-header,
   .table-button-cell {
     display: none !important; }
   .table-responsive thead {
@@ -2713,7 +2717,7 @@ dw-icon,
   .site-header li {
     border-width: 0 !important; }
   .site-saved-searches table button,
-  .site-saved-searches #new-request-button,
+  .site-saved-searches .new-request-button,
   .site-saved-searches .searches-settings,
   .site-saved-searches .table-searches.table-responsive thead th.table-spinner:last-child {
     display: none !important; }

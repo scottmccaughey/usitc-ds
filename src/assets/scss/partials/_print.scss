@@ -25,11 +25,8 @@
   a {
     color: $print-color-base !important;
     font-weight: $font-weight-bold;
+    padding-right: 0 !important;
     text-decoration: underline;
-
-    &::after {
-      content: ' (' attr(href) ') ';
-    }
   }
 
   input,
@@ -42,16 +39,23 @@
     max-width: 100vw !important;
 
     * {
-      border: $border-base !important;
       color: $print-color-base !important;
       white-space: normal !important;
+    }
+
+    td,
+    th {
+      border: $border-base !important;
     }
   }
 
   .form-read-more,
   .no-print,
   .pagination,
+  .s-h-details,
   .search-actions button,
+  .site-nav,
+  .site-search-header,
   .table-button-cell {
     display: none !important;
   }
@@ -88,7 +92,7 @@
 
   .site-saved-searches {
     table button,
-    #new-request-button,
+    .new-request-button,
     .searches-settings,
     .table-searches.table-responsive thead th.table-spinner:last-child {
       display: none !important;
