@@ -2700,6 +2700,7 @@ dw-icon,
   .search-actions button,
   .site-nav,
   .site-search-header,
+  .state-error,
   .table-button-cell {
     display: none !important; }
   .table-responsive thead {
