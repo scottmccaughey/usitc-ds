@@ -34,8 +34,8 @@
   a.button,
   a.button[role='button'],
   .panel-header {
-    background-color: $color-state-info-background-alt !important;
-    color: $color-state-info-text !important;
+    border: $border-base !important;
+    color: $print-color-base !important;
   }
 
   input,
