@@ -2685,8 +2685,8 @@ dw-icon,
   a.button,
   a.button[role='button'],
   .panel-header {
-    background-color: #d1f3fa;
-    color: #2e3638; }
+    background-color: #d1f3fa !important;
+    color: #2e3638 !important; }
   input,
   select,
   td {
