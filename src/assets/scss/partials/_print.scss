@@ -29,6 +29,15 @@
     text-decoration: underline;
   }
 
+  button,
+  input[type='button'],
+  a.button,
+  a.button[role='button'],
+  .panel-header {
+    background-color: $color-state-info-background-alt;
+    color: $color-state-info-text;
+  }
+
   input,
   select,
   td {
@@ -61,25 +70,9 @@
     display: none !important;
   }
 
-  .table-responsive {
-    thead {
-      display: table-header-group;
-    }
-
-    th,
-    td {
-      display: table-cell;
-      position: relative;
-    }
-  }
-
   .site-header {
     a:link {
       text-decoration: none;
-
-      &::after {
-        content: '';
-      }
     }
 
     button {
@@ -150,6 +143,18 @@
 
     .table-results {
       font-size: $print-font-size-results !important;
+    }
+  }
+
+  .table-responsive {
+    thead {
+      display: table-header-group;
+    }
+
+    th,
+    td {
+      display: table-cell;
+      position: relative;
     }
   }
 }
