@@ -1554,6 +1554,9 @@ a {
     padding-right: 1.7rem; }
     a[href*='//']:not([href*="dataweb.usitc.gov"]):active, a[href*='//']:not([href*="dataweb.usitc.gov"]):focus, a[href*='//']:not([href*="dataweb.usitc.gov"]):hover {
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiPjx0aXRsZT5leHRlcm5hbDwvdGl0bGU+PHN0eWxlPnBhdGggeyBmaWxsOiAjMDUyNzJlOyB9PC9zdHlsZT48cGF0aCBkPSJNOTQ4Ljc1LDMyNC4xNCw4NzkuMjUsMjIxLDY3Ni41OSw0MjMuNjRhMjAuNzYsMjAuNzYsMCwwLDEtMjkuMjYsMGwtNzMuMTYtNzMuMTZhMjAuNzYsMjAuNzYsMCwwLDEsMC0yOS4yN0w3NzYuODIsMTE4LjU2bC0xMDEtNjcuMzFjLTE2LjgzLTExLTguNzgtMzYuNTgsMTEtMzcuMzFMOTc4Ljc0LDBjMTIuNDQtLjczLDIyLDguNzgsMjEuMjIsMjEuMjJsLTEzLjksMjkxLjlDOTg0LjYsMzMzLjY1LDk1OS43MiwzNDEsOTQ4Ljc1LDMyNC4xNFoiLz48cGF0aCBkPSJNODI2LjMyLDM1NS4yNVY4MTAuNTNhMTUuNjcsMTUuNjcsMCwwLDEtMTUuMjcsMTUuMjZIMTg5YTE1LjY3LDE1LjY3LDAsMCwxLTE1LjI3LTE1LjI2VjE4OC40MmMwLTcuODMsNi44NS0xNC4yMSwxNS4yNy0xNC4yMUg2NDMuNjdsNTAtNTBIMTg5Yy0zNS43OSwwLTY1LjI3LDI4LjQyLTY1LjI3LDY0LjIxVjgxMC41M2MwLDM1Ljc5LDI5LjQ4LDY1LjI2LDY1LjI3LDY1LjI2aDYyMi4xYzM1Ljc5LDAsNjUuMjctMjkuNDcsNjUuMjctNjUuMjZWMzA1LjI1WiIvPjwvc3ZnPg==); }
+    a[href*='//']:not([href*="dataweb.usitc.gov"]).no-icon, a[href*='//']:not([href*="dataweb.usitc.gov"]).no-icon:active, a[href*='//']:not([href*="dataweb.usitc.gov"]).no-icon:focus, a[href*='//']:not([href*="dataweb.usitc.gov"]).no-icon:hover {
+      background-image: none;
+      padding-right: 0; }
   a:active, a:focus, a:hover {
     background-color: transparent;
     color: #05272e; }
