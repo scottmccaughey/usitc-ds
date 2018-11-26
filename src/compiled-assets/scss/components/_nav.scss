@@ -101,7 +101,8 @@
   grid-area: site-nav;
   height: $off-canvas-height;
   left: (-$off-canvas-width);
-  position: absolute;
+  overflow: auto;
+  position: fixed;
   top: 0;
   transition: $off-canvas-transition;
   width: $off-canvas-width;

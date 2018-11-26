@@ -2145,7 +2145,8 @@ dw-icon,
   grid-area: site-nav;
   height: 100vh;
   left: -250px;
-  position: absolute;
+  overflow: auto;
+  position: fixed;
   top: 0;
   -webkit-transition: left 0.75s ease-in-out;
   transition: left 0.75s ease-in-out;
