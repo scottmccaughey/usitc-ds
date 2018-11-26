@@ -130,7 +130,10 @@ a {
       &:focus,
       &:hover {
         background-image: none;
-        padding-right: 0;
+
+        &:not(.button) {
+          padding-right: 0;
+        }
       }
     }
   }
