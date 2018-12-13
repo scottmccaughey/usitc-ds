@@ -9,7 +9,7 @@
 
 // Utilities
 //
-// These are CSS classes that can be used in your HTML templates.
+// These are CSS classes that can be used in your <abbr>HTML</abbr> templates.
 //
 // Weight: 3
 //
@@ -18,3 +18,8 @@
 @import 'flex';
 @import 'grid';
 @import 'off-canvas';
+@import 'print';
+@import 'responsive';
+@import 'spacing';
+@import 'states';
+@import 'typography';

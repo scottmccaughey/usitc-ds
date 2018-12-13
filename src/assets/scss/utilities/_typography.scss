@@ -10,6 +10,12 @@
 //        Y8b d88P 888               Y8b d88P                 888               Y8b d88P
 //         "Y88P"  888                "Y88P"                  888                "Y88P"
 
+// Typography
+//
+// These are utility classes that can be used to change font weight, size, alignment, etc.
+//
+// Styleguide Utilities.Typography
+
 @each $family, $data in $font-family-files {
   @each $variant, $variant-data in $data {
     @include font-def(
@@ -20,18 +26,6 @@
       map-get($variant-data, 'stretch')
     );
   }
-}
-
-.black {
-  font-weight: $font-weight-black;
-}
-
-.bold {
-  font-weight: $font-weight-bold;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .max-line {
@@ -48,10 +42,50 @@
   }
 }
 
+// Weight
+//
+// These classes change the font weight, defined in [Tokens ➔ Typography](/tokens/typography).
+//
+// .black  - Use the black weight.
+// .bold   - Use the bold weight.
+// .unbold - Use the normal weight.
+//
+// Styleguide Utilities.Typography.Weight
+//
+// Weight: 1
+.black {
+  font-weight: $font-weight-black;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.unbold {
+  font-weight: $font-weight-normal !important;
+}
+
 .mono {
   font-family: $font-family-mono;
 }
 
+// Size
+//
+// These classes change the font size, defined in [Tokens ➔ Typography](/tokens/typography).
+//
+// .size-xxs    - Use the XXS size.
+// .size-xs     - Use the XS size.
+// .size-s      - Use the small size.
+// .size-m      - Use the medium size.
+// .size-l      - Use the large size.
+// .size-xl     - Use the XL size.
+// .size-xxl    - Use the XXL size.
+// .size-xxxl   - Use the XXXL size.
+// .size-xxxxl  - Use the XXXXL size.
+//
+// Styleguide Utilities.Typography.Size
+//
+// Weight: 2
 .size-xxs {
   font-size: $font-size-xxs;
 }
@@ -88,14 +122,25 @@
   font-size: $font-size-xxxxl;
 }
 
-.text-center {
-  display: block;
-  text-align: center !important;
-}
-
+// Alignment
+//
+// These classes change the text alignment. Please note that these force the element to a block-level element.
+//
+// .text-left   - Left-align the element.
+// .text-center - Center the element.
+// .text-right  - Right-align the element.
+//
+// Styleguide Utilities.Typography.Alignment
+//
+// Weight: 3
 .text-left {
   display: block;
   text-align: left !important;
+}
+
+.text-center {
+  display: block;
+  text-align: center !important;
 }
 
 .text-right {
@@ -103,8 +148,18 @@
   text-align: right !important;
 }
 
-.unbold {
-  font-weight: $font-weight-normal !important;
+// Various
+//
+// These classes change other typography settings.
+//
+// .italic    - Italicize the text.
+// .uppercase - Display the text as all uppercase letters.
+//
+// Styleguide Utilities.Typography.Various
+//
+// Weight: 4
+.italic {
+  font-style: italic;
 }
 
 .uppercase {

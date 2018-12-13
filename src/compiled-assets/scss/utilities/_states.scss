@@ -1,0 +1,74 @@
+//          888             888
+//          888             888
+//          888             888
+// .d8888b  888888  8888b.  888888 .d88b.  .d8888b
+// 88K      888        "88b 888   d8P  Y8b 88K
+// "Y8888b. 888    .d888888 888   88888888 "Y8888b.
+//      X88 Y88b.  888  888 Y88b. Y8b.          X88
+//  88888P'  "Y888 "Y888888  "Y888 "Y8888   88888P'
+
+// States
+//
+// These are utility classes that can be used to convey state, using the states defined in [Tokens ➔ Colors](/tokens/colors).
+//
+// Styleguide Utilities.States
+
+// Error
+//
+// .state-error - Error state.
+//
+// Markup:
+// <div class="panel state-error">This is to display an error.</div>
+//
+// Styleguide Utilities.States.Error
+//
+// Weight: 1
+.state-error,
+.state-error.panel {
+  @include state-error;
+}
+
+// Info
+//
+// .state-info - Info state.
+//
+// Markup:
+// <div class="panel state-info">This is to call out important information.</div>
+//
+// Styleguide Utilities.States.Info
+//
+// Weight: 2
+.state-info,
+.state-info.panel {
+  @include state-info;
+}
+
+// Success
+//
+// .state-success - Success state.
+//
+// Markup:
+// <div class="panel state-success">This is to display success.</div>
+//
+// Styleguide Utilities.States.Success
+//
+// Weight: 3
+.state-success,
+.state-success.panel {
+  @include state-success;
+}
+
+// Warning
+//
+// .state-warning - Warning state.
+//
+// Markup:
+// <div class="panel state-warning">This is to convey a warning.</div>
+//
+// Styleguide Utilities.States.Warning
+//
+// Weight: 4
+.state-warning,
+.state-warning.panel {
+  @include state-warning;
+}

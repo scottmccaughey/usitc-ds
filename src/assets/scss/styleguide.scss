@@ -462,6 +462,14 @@
   }
 }
 
+.kss-section-offcanvas {
+  display: none;
+}
+
+.kss-section-states .panel {
+  margin-bottom: 0;
+}
+
 .kss-source {
   margin-bottom: $space-l;
   padding: $space-s $space-m;

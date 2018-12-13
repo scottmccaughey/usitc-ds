@@ -7,6 +7,17 @@
 // Y88..88P 888    888         Y88b.    888  888 888  888  Y8bd8P  888  888      X88
 //  "Y88P"  888    888          "Y8888P "Y888888 888  888   Y88P   "Y888888  88888P'
 
+// Off-Canvas
+//
+// To use our off-canvas navigation, structure your <abbr>HTML</abbr> like this:
+//
+// Markup:
+// <div class="site-layout">
+//   <div class="site-content"></div>
+//   <nav class="site-nav on-dark"></nav>
+// </nav>
+//
+// Styleguide Utilities.OffCanvas
 .site-content {
   display: flex;
   flex-direction: column;
@@ -24,7 +35,6 @@
 
     .site-nav.on-dark {
       left: 0;
-      position: relative;
 
       .button-close {
         display: none;

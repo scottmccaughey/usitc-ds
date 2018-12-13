@@ -1,0 +1,385 @@
+//                                     d8b
+//                                     Y8P
+//
+// .d8888b  88888b.   8888b.   .d8888b 888 88888b.   .d88b.
+// 88K      888 "88b     "88b d88P"    888 888 "88b d88P"88b
+// "Y8888b. 888  888 .d888888 888      888 888  888 888  888
+//      X88 888 d88P 888  888 Y88b.    888 888  888 Y88b 888
+//  88888P' 88888P"  "Y888888  "Y8888P 888 888  888  "Y88888
+//          888                                          888
+//          888                                     Y8b d88P
+//          888                                      "Y88P"
+
+// Spacing
+//
+// These are utility classes that can be used to change margins and padding on elements.
+//
+// Styleguide Utilities.Spacing
+
+// Margin
+//
+// Styleguide Utilities.Spacing.Margin
+//
+// Weight: 1
+
+// None
+//
+// These classes *remove* margins.
+//
+// .margin-none         - Removes any margin from all sides of the element.
+// .margin-top-none     - Removes any margin from the top side of the element.
+// .margin-right-none   - Removes any margin from the right side of the element.
+// .margin-bottom-none  - Removes any margin from the bottom side of the element.
+// .margin-left-none    - Removes any margin from the left side of the element.
+//
+// Styleguide Utilities.Spacing.Margin.None
+//
+// Weight: 1
+.margin-none {
+  margin: 0 !important;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.margin-left-none {
+  margin-left: 0 !important;
+}
+
+.margin-right-none {
+  margin-right: 0 !important;
+}
+
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+// Base
+//
+// These classes add *base (medium)* margins as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .margin            - Adds a base margin on all sides of the element.
+// .margin-left-right - Adds a base margin on the left and right sides of the element.
+// .margin-top-bottom - Adds a base margin on the top and bottom sides of the element.
+// .margin-top        - Adds a base margin on the top side of the element.
+// .margin-right      - Adds a base margin on the right side of the element.
+// .margin-bottom     - Adds a base margin on the bottom side of the element.
+// .margin-left       - Adds a base margin on the left side of the element.
+//
+// Styleguide Utilities.Spacing.Margin.Base
+//
+// Weight: 2
+.margin {
+  padding: $space-m;
+
+  + .margin {
+    padding-top: 0;
+  }
+}
+
+.margin-left-right {
+  margin-left: $space-m;
+  margin-right: $space-m;
+}
+
+.margin-top-bottom {
+  margin-bottom: $space-m;
+  margin-top: $space-m;
+}
+
+.margin-top {
+  margin-top: $space-m;
+}
+
+.margin-right {
+  margin-right: $space-m;
+}
+
+.margin-bottom {
+  margin-bottom: $space-m;
+}
+
+.margin-left {
+  margin-left: $space-m;
+}
+
+// Half
+//
+// These classes add *half (small)* margins as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .margin-half         - Adds a half margin on all sides of the element.
+// .margin-top-half     - Adds a half margin on the top side of the element.
+// .margin-right-half   - Adds a half margin on the right side of the element.
+// .margin-bottom-half  - Adds a half margin on the bottom side of the element.
+// .margin-left-half    - Adds a half margin on the left side of the element.
+//
+// Styleguide Utilities.Spacing.Margin.Half
+//
+// Weight: 3
+.margin-half {
+  margin: $space-s;
+}
+
+.margin-bottom-half {
+  margin-bottom: $space-s;
+}
+
+.margin-left-half {
+  margin-left: $space-s;
+}
+
+.margin-right-half {
+  margin-right: $space-s;
+}
+
+.margin-top-half {
+  margin-top: $space-s;
+}
+
+// Quarter
+//
+// These classes add *quarter (extra small)* margins as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .margin-quarter        - Adds a quarter margin on all sides of the element.
+// .margin-top-quarter    - Adds a quarter margin on the top side of the element.
+// .margin-right-quarter  - Adds a quarter margin on the right side of the element.
+// .margin-bottom-quarter - Adds a quarter margin on the bottom side of the element.
+// .margin-left-quarter   - Adds a quarter margin on the left side of the element.
+//
+// Styleguide Utilities.Spacing.Margin.Quarter
+//
+// Weight: 4
+.margin-quarter {
+  margin: $space-xs;
+}
+
+.margin-bottom-quarter {
+  margin-bottom: $space-xs;
+}
+
+.margin-left-quarter {
+  margin-left: $space-xs;
+}
+
+.margin-right-quarter {
+  margin-right: $space-xs;
+}
+
+.margin-top-quarter {
+  margin-top: $space-xs;
+}
+
+// Double
+//
+// These classes add *double (large)* margins as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .margin-double         - Adds a double margin on all sides of the element.
+// .margin-top-double     - Adds a double margin on the top side of the element.
+// .margin-right-double   - Adds a double margin on the right side of the element.
+// .margin-bottom-double  - Adds a double margin on the bottom side of the element.
+// .margin-left-double    - Adds a double margin on the left side of the element.
+//
+// Styleguide Utilities.Spacing.Margin.Double
+//
+// Weight: 5
+.margin-double {
+  margin: $space-l;
+}
+
+.margin-bottom-double {
+  margin-bottom: $space-l;
+}
+
+.margin-left-double {
+  margin-left: $space-l;
+}
+
+.margin-right-double {
+  margin-right: $space-l;
+}
+
+.margin-top-double {
+  margin-top: $space-l;
+}
+
+// Padding
+//
+// Styleguide Utilities.Spacing.Padding
+//
+// Weight: 2
+
+// None
+//
+// These classes *remove* padding.
+//
+// .padding-none         - Removes any padding from all sides of the element.
+// .padding-top-none     - Removes any padding from the top side of the element.
+// .padding-right-none   - Removes any padding from the right side of the element.
+// .padding-bottom-none  - Removes any padding from the bottom side of the element.
+// .padding-left-none    - Removes any padding from the left side of the element.
+//
+// Styleguide Utilities.Spacing.Padding.None
+//
+// Weight: 1
+.padding-none {
+  padding: 0 !important;
+}
+
+.padding-bottom-none {
+  padding-bottom: 0 !important;
+}
+
+.padding-left-none {
+  padding-left: 0 !important;
+}
+
+.padding-right-none {
+  padding-right: 0 !important;
+}
+
+.padding-top-none {
+  padding-top: 0 !important;
+}
+
+// Base
+//
+// These classes add *base (medium)* padding as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .padding            - Adds a base padding on all sides of the element.
+// .padding-left-right - Adds a base padding on the left and right sides of the element.
+// .padding-top-bottom - Adds a base padding on the top and bottom sides of the element.
+// .padding-top        - Adds a base padding on the top side of the element.
+// .padding-right      - Adds a base padding on the right side of the element.
+// .padding-bottom     - Adds a base padding on the bottom side of the element.
+// .padding-left       - Adds a base padding on the left side of the element.
+//
+// Styleguide Utilities.Spacing.Padding.Base
+//
+// Weight: 2
+.padding {
+  padding: $space-m;
+
+  + .padding {
+    padding-top: 0;
+
+    &.padding-top {
+      padding-top: $space-m;
+    }
+  }
+}
+
+.padding-left-right {
+  padding-left: $space-m;
+  padding-right: $space-m;
+}
+
+.padding-top-bottom {
+  padding-bottom: $space-m;
+  padding-top: $space-m;
+}
+
+.padding-top {
+  padding-top: $space-m;
+}
+
+.padding-right {
+  padding-right: $space-m;
+}
+
+.padding-bottom {
+  padding-bottom: $space-m;
+}
+
+.padding-left {
+  padding-left: $space-m;
+}
+
+// Half
+//
+// These classes add *half (small)* padding as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .padding-half        - Adds a half padding on all sides of the element.
+//
+// Styleguide Utilities.Spacing.Padding.Half
+//
+// Weight: 3
+.padding-half {
+  padding: $space-s;
+}
+
+// Quarter
+//
+// These classes add *quarter (extra small)* padding as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .padding-quarter        - Adds a quarter margin on all sides of the element.
+//
+// Styleguide Utilities.Spacing.Padding.Quarter
+//
+// Weight: 4
+.margin-quarter {
+  margin: $space-xs;
+}
+
+// Double
+//
+// These classes add *double (large)* padding as defined in [Tokens ➔ Spacing](/tokens/spacing).
+//
+// .padding-double         - Adds a double margin on all sides of the element.
+//
+// Styleguide Utilities.Spacing.Padding.Double
+//
+// Weight: 5
+.padding-double {
+  padding: $space-l;
+}
+
+.space-xxs {
+  height: $space-m;
+  width: $space-xxs;
+}
+
+.space-xs {
+  height: $space-m;
+  width: $space-xs;
+}
+
+.space-s {
+  height: $space-m;
+  width: $space-s;
+}
+
+.space-m {
+  height: $space-m;
+  width: $space-m;
+}
+
+.space-l {
+  height: $space-m;
+  width: $space-l;
+}
+
+.space-xl {
+  height: $space-m;
+  width: $space-xl;
+}
+
+.space-xxl {
+  height: $space-m;
+  width: $space-xxl;
+}
+
+.space-xxxl {
+  height: $space-m;
+  width: $space-xxxl;
+}
+
+.space-xxxxl {
+  height: $space-m;
+  width: $space-xxxxl;
+}
+
+.space-xxxxxl {
+  height: $space-m;
+  width: $space-xxxxxl;
+}

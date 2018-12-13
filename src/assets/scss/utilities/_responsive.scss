@@ -10,6 +10,25 @@
 //                          888
 //                          888
 
+// Responsive
+//
+// These are utility classes that can be used to hide elements based on the viewport widths defined in [Tokens ➔ Breakpoints](/tokens/breakpoints).
+//
+// .hide-xs-down    - Hide element when screen size is smaller than the XS breakpoint.
+// .hide-xs-up      - Hide element when screen size is equal to or greater than the XS breakpoint.
+// .hide-s-down     - Hide element when screen size is smaller than the S breakpoint.
+// .hide-s-up       - Hide element when screen size is equal to or greater than the S breakpoint.
+// .hide-m-down     - Hide element when screen size is smaller than the M breakpoint.
+// .hide-m-up       - Hide element when screen size is equal to or greater than the M breakpoint.
+// .hide-l-down     - Hide element when screen size is smaller than the L breakpoint.
+// .hide-l-up       - Hide element when screen size is equal to or greater than the L breakpoint.
+// .hide-xl-down    - Hide element when screen size is smaller than the XL breakpoint.
+// .hide-xl-up      - Hide element when screen size is equal to or greater than the XL breakpoint.
+// .hide-xxl-down   - Hide element when screen size is smaller than the XXL breakpoint.
+// .hide-xxl-up     - Hide element when screen size is equal to or greater than the XXL breakpoint.
+// .hide-xxxl-up    - Hide element when screen size is equal to or greater than the XXXL breakpoint.
+//
+// Styleguide Utilities.Responsive
 .hide-xs-down {
   display: none;
 
